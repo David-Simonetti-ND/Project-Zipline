@@ -12,7 +12,25 @@
 // use getenv to get path to tb config files
 import "DPI-C" function string getenv(input string env_name);
 
-module kme_tb;   
+module kme_tb (input wire clk,
+               output logic rst_n,
+
+               input logic kme_ib_tready,
+               output logic [`AXI_S_TID_WIDTH-1:0]  kme_ib_tid,
+               output logic [`AXI_S_DP_DWIDTH-1:0]  kme_ib_tdata,
+               output logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ib_tstrb,
+               output logic [`AXI_S_USER_WIDTH-1:0] kme_ib_tuser,
+               output logic                         kme_ib_tvalid,
+               output logic                         kme_ib_tlast,
+ 
+               output logic kme_ob_tready,
+               input logic [`AXI_S_TID_WIDTH-1:0]  kme_ob_tid,
+               input logic [`AXI_S_DP_DWIDTH-1:0]  kme_ob_tdata,
+               input logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ob_tstrb,
+               input logic [`AXI_S_USER_WIDTH-1:0] kme_ob_tuser,
+               input logic                         kme_ob_tvalid,
+               input logic                         kme_ob_tlast
+               );
    
    string testname;
    string seed;
@@ -21,91 +39,6 @@ module kme_tb;
 
    string fsdbFilename;
    string kme_tb_config_path;
-  
-
-   wire clk;
-   logic rst_n;
-
-   logic kme_ib_tready;
-   logic [`AXI_S_TID_WIDTH-1:0]  kme_ib_tid;
-   logic [`AXI_S_DP_DWIDTH-1:0]  kme_ib_tdata;
-   logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ib_tstrb;
-   logic [`AXI_S_USER_WIDTH-1:0] kme_ib_tuser;
-   logic                         kme_ib_tvalid;
-   logic                         kme_ib_tlast;
-
-   logic kme_ob_tready;
-   logic [`AXI_S_TID_WIDTH-1:0]  kme_ob_tid;
-   logic [`AXI_S_DP_DWIDTH-1:0]  kme_ob_tdata;
-   logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ob_tstrb;
-   logic [`AXI_S_USER_WIDTH-1:0] kme_ob_tuser;
-   logic                         kme_ob_tvalid;
-   logic                         kme_ob_tlast;    
-
-   logic [`N_RBUS_ADDR_BITS-1:0] kme_apb_paddr;
-   logic                         kme_apb_psel;
-   logic                         kme_apb_penable;
-   logic                         kme_apb_pwrite;
-   logic [`N_RBUS_DATA_BITS-1:0] kme_apb_pwdata;  
-   logic [`N_RBUS_DATA_BITS-1:0] kme_apb_prdata;
-   logic                         kme_apb_pready;		        
-   logic                         kme_apb_pslverr;
-   
-   apb_xactor #(.ADDR_WIDTH(`N_RBUS_ADDR_BITS),.DATA_WIDTH(`N_RBUS_DATA_BITS)) apb_xactor(
-											  .clk(clk), 
-											  .reset_n(rst_n), 
-											  .prdata(kme_apb_prdata), 
-											  .pready(kme_apb_pready), 
-											  .pslverr(kme_apb_pslverr), 
-											  .psel(kme_apb_psel), 
-											  .penable(kme_apb_penable), 
-											  .paddr(kme_apb_paddr), 
-											  .pwdata(kme_apb_pwdata), 
-											  .pwrite(kme_apb_pwrite)
-											  );
-   
-   cr_kme kme_dut(
-		  .kme_ib_tready(kme_ib_tready), 
-		  .kme_ib_tvalid(kme_ib_tvalid),
-		  .kme_ib_tlast(kme_ib_tlast),
-		  .kme_ib_tid(kme_ib_tid),
-		  .kme_ib_tstrb(kme_ib_tstrb),
-		  .kme_ib_tuser(kme_ib_tuser),
-		  .kme_ib_tdata(kme_ib_tdata),
-
-		  .kme_cceip0_ob_tready(kme_ob_tready), 
-		  .kme_cceip0_ob_tvalid(kme_ob_tvalid),
-		  .kme_cceip0_ob_tlast(kme_ob_tlast),
-		  .kme_cceip0_ob_tid(kme_ob_tid),
-		  .kme_cceip0_ob_tstrb(kme_ob_tstrb),
-		  .kme_cceip0_ob_tuser(kme_ob_tuser),
-		  .kme_cceip0_ob_tdata(kme_ob_tdata),
-      
-		  .apb_paddr(kme_apb_paddr[`N_KME_RBUS_ADDR_BITS-1:0]),
-		  .apb_psel(kme_apb_psel), 
-		  .apb_penable(kme_apb_penable), 
-		  .apb_pwrite(kme_apb_pwrite), 
-		  .apb_pwdata(kme_apb_pwdata),
-		  .apb_prdata(kme_apb_prdata),
-		  .apb_pready(kme_apb_pready), 
-		  .apb_pslverr(kme_apb_pslverr),
-
-		  .rst_n(rst_n), 
-		  .scan_en(1'b0), 
-		  .scan_mode(1'b0), 
-		  .scan_rst_n(1'b0), 
-    
-		  .ovstb(1'b1), 
-		  .lvm(1'b0),
-		  .mlvm(1'b0),
-
-		  .kme_interrupt(),
-		  .disable_debug_cmd(1'b0),
-                  .kme_idle(),
-		  .disable_unencrypted_keys(1'b0)
-		  );
-
-   assign clk = kme_dut.new_clk;
 
    initial begin
 
@@ -205,7 +138,7 @@ module kme_tb;
 	    //      $display ("APB_INFO:  @time:%-d parsed vector --> %s 0x%h 0x%h    %d", $time, operation, address, data, str_get ); 
             if ( str_get == 3 && (operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
                if ( operation == "r" || operation == "R" ) begin
-		  apb_xactor.read(address, returned_data, response);
+		  top.apb_xactor.read(address, returned_data, response);
 		  if ( response !== 0 ) begin
 		     $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the READ operation to address 0x%h\n\n",
                                $time, address );
@@ -219,7 +152,7 @@ module kme_tb;
 		     end
 		  end
                end else begin
-		  apb_xactor.write(address, data, response);
+		  top.apb_xactor.write(address, data, response);
 		  if ( response !== 0 ) begin
 		     $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the WRITE operation to address 0x%h\n\n",
                                $time, address );

@@ -14,3 +14,5 @@
 +incdir+$DV_ROOT/CCE_64/tb_top
 $DV_ROOT/agents/apb/apb_xactor.v
 $DV_ROOT/KME/run/kme_tb.v
+$DV_ROOT/KME/run/hw_top.v
+$DV_ROOT/KME/run/top.v

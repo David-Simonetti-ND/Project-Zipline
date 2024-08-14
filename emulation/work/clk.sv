@@ -11,7 +11,7 @@
 `timescale 1 ns / 1 ns
 `define IXCclkgenTs 1 ns / 1 ns
 module _ixc_clkgen;
-  wire clk_0;
+  wire dut_clk_0;
 
 `ifdef IXCOM_COMPILE
   initial $ixc_ctrl("map_delays");
@@ -19,15 +19,15 @@ module _ixc_clkgen;
 `endif
 
   // Generate logic for clock sources
-  ixc_master_clock #(5) ixcg_0(clk_0  );
+  ixc_master_clock #(5) ixcg_0(dut_clk_0  );
 
   // Bind clock sources to generated clock signal
-  ixc_cakebind ixcb_0 (kme_tb.kme_dut.clk, clk_0);
+  ixc_cakebind ixcb_0 (top.hw_top.dut_clk, dut_clk_0);
 
 `ifdef IXCOM_COMPILE
   initial begin
     $ixc_ctrl("hotswap_top");
-    $ua_cmd("cakeClk", "kme_tb.kme_dut.clk", "ixcg_0", "100000kHz", "B2", "0");
+    $ua_cmd("cakeClk", "top.hw_top.dut_clk", "ixcg_0", "100000kHz", "B2", "0");
   end
 `endif
 endmodule // _ixc_clkgen

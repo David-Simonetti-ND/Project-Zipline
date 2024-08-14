@@ -19260,3 +19260,7523 @@ DRM memory info: hsv-sc21 - DBEngine - 106664 - 104474 - unknown unlimited
 ## DBEngine exits at 08/14/2024 14:16:08 Status: 0, PID: 106664
 ## DBEngine Elapsed time: 0:00:16, CPU time: 0:00:06.09, Memory Usage: 5.4G
 ## Child Proc. CPU time: 0:00:00.36
+
+## DBEngine starts at 08/14/2024 15:00:21 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 4548, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:38436 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2976       46        0        0     2160
+Swap (GB):      127       27      100
+* Load info:
+  13898 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              11.05 ( 23% CPU) |  11.49 ( 24% CPU) |  11.67 ( 24% CPU)
+System info: hsv-sc21 - DBEngine - 4548 2750 - qtInit - 2024-08-14 15:00:21 - 11.05 23% 11.49 24% 11.67 24% - 3023 2976 46 2160 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1237762909.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0 real, 0 cpu(0u+0s), 0%, memory 1494M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1846 Mb) on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 14:59:46 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1438179
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.140 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.29s (0.14u+0.34s), Memory used 2392 Mb) on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000063 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C30001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.11s (0.01u+0.03s), Memory used 2408 Mb) on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 14:59:44 WITH SEED 315204099
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.09s (0.03u+0.05s), Memory used 2441 Mb) on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:00:23
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:00:23, finishes at 15:00:23. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2afe1abd1000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a225
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.30s (0.55u+1.81s), Memory used 4116 Mb) on 08/14/2024 15:00:25
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.000000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:top' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:00:26] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 195
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.013279 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 14 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,005 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 12779521; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C30001 (12779521)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C30001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C30001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1075 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xa8227c0; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1077 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 195) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:00:27] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000236231 s, ib_submit_op: 0.07374 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2192 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2309 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 43 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11005;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 8792128, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 8 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 22 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.183e-06 s, ib_submit_op: 0.048901 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 101 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 310 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:00:30] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:00:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:00:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 89 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,009 s: INFO (legacy-22222): domainMap size=288
+000,009 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 62528
+000,009 s: INFO (legacy-29866): Loading compiler saved data.
+000,009 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,009 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,009 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:00:31 
+000,009 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,009 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,009 s: INFO (legacy-0): 	max_nets_per_frame = 500224
+000,009 s: INFO (legacy-0): 	max_nets_cycle_1 = 55808
+000,009 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 14336
+000,009 s: INFO (legacy-0): 	max_frames_per_dcc = 274754
+000,009 s: INFO (legacy-0): 	max_PI_nets = 14336
+000,009 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,009 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	dcc_mode = single
+000,009 s: INFO (legacy-0): 	dcc_comp = 0
+000,009 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,009 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,009 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,009 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,009 s: INFO (legacy-29213): Estimated available probe resource: 6166
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 62528, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 252175424, fixedBuf = 255864832, num of fixed buf = 4
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 62528, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 252175424, fixedBuf = 255864832, num of fixed buf = 4
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1003 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: Enable DCC flush
+000,010 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=275
+000,013 s: xe> exit
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,014 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,014 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,014 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      86      0.000146 secs     0.001757 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.005086 secs     2.009457 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      15      0.005101 secs     0.036499 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      38      0.006636 secs     0.173198 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      3.996030 secs     3.996030 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      62      0.000022 secs     0.000211 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000029 secs     0.000046 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      53      0.000780 secs     0.033631 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      37      0.000195 secs     0.001389 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000009 secs     0.000015 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.487940 secs     0.487940 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000007 secs     0.000007 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1246      0.002248 secs     0.052345 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000011 secs     0.000019 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000254 secs     0.000467 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      14      0.003827 secs     0.031156 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      22      0.000009 secs     0.000061 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.001024 secs     0.005694 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     130      0.000324 secs     0.003898 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick       9      0.001055 secs     0.001494 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net       8      0.000047 secs     0.000190 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000013 secs     0.000031 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000031 secs     0.000044 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000004 secs     0.000004 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      48      0.000073 secs     0.000529 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000159 secs     0.000159 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.007486 secs     0.727451 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000071 secs     0.000192 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     132      0.000015 secs     0.000331 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000006 secs     0.000140 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000006 secs     0.000016 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.004288 secs     0.464031 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.028432 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE | 
+000,014 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,014 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,014 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,014 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,014 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,014 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,014 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1237762909.
+000,014 s: INFO (legacy-52098): Closing DBEngine streams.
+000,014 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2979       44        0        0     2160
+Swap (GB):      127       27      100
+* Load info:
+  13873 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              10.96 ( 23% CPU) |  11.45 ( 24% CPU) |  11.66 ( 24% CPU)
+System info: hsv-sc21 - DBEngine - 4548 2750 - qtExit - 2024-08-14 15:00:36 - 10.96 23% 11.45 24% 11.66 24% - 3023 2979 44 2160 127 27 100
+Peak usage info for DBEngine (pid 4548, ppid 2750) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 44 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,014 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 44 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 4548 - 2750 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:00:36 Status: 0, PID: 4548
+## DBEngine Elapsed time: 0:00:15, CPU time: 0:00:05.78, Memory Usage: 5.1G
+## Child Proc. CPU time: 0:00:00.38
+
+## DBEngine starts at 08/14/2024 15:06:37 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 9600, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:36731 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2978       44        0        0     2162
+Swap (GB):      127       27      100
+* Load info:
+  13895 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              11.22 ( 23% CPU) |  11.54 ( 24% CPU) |  11.66 ( 24% CPU)
+System info: hsv-sc21 - DBEngine - 9600 7706 - qtInit - 2024-08-14 15:06:37 - 11.22 23% 11.54 24% 11.66 24% - 3023 2978 44 2162 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1315625182.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.01 real, 0.01 cpu(0u+0.01s), 100%, memory 1496M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.020000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:06:38
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1846 Mb) on 08/14/2024 15:06:38
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:06:38
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:06:21 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1437801
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.210 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.30s (0.13u+0.32s), Memory used 2328 Mb) on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000094 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C40001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.11s (0.01u+0.02s), Memory used 2344 Mb) on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:06:19 WITH SEED 988058642
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.08s (0.04u+0.04s), Memory used 2377 Mb) on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:06:39
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:06:39, finishes at 15:06:39. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2afcb14cf000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a229
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.19s (0.54u+1.70s), Memory used 4052 Mb) on 08/14/2024 15:06:41
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.000000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:top' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:06:42] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 196
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.007986 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 9 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,005 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 12845057; get_num_design_fits is 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C40001 (12845057)  CFGMGR_result 00000000
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C40001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C40001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1073 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0x9c727f0; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1074 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 196) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:06:43] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000233059 s, ib_submit_op: 0.0802655 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2192 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2308 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:06:45] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:06:45] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 45 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11004;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9099488, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 12 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 26 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.606e-06 s, ib_submit_op: 0.0496094 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 111 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 391 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:06:46] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 92 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,009 s: INFO (legacy-22222): domainMap size=288
+000,009 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60416
+000,009 s: INFO (legacy-29866): Loading compiler saved data.
+000,009 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,009 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,009 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:06:47 
+000,009 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,009 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,009 s: INFO (legacy-0): 	max_nets_per_frame = 483328
+000,009 s: INFO (legacy-0): 	max_nets_cycle_1 = 54784
+000,009 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,009 s: INFO (legacy-0): 	max_frames_per_dcc = 284359
+000,009 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,009 s: INFO (legacy-0): 	max_FF_nets = 40960
+000,009 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	dcc_mode = single
+000,009 s: INFO (legacy-0): 	dcc_comp = 0
+000,009 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,009 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,009 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,009 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,009 s: INFO (legacy-29213): Estimated available probe resource: 5656
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: Enable DCC flush
+000,010 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=275
+000,013 s: xe> exit
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,014 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,014 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,014 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      86      0.000110 secs     0.001589 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.005086 secs     2.009840 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      15      0.004190 secs     0.031269 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      38      0.011623 secs     0.175506 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.038331 secs     4.038331 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      62      0.000012 secs     0.000202 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000043 secs     0.000058 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      53      0.000815 secs     0.034971 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      37      0.000229 secs     0.001401 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000005 secs     0.000013 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.529196 secs     0.529196 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000007 secs     0.000007 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1246      0.001413 secs     0.046635 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000012 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000287 secs     0.000569 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      14      0.002882 secs     0.026797 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      22      0.000007 secs     0.000071 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.000902 secs     0.005640 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     130      0.000237 secs     0.003915 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick       9      0.000897 secs     0.001378 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net       8      0.000066 secs     0.000230 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000036 secs     0.000057 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000006 secs     0.000019 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000003 secs     0.000003 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      48      0.000066 secs     0.000509 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000140 secs     0.000140 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.003551 secs     0.681171 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000091 secs     0.000164 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     132      0.000015 secs     0.000304 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000007 secs     0.000148 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000017 secs     0.000033 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.001883 secs     0.429818 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE |  
+000,014 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.019996 secs
+000,014 s: INFO (legacy-40012): 00 DATABASE | 
+000,014 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,014 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,014 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,014 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,014 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,014 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,014 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1315625182.
+000,014 s: INFO (legacy-52098): Closing DBEngine streams.
+000,014 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2981       42        0        0     2163
+Swap (GB):      127       27      100
+* Load info:
+  13886 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.44 ( 26% CPU) |  11.80 ( 25% CPU) |  11.75 ( 24% CPU)
+System info: hsv-sc21 - DBEngine - 9600 7706 - qtExit - 2024-08-14 15:06:51 - 12.44 26% 11.80 25% 11.75 24% - 3023 2981 42 2163 127 27 100
+Peak usage info for DBEngine (pid 9600, ppid 7706) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 42 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,014 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 42 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 9600 - 7706 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:06:51 Status: 0, PID: 9600
+## DBEngine Elapsed time: 0:00:14, CPU time: 0:00:05.78, Memory Usage: 5.2G
+## Child Proc. CPU time: 0:00:00.35
+
+## DBEngine starts at 08/14/2024 15:19:19 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 18752, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:38310 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2983       40        0        0     2167
+Swap (GB):      127       27      100
+* Load info:
+  13961 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.89 ( 27% CPU) |  12.77 ( 27% CPU) |  12.26 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 18752 16872 - qtInit - 2024-08-14 15:19:19 - 12.89 27% 12.77 27% 12.26 26% - 3023 2983 40 2167 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1148721423.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.01 real, 0 cpu(0u+0s), 0%, memory 1556M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:19:20
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1910 Mb) on 08/14/2024 15:19:20
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:19:20
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:18:58 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1439524
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.180 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.27s (0.15u+0.31s), Memory used 2392 Mb) on 08/14/2024 15:19:20
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000089 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:19:20
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C50001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.02u+0.03s), Memory used 2408 Mb) on 08/14/2024 15:19:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:19:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:18:56 WITH SEED 485502288
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.12s (0.03u+0.04s), Memory used 2441 Mb) on 08/14/2024 15:19:21
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:19:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:19:21, finishes at 15:19:21. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b1940d61000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a228
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.31s (0.53u+1.80s), Memory used 4116 Mb) on 08/14/2024 15:19:23
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.000000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:top' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:19:24] <<<
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 197
+000,005 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,005 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,005 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.007510 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 9 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,006 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 12910593; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C50001 (12910593)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C50001;  Calling jobLock()
+000,007 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C50001;  Called jobLock();  stat is 00000008
+000,007 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1643 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,007 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xdeb6670; logical_brd 0)
+000,007 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,007 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1645 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 197) 
+000,007 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:19:26] <<<
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,007 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,007 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,007 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,007 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,007 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,007 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,007 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,007 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,007 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,007 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,007 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,007 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,007 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,009 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,009 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000238687 s, ib_submit_op: 0.0747414 s
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2180 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 3 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2298 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:19:28] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:19:28] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,009 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 44 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11032;  rc 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,009 s: INFO (legacy-40012): 00 DATABASE |  
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9089856, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,009 s: WARNING (legacy-28870): 10 DATABASE | 
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:19:28] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:19:28] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,009 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,009 s: INFO (legacy-40012): 00          | Saving CCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,009 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,009 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,009 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,009 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 6 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 18 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:19:28] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,009 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,009 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,009 s: INFO (legacy-40012): 00          | Saving GCSW
+000,009 s: INFO (legacy-40012): 00          | Saving NCSW
+000,009 s: INFO (legacy-40012): 00          | Saving ICSW
+000,009 s: INFO (legacy-40012): 00          | Saving OCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.853e-06 s, ib_submit_op: 0.0491109 s
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 98 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,009 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,009 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:19:29] <<<
+000,009 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 286 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:19:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:19:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:19:29] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:19:29] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 74 milliseconds
+000,010 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,010 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,010 s: INFO (legacy-22222): domainMap size=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60480
+000,010 s: INFO (legacy-29866): Loading compiler saved data.
+000,010 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,010 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,010 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,010 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:19:30 
+000,010 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,010 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,010 s: INFO (legacy-0): 	max_nets_per_frame = 483840
+000,010 s: INFO (legacy-0): 	max_nets_cycle_1 = 55296
+000,010 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,010 s: INFO (legacy-0): 	max_frames_per_dcc = 284058
+000,010 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,010 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,010 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	dcc_mode = single
+000,010 s: INFO (legacy-0): 	dcc_comp = 0
+000,010 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,010 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,010 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,010 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,010 s: INFO (legacy-29213): Estimated available probe resource: 5561
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,011 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,011 s: Enable DCC flush
+000,011 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,012 s: INFO (legacy-11111): BOARD_MAX=288
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,012 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,012 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,012 s: xe> run -swap
+000,012 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,012 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,012 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,012 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,012 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,014 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1003 milliseconds
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s:   (nested call from 'run')xe> clockConfig -actual
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,014 s: xe> run
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,016 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,016 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,016 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,016 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,016 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,016 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 15 Cycles;  Ran 15 Cycles, rc = 00000000
+000,016 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,016 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,016 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,016 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=339815
+000,016 s: xe> exit
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,017 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,017 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,017 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      87      0.000109 secs     0.001188 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.005037 secs     2.009248 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      17      0.005590 secs     0.049437 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      46      0.015851 secs     0.264910 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.645227 secs     4.645227 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      63      0.000019 secs     0.000211 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000053 secs     0.000091 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      58      0.007039 secs     0.046538 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      42      0.000184 secs     0.001583 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000005 secs     0.000013 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.410609 secs     0.410609 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000007 secs     0.000007 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1273      0.003657 secs     0.089785 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000012 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000244 secs     0.000531 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      15      0.007192 secs     0.043402 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      25      0.000012 secs     0.000070 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.001075 secs     0.006224 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     136      0.000267 secs     0.004006 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick      10      0.001026 secs     0.001575 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net      10      0.000036 secs     0.000240 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000035 secs     0.000059 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                          sim_halt_query       1      0.000048 secs     0.000048 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000011 secs     0.000026 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000004 secs     0.000004 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      54      0.000062 secs     0.000424 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000136 secs     0.000136 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.006643 secs     0.786352 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000066 secs     0.000163 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     137      0.000008 secs     0.000299 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000005 secs     0.000143 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000008 secs     0.000016 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.004441 secs     0.490222 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.852799 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE | 
+000,017 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,017 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,017 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,017 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,017 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,017 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,017 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1148721423.
+000,017 s: INFO (legacy-52098): Closing DBEngine streams.
+000,017 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2985       37        0        0     2167
+Swap (GB):      127       27      100
+* Load info:
+  13941 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              13.07 ( 27% CPU) |  12.82 ( 27% CPU) |  12.29 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 18752 16872 - qtExit - 2024-08-14 15:19:36 - 13.07 27% 12.82 27% 12.29 26% - 3023 2985 37 2167 127 27 100
+Peak usage info for DBEngine (pid 18752, ppid 16872) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 38 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,017 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 38 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 18752 - 16872 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:19:36 Status: 0, PID: 18752
+## DBEngine Elapsed time: 0:00:17, CPU time: 0:00:06.02, Memory Usage: 5.2G
+## Child Proc. CPU time: 0:00:00.35
+
+## DBEngine starts at 08/14/2024 15:25:20 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 24371, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:45234 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2987       35        0        0     2172
+Swap (GB):      127       27      100
+* Load info:
+  13930 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.74 ( 27% CPU) |  12.73 ( 27% CPU) |  12.41 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 24371 22607 - qtInit - 2024-08-14 15:25:20 - 12.74 27% 12.73 27% 12.41 26% - 3023 2987 35 2172 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1476332919.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0 real, 0 cpu(0u+0s), 0%, memory 1556M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:25:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1910 Mb) on 08/14/2024 15:25:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:25:21
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:24:56 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1439032
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.190 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.28s (0.12u+0.34s), Memory used 2392 Mb) on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000054 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C70001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.01u+0.02s), Memory used 2408 Mb) on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 280
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:24:54 WITH SEED 421250188
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.10s (0.03u+0.06s), Memory used 2441 Mb) on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:25:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:25:22, finishes at 15:25:22. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b94fe1f4000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a228
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.25s (0.55u+1.76s), Memory used 4116 Mb) on 08/14/2024 15:25:24
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.010000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:25:25] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 199
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.007731 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 280 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 9 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,005 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13041665; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C70001 (13041665)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C70001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C70001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1118 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0x9351810; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1122 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 199) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:25:26] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000232324 s, ib_submit_op: 0.0732402 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2182 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2298 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:25:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:25:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 46 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11156;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9089856, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:25:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:25:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 6 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 20 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:25:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 7.655e-06 s, ib_submit_op: 0.0483017 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 94 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 20 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:25:29] <<<
+000,009 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 289 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:25:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:25:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:25:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:25:29] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 81 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,009 s: INFO (legacy-22222): domainMap size=288
+000,009 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60480
+000,009 s: INFO (legacy-29866): Loading compiler saved data.
+000,009 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,009 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,009 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:25:30 
+000,009 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,009 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,009 s: INFO (legacy-0): 	max_nets_per_frame = 483840
+000,009 s: INFO (legacy-0): 	max_nets_cycle_1 = 55296
+000,009 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,009 s: INFO (legacy-0): 	max_frames_per_dcc = 284058
+000,009 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,009 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,009 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	dcc_mode = single
+000,009 s: INFO (legacy-0): 	dcc_comp = 0
+000,009 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,009 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,009 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,009 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,009 s: INFO (legacy-29213): Estimated available probe resource: 5602
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1003 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: Enable DCC flush
+000,010 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=275
+000,013 s: xe> exit
+000,015 s: INFO (legacy-40012): 00 DATABASE |  
+000,015 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,015 s: INFO (legacy-40012): 00 DATABASE |  
+000,015 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,015 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,015 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,015 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      86      0.000085 secs     0.001335 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004379 secs     2.008611 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      15      0.005944 secs     0.042097 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      38      0.013987 secs     0.230372 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.083063 secs     4.083063 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      62      0.000012 secs     0.000196 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000056 secs     0.000075 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      53      0.001007 secs     0.035028 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      37      0.000141 secs     0.001267 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000003 secs     0.000011 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.417398 secs     0.417398 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000006 secs     0.000006 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1246      0.003451 secs     0.074940 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000010 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000213 secs     0.000437 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      14      0.007022 secs     0.043836 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      22      0.000008 secs     0.000047 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.000856 secs     0.005679 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     130      0.000271 secs     0.003995 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick       9      0.000879 secs     0.001339 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net       8      0.000040 secs     0.000219 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000023 secs     0.000039 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000007 secs     0.000020 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000005 secs     0.000005 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      48      0.000071 secs     0.000415 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000191 secs     0.000191 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.004007 secs     0.769794 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000109 secs     0.000179 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     132      0.000043 secs     0.000333 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000007 secs     0.000122 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000009 secs     0.000018 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.003626 secs     0.472619 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE |  
+000,015 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.193696 secs
+000,015 s: INFO (legacy-40012): 00 DATABASE | 
+000,015 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,015 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,015 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,015 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,015 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,015 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,015 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1476332919.
+000,015 s: INFO (legacy-52098): Closing DBEngine streams.
+000,015 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2989       33        0        0     2172
+Swap (GB):      127       27      100
+* Load info:
+  13918 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.21 ( 25% CPU) |  12.62 ( 26% CPU) |  12.38 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 24371 22607 - qtExit - 2024-08-14 15:25:36 - 12.21 25% 12.62 26% 12.38 26% - 3023 2989 33 2172 127 27 100
+Peak usage info for DBEngine (pid 24371, ppid 22607) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 34 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,015 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 34 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 24371 - 22607 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:25:36 Status: 0, PID: 24371
+## DBEngine Elapsed time: 0:00:16, CPU time: 0:00:05.84, Memory Usage: 5.3G
+## Child Proc. CPU time: 0:00:00.35
+
+## DBEngine starts at 08/14/2024 15:28:32 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 29593, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:40299 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2989       34        0        0     2173
+Swap (GB):      127       27      100
+* Load info:
+  13954 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.96 ( 27% CPU) |  12.55 ( 26% CPU) |  12.38 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 29593 27813 - qtInit - 2024-08-14 15:28:32 - 12.96 27% 12.55 26% 12.38 26% - 3023 2989 34 2173 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1297036240.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0 real, 0 cpu(0u+0s), 0%, memory 1494M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:28:33
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1846 Mb) on 08/14/2024 15:28:33
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:28:33
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:28:16 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1439700
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.170 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.24s (0.14u+0.30s), Memory used 2328 Mb) on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000100 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C80001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.01u+0.03s), Memory used 2344 Mb) on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 264
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:28:14 WITH SEED 325961361
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.10s (0.04u+0.05s), Memory used 2377 Mb) on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:28:34
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:28:34, finishes at 15:28:34. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b605ed62000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a229
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.39s (0.61u+1.84s), Memory used 4052 Mb) on 08/14/2024 15:28:36
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.010000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:28:37] <<<
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 200
+000,005 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,005 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,005 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.008140 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 264 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 10 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,006 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,007 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13107201; get_num_design_fits is 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C80001 (13107201)  CFGMGR_result 00000000
+000,007 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C80001;  Calling jobLock()
+000,007 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C80001;  Called jobLock();  stat is 00000008
+000,007 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1561 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,007 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 1 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xd1ab700; logical_brd 0)
+000,007 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,007 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,007 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1564 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 200) 
+000,007 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 1 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:28:39] <<<
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,007 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,007 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,007 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,007 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,007 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,007 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,007 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,007 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,007 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,007 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,007 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,007 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,007 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,007 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,007 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,007 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,007 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,007 s: INFO (legacy-40012): 00 DATABASE | 
+000,009 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,009 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000233878 s, ib_submit_op: 0.0774152 s
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2188 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 4 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2322 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:28:42] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:28:42] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,009 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 48 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11103;  rc 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,009 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,009 s: INFO (legacy-40012): 00 DATABASE |  
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 8792128, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,009 s: WARNING (legacy-28870): 10 DATABASE | 
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:28:42] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:28:42] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,009 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,009 s: INFO (legacy-40012): 00          | Saving CCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,009 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,009 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,009 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,009 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 12 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 39 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:28:42] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,009 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,009 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,009 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,009 s: INFO (legacy-40012): 00          | Saving GCSW
+000,009 s: INFO (legacy-40012): 00          | Saving NCSW
+000,009 s: INFO (legacy-40012): 00          | Saving ICSW
+000,009 s: INFO (legacy-40012): 00          | Saving OCSW
+000,009 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,009 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.424e-06 s, ib_submit_op: 0.0490529 s
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 86 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:28:42] <<<
+000,010 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 236 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:28:42] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,010 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:28:42] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,010 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,010 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,010 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:28:42] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:28:42] <<<
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 98 milliseconds
+000,010 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,010 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,011 s: INFO (legacy-22222): domainMap size=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,011 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 62528
+000,011 s: INFO (legacy-29866): Loading compiler saved data.
+000,011 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,011 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,011 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,011 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:28:43 
+000,011 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,011 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,011 s: INFO (legacy-0): 	max_nets_per_frame = 500224
+000,011 s: INFO (legacy-0): 	max_nets_cycle_1 = 55808
+000,011 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 14336
+000,011 s: INFO (legacy-0): 	max_frames_per_dcc = 274754
+000,011 s: INFO (legacy-0): 	max_PI_nets = 14336
+000,011 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,011 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,011 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,011 s: INFO (legacy-0): 	dcc_mode = single
+000,011 s: INFO (legacy-0): 	dcc_comp = 0
+000,011 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,011 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,011 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,011 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,011 s: INFO (legacy-29213): Estimated available probe resource: 6174
+000,011 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,011 s: frameBytes = 62528, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 252175424, fixedBuf = 255864832, num of fixed buf = 4
+000,011 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,011 s: frameBytes = 62528, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 252175424, fixedBuf = 255864832, num of fixed buf = 4
+000,011 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,012 s: Enable DCC flush
+000,012 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,012 s: INFO (legacy-11111): BOARD_MAX=288
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,012 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,012 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,012 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,012 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,012 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,012 s: xe> run -swap
+000,012 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,012 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,012 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,012 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,013 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,013 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,013 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,014 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s:   (nested call from 'run')xe> clockConfig -actual
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,015 s: xe> run
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=1275
+000,015 s: xe> exit
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      86      0.000105 secs     0.001417 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004842 secs     2.009430 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      15      0.006782 secs     0.044271 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      38      0.011941 secs     0.229943 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.901398 secs     4.901398 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      62      0.000014 secs     0.000213 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000027 secs     0.000048 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      53      0.000856 secs     0.035043 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      37      0.000175 secs     0.001352 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000003 secs     0.000011 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.394406 secs     0.394406 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000007 secs     0.000007 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1246      0.001911 secs     0.055890 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000010 secs     0.000019 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000214 secs     0.000525 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      14      0.004290 secs     0.036927 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      22      0.000008 secs     0.000046 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.000975 secs     0.005912 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     130      0.000285 secs     0.004134 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick       9      0.000942 secs     0.001392 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net       8      0.000049 secs     0.000206 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000010 secs     0.000025 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000016 secs     0.000040 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000005 secs     0.000005 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      48      0.000067 secs     0.000459 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000155 secs     0.000155 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.011292 secs     0.995332 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000100 secs     0.000224 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     132      0.000015 secs     0.000301 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000009 secs     0.000135 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000008 secs     0.000016 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.009989 secs     0.620001 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 9.339283 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE | 
+000,016 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,016 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,016 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,016 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,016 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,016 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,016 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1297036240.
+000,016 s: INFO (legacy-52098): Closing DBEngine streams.
+000,016 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2992       30        0        0     2174
+Swap (GB):      127       27      100
+* Load info:
+  13940 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              13.33 ( 28% CPU) |  12.66 ( 26% CPU) |  12.42 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 29593 27813 - qtExit - 2024-08-14 15:28:49 - 13.33 28% 12.66 26% 12.42 26% - 3023 2992 30 2174 127 27 100
+Peak usage info for DBEngine (pid 29593, ppid 27813) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 31 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,016 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 31 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 29593 - 27813 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:28:49 Status: 0, PID: 29593
+## DBEngine Elapsed time: 0:00:17, CPU time: 0:00:06.12, Memory Usage: 5.1G
+## Child Proc. CPU time: 0:00:00.39
+
+## DBEngine starts at 08/14/2024 15:36:06 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 36064, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:33214 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2990       33        0        0     2174
+Swap (GB):      127       27      100
+* Load info:
+  13875 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              13.86 ( 29% CPU) |  12.55 ( 26% CPU) |  12.37 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 36064 34110 - qtInit - 2024-08-14 15:36:06 - 13.86 29% 12.55 26% 12.37 26% - 3023 2990 33 2174 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1215561545.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.01 real, 0 cpu(0u+0s), 0%, memory 1556M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1910 Mb) on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:35:24 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1438109
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.160 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.23s (0.13u+0.30s), Memory used 2392 Mb) on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000070 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00C90001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.02u+0.03s), Memory used 2408 Mb) on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 280
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:35:22 WITH SEED 570863989
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.08s (0.03u+0.04s), Memory used 2441 Mb) on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:36:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:36:09, finishes at 15:36:09. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b4580acb000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a22a
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,003 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,003 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.18s (0.53u+1.68s), Memory used 4116 Mb) on 08/14/2024 15:36:10
+000,003 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.000000 seconds.
+000,003 s: INFO (legacy-49774): Design is compiled with retiming.
+000,003 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:36:11] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 201
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,004 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,004 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,004 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,004 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,004 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.008198 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 280 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 9 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,005 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13172737; get_num_design_fits is 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C90001 (13172737)  CFGMGR_result 00000000
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C90001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00C90001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1135 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xdb89620; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1137 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 201) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:36:13] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000237218 s, ib_submit_op: 0.0738274 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2184 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2305 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 45 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11076;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9099488, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 15 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 29 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.668e-06 s, ib_submit_op: 0.0496741 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 141 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 302 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:36:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 93 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,009 s: INFO (legacy-22222): domainMap size=288
+000,009 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60416
+000,009 s: INFO (legacy-29866): Loading compiler saved data.
+000,009 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,009 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,009 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:36:16 
+000,009 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,009 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,009 s: INFO (legacy-0): 	max_nets_per_frame = 483328
+000,009 s: INFO (legacy-0): 	max_nets_cycle_1 = 54784
+000,009 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,009 s: INFO (legacy-0): 	max_frames_per_dcc = 284359
+000,009 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,009 s: INFO (legacy-0): 	max_FF_nets = 40960
+000,009 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	dcc_mode = single
+000,009 s: INFO (legacy-0): 	dcc_comp = 0
+000,009 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,009 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,009 s: INFO (legacy-47919): Verify dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,009 s: INFO (legacy-29213): Estimated available probe resource: 5594
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: Enable DCC flush
+000,010 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,010 s: INFO (legacy-11111): BOARD_MAX=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,010 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=438945
+000,015 s: xe> exit
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,017 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,017 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,017 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      86      0.000094 secs     0.001233 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004568 secs     2.009085 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      15      0.004781 secs     0.032548 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      38      0.015163 secs     0.198788 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.091018 secs     4.091018 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      62      0.000019 secs     0.000185 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000062 secs     0.000074 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      53      0.000836 secs     0.036808 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      37      0.000093 secs     0.001256 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000002 secs     0.000008 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.441277 secs     0.441277 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000008 secs     0.000008 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1246      0.001499 secs     0.048674 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000002 secs     0.000009 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000270 secs     0.000585 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      14      0.003682 secs     0.030022 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      22      0.000007 secs     0.000051 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.000984 secs     0.006228 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     130      0.000394 secs     0.003908 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick       9      0.001018 secs     0.001557 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net       8      0.000034 secs     0.000167 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000010 secs     0.000023 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000007 secs     0.000018 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000003 secs     0.000003 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      48      0.000042 secs     0.000375 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000123 secs     0.000123 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.003986 secs     0.677121 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000030 secs     0.000091 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     132      0.000013 secs     0.000288 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000017 secs     0.000154 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000019 secs     0.000026 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.001859 secs     0.426786 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE |  
+000,017 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.008497 secs
+000,017 s: INFO (legacy-40012): 00 DATABASE | 
+000,017 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,017 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,017 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,017 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,017 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,017 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,017 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1215561545.
+000,017 s: INFO (legacy-52098): Closing DBEngine streams.
+000,017 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2963       59        0        0     2145
+Swap (GB):      127       27      100
+* Load info:
+  13857 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.58 ( 30% CPU) |  12.77 ( 27% CPU) |  12.45 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 36064 34110 - qtExit - 2024-08-14 15:36:24 - 14.58 30% 12.77 27% 12.45 26% - 3023 2963 59 2145 127 27 100
+Peak usage info for DBEngine (pid 36064, ppid 34110) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 60 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,017 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 60 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 36064 - 34110 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:36:24 Status: 0, PID: 36064
+## DBEngine Elapsed time: 0:00:18, CPU time: 0:00:05.82, Memory Usage: 5.3G
+## Child Proc. CPU time: 0:00:00.38
+
+## DBEngine starts at 08/14/2024 15:39:21 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 39639, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:38231 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2962       60        0        0     2146
+Swap (GB):      127       27      100
+* Load info:
+  13883 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.89 ( 31% CPU) |  13.18 ( 27% CPU) |  12.64 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 39639 37779 - qtInit - 2024-08-14 15:39:21 - 14.89 31% 13.18 27% 12.64 26% - 3023 2962 60 2146 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1137309464.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.01 real, 0.01 cpu(0u+0.01s), 100%, memory 1494M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.020000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1846 Mb) on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:39:03 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1438707
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.200 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.29s (0.16u+0.28s), Memory used 2328 Mb) on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000086 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00CA0001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.01u+0.02s), Memory used 2344 Mb) on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:39:01 WITH SEED 761602347
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.12s (0.04u+0.05s), Memory used 2377 Mb) on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:39:22
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:39:23, finishes at 15:39:23. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b11b6762000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a224
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.30s (0.54u+1.80s), Memory used 4052 Mb) on 08/14/2024 15:39:25
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.010000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:39:26] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 202
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,005 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.006619 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 8 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,006 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13238273; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CA0001 (13238273)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CA0001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CA0001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1156 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xa452850; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1158 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 202) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:39:27] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 1 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000235063 s, ib_submit_op: 0.0777683 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2184 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 4 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2306 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:39:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:39:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 48 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11025;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9408448, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:39:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:39:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 6 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:39:29] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.548e-06 s, ib_submit_op: 0.0498531 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 112 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:39:30] <<<
+000,009 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 264 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:39:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:39:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:39:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:39:30] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 89 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,010 s: INFO (legacy-22222): domainMap size=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 58432
+000,010 s: INFO (legacy-29866): Loading compiler saved data.
+000,010 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,010 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,010 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,010 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:39:31 
+000,010 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,010 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,010 s: INFO (legacy-0): 	max_nets_per_frame = 467456
+000,010 s: INFO (legacy-0): 	max_nets_cycle_1 = 54784
+000,010 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13312
+000,010 s: INFO (legacy-0): 	max_frames_per_dcc = 294014
+000,010 s: INFO (legacy-0): 	max_PI_nets = 13312
+000,010 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,010 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	dcc_mode = single
+000,010 s: INFO (legacy-0): 	dcc_comp = 0
+000,010 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,010 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,010 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,010 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,010 s: INFO (legacy-29213): Estimated available probe resource: 5179
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 58432, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 235656256, fixedBuf = 239087616, num of fixed buf = 4
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 58432, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 235656256, fixedBuf = 239087616, num of fixed buf = 4
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,011 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,011 s: Enable DCC flush
+000,011 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93165, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93166, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93100, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93099, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93167, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93101, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93168, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52898, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52899, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52900, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52901, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52902, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52903, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52904, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52905, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52906, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52907, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52908, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52909, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52910, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52911, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52912, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52913, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52914, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52915, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52916, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52917, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52918, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52919, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52920, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52921, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52922, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52923, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52924, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52925, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52926, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52927, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52928, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52929, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52930, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52931, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52932, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52933, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52934, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52935, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52936, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52937, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52938, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52939, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52940, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52941, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52942, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52943, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52944, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52945, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52946, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52947, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52948, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52949, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52950, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52951, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52952, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52953, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52954, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52955, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52956, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52957, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52958, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52959, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52960, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49780, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79508, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79517, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79527, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79529, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=79533, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=58149, index=261
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 15 Cycles;  Ran 15 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=339815
+000,015 s: xe> exit
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      87      0.000139 secs     0.001381 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004774 secs     2.009539 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      17      0.004975 secs     0.042370 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      46      0.013540 secs     0.213125 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.128762 secs     4.128762 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      63      0.000012 secs     0.000190 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000028 secs     0.000047 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      58      0.000919 secs     0.039699 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      42      0.000063 secs     0.001308 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000003 secs     0.000009 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.400283 secs     0.400283 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000018 secs     0.000018 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1273      0.001650 secs     0.052770 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000012 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000195 secs     0.000448 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      15      0.005743 secs     0.033857 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      25      0.000005 secs     0.000058 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.001248 secs     0.006119 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     136      0.000335 secs     0.004164 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick      10      0.001182 secs     0.001767 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net      10      0.000040 secs     0.000233 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000014 secs     0.000028 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_halt_query       1      0.000052 secs     0.000052 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000008 secs     0.000021 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000005 secs     0.000005 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      54      0.000055 secs     0.000497 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000191 secs     0.000191 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.004197 secs     0.820642 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000072 secs     0.000153 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     137      0.000029 secs     0.000361 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000022 secs     0.000172 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000008 secs     0.000016 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.003367 secs     0.528783 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.287080 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE | 
+000,016 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,016 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,016 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,016 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,016 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,016 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,016 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1137309464.
+000,016 s: INFO (legacy-52098): Closing DBEngine streams.
+000,016 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2965       57        0        0     2146
+Swap (GB):      127       27      100
+* Load info:
+  13851 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.83 ( 31% CPU) |  13.25 ( 28% CPU) |  12.67 ( 26% CPU)
+System info: hsv-sc21 - DBEngine - 39639 37779 - qtExit - 2024-08-14 15:39:37 - 14.83 31% 13.25 28% 12.67 26% - 3023 2965 57 2146 127 27 100
+Peak usage info for DBEngine (pid 39639, ppid 37779) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 58 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,016 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 58 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 39639 - 37779 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:39:37 Status: 0, PID: 39639
+## DBEngine Elapsed time: 0:00:16, CPU time: 0:00:05.93, Memory Usage: 5.1G
+## Child Proc. CPU time: 0:00:00.35
+
+## DBEngine starts at 08/14/2024 15:48:44 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 86846, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:39816 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2965       58        0        0     2148
+Swap (GB):      127       27      100
+* Load info:
+  13868 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              12.48 ( 26% CPU) |  13.46 ( 28% CPU) |  13.20 ( 27% CPU)
+System info: hsv-sc21 - DBEngine - 86846 84988 - qtInit - 2024-08-14 15:48:44 - 12.48 26% 13.46 28% 13.20 27% - 3023 2965 58 2148 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1402602211.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.01 real, 0.01 cpu(0u+0.01s), 100%, memory 1496M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.020000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:48:45
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1910 Mb) on 08/14/2024 15:48:45
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:48:45
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:48:27 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1447967
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.140 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.27s (0.15u+0.33s), Memory used 2392 Mb) on 08/14/2024 15:48:45
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000092 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:48:45
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00CC0001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.12s (0.01u+0.03s), Memory used 2408 Mb) on 08/14/2024 15:48:46
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:48:46
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:48:25 WITH SEED 192610986
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.09s (0.03u+0.05s), Memory used 2441 Mb) on 08/14/2024 15:48:46
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:48:46
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:48:46, finishes at 15:48:46. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b9ea9763000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a2c6
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,003 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,003 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 1.77s (0.56u+1.25s), Memory used 4116 Mb) on 08/14/2024 15:48:47
+000,003 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.000000 seconds.
+000,003 s: INFO (legacy-49774): Design is compiled with retiming.
+000,003 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:48:48] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 204
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,004 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,004 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,004 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,004 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,004 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.006171 seconds
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,004 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,004 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 7 milliseconds
+000,004 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,004 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,004 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,004 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,005 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,005 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13369345; get_num_design_fits is 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CC0001 (13369345)  CFGMGR_result 00000000
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CC0001;  Calling jobLock()
+000,005 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CC0001;  Called jobLock();  stat is 00000008
+000,005 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1130 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,005 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0xdc36670; logical_brd 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,005 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,005 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1132 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,005 s: INFO (legacy-40012): 00 DATABASE | 
+000,005 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 204) 
+000,005 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,005 s: INFO (legacy-40012): 00 DATABASE | 
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:48:50] <<<
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,005 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,005 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,005 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,005 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,005 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,005 s: INFO (legacy-40012): 00 DATABASE | 
+000,005 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,005 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,005 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,005 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,005 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,005 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,005 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,005 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,005 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,005 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000241437 s, ib_submit_op: 0.0786663 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2181 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 4 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2305 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 46 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11166;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9099488, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 5 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 19 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.409e-06 s, ib_submit_op: 0.0493867 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 114 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 381 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:48:52] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 95 milliseconds
+000,008 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,008 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,009 s: INFO (legacy-22222): domainMap size=288
+000,009 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60416
+000,009 s: INFO (legacy-29866): Loading compiler saved data.
+000,009 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,009 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,009 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,009 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:48:53 
+000,009 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,009 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,009 s: INFO (legacy-0): 	max_nets_per_frame = 483328
+000,009 s: INFO (legacy-0): 	max_nets_cycle_1 = 54784
+000,009 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,009 s: INFO (legacy-0): 	max_frames_per_dcc = 284359
+000,009 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,009 s: INFO (legacy-0): 	max_FF_nets = 40960
+000,009 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,009 s: INFO (legacy-0): 	dcc_mode = single
+000,009 s: INFO (legacy-0): 	dcc_comp = 0
+000,009 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,009 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,009 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,009 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,009 s: INFO (legacy-29213): Estimated available probe resource: 5603
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,009 s: frameBytes = 60416, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243657728, fixedBuf = 247476224, num of fixed buf = 4
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: Enable DCC flush
+000,010 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,010 s: INFO (legacy-11111): BOARD_MAX=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,010 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93819, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93820, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93754, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93752, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93821, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93755, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=93753, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51194, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51195, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51196, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51197, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51198, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51199, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51200, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51201, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51202, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51203, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51204, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51205, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51206, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51207, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51208, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51209, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51210, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51211, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51212, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51213, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51214, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51215, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51216, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51217, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51218, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51219, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51220, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51221, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51222, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51223, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51224, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51225, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51226, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51227, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51228, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51229, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51230, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51231, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51232, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51233, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51234, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51235, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51236, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51237, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51238, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51239, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51240, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51241, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51242, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51243, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51244, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51245, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51246, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51247, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51248, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51249, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51250, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51251, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51252, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51253, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51254, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51255, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=51256, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49949, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=167872, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=167881, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=167884, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=80746, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=167888, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=60786, index=259
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,014 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,014 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,014 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 15 Cycles;  Ran 15 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=339815
+000,015 s: xe> exit
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      87      0.000152 secs     0.001569 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004520 secs     2.008936 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      17      0.004525 secs     0.037162 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      46      0.013713 secs     0.229733 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.076882 secs     4.076882 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      63      0.000012 secs     0.000185 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000025 secs     0.000048 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      58      0.000867 secs     0.040162 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      42      0.000076 secs     0.001240 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000004 secs     0.000013 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.524267 secs     0.524267 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000008 secs     0.000008 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1273      0.001977 secs     0.049268 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000011 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000194 secs     0.000446 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      15      0.006627 secs     0.034753 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      25      0.000007 secs     0.000049 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.001050 secs     0.005920 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     136      0.000217 secs     0.003870 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick      10      0.001097 secs     0.001616 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net      10      0.000035 secs     0.000202 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000043 secs     0.000055 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_halt_query       1      0.000048 secs     0.000048 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000007 secs     0.000020 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000004 secs     0.000004 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      54      0.000091 secs     0.000501 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000161 secs     0.000161 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.003562 secs     0.724671 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000076 secs     0.000147 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     137      0.000015 secs     0.000323 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000007 secs     0.000138 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000009 secs     0.000019 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.001952 secs     0.452375 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.194802 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE | 
+000,016 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,016 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,016 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,016 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,016 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,016 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,016 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1402602211.
+000,016 s: INFO (legacy-52098): Closing DBEngine streams.
+000,016 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2967       56        0        0     2148
+Swap (GB):      127       27      100
+* Load info:
+  13879 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              13.00 ( 27% CPU) |  13.52 ( 28% CPU) |  13.22 ( 28% CPU)
+System info: hsv-sc21 - DBEngine - 86846 84988 - qtExit - 2024-08-14 15:49:00 - 13.00 27% 13.52 28% 13.22 28% - 3023 2967 56 2148 127 27 100
+Peak usage info for DBEngine (pid 86846, ppid 84988) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 56 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,016 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 56 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 86846 - 84988 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:49:00 Status: 0, PID: 86846
+## DBEngine Elapsed time: 0:00:16, CPU time: 0:00:05.59, Memory Usage: 5.3G
+## Child Proc. CPU time: 0:00:00.34
+
+## DBEngine starts at 08/14/2024 15:53:09 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 113274, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:36274 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2965       57        0        0     2149
+Swap (GB):      127       27      100
+* Load info:
+  13843 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.05 ( 29% CPU) |  13.88 ( 29% CPU) |  13.43 ( 28% CPU)
+System info: hsv-sc21 - DBEngine - 113274 111342 - qtInit - 2024-08-14 15:53:09 - 14.05 29% 13.88 29% 13.43 28% - 3023 2965 57 2149 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1269186064.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0 real, 0 cpu(0u+0s), 0%, memory 1494M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.010000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1846 Mb) on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:52:41 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1451654
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.140 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.22s (0.15u+0.28s), Memory used 2328 Mb) on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000061 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00CD0001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.11s (0.01u+0.03s), Memory used 2344 Mb) on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 264
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:52:39 WITH SEED 817221883
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.09s (0.04u+0.04s), Memory used 2377 Mb) on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:53:11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:53:12, finishes at 15:53:12. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b1af3159000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a29e
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,003 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.38s (0.54u+1.89s), Memory used 4052 Mb) on 08/14/2024 15:53:14
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.010000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:53:14] <<<
+000,004 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 205
+000,004 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,005 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.007126 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 264 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 8 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,006 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13434881; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CD0001 (13434881)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CD0001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CD0001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1106 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0x9689ba0; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1108 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 205) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:53:16] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000236937 s, ib_submit_op: 0.0757064 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2187 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 4 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2307 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:53:18] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:53:18] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 44 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11034;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 9089856, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:53:18] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:53:18] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 6 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 19 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:53:18] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,008 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,008 s: INFO (legacy-40012): 00          | Saving GCSW
+000,008 s: INFO (legacy-40012): 00          | Saving NCSW
+000,008 s: INFO (legacy-40012): 00          | Saving ICSW
+000,008 s: INFO (legacy-40012): 00          | Saving OCSW
+000,008 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.844e-06 s, ib_submit_op: 0.0486647 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 123 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,008 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,008 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:53:18] <<<
+000,009 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 417 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:53:19] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:53:19] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:53:19] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:53:19] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 96 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,010 s: INFO (legacy-22222): domainMap size=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 60480
+000,010 s: INFO (legacy-29866): Loading compiler saved data.
+000,010 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,010 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,010 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,010 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:53:20 
+000,010 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,010 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,010 s: INFO (legacy-0): 	max_nets_per_frame = 483840
+000,010 s: INFO (legacy-0): 	max_nets_cycle_1 = 55296
+000,010 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 13824
+000,010 s: INFO (legacy-0): 	max_frames_per_dcc = 284058
+000,010 s: INFO (legacy-0): 	max_PI_nets = 13824
+000,010 s: INFO (legacy-0): 	max_FF_nets = 41472
+000,010 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	dcc_mode = single
+000,010 s: INFO (legacy-0): 	dcc_comp = 0
+000,010 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,010 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,010 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,010 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,010 s: INFO (legacy-29213): Estimated available probe resource: 5693
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 60480, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 243915840, fixedBuf = 247476224, num of fixed buf = 4
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,011 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,011 s: Enable DCC flush
+000,011 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91146, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91145, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91211, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91212, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91144, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91210, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91213, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52380, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52381, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52382, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52383, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52384, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52385, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52386, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52387, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52388, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52389, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52390, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52391, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52392, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52393, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52394, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52395, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52396, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52397, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52398, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52399, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52400, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52401, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52402, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52403, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52404, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52405, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52406, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52407, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52408, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52409, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52410, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52411, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52412, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52413, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52414, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52415, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52416, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52417, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52418, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52419, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52420, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52421, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52422, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52423, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52424, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52425, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52426, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52427, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52428, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52429, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52430, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52431, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52432, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52433, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52434, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52435, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52436, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52437, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52438, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52439, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52440, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52441, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52442, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49697, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78269, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78279, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78291, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78293, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78297, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=56839, index=259
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=372405
+000,015 s: xe> exit
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      87      0.000112 secs     0.001456 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004658 secs     2.009110 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      17      0.009088 secs     0.045253 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      46      0.013442 secs     0.218032 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.103216 secs     4.103216 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      63      0.000014 secs     0.000217 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000027 secs     0.000037 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      58      0.000924 secs     0.038633 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      42      0.000245 secs     0.001551 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000003 secs     0.000011 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.564582 secs     0.564582 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000006 secs     0.000006 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1273      0.001847 secs     0.051965 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000011 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000182 secs     0.000385 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      15      0.003658 secs     0.031194 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      25      0.000006 secs     0.000053 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.000912 secs     0.005791 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     136      0.000227 secs     0.004068 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick      10      0.000882 secs     0.001397 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net      10      0.000043 secs     0.000217 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000035 secs     0.000057 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_halt_query       1      0.000048 secs     0.000048 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000013 secs     0.000029 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000010 secs     0.000010 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      54      0.000041 secs     0.000393 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000156 secs     0.000156 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.005566 secs     0.761504 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000042 secs     0.000120 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     137      0.000020 secs     0.000358 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000011 secs     0.000141 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000009 secs     0.000016 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.004216 secs     0.468174 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.308191 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE | 
+000,016 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,016 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,016 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,016 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,016 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,016 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,016 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1269186064.
+000,016 s: INFO (legacy-52098): Closing DBEngine streams.
+000,016 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2968       55        0        0     2149
+Swap (GB):      127       27      100
+* Load info:
+  13830 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.16 ( 30% CPU) |  13.92 ( 29% CPU) |  13.45 ( 28% CPU)
+System info: hsv-sc21 - DBEngine - 113274 111342 - qtExit - 2024-08-14 15:53:26 - 14.16 30% 13.92 29% 13.45 28% - 3023 2968 55 2149 127 27 100
+Peak usage info for DBEngine (pid 113274, ppid 111342) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 55 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,016 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 55 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 113274 - 111342 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:53:26 Status: 0, PID: 113274
+## DBEngine Elapsed time: 0:00:17, CPU time: 0:00:06.19, Memory Usage: 5.1G
+## Child Proc. CPU time: 0:00:00.36
+
+## DBEngine starts at 08/14/2024 15:56:07 simonett V23.03.078.s000, HOST: hsv-sc21, PID: 117938, DISPLAY: none
+DBEngine -uid 288910 -socket hsv-sc21:34369 -dbgMode none
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin on Linux 3.10.0-957.5.1.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libvec.so - 23H1_WXE, V23.03.078.s000            
+#)libvcp.so - 23H1_WXE, V23.03.078.s000            
+#)libdbgutil.so - 23H1_WXE, V23.03.078.s000            
+#)libdbget4.so - 23H1_WXE, V23.03.078.s000            
+#)libmembin.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libCompilerRT.so - 23H1_WXE, V23.03.078.s000            
+#)libhwConfig.so - 23H1_WXE, V23.03.078.s000            
+#)libswfv.so - 23H1_WXE, V23.03.078.s000            
+#)libinfinifile.so - 23H1_WXE, V23.03.078.s000            
+#)libsdltm.so - 23H1_WXE, V23.03.078.s000            
+#)libsaifr.so - 23H1_WXE, V23.03.078.s000            
+#)libetwrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libllmemory.so - 23H1_WXE, V23.03.078.s000            
+#)libfsdb_wrapper.so - 23H1_WXE, V23.03.078.s000            
+#)libphy.so - 23H1_WXE, V23.03.078.s000            
+#)libcfgmgr_client.so - 23H1_WXE, V23.03.078.s000            
+#)libtcl.so - 23H1_WXE, V23.03.078.s000            
+#)libdb3.so - 23H1_WXE, V23.03.078.s000            
+#)et3lib - 23H1_WXE, V23.03.078.s000            
+#)et7confg - 23H1_WXE, V23.03.078.s000            
+#)memutil - 23H1_WXE, V23.03.078.s000            
+#)SDschedlib - 23H1_WXE, V23.03.078.s000            
+#)libetapi.so - 23H1_WXE, V23.03.078.s000            
+#)libetnbcs.so - 23H1_WXE, V23.03.078.s000            
+#)libapsm_client.a - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsmDB.so - 23H1_WXE, V23.03.078.s000            
+#)libtypedb.so - 23H1_WXE, V23.03.078.s000            
+#)libudqr.so - 23H1_WXE, V23.03.078.s000            
+#)libhdldb.so - 23H1_WXE, V23.03.078.s000            
+#)libhdlucdb.so - 23H1_WXE, V23.03.078.s000            
+#)libdb.so - 23H1_WXE, V23.03.078.s000            
+#)libsideFile.so - 23H1_WXE, V23.03.078.s000            
+#)libchannel.so - 23H1_WXE, V23.03.078.s000            
+#)libccrm_client.so - 23H1_WXE, V23.03.078.s000            
+#)libetruncom.so - 23H1_WXE, V23.03.078.s000            
+#)libqt.so - 23H1_WXE, V23.03.078.s000            
+#)libqtutil.so - 23H1_WXE, V23.03.078.s000            
+#)libsd.so - 23H1_WXE, V23.03.078.s000            
+* System parameters:
+vm/overcommit_memory: 2
+vm/overcommit_ratio: 100
+vm/oom_dump_tasks: 1
+vm/oom_kill_allocating_task: 0
+% ulimit -a
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 12384168
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 524288
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 12384168
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+* CPU info:
+  Number of CPUs: 48
+  Name: Intel(R) Xeon(R) CPU E7-8857 v2 @ 3.00GHz
+  Vendor: GenuineIntel, family: 6, model: 62, stepping: 7
+  CPU min MHz: 1200.0000, BogoMIPS: 6000.24, virtualization: VT-x
+  L1d cache: 32K, L1i cache: 32K, L2 cache: 256K, L3 cache: 30720K
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2966       56        0        0     2150
+Swap (GB):      127       27      100
+* Load info:
+  13835 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.51 ( 30% CPU) |  13.87 ( 29% CPU) |  13.49 ( 28% CPU)
+System info: hsv-sc21 - DBEngine - 117938 115912 - qtInit - 2024-08-14 15:56:07 - 14.51 30% 13.87 29% 13.49 28% - 3023 2966 56 2150 127 27 100
+000,000 s: REPORT (legacy-51199): DBEngine Transient RPC program number = 1392267693.
+000,000 s: INFO (legacy-47055): Running in design directory: '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+000,000 s: 00          | fastDownload: off -> off
+000,000 s: REPORT (legacy-51983): Attempting to determine emulator HW type using configmgr_cmd:
+000,000 s:  configmgr_cmd -h hsv-smd414 LB < /dev/null 2>&1
+000,000 s: REPORT (legacy-52623): Loading segData sidefile done. Total 1 partitions.
+000,000 s: REPORT (legacy-54222): Loading side file segData total time 0.05 real, 0.01 cpu(0u+0.01s), 20%, memory 1562M.
+000,000 s: REPORT (legacy-23457): Loading dbFiles/dadbnets takes 0.050000 seconds.
+000,000 s: REPORT (legacy-52623): Loading dadbnets sidefile done.
+000,001 s:  Identified etMark=11
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' on 08/14/2024 15:56:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                              ET3 LIBRARY
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | (c) 1995-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |            See files in <rootdir>/share/vxe/install/Copyrights
+000,001 s: INFO (legacy-40012): 00 ET3LIB   |                                    
+000,001 s: INFO (legacy-40012): 00 ET3LIB   | ET3lib created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et3lib' (Elapsed time 0.00s (0.00u+0.00s), Memory used 1910 Mb) on 08/14/2024 15:56:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling 'ldproto' on 08/14/2024 15:56:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: 'xcva_top -ffdb'
+000,001 s: INFO (legacy-40012): 00 DATABASE | Reading file './dbFiles/xcva_top.ffproto' created on Wed Aug 14 15:55:35 2024
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Proto size = 1454020
+000,001 s: INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+000,001 s: INFO (legacy-37259): Opening short PDB in parallel done in 0.160 sec
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from 'ldproto' (Elapsed time 0.29s (0.14u+0.34s), Memory used 2392 Mb) on 08/14/2024 15:56:08
+000,001 s: INFO (legacy-37260): Enumerate user memories
+000,001 s: INFO (legacy-37260): Enumerate user memories done: 196 instances
+000,001 s: INFO (legacy-57127): Verify mhConfig on hsv-sc21 takes 0.000081 seconds, config = local
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetnbcs.so' instead of 'etnbcs' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' on 08/14/2024 15:56:08
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |            ET NETWORK BASED CONTROL SYSTEM API -- Apollo II
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |               etnbcs created on Apr 18 2023 at 21:40:59.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |          Running on Linux Release '3.10.0-957.5.1.el7.x86_64'
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |                                    
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Calling process_etnbcs_parms with parms "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | AP2 ETNBCS Parms:  "-client -hostname hsv-smd414 -skip_defaults -skip_et3mach -hostdir ./tmp"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found 7 args
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -client
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostname
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -skip_et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | -hostdir
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Found HOST as in "-host..."
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | context is DB3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Supported:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_KEEPALIVE_TIMER
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_MAX_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CFGMGR_SAVE_LOGSIZE
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CHANNEL_DEFAULT_STALL_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGRIP
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  CONFIGMGR_HNAME
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ET3MACH_DIR
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETMASK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NAT_NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  NETWORK
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  PHYCONFIG
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_NODE_PING_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  ROUTER_DEFAULT_TIMEOUT
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  STAT_FREQUENCY
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  context_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_port_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  emul_sock_server_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  enable_ccrm_timestamp_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  full_logging_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  pcie_trace
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  sync_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  trace_mode_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Parameters that are Set:
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_dir_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Param:  host_name_gp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgrip is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | emul_mode_gp is not set
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -host/-hostname      hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | From -hostdir             ./tmp
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_etncbs_parms(parms) rc is 29
+000,001 s: INFO (legacy-40012): 00 ETNBCS   |  
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH work directory set to /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | In etnbcs_startup param::CONFIGMGRIP is 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Initializing the Channel.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | configmgr_host is "hsv-smd414"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | For host "hsv-smd414" IP is "10.206.176.64"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Connecting to configmgr at 8191@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Registering resolved self with configmgr at 544@hsv-smd414
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NodeID is 00CE0001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | APSM NodeID is 00010004
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_init_channel(hsv-smd414) is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | 
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Processing the NBCS Defaults file from the remote host.
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/nbcs_defaults"   local name "./tmp/nbcs_defaults"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | process_nbcs_defaults: Reading system defaults from ./tmp/nbcs_defaults
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ET3MACH_DIR:  Now /et3mach
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NETWORK:  Now eno3
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CONFIGMGRIP:  Now 10.206.176.64
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | PHYCONFIG:  Now /et3mach/scd.et3confg
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | ROUTER_DEFAULT_NODE_PING_TIMEOUT:  Now 120000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CHANNEL_DEFAULT_STALL_TIMEOUT:  Now 960000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_DEFAULT_TIMEOUT:  Now 900000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_KEEPALIVE_TIMER:  Now 30000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_MAX_LOGSIZE:  Now 67108864
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | CFGMGR_SAVE_LOGSIZE:  Now 33554432
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETWORK:  Now 10.254.8.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | NAT_NETMASK:  Now 255.255.248.0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | Call to copy_file_from_cfgmgr_host():  Remote name "/et3mach/scd.et3confg"   local name "./tmp/hsv-smd414.et3confg"  Using Node 00010001
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | phy_config_s set to "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | rc from etnbcs_startup() is 00000000
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | param::emul_mode_gp.var() is 0
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | sync_mode_gp is TCI
+000,001 s: INFO (legacy-40012): 00 ETNBCS   | etnbcs rc is 0
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetnbcs.so' (Elapsed time 0.11s (0.01u+0.03s), Memory used 2408 Mb) on 08/14/2024 15:56:09
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' on 08/14/2024 15:56:09
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client'
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS IS /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/bin/64bit/DBEngine RUNNING.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | THIS_IS_DIAGS = 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | Reading configuration from Proto Configuration.proto
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                       ET7 CONFIGURATION MANAGER
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |                                    
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | et7confg created on Apr 18 2023 at 21:36:31.
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | --> USING LD8 CLUSTER TABLES
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | load_module_version()          = 40
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | minor_cycles_per_major_cycle() = 272
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | num_cycles_per_capture_frame   = 32
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | das_protocol()                 = 5
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | COMPILED ON 08/14/2024 AT 15:55:33 WITH SEED 367953281
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 BOARD ET7
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | +   1 MEMORY_CARD_V1  on BOARD 0
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | -   7 CHIPs
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     8 installed chip(s)
+000,001 s: INFO (legacy-40012): 00 ET7CONFG |     0 unused connectors out of 24 total
+000,001 s: INFO (legacy-40012): 00 ET7CONFG | END of et7confg.........
+000,001 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/et7confg' (Elapsed time 0.09s (0.02u+0.06s), Memory used 2441 Mb) on 08/14/2024 15:56:09
+000,001 s: INFO (legacy-22222): emulator_type [ET4x4=2, ET5D=4, ET5E=5, ET5L=7, ET5D2=8, ET5E2=9, ET6=10, ET7=11] from eb_type(0) is: 11.
+000,001 s: INFO (legacy-22222): emulator_type from /et3mach is: 11.
+000,001 s: INFO (legacy-40012): 00 DATABASE | Using  'libetapi.so' instead of 'etapi' library in DBIN path
+000,001 s: INFO (legacy-40012): 00 DATABASE | 
+000,001 s: INFO (legacy-40012): 00 DATABASE | Calling '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' on 08/14/2024 15:56:09
+000,001 s: INFO (legacy-40012): 00 DATABASE | Parms: '-client -i xcva_top'
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                        ET HARDWARE API (HWAPI)
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                           VXE, VEngineering
+000,001 s: INFO (legacy-40012): 00 ETAPI    |             Copyright(C) 1995-2018, Cadence Design Systems
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                          All rights reserved
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                            RELEASE 7.0.0.0
+000,001 s: INFO (legacy-40012): 00 ETAPI    |                                    
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et7api created on Apr 18 2023 at 21:39:02.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running with etnbcs: 'RELEASE 7.0.0.0' (7000)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on a Linux machine (distribution is RedHat).
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in little-endian mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running in 64-bit mode.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ET API is running on emulator hsv-smd414 from host workstation hsv-sc21.
+000,001 s: INFO (legacy-40012): 00 ETAPI    | HostConfgFile is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | et3confg_file is "./tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Set model_name to proto_name xcva_top (diags:0)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Active Proto=1, proto_name=xcva_top, model_name=xcva_top
+000,001 s: INFO (legacy-40012): 00 ETAPI    | The configmgr IP address and port is 10.206.176.64 (port 65535)
+000,001 s: INFO (legacy-40012): 00 ETAPI    | ETNBCS trace threshold level is UNCHANGED [TRACE_LVL=TRC_INFO,PRINT_LVL=999]
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,001 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,002 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,002 s: INFO (legacy-40012): 00 ETAPI    | FAST INIT: Reading dbFiles/etapi.mem_slices starts at 15:56:09, finishes at 15:56:09. File size is 18400, number of memory slices is 230.
+000,002 s: INFO (legacy-40012): 00 ETAPI    | CHECKPOINT_CONTROL: fffffffb (DCC Checkpointing is not supported on this hardware)
+000,003 s: INFO (legacy-40012): 00 ETAPI    | [et3_init] work_p=0x2b52ff36a000, work_p_size=1207959552(48000000(hex)), sram_tbl_idx=64, dcc_tbl_idx=9, step data size=32
+000,003 s: INFO (legacy-40012): 00 ETAPI    | CURRENT DIRECTORY: /home/simonett/Documents/Coursework/Project-Zipline/emulation/work
+000,003 s: INFO (legacy-40012): 00 ETAPI    | allocated stuck_nets, size is 0x4a2a8
+000,004 s: INFO (legacy-40012): 00 ETAPI    | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 ETAPI    | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 ETAPI    | --> USING LD8 CLUSTER TABLES
+000,004 s: INFO (legacy-40012): 00 ETAPI    | END of ET API initialization (result 00000000)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Return from '/lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/lib/64bit/libetapi.so' (Elapsed time 2.37s (0.53u+1.89s), Memory used 4116 Mb) on 08/14/2024 15:56:11
+000,004 s: REPORT (legacy-23457): Loading dbFiles/designparam takes 0.010000 seconds.
+000,004 s: INFO (legacy-49774): Design is compiled with retiming.
+000,004 s: design time precision is 3
+000,004 s:   (nested call from 'host')xe> xeset traceMemSize 32000ns
+000,004 s: xe> xc zt0 xt0 run
+000,004 s:   (nested call from 'xc')xe> download
+000,004 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,004 s: REPORT (legacy-52560): No .bp file found.
+000,004 s: REPORT (legacy-52621): No .br file found.
+000,004 s: INFO (legacy-51828): sim_configuration_management to be called for job 'SA:kme_tb' with key 0 locking_Mechanism=Other (0)
+000,004 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,004 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,004 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 10 PERCENT COMPLETE [15:56:12] <<<
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  scm_command is LOCK_PROTO_DOMAINS_ONLY(FF)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Session ID is now 206
+000,005 s: INFO (legacy-40012): 00 DATABASE | B: Creating ET Configuration(./tmp/hsv-smd414)
+000,005 s: INFO (legacy-40012): 00 DATABASE | Reading configuration file "././tmp/hsv-smd414.et3confg"
+000,005 s: INFO (legacy-40012): 00 DATABASE | Boards skips detected in ./tmp/hsv-smd414.et3confg.  Adjusting tables (boards found:20  board slots needed:121)
+000,005 s: INFO (legacy-40012): 00 DATABASE | --> USING LD8 CLUSTER TABLES
+000,005 s: INFO (legacy-40012): 00 DATABASE | SCM:  etapi_s::proto_boards 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | (2) Set Proto Configuration (1) as active configuration
+000,005 s: INFO (legacy-40012): 00 DATABASE | count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [analyze_proto_config]
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to init_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  count_ecs() is 8
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg
+000,005 s: INFO (legacy-40012): 00 DATABASE | building DCC_net table in et7confg done in 0.006846 seconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  dcc_tbl_idx is 1
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  mcpmc is set to 272 cycles
+000,005 s: INFO (legacy-40012): 00 DATABASE | analyze_proto_config():  Call to set_domain_masks()
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> END of [analyze_proto_config], Duration is: 8 milliseconds
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [et_control_card_find]
+000,005 s: INFO (legacy-40012): 00 DATABASE | >> START of [request_resources]
+000,005 s: INFO (legacy-40012): 00 DATABASE | Entering request_resources(scm_request 0; scm_timeout 0; scm_key 0)
+000,005 s: INFO (legacy-40012): 00 DATABASE | This design was compiled for best relocation.
+000,005 s: INFO (legacy-40012): 00 DATABASE | configured domain: 
+000,006 s: INFO (legacy-40012): 00 DATABASE | call to logical_config.check():  Result 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001
+000,006 s: INFO (legacy-40012): 00 DATABASE | jobAdd: xcva_top /home/simonett/Documents/Coursework/Project-Zipline/emulation/work FLGS:017e3001;  gJobKey is 13500417; get_num_design_fits is 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CE0001 (13500417)  CFGMGR_result 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CE0001;  Calling jobLock()
+000,006 s: INFO (legacy-40012): 00 DATABASE | gJobKey 00CE0001;  Called jobLock();  stat is 00000008
+000,006 s: INFO (legacy-40012): 00 DATABASE | request_resources returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [request_resources], Duration is: 1049 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | CFGMGR:  result from request_resoures(scm_request 0, scm_timeout 0, scm_key 0) is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_logical_to_physical_map]
+000,006 s: INFO (legacy-40012): 00 DATABASE | [create_logical_to_physical_map] CONFIGURED SD     :    0.0 -->  90.0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_logical_to_physical_map], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find():  get_num_design_fits 0;  scm_request 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | cfg_et6_find_board(jobLoc 0x9320c70; logical_brd 0)
+000,006 s: INFO (legacy-40012): 00 DATABASE | domain_mask[logical_brd 0] is 00000001
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.type     52
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.board    90
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.chip     -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: id.num      -1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: configured  1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ssn         BRD012345678090
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: node        000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: ready       1
+000,006 s: INFO (legacy-40012): 00 DATABASE | res_info: multi_board 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | getResoruceInfo():  *physical_node 000101F1
+000,006 s: INFO (legacy-40012): 00 DATABASE | BoardA = 000101f1 ffffffff ffffffff ffffffff
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [update_advanced_reloc_lanes_for_chips]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [update_advanced_reloc_lanes_for_chips], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | et_control_card_find() returning 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [et_control_card_find], Duration is: 1051 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | Call to et_control_card_find(scm_request 0, scm_timeout 0, scm_key 0 ) rc = 00000000.)
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | User simonett, (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/dbFiles/xcva_top.proto, session 206) 
+000,006 s: INFO (legacy-40012): 00 DATABASE |   is running on board.domain(s): {90.0}
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [record_job_resources]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [record_job_resources], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [create_physical_lanes]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [create_physical_lanes], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 20 PERCENT COMPLETE [15:56:13] <<<
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domains]
+000,006 s: INFO (legacy-40012): 00 DATABASE | Entering reset_domains()
+000,006 s: INFO (legacy-40012): 00 DATABASE | rack side bf_download version doesn't match, will disable the BF based download flow.
+000,006 s: INFO (legacy-40012): 00 DATABASE | BUNCH_OPS is turned off.
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib()
+000,006 s: INFO (legacy-40012): 00 DATABASE | setup_ib():  devIds.size() is 1:
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing CCRM client library 
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,006 s: INFO (legacy-40012): 00 DATABASE | rc from libccrm_init() is 00000000
+000,006 s: INFO (legacy-40012): 00 DATABASE | Initializing libibsupport
+000,006 s: WARNING (legacy-28870): 10 DATABASE | Using FDR Infiniband HCA. Performance will be degraded
+000,006 s: INFO (legacy-40012): 00 DATABASE | Preparing memory regions
+000,006 s: INFO (legacy-40012): 00 DATABASE | [prepare_regions] Prepared 64 memory regions of 1048576 bytes each
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: detailed logging set to 0
+000,006 s: INFO (legacy-40012): 00 DATABASE | SD_DEBUG: ib write splitting set to 1
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_all_sds]
+000,006 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 19 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,006 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,006 s: INFO (legacy-40012): 00 DATABASE | All LLIO lanes are cleared.
+000,006 s: INFO (legacy-40012): 00 DATABASE | Skip adjustment of DCC flag wrap address as DCC compression disabled, flag wrap address 0x0000000400010000
+000,006 s: INFO (legacy-40012): 00 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_prepare_param] ella_level = 1, ella_log_name = ''
+000,008 s: INFO (legacy-40012): 00 DATABASE | sw_reset_all_sds complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 0.000240055 s, ib_submit_op: 0.0749006 s
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_all_sds], Duration is: 2186 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_csws], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [reset_domain_operations]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [cleanup_sus]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [cleanup_sus], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_su_csws]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_su_csws], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [tSodSusSetup::reset()]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [tSodSusSetup::reset()], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sertop_check_lane_status]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sertop_check_lane_status], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [ella_enable_links]
+000,008 s: INFO (legacy-40012): 00 DATABASE | [ella_enable_links] level = 1
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [ella_enable_links], Duration is: 3 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domain_operations], Duration is: 4 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [reset_domains], Duration is: 2307 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 30 PERCENT COMPLETE [15:56:15] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 40 PERCENT COMPLETE [15:56:16] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [validate_et4_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | cfgmgr_boardnum is 90
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [validate_et4_configuration], Duration is: 45 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | SCM:  result from initialize_etx_configuration(): 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status(RCBC  5, 0, 0, 0) reports state 11090;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | [lock_and_read_dcc_stat] SD_CORE_TRACE::get_trace_status() reports state 1;  rc 00000000
+000,008 s: INFO (legacy-40012): 00 DATABASE | DCC Capture Depth is 16 GB
+000,008 s: INFO (legacy-40012): 00 DATABASE |  
+000,008 s: INFO (legacy-40012): 00 DATABASE | [sim_configuration_management] Setting etapi_s::max_dcc_cycles = 8801152, while sim_query_capture_frame_info() == 0, no_loadmodule = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | fastDownload: off -> off
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: WARNING (legacy-28870): 10 DATABASE | stop_tci(): clocks already stopped
+000,008 s: WARNING (legacy-28870): 10 DATABASE | 
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 50 PERCENT COMPLETE [15:56:16] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 60 PERCENT COMPLETE [15:56:16] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init():  Calling init_hw_clocks()
+000,008 s: INFO (legacy-40012): 00          | >> START of [copy_original_load_module]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [init_hw_clocks]
+000,008 s: INFO (legacy-40012): 00          | Saving CCSW
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [Check_SDs_for_KH]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [Check_SDs_for_KH], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | job size: SINGLE_BOARD (with TCI)
+000,008 s: INFO (legacy-40012): 00 DATABASE | clean_up_additional_sync_config is off
+000,008 s: INFO (legacy-40012): 00 DATABASE | Clearing clock resources
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clock_clear_and_init]
+000,008 s: INFO (legacy-40012): 00 DATABASE | init_tci()
+000,008 s: INFO (legacy-40012): 00 DATABASE | sync mode:LEGACY
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clock_clear_and_init], Duration is: 6 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sd_and_su_configuration]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [sds_pcs_setup]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sds_pcs_setup], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_clear_for_target]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear_for_target], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_clear], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [sd_and_su_configuration], Duration is: 1 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [clear_sd_seq_count_regs]
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [clear_sd_seq_count_regs], Duration is: 0 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> END of [init_hw_clocks], Duration is: 22 milliseconds
+000,008 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 70 PERCENT COMPLETE [15:56:16] <<<
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_init(): function ended. 
+000,008 s: INFO (legacy-40012): 00 DATABASE | model_load_proto_data():  Calling load_csws_from_proto()
+000,008 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading start... rc = 0
+000,008 s: INFO (legacy-40012): 00 DATABASE | >> START of [SD CSW Downloading]
+000,009 s: INFO (legacy-40012): 00          | Saving KTCSW
+000,009 s: INFO (legacy-40012): 00          | Saving GCSW
+000,009 s: INFO (legacy-40012): 00          | Saving NCSW
+000,009 s: INFO (legacy-40012): 00          | Saving ICSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | download_sd_csw_for_chips complete, result = 0. ib_reg_mr: 0 s, ib_unreg_mr: 0 s, ib_wait_mem_region: 5.952e-06 s, ib_submit_op: 0.0498777 s
+000,009 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,009 s: INFO (legacy-40012): 00 DATABASE | SD CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SD CSW Downloading], Duration is: 108 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading start... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [SU CSW Downloading]
+000,009 s: INFO (legacy-40012): 00 DATABASE | SU CSW downloading complete... rc = 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [SU CSW Downloading], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | LLIO Debug P64 KH level = 7
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [keephot_control]
+000,009 s: INFO (legacy-40012): 00          | Saving OCSW
+000,009 s: INFO (legacy-40012): 00          | Saving SUCSW
+000,009 s: INFO (legacy-40012): 00          | Saving SOD_SUCSW
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [keephot_control], Duration is: 21 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 80 PERCENT COMPLETE [15:56:16] <<<
+000,009 s: INFO (legacy-40012): 00          | >> END of [copy_original_load_module], Duration is: 335 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [llio_lanes_clear_and_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [llio_lanes_clear_and_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 85 PERCENT COMPLETE [15:56:16] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [pcs_lanes_check]
+000,009 s: INFO (legacy-40012): 00 DATABASE | [pcs_lanes_check] Starting
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [pcs_lanes_check], Duration is: 0 milliseconds
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 90 PERCENT COMPLETE [15:56:16] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_RESET_IOPS is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo0.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo1.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo2.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbi3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [read_dma_file]:  File: dbFiles/dbo3.dma   elements: 1  version: 0.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | Creating images for XTENSA domains (physical): 90.0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_2 is not defined, using default value 128
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_TIMEOUT_3 is not defined, using default value 12288
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_DBO_RD_DELAY is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [get_xtensa_setting] Environment variable QT_XTENSA_WAIT_CYC_COUNT is not defined, using default value 0
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/IRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/IRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | [open_program_file] Reading Xtensa program from /lan/cva_rel/23h1_wxe/23.03.078.s000/tools.lnx86/etc/et3/DRAM.DATA (/lan/cva_rel/23h1_wxe/23.03.078.s000/share/etc/et3/DRAM.DATA)
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 95 PERCENT COMPLETE [15:56:16] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >>> DOWNLOAD PROGRESS: 100 PERCENT COMPLETE [15:56:16] <<<
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> START of [unstick_all_nets]
+000,009 s: INFO (legacy-40012): 00 DATABASE | >> END of [unstick_all_nets], Duration is: 101 milliseconds
+000,009 s: INFO (legacy-50252): DBEngine IP Address = 158.140.43.174
+000,009 s: INFO (legacy-11111): emulator_type=11, numDomains=968, numBoards=121, domainDiv=8
+000,010 s: INFO (legacy-22222): domainMap size=288
+000,010 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,010 s: INFO (legacy-40012): 00 DATABASE | [sim_start_capture] set bytes_per_dcc_frame = cfi.max_nets_per_frame / 8 = 62464
+000,010 s: INFO (legacy-29866): Loading compiler saved data.
+000,010 s: INFO (legacy-29867): Loading compiler saved data done in 0.000000 seconds.
+000,010 s: REPORT (legacy-23457): Loading dbFiles/dccMask takes 0.010000 seconds.
+000,010 s: INFO (legacy-49239): FVINIT is NON-BLOCKING.
+000,010 s: INFO (legacy-46484): Return from '/home/simonett/Documents/Coursework/Project-Zipline/emulation/work' August 14 2024 at 15:56:17 
+000,010 s: INFO (legacy-0): CAPTURE_FRAME_INFO:
+000,010 s: INFO (legacy-0): 	cycles_per_frame = 32
+000,010 s: INFO (legacy-0): 	max_nets_per_frame = 499712
+000,010 s: INFO (legacy-0): 	max_nets_cycle_1 = 55296
+000,010 s: INFO (legacy-0): 	max_nets_cycle_2_to_n = 14336
+000,010 s: INFO (legacy-0): 	max_frames_per_dcc = 275036
+000,010 s: INFO (legacy-0): 	max_PI_nets = 14336
+000,010 s: INFO (legacy-0): 	max_FF_nets = 40960
+000,010 s: INFO (legacy-0): 	max_flag_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	max_compress_frames_per_dcc = 0
+000,010 s: INFO (legacy-0): 	dcc_mode = single
+000,010 s: INFO (legacy-0): 	dcc_comp = 0
+000,010 s: INFO (legacy-28971): Restore 91 verify nets from dccMaskFile takes 0.000000 seconds.
+000,010 s: INFO (legacy-28970): No DYNP nets added in current session.
+000,010 s: INFO (legacy-47919): Verify dccMask takes 0.000000 seconds.
+000,010 s: INFO (legacy-0): etapi has 1 connectors, fvDCC uses 1 connectors.
+000,010 s: INFO (legacy-29213): Estimated available probe resource: 6176
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 62464, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 251917312, fixedBuf = 255864832, num of fixed buf = 4
+000,010 s: INFO (legacy-38764): multiHostDCCUnload enabled, DCC threads reset to 1.
+000,010 s: frameBytes = 62464, unloadDCCblkSize = 4033 frames, numDCC = 1, bufSize = 251917312, fixedBuf = 255864832, num of fixed buf = 4
+000,010 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,011 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,011 s: Enable DCC flush
+000,011 s: INFO (legacy-40012): 00 DATABASE | SIM_SET(NO_DCC_FLUSH,0): Will always FLUSH trace to DCC when requested.
+000,011 s: INFO (legacy-11111): BOARD_MAX=288
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: WARNING (legacy-28870): 10 DATABASE | get_configmgrip:  CONFIGMGRIP is not set.
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91146, index=0
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91145, index=65
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91211, index=66
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91212, index=67
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91144, index=64
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91210, index=68
+000,011 s: INFO (legacy-55555): et7_das_input_net_bit_index_in_section: net=91213, index=69
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52380, index=0
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52381, index=1
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52382, index=2
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52383, index=3
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52384, index=4
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52385, index=5
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52386, index=6
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52387, index=7
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52388, index=8
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52389, index=9
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52390, index=10
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52391, index=11
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52392, index=12
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52393, index=13
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52394, index=14
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52395, index=15
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52396, index=16
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52397, index=17
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52398, index=18
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52399, index=19
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52400, index=20
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52401, index=21
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52402, index=22
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52403, index=23
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52404, index=24
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52405, index=25
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52406, index=26
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52407, index=27
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52408, index=28
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52409, index=29
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52410, index=30
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52411, index=31
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52412, index=32
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52413, index=33
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52414, index=34
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52415, index=35
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52416, index=36
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52417, index=37
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52418, index=38
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52419, index=39
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52420, index=40
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52421, index=41
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52422, index=42
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52423, index=43
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52424, index=44
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52425, index=45
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52426, index=46
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52427, index=47
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52428, index=48
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52429, index=49
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52430, index=50
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52431, index=51
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52432, index=52
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52433, index=53
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52434, index=54
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52435, index=55
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52436, index=56
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52437, index=57
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52438, index=58
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52439, index=59
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52440, index=60
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52441, index=61
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=52442, index=62
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=49697, index=63
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78269, index=64
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78279, index=65
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78291, index=66
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78293, index=67
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=78297, index=68
+000,011 s: INFO (legacy-55555): et7_das_output_net_bit_index_in_section: net=56839, index=259
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sdlEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.tbcEnable 'b1
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbg 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.hwClkDbgTime 'b0
+000,011 s:   (nested call from 'xc')xe> signal -force xc_top.sfifoSyncMode 'b1
+000,011 s:   (nested call from 'xc')xe> assertion -list -depth all ALPV_MODEL_VCOMP -silent
+000,011 s:   (nested call from 'xc')xe> signal -set xc_top.simTime 'd0
+000,011 s: xe> run -swap
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,011 s:   (nested call from 'run')xe> signal -force xc_top.simTime 'd0
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s:   (nested call from 'run')xe> signal -release xc_top.simTime
+000,011 s: INFO (legacy-40012): 00 DATABASE | BEGIN sim_sa_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | Updating CDA by run 2 cycles in seq_update_cda()
+000,011 s: INFO (legacy-40012): 00 DATABASE | END sim_sa_update_cda():  rc=00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 100 Cycles;  Ran 100 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,011 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,011 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,011 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,012 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,012 s: INFO (legacy-40012): 00 DATABASE | >> START of [sw_reset_clear_mems]
+000,013 s: INFO (legacy-40012): 00 DATABASE | >> END of [sw_reset_clear_mems], Duration is: 1004 milliseconds
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_start_capture(num_cycles 0; start_cycle 0; trigger_point 0)
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> clockConfig -actual
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 0
+000,013 s: xe> run
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=0
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,013 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,013 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,013 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s:   (nested call from 'run')xe> signal -force xc_top.gfifoOff 1
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 1 Cycles;  Ran 1 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | [start_free_run] complete
+000,015 s: INFO (legacy-40012): 00 DATABASE | sim_clock():  Called for 0 Cycles;  Ran 0 Cycles, rc = 00000000
+000,015 s: INFO (legacy-40012): 00 DATABASE | stop_tci():  Stop clocking
+000,015 s: INFO (legacy-22222): get_counter_value: name=NULLm cyc=372405
+000,015 s: xe> exit
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE | ET Runtime Statistics
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |  Command Name                            Calls       Longest Call      Total Time
+000,016 s: INFO (legacy-40012): 00 DATABASE |  --------------------------------------  ------      -------------     -------------
+000,016 s: INFO (legacy-40012): 00 DATABASE |               sim_build_symbol_list_net      87      0.000155 secs     0.001256 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_clear_dcc       2      1.004893 secs     2.009538 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_clock      17      0.006319 secs     0.042275 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |           sim_clock_combinatorial_logic      46      0.010641 secs     0.228393 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_configuration_management       1      4.027425 secs     4.027425 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                    sim_free_symbol_list      63      0.000033 secs     0.000208 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_get_board_id       4      0.000051 secs     0.000069 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_get_net      58      0.001154 secs     0.040259 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_get_net_net      42      0.000071 secs     0.001326 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_ith_dcc       6      0.000003 secs     0.000010 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_model_load       1      0.493935 secs     0.493935 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_num_board_resources       1      0.000008 secs     0.000008 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_query_clock    1273      0.002455 secs     0.063092 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_nets_per_dcc_entry       8      0.000003 secs     0.000011 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                       sim_start_capture       3      0.000262 secs     0.000593 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                            sim_stop_et3      15      0.002683 secs     0.030005 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_flush      25      0.000006 secs     0.000059 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                               sim_stick      37      0.001115 secs     0.005877 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                           sim_stick_net     136      0.000234 secs     0.004128 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                             sim_unstick      10      0.001145 secs     0.001626 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                         sim_unstick_net      10      0.000050 secs     0.000239 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                 sim_get_emulation_speed       3      0.000017 secs     0.000036 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                          sim_halt_query       1      0.000056 secs     0.000056 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_num_dccs_all       5      0.000011 secs     0.000030 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_set_capture_delay       1      0.000004 secs     0.000004 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                                 sim_set      54      0.000043 secs     0.000377 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                        sim_report_stats       1      0.000147 secs     0.000147 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |             sim_ith_board_resource_info     968      0.009132 secs     0.702212 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |            sim_query_capture_frame_info       8      0.000052 secs     0.000150 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_size     137      0.000016 secs     0.000313 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_symbol_nets     102      0.000007 secs     0.000151 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                     sim_get_chip_offset       4      0.000011 secs     0.000022 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |                   sim_get_target_owners     968      0.008940 secs     0.438146 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE |  
+000,016 s: INFO (legacy-40012): 00 DATABASE |  ---> Total API time was 8.091976 secs
+000,016 s: INFO (legacy-40012): 00 DATABASE | 
+000,016 s: INFO (legacy-40012): 00 DATABASE | [send_buffers] send_buffers started ...
+000,016 s: WARNING (legacy-28870): 10 DATABASE | etapi called to clean-up and terminate.
+000,016 s: INFO (legacy-40012): 00 DATABASE | et7confg called to clean-up and terminate.
+000,016 s: INFO (legacy-52096): Beginning DBEngine shutdown.
+000,016 s: INFO (legacy-52097): Unregistering DBEngine RPC.
+000,016 s: INFO (legacy-777): Programming DBEngine to exit on timer...
+000,016 s: REPORT (legacy-54309): DBEngine unregistered RPC program number 1392267693.
+000,016 s: INFO (legacy-52098): Closing DBEngine streams.
+000,016 s: INFO (legacy-52099): DBEngine exiting.
+* Memory info:
+              total     used     free   shared  buffers   cached
+Mem  (GB):     3023     2969       54        0        0     2150
+Swap (GB):      127       27      100
+* Load info:
+  13835 threads
+  Load (avg):    1 min (% CPU) |     5 min (% CPU) |    15 min (% CPU)
+              14.46 ( 30% CPU) |  13.89 ( 29% CPU) |  13.51 ( 28% CPU)
+System info: hsv-sc21 - DBEngine - 117938 115912 - qtExit - 2024-08-14 15:56:23 - 14.46 30% 13.89 29% 13.51 28% - 3023 2969 54 2150 127 27 100
+Peak usage info for DBEngine (pid 117938, ppid 115912) on hsv-sc21: CPU usage 0.00, Peak mem (Res 2 GB, Virt 5 GB), freePhyMem 54 GB, totalPhyMem 3024 GB, freeSwap 101 GB, totalSwap 128 GB
+000,016 s: WARNING (legacy-54241): The workstation was running low on memory (free memory dropped to 54 GB), therefore the performance might be impacted.
+DRM memory info: hsv-sc21 - DBEngine - 117938 - 115912 - unknown unlimited
+## DBEngine exits at 08/14/2024 15:56:23 Status: 0, PID: 117938
+## DBEngine Elapsed time: 0:00:16, CPU time: 0:00:06.07, Memory Usage: 5.4G
+## Child Proc. CPU time: 0:00:00.35

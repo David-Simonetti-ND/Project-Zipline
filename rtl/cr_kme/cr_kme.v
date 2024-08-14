@@ -53,7 +53,7 @@ module cr_kme
     
     
     
-    output logic  clk;
+    input         clk;
     input         rst_n; 
 
     
@@ -664,12 +664,6 @@ module cr_kme
     assign rbus_ring_i.ack = 1'b0;
     assign rbus_ring_i.err_ack = 1'b0;
     assign rbus_ring_i.rd_data = {`N_RBUS_DATA_BITS{1'b0}};
-
-    wire new_clk;
-    assign new_clk = clk;
-    initial begin
-        $export_read(new_clk);
-    end
   
 endmodule
 
