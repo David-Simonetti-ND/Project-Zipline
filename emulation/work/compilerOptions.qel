@@ -1,0 +1,2 @@
+emulatorConfiguration -add "host $env(XE_HOST)" "boards $env(XE_BOARDS)"
+symmetricConfiguration -add "host $env(XE_HOST)" 

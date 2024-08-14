@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++define+ENA_BIMC+
++sv
++libext+.v
++libext+.sv
++libext+.svp
++libext+.vh
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/common/include
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/cr_kme
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/common/nx_library
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/mem_wrappers/bimc_master/top
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/common/fifo
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/common/cr_tlvp
++incdir+/home/simonett/Documents/Coursework/Project-Zipline/dv/KME/run/../../../rtl/common/axi
+-no_analogsolver
+-MESSAGES
+-XLMODE
+./xcelium.d/run.lnx86.23.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.23.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.23.09.d/hdl.var
+-WORK
+worklib
+-HASXLMODE

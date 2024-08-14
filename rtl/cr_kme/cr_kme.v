@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -53,7 +53,7 @@ module cr_kme
     
     
     
-    input         clk;
+    output logic  clk;
     input         rst_n; 
 
     
@@ -665,6 +665,11 @@ module cr_kme
     assign rbus_ring_i.err_ack = 1'b0;
     assign rbus_ring_i.rd_data = {`N_RBUS_DATA_BITS{1'b0}};
 
+    wire new_clk;
+    assign new_clk = clk;
+    initial begin
+        $export_read(new_clk);
+    end
   
 endmodule
 

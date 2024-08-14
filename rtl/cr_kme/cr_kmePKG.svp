@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -10,7 +10,6 @@
 `ifndef __CR_KMEPKG_SVP
 `define __CR_KMEPKG_SVP
 `include "cr_global_params.vh"
-`include "cr_kme.vh"
 package cr_kmePKG;
 
    

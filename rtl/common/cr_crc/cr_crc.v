@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -74,7 +74,7 @@ module cr_crc
 
   
   
-  `CCX_STD_DECLARE_CRC(mycrc, POLYNOMIAL, N_CRC_WIDTH,N_DATA_WIDTH );
+  `CCX_STD_DECLARE_CRC(mycrc, POLYNOMIAL, N_CRC_WIDTH,N_DATA_WIDTH )
   
   
   logic [N_CRC_WIDTH-1:0]    crc_r;

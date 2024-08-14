@@ -1,0 +1,22 @@
+// Log started on host: hsv-sc21 at : Wed Aug 14 14:31:24 2024
+ 
+
+******************************************************************************
+vlan IXCOM, V23.03.131.s001            
+Path - /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/bin/64bit/vlan
+(c) 2024 Cadence Design Systems, Inc.  All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+******************************************************************************
+
+Executing ... vlan (64bit) - Thu Aug  3 21:46:56 PDT 2023
+
+Command Arguments:
+  -cleanDupCells
+	Errors : 0 Warnings : 0 Info : 0
+
+ // Log end : Wed Aug 14 14:31:24 2024
+
+
+	vlan: cpu time = 0.01 sec, elapsed time = 0 sec
+	  peak virtual memory size = 67.88M bytes, peak resident memory size = 22.83M bytes
+	  heap memory size = 17.13M bytes

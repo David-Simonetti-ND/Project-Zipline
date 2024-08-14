@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -263,7 +263,7 @@ module cr_kme_tlv_parser (
                     // Fatal added to report unsupported feature
                     //----------------------------------------------------------------------------------
                     // synopsys translate_off
-                    if (aux_key_header.dek_key_op | aux_key_header.dak_key_op) $fatal("KDF operations are not supported");
+                    if (aux_key_header.dek_key_op | aux_key_header.dak_key_op) $fatal(1, "KDF operations are not supported");
                     // synopsys translate_on
                 end
             end 
@@ -507,7 +507,7 @@ module cr_kme_tlv_parser (
                         // Fatal added to report unsupported feature
                         //----------------------------------------------------------------------------------
                         // synopsys translate_off
-                        if (tlv_word2.key_type > 6'h6) $fatal("Encrypted key blobs not supported");
+                        if (tlv_word2.key_type > 6'h6) $fatal(1, "Encrypted key blobs not supported");
                         // synopsys translate_on
 
                         fifo_in_valid = 1'b1;

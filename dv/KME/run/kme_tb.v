@@ -1,13 +1,16 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
 `include "cr_global_params.vh"
 
 `define FSDB_PATH kme_tb
+
+// use getenv to get path to tb config files
+import "DPI-C" function string getenv(input string env_name);
 
 module kme_tb;   
    
@@ -17,9 +20,10 @@ module kme_tb;
    int  error_cntr;
 
    string fsdbFilename;
+   string kme_tb_config_path;
   
 
-   logic clk;
+   wire clk;
    logic rst_n;
 
    logic kme_ib_tready;
@@ -46,16 +50,6 @@ module kme_tb;
    logic [`N_RBUS_DATA_BITS-1:0] kme_apb_prdata;
    logic                         kme_apb_pready;		        
    logic                         kme_apb_pslverr;
-
-   
-   initial begin
-      clk = 1'b0;
-      forever
-	begin
-           #0.625;
-           clk = ~clk;
-	end
-   end
    
    apb_xactor #(.ADDR_WIDTH(`N_RBUS_ADDR_BITS),.DATA_WIDTH(`N_RBUS_DATA_BITS)) apb_xactor(
 											  .clk(clk), 
@@ -87,64 +81,6 @@ module kme_tb;
 		  .kme_cceip0_ob_tuser(kme_ob_tuser),
 		  .kme_cceip0_ob_tdata(kme_ob_tdata),
       
-/* -----\/----- EXCLUDED -----\/-----
-		  .kme_cceip1_ob_tready(), 
-		  .kme_cceip1_ob_tvalid(),
-		  .kme_cceip1_ob_tlast(),
-		  .kme_cceip1_ob_tid(),
-		  .kme_cceip1_ob_tstrb(),
-		  .kme_cceip1_ob_tuser(),
-		  .kme_cceip1_ob_tdata(),
-
-		  .kme_cceip2_ob_tready(), 
-		  .kme_cceip2_ob_tvalid(),
-		  .kme_cceip2_ob_tlast(),
-		  .kme_cceip2_ob_tid(),
-		  .kme_cceip2_ob_tstrb(),
-		  .kme_cceip2_ob_tuser(),
-		  .kme_cceip2_ob_tdata(),
-
-		  .kme_cceip3_ob_tready(), 
-		  .kme_cceip3_ob_tvalid(),
-		  .kme_cceip3_ob_tlast(),
-		  .kme_cceip3_ob_tid(),
-		  .kme_cceip3_ob_tstrb(),
-		  .kme_cceip3_ob_tuser(),
-		  .kme_cceip3_ob_tdata(),
-
-		  .kme_cddip0_ob_tready(), 
-		  .kme_cddip0_ob_tvalid(),
-		  .kme_cddip0_ob_tlast(),
-		  .kme_cddip0_ob_tid(),
-		  .kme_cddip0_ob_tstrb(),
-		  .kme_cddip0_ob_tuser(),
-		  .kme_cddip0_ob_tdata(),
-      
-		  .kme_cddip1_ob_tready(), 
-		  .kme_cddip1_ob_tvalid(),
-		  .kme_cddip1_ob_tlast(),
-		  .kme_cddip1_ob_tid(),
-		  .kme_cddip1_ob_tstrb(),
-		  .kme_cddip1_ob_tuser(),
-		  .kme_cddip1_ob_tdata(),
-
-		  .kme_cddip2_ob_tready(), 
-		  .kme_cddip2_ob_tvalid(),
-		  .kme_cddip2_ob_tlast(),
-		  .kme_cddip2_ob_tid(),
-		  .kme_cddip2_ob_tstrb(),
-		  .kme_cddip2_ob_tuser(),
-		  .kme_cddip2_ob_tdata(),
-
-		  .kme_cddip3_ob_tready(), 
-		  .kme_cddip3_ob_tvalid(),
-		  .kme_cddip3_ob_tlast(),
-		  .kme_cddip3_ob_tid(),
-		  .kme_cddip3_ob_tstrb(),
-		  .kme_cddip3_ob_tuser(),
-		  .kme_cddip3_ob_tdata(),
- -----/\----- EXCLUDED -----/\----- */
-      
 		  .apb_paddr(kme_apb_paddr[`N_KME_RBUS_ADDR_BITS-1:0]),
 		  .apb_psel(kme_apb_psel), 
 		  .apb_penable(kme_apb_penable), 
@@ -154,7 +90,6 @@ module kme_tb;
 		  .apb_pready(kme_apb_pready), 
 		  .apb_pslverr(kme_apb_pslverr),
 
-		  .clk(clk), 
 		  .rst_n(rst_n), 
 		  .scan_en(1'b0), 
 		  .scan_mode(1'b0), 
@@ -170,6 +105,8 @@ module kme_tb;
 		  .disable_unencrypted_keys(1'b0)
 		  );
 
+   assign clk = kme_dut.new_clk;
+
    initial begin
 
       error_cntr = 0;
@@ -177,30 +114,23 @@ module kme_tb;
       rst_n = 1'b0; 
       
       if( $test$plusargs("SEED") ) begin
-         $value$plusargs("SEED=%d", seed);
+         void'($value$plusargs("SEED=%d", seed));
       end else begin
 	 seed="1";	
       end
       
       if( $test$plusargs("TESTNAME") ) begin
-         $value$plusargs("TESTNAME=%s", testname);
-         $display("TESTNAME=%s SEED=%d", testname, seed);
+         void'($value$plusargs("TESTNAME=%s", testname));
+         $display("TESTNAME=%s SEED=%s", testname, seed);
       end else begin
-	 testname="unknown";	
+	 testname="kme_key_type_0";	
       end
       
       if ( $test$plusargs("waves") ) begin
-         if( $test$plusargs("dump_fsdb") ) begin
-            $value$plusargs("fsdbfile+%s", fsdbFilename);
-            $fsdbDumpfile(fsdbFilename);
-            $fsdbDumpvars(0, `FSDB_PATH);
-            $fsdbDumpMDA(0, `FSDB_PATH);
-            $fsdbDumpvars(0, "+all", `FSDB_PATH);
-         end else begin
-            $vcdpluson();
-            $vcdplusmemon();
-         end
       end
+
+      kme_tb_config_path = getenv("DV_ROOT");
+      $display("Using tb config path = %s", kme_tb_config_path);
 
       $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
 
@@ -259,7 +189,7 @@ module kme_tb;
       reg            response;
 
       
-      file_name = $psprintf("../tests/kme.config");
+      file_name = $psprintf("%s/KME/tests/kme.config", kme_tb_config_path);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
 	 $display ("\nAPB_INFO:  @time:%-d File %s NOT found!\n", $time, file_name );
@@ -297,7 +227,7 @@ module kme_tb;
 		  end
                end
                @(posedge clk);
-            end else if ( operation !== "#" ) begin
+            end else if ( operation != "#" ) begin
                $display ("APB_FATAL:  @time:%-d vector --> %s NOT valid!", $time, vector );
                $finish;
             end
@@ -325,7 +255,7 @@ module kme_tb;
       
       
 
-      file_name = $psprintf("../tests/%s.inbound", testname);
+      file_name = $psprintf("%s/KME/tests/%s.inbound", kme_tb_config_path, testname);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
 	 $display ("INBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
@@ -421,7 +351,7 @@ module kme_tb;
 
       
 
-      file_name = $psprintf("../tests/%s.outbound", testname);
+      file_name = $psprintf("%s/KME/tests/%s.outbound", kme_tb_config_path, testname);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
 	 $display ("OUTBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );

@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -254,12 +254,13 @@ module cr_kme_core_glue (
     endgenerate  
 
     
+    /*
     always @ (*) begin
         for (k=0; k<32; k=k+1) begin
             sa_count   [k].f.unused = 14'b0;
             sa_snapshot[k].f.unused = 14'b0;
         end
-    end
+    end */
 
 
     
