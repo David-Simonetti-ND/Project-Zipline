@@ -1,6 +1,0 @@
-define LIB_MAP ( $LIB_MAP \
-, ../../../../mem_wrappers/bimc_master/top => top \
-, ../../../../common/fifo => fifo \
-, ../../../../common/nx_library => nx_library \
-, ../../../../common => common \
-)

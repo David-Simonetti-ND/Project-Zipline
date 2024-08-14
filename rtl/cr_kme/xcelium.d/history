@@ -1,9 +1,0 @@
-//
-// File created by:  xrun
-// Do not modify this file
-
-s1::(13Aug2024:13:48:46):( xrun -f compile.f )
-s2::(13Aug2024:13:49:20):( xrun -f compile.f )
-s3::(13Aug2024:13:52:35):( xrun -f compile.f )
-s4::(13Aug2024:13:52:49):( xrun -f compile.f )
-s5::(13Aug2024:14:56:58):( xrun -f compile.f )

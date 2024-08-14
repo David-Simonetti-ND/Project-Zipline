@@ -1,4 +1,0 @@
-define top ./top
-define fifo ./fifo
-define nx_library ./nx_library
-define common ./common
