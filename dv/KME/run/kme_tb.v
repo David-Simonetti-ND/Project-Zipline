@@ -67,7 +67,7 @@ module kme_tb (input wire clk,
 
       $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
 
-      #100;
+      top.hw_top.wait_cycles(100);
 
       kme_ib_tid <= 0;
       kme_ib_tvalid <= 0;
@@ -77,15 +77,13 @@ module kme_tb (input wire clk,
       kme_ib_tuser <= 0;
       kme_ob_tready <= 1;
 
-      #50;
+      top.hw_top.wait_cycles(50);
 
       $display("--- \"rst_n\" has been DE-ASSERTED! ---");
 
       rst_n = 1'b1; 
 
-      #100;
-
-      @(posedge clk);
+      top.hw_top.wait_cycles(101);
 
       do_kme_config();
 
@@ -105,73 +103,41 @@ module kme_tb (input wire clk,
 	 $display("\nTest %s PASSED!\n", testname);
       end
 
-      #10ns;
+      top.hw_top.wait_cycles(10);
       $finish;
       
    end // initial
 
    task do_kme_config();
-      reg[31:0]      address;
-      reg [31:0]     data;
-      reg [31:0]     returned_data;
-      string         operation;
+      reg   [31:0]   address;
+      reg   [31:0]   data;
+      logic [7:0]    operation;
       string         file_name;
       string         vector;
-      integer        str_get;
+      logic [31:0]   str_get;
       integer        file_descriptor;
-      reg            response;
-
       
       file_name = $psprintf("%s/KME/tests/kme.config", kme_tb_config_path);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
-	 $display ("\nAPB_INFO:  @time:%-d File %s NOT found!\n", $time, file_name );
-	 return;
+         $display ("\nAPB_INFO:  @time:%-d File %s NOT found!\n", $time, file_name );
+         return;
       end else begin
-	 $display ("APB_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
+	      $display ("APB_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
       end
 
       while( !$feof(file_descriptor) ) begin
-	 if ( $fgets(vector,file_descriptor) ) begin
-            $display ("APB_INFO:  @time:%-d vector --> %s", $time, vector );
-            str_get = $sscanf(vector, "%s 0x%h 0x%h", operation, address, data);
-	    //      $display ("APB_INFO:  @time:%-d parsed vector --> %s 0x%h 0x%h    %d", $time, operation, address, data, str_get ); 
-            if ( str_get == 3 && (operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
-               if ( operation == "r" || operation == "R" ) begin
-		  top.apb_xactor.read(address, returned_data, response);
-		  if ( response !== 0 ) begin
-		     $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the READ operation to address 0x%h\n\n",
-                               $time, address );
-		     $finish;
-		  end
-		  if ( returned_data !== data ) begin
-		     $display ("APB_ERROR:  @time:%-d   Data MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, returned_data, data ); 
-		     ++error_cntr;
-		     if ( error_cntr > 10 ) begin
-			$finish;
-		     end
-		  end
-               end else begin
-		  top.apb_xactor.write(address, data, response);
-		  if ( response !== 0 ) begin
-		     $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the WRITE operation to address 0x%h\n\n",
-                               $time, address );
-		     $finish;
-		  end
-               end
-               @(posedge clk);
-            end else if ( operation != "#" ) begin
-               $display ("APB_FATAL:  @time:%-d vector --> %s NOT valid!", $time, vector );
-               $finish;
-            end
-	 end
+         if ( $fgets(vector,file_descriptor) ) begin
+                  $display ("APB_INFO:  @time:%-d vector --> %s", $time, vector );
+                  str_get = $sscanf(vector, "%c 0x%h 0x%h", operation, address, data);
+                  top.hw_top.commit_kme_cfg_txn(operation, address, data, str_get, error_cntr);      
+         end
       end
 
-      @(posedge clk);
+      top.hw_top.wait_cycles(1);
 
       $display ("APB_INFO:  @time:%-d Exiting APB engine config ...", $time );
-
-   endtask // do_kme_config
+   endtask // do_kme_config   
 
    task service_ib_interface();
       reg[7:0]       tstrb;
@@ -191,10 +157,10 @@ module kme_tb (input wire clk,
       file_name = $psprintf("%s/KME/tests/%s.inbound", kme_tb_config_path, testname);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
-	 $display ("INBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
-	 $finish;
+         $display ("INBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
+         $finish;
       end else begin
-	 $display ("INBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
+	      $display ("INBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
       end
 
       saw_mega = 0;
@@ -203,54 +169,53 @@ module kme_tb (input wire clk,
       have_guid_tlv = 0;
       
       while( !$feof(file_descriptor) ) begin
-	 if ( kme_ib_tready === 1'b1 ) begin
+         if ( kme_ib_tready === 1'b1 ) begin
             kme_ib_tlast <= 1'b0;
             if ( $fgets(vector,file_descriptor) ) begin
                str_get = $sscanf(vector, "0x%h %s 0x%h", tdata, tuser_string, tstrb);
-	       //        $display ("INBOUND_INFO:  @time:%-d parsed vector --> 0x%h %s 0x%h %d", $time, tdata, tuser_string, tstrb, str_get ); 
                if ( str_get >= 2 ) begin
-		  $display ("INBOUND_INFO:  @time:%-d vector --> %s", $time, vector ); 
-		  if ( str_get == 3 ) begin
-		     if ( tuser_string == "SoT" && tdata[7:0] >= 8'd21 ) begin
-			saw_mega = 1;
-		     end 
-		     else if(tdata[7:0] == 8'd10) begin
-			saw_guid_tlv = 1;
-		     end
-		     if (saw_mega == 1 ) begin
-			mega_tlv_word_count = mega_tlv_word_count + 1;
-			if(mega_tlv_word_count == 2) begin
-			   $display("mega tlv word #2: %x", tdata);
-			   if(tdata[4] == 1) begin
-			      have_guid_tlv = 1;
-			   end
-			end
-		     end
-		     if ( tuser_string == "EoT" && saw_mega == 1 ) begin
-			if( have_guid_tlv == 0 ) begin
-			   kme_ib_tlast <= 1'b1;
-			end
-			saw_mega = 0;
-		     end
-		     else if(tuser_string == "EoT" && saw_guid_tlv == 1) begin
-			kme_ib_tlast <= 1'b1;
-			saw_guid_tlv = 0;
-		     end
-		     kme_ib_tuser <= translate_tuser( tuser_string );
-		  end else begin
-		     kme_ib_tuser <= 8'h00;
-		  end
-		  kme_ib_tvalid <= 1'b1;
-		  kme_ib_tdata <= tdata;
-		  kme_ib_tstrb <= tstrb;
-               end else begin
-		  kme_ib_tvalid <= 1'b0;
-               end
+                  $display ("INBOUND_INFO:  @time:%-d vector --> %s", $time, vector ); 
+                  if ( str_get == 3 ) begin
+                     if ( tuser_string == "SoT" && tdata[7:0] >= 8'd21 ) begin
+                        saw_mega = 1;
+                     end 
+                     else if(tdata[7:0] == 8'd10) begin
+                        saw_guid_tlv = 1;
+                     end
+                     if (saw_mega == 1 ) begin
+                        mega_tlv_word_count = mega_tlv_word_count + 1;
+                        if(mega_tlv_word_count == 2) begin
+                           $display("mega tlv word #2: %x", tdata);
+                           if(tdata[4] == 1) begin
+                              have_guid_tlv = 1;
+                           end
+                        end
+                     end
+                     if ( tuser_string == "EoT" && saw_mega == 1 ) begin
+                        if( have_guid_tlv == 0 ) begin
+                           kme_ib_tlast <= 1'b1;
+                        end
+                        saw_mega = 0;
+                     end
+                     else if(tuser_string == "EoT" && saw_guid_tlv == 1) begin
+                        kme_ib_tlast <= 1'b1;
+                        saw_guid_tlv = 0;
+                     end
+                     kme_ib_tuser <= translate_tuser( tuser_string );
+                  end else begin
+                     kme_ib_tuser <= 8'h00;
+                  end
+                  kme_ib_tvalid <= 1'b1;
+                  kme_ib_tdata <= tdata;
+                  kme_ib_tstrb <= tstrb;
+                  end else begin
+                     kme_ib_tvalid <= 1'b0;
+                  end
             end else begin
                kme_ib_tvalid <= 1'b0;
             end
-	 end
-	 @(posedge clk);
+         end
+         @(posedge clk);
       end
 
       kme_ib_tvalid <= 1'b0;

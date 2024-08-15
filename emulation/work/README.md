@@ -15,6 +15,9 @@ We are now generating the clock in the DUT on the Palladium emulator, but becaus
 How we can improve the numbers is by moving to a different form of testing than signal based. For example, if we moved towards transaction based acceleration, we could cut the number of tbSync events by a considerable amount compared to this baseline. We could also attempt to use fewer #delay and @ constructs in the testbench code.
 
 # 3: @vents removal from Testbench: all waits, #delays and @s events must be on HW side, make sure testbench does not have any.
+
+Make an export task in hw_top to wait a certain number of cycles. Moved the apb_xactor to be in hardware and exported the read and write task to the testbench
+
 # 4: Implement TBA (Transaction Based Acceleration) on the testbench.
 # 5: Extra 1: use CAKE 1X clock.
 # 6: Extra 2: Implement Regression Test

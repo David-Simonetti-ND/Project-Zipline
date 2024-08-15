@@ -23,15 +23,6 @@ module top;
     wire                         kme_ob_tvalid;
     wire                         kme_ob_tlast;    
 
-    wire [`N_RBUS_ADDR_BITS-1:0] kme_apb_paddr;
-    wire                         kme_apb_psel;
-    wire                         kme_apb_penable;
-    wire                         kme_apb_pwrite;
-    wire [`N_RBUS_DATA_BITS-1:0] kme_apb_pwdata;  
-    wire [`N_RBUS_DATA_BITS-1:0] kme_apb_prdata;
-    wire                         kme_apb_pready;		        
-    wire                         kme_apb_pslverr;
-
     kme_tb tb( .clk,
                .rst_n,
 
@@ -68,30 +59,8 @@ module top;
         .kme_ob_tid(kme_ob_tid),
         .kme_ob_tstrb(kme_ob_tstrb),
         .kme_ob_tuser(kme_ob_tuser),
-        .kme_ob_tdata(kme_ob_tdata),
-    
-        .kme_apb_paddr(kme_apb_paddr),
-        .kme_apb_psel(kme_apb_psel), 
-        .kme_apb_penable(kme_apb_penable), 
-        .kme_apb_pwrite(kme_apb_pwrite), 
-        .kme_apb_pwdata(kme_apb_pwdata),
-        .kme_apb_prdata(kme_apb_prdata),
-        .kme_apb_pready(kme_apb_pready), 
-        .kme_apb_pslverr(kme_apb_pslverr)
+        .kme_ob_tdata(kme_ob_tdata)
     );
-
-    apb_xactor #(.ADDR_WIDTH(`N_RBUS_ADDR_BITS),.DATA_WIDTH(`N_RBUS_DATA_BITS)) apb_xactor(
-											  .clk(clk), 
-											  .reset_n(rst_n), 
-											  .prdata(kme_apb_prdata), 
-											  .pready(kme_apb_pready), 
-											  .pslverr(kme_apb_pslverr), 
-											  .psel(kme_apb_psel), 
-											  .penable(kme_apb_penable), 
-											  .paddr(kme_apb_paddr), 
-											  .pwdata(kme_apb_pwdata), 
-											  .pwrite(kme_apb_pwrite)
-											  );
 
     assign clk = hw_top.buff_clk;
 endmodule : top
