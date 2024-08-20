@@ -1,2 +1,0 @@
-clockOption -add {technology CAKE 2}
-clockFrequency -add "kme_tb.kme_dut.clk 100 mhz"

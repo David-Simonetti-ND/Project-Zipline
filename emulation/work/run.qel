@@ -1,6 +1,6 @@
 debug .
 host $env(XE_HOST)
-xc zt0 xt0 run
+xc zt0 xt0 tbrun
 run -swap 
 run
 exit

@@ -1,56 +1,55 @@
-Log started on host: hsv-sc21 pid: 72213 at: Thu Aug 15 14:07:37 2024
+Log started on host: hsv-sc22 pid: 10615 at: Tue Aug 20 11:33:57 2024
 
 libxcrt IXCOM, V23.03.131.s001             (compiled with XCELIUM-22.09-s001, loaded with  XCELIUM-23.03-s001)
 
 INFO: target platform:Z2, execution platform:Z2
---- xc status: @ simTime=0 FS, IN SOFTWARE MODE going to be IN RUN MODE, xt0, zt0.
---- xc status: @ simTime=0 FS, IN RUN MODE, xt0, zt0.
---- xc status: @ simTime=374745 NS (End-Of-Simulation), IN RUN MODE, xt0, zt0.
+--- xc status: @ simTime=0 FS, IN SOFTWARE MODE going to be IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=0 FS, IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=374745 NS (End-Of-Simulation), IN TBRUN MODE, xt0, zt0.
 
 =========================================================================
 IXCOM Performance and Design Profile
 -------------------------------------------------------------------------
---- Maximum HW operating speed (compiler fclk freq): 3342.00 KHz
---- HW executed total fclk cycles  (     5314269 ) : time = 1.59 sec, (cfclks/fclks: 4.42%)
+--- Maximum HW operating speed (compiler fclk freq): 3246.00 KHz
+--- HW executed total fclk cycles  (     1613114 ) : time = 0.50 sec, (cfclks/fclks: 5.68%)
 --- Clocking Mode: Default (2X).
 
---- HW execution command line session time: 1.77 sec (1.53 CPU sec)
+--- HW execution command line session time: 0.73 sec (0.41 CPU sec)
 
---- HW execution wall clock time          : 1.63 sec (1.52 CPU sec)
---- HW execution emulator busy time       : 0.07 sec (4.29%)
+--- HW execution wall clock time          : 0.50 sec (0.40 CPU sec)
+--- HW execution emulator busy time       : 0.03 sec (5.64%)
 
---- Simulation acceleration speed achieved: 45.84 KHz (45841.59 evals/sec)
+--- Simulation acceleration speed achieved: 149.90 KHz (149903.95 evals/sec)
 
 --- HW executed
-    --     234657 ECM controlled fclk cycles      @ 143.52 KHz (143523.02 cfclks/sec)
-    --      74950 Eval (or sim-timestep) cycles   @ 45.84 KHz (45841.59 evals/sec)
+    --      91595 ECM controlled fclk cycles      @ 183.20 KHz (183197.27 cfclks/sec)
+    --      74949 Eval (or sim-timestep) cycles   @ 149.90 KHz (149903.95 evals/sec)
 
-       --       6516 Behavioral-eval cycles                : 0.00 sec (0.12% total)
-               |--       6516 Beh logic : 0.00 sec (0.12% total)
-       --       3268 Extended-eval cycles         : 0.00 sec (0.06% total)
+       --       6516 Behavioral-eval cycles                : 0.00 sec (0.40% total)
+               |--       6516 Beh logic : 0.00 sec (0.40% total)
+       --      10131 Sfifo asyncCall idle cycles  : 0.00 sec (0.62% total)
 
---- Total number of HW-SW Synchronizations(tbSyncs) : 78218 (0.96 evals/tbSync)
-    |-- Synchronizations due to tbcalls(tbcallSyncs): 3263 (22.97 evals/tbcallSync)
+--- Total number of HW-SW Synchronizations(tbSyncs) : 3376 (22.20 evals/tbSync)
+    |-- Synchronizations due to tbcalls(tbcallSyncs): 3376 (22.20 evals/tbcallSync)
 
 
 --- xc Profile: (%)
-	    77.65      HW-EMU-RUN (Elapsed: 1.27 sec)
+	    57.59    HW-EMU-TBRUN (Elapsed: 0.29 sec)
+	                    |---- SFIFO (32.56 %, 0.09 sec)
 
-	    14.05          SW-SIM (Elapsed: 0.23 sec)
-	                    |----  MARG (11.82 %, 0.03 sec)
+	    22.77          SW-SIM (Elapsed: 0.11 sec)
+	                    |----  MARG (47.06 %, 0.05 sec)
 
-	     8.17         XCRT-OH (Elapsed: 0.13 sec)
+	    19.64         XCRT-OH (Elapsed: 0.10 sec)
 
-	     0.13         DEPOSIT (Elapsed: 0.00 sec)
 
 	--- HW-EMU     : HW evaluations and Synchronization Latency.
 	--- SW-SIM     : TB and TBCall execution in sw simulator.
 	--- XCRT-OH    : IXCOM runtime overhead.
-	--- DEPOSIT    : Deposit signals in HW.
 
 
---- Primary Inputs  (bits): INPUT(85) FORCE(0)DEPOSIT(5 :dut=2 + dpi=3 + ixcom=0).
---- Primary Outputs (bits): OUTPUT(157 :dut=85  dpi=69 + ixcom=3).
+--- Primary Inputs  (bits): INPUT(0) FORCE(0)DEPOSIT(16 :dut=2 + dpi=14 + ixcom=0).
+--- Primary Outputs (bits): OUTPUT(167 :dut=84  dpi=80 + ixcom=3).
 =========================================================================
 
 =========================================================================
@@ -64,49 +63,87 @@ IXCOM Performance and Design Profile
 
 
 =========================================================================
---- Synchronizations due to TB/DPI/SVA/SysTask calls (tbcallSyncs): 3263.
+GFIFO (import) profile
+      Num read xfers = 1, Num bytes read = 24, Time for read xfers = 0.00 sec (0.001 GBytes/sec)
+      Mem write wait time = 0.00 sec
+    1 GFIFO functions executed in 0.00 sec
+-------------------------------------------------------------------------
+               Count    %1-way      Ave      Ave     Saved  Scope
+                               NB-Sfifo  B-Sfifo             
+-------------------------------------------------------------------------
+                   1  100.00%     0.00     0.00         0  top.hw_top._gfdL183_0_P0
+-------------------------------------------------------------------------
+---                1  100.00%     0.00     0.00         0  Total
+-------------------------------------------------------------------------
+      Num polls = 3270, Num bytes polled = 52320, Time for polls = 0.04 sec, Polling back off time = 0.00 sec
+      Ave poll time = 10.82 us, Min poll time = 8.18 us, Max poll time = 2951.72 us
+      Polling distribution:
+          5.00 us to  10.00 us 2605 polls
+         10.00 us to  15.00 us 520 polls
+         15.00 us to  20.00 us 78 polls
+         20.00 us to  25.00 us 29 polls
+         25.00 us to  30.00 us 21 polls
+         30.00 us to  35.00 us 9 polls
+         35.00 us to  40.00 us 5 polls
+         65.00 us to  70.00 us 1 polls
+        > 100.00 us            2 polls
+=========================================================================
+
+=========================================================================
+--- Synchronizations due to TB/DPI/SVA/SysTask calls (tbcallSyncs): 3376.
 
 -------------------------------------------------------------------------
-	TBCALL statistics: 3263 tb-calls
+	TBCALL statistics: 3376 tb-calls
 -------------------------------------------------------------------------
      Count Scope
 -------------------------------------------------------------------------
-      3263 IXC_GFIFO.OSF.OSF_flushAll
+      3376 IXC_GFIFO.OSF.OSF_flushAll
               Loc: (/lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCSF.sv, 268)
 
 
 -------------------------------------------------------------------------
-    Synchronous task and function call profile, Total #calls = 3262
+    Synchronous task and function call profile, Total #calls = 3390
 -------------------------------------------------------------------------
      Count Scope
 -------------------------------------------------------------------------
-      3258 top.hw_top.commit_kme_cfg_txn (task, tb_export:tb_mem, iArgW=136, oArgW=0)
-              Total life-time = 1.46 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 88)
+      3258 top.hw_top.commit_kme_cfg_txn (task, tb_export:tb_mem, iArgW=104, oArgW=0)
+              Total life-time = 0.36 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 92)
 
-         4 top.hw_top.wait_cycles (task, tb_export:tb_mem, iArgW=32, oArgW=0)
-              Total life-time = 14.02 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 121)
+        87 top.hw_top.wait_cycles_ob (task, tb_export:tb_mem, iArgW=32, oArgW=0)
+              Total life-time = 0.03 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 128)
+
+        16 top.hw_top.wait_cycles (task, tb_export:tb_mem, iArgW=32, oArgW=0)
+              Total life-time = 0.01 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 122)
+
+        14 top.hw_top.write_kme_ib_tlast (task, tb_export:tb_mem, iArgW=8, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 158)
+
+        12 top.hw_top.service_ib_txn (task, tb_export:tb_mem, iArgW=112, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 204)
+
+         2 top.hw_top.write_kme_ib_tvalid (task, tb_export:tb_mem, iArgW=8, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 154)
+
+         1 top.hw_top.reset_ib_regs (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 196)
 
 =========================================================================
 
 =========================================================================
-	Memory Writes statistics: 3263 mem writes
+	Memory Writes statistics: 3389 mem writes
 -------------------------------------------------------------------------
          Count           Bytes            sec     MB/sec  Name
 -------------------------------------------------------------------------
-          3263          104296         0.0433      2.408  IXCOM Generated Internal Memories
+          3389          105528         0.0632      1.671  IXCOM Generated Internal Memories
 -------------------------------------------------------------------------
----       3263          104296         0.0433      2.408  Total
--------------------------------------------------------------------------
-
---- Memory Access during Swapin 1 times, transferred 8 bytes in 0.0001 sec (0.070 MB/sec)
+---       3389          105528         0.0632      1.671  Total
 =========================================================================
 
 =========================================================================
-	Output event statistics: 74961 output events
+	Output event statistics: 12 output events
 -------------------------------------------------------------------------
      Count Name
 -------------------------------------------------------------------------
-     74949 top.hw_top.buff_clk    (PO Clock)
          4 top.hw_top.kme_ob_tvalid
          3 top.hw_top.kme_ob_tdata
          3 top.hw_top.kme_ob_tuser
@@ -115,133 +152,40 @@ IXCOM Performance and Design Profile
 =========================================================================
 
 
-=========================================================================
-	Input event statistics: 114 Input events
--------------------------------------------------------------------------
-     Count Name
--------------------------------------------------------------------------
-         5 top.hw_top.kme_ib_tuser(0)
-         4 top.hw_top.kme_ib_tuser(1)
-         3 top.hw_top.kme_ib_tdata(0)
-         3 top.hw_top.kme_ib_tdata(2)
-         3 top.hw_top.kme_ib_tdata(4)
-         3 top.hw_top.kme_ib_tdata(60)
-         3 top.hw_top.kme_ib_tdata(62)
-         3 top.hw_top.kme_ib_tvalid
-         3 top.hw_top.kme_ib_tlast
-         2 top.hw_top.kme_ib_tstrb(0)
-         2 top.hw_top.kme_ib_tstrb(1)
-         2 top.hw_top.kme_ib_tstrb(2)
-         2 top.hw_top.kme_ib_tstrb(3)
-         2 top.hw_top.kme_ib_tstrb(4)
-         2 top.hw_top.kme_ib_tstrb(5)
-         2 top.hw_top.kme_ib_tstrb(6)
-         2 top.hw_top.kme_ib_tstrb(7)
-         1 top.hw_top.rst_n
-         1 top.hw_top.kme_ib_tid
-         1 top.hw_top.kme_ib_tdata(1)
-         1 top.hw_top.kme_ib_tdata(3)
-         1 top.hw_top.kme_ib_tdata(5)
-         1 top.hw_top.kme_ib_tdata(6)
-         1 top.hw_top.kme_ib_tdata(7)
-         1 top.hw_top.kme_ib_tdata(8)
-         1 top.hw_top.kme_ib_tdata(9)
-         1 top.hw_top.kme_ib_tdata(10)
-         1 top.hw_top.kme_ib_tdata(11)
-         1 top.hw_top.kme_ib_tdata(12)
-         1 top.hw_top.kme_ib_tdata(13)
-         1 top.hw_top.kme_ib_tdata(14)
-         1 top.hw_top.kme_ib_tdata(15)
-         1 top.hw_top.kme_ib_tdata(16)
-         1 top.hw_top.kme_ib_tdata(17)
-         1 top.hw_top.kme_ib_tdata(18)
-         1 top.hw_top.kme_ib_tdata(19)
-         1 top.hw_top.kme_ib_tdata(20)
-         1 top.hw_top.kme_ib_tdata(21)
-         1 top.hw_top.kme_ib_tdata(22)
-         1 top.hw_top.kme_ib_tdata(23)
-         1 top.hw_top.kme_ib_tdata(24)
-         1 top.hw_top.kme_ib_tdata(25)
-         1 top.hw_top.kme_ib_tdata(26)
-         1 top.hw_top.kme_ib_tdata(27)
-         1 top.hw_top.kme_ib_tdata(28)
-         1 top.hw_top.kme_ib_tdata(29)
-         1 top.hw_top.kme_ib_tdata(30)
-         1 top.hw_top.kme_ib_tdata(31)
-         1 top.hw_top.kme_ib_tdata(32)
-         1 top.hw_top.kme_ib_tdata(33)
-         1 top.hw_top.kme_ib_tdata(34)
-         1 top.hw_top.kme_ib_tdata(35)
-         1 top.hw_top.kme_ib_tdata(36)
-         1 top.hw_top.kme_ib_tdata(37)
-         1 top.hw_top.kme_ib_tdata(38)
-         1 top.hw_top.kme_ib_tdata(39)
-         1 top.hw_top.kme_ib_tdata(40)
-         1 top.hw_top.kme_ib_tdata(41)
-         1 top.hw_top.kme_ib_tdata(42)
-         1 top.hw_top.kme_ib_tdata(43)
-         1 top.hw_top.kme_ib_tdata(44)
-         1 top.hw_top.kme_ib_tdata(45)
-         1 top.hw_top.kme_ib_tdata(46)
-         1 top.hw_top.kme_ib_tdata(47)
-         1 top.hw_top.kme_ib_tdata(48)
-         1 top.hw_top.kme_ib_tdata(49)
-         1 top.hw_top.kme_ib_tdata(50)
-         1 top.hw_top.kme_ib_tdata(51)
-         1 top.hw_top.kme_ib_tdata(52)
-         1 top.hw_top.kme_ib_tdata(53)
-         1 top.hw_top.kme_ib_tdata(54)
-         1 top.hw_top.kme_ib_tdata(55)
-         1 top.hw_top.kme_ib_tdata(56)
-         1 top.hw_top.kme_ib_tdata(57)
-         1 top.hw_top.kme_ib_tdata(58)
-         1 top.hw_top.kme_ib_tdata(59)
-         1 top.hw_top.kme_ib_tdata(61)
-         1 top.hw_top.kme_ib_tdata(63)
-         1 top.hw_top.kme_ib_tuser(2)
-         1 top.hw_top.kme_ib_tuser(3)
-         1 top.hw_top.kme_ib_tuser(4)
-         1 top.hw_top.kme_ib_tuser(5)
-         1 top.hw_top.kme_ib_tuser(6)
-         1 top.hw_top.kme_ib_tuser(7)
-         1 top.hw_top.kme_ob_tready
-=========================================================================
-
-
-xcProfiler report generated on: Thu Aug 15 14:07:50 2024
+xcProfiler report generated on: Tue Aug 20 11:34:13 2024
 
 =========================================================================
 
---- pollEmu PO usec: avg:13.40, max:5740.41, min:1.28 #polls:78219 (>1ms 2), tot:1.05s
+--- pollEmu PO usec: avg:20.24, max:5631.88, min:8.24 #polls:6637 (>1ms 1), tot:0.13s
 ======================================================
 	get resource usage report
 ------------------------------------------------------
-user time used: 1.52 sec
-system time used: 0.07 sec
-maximum resident set size: 569732 (712)
+user time used: 0.41 sec
+system time used: 0.11 sec
+maximum resident set size: 636508 (63228)
 integral shared memory size: 0
 integral unshared data size: 0
 integral unshared stack size: 0
-page reclaims: 434
+page reclaims: 16010
 page faults: 0
 swaps: 0
-block input operations: 32
-block output operations: 48
+block input operations: 24
+block output operations: 16
 messages sent: 0
 messages received: 0
 signals received: 0
-voluntary context switches: 161
-involuntary context switches: 2
+voluntary context switches: 199
+involuntary context switches: 1
 ======================================================
 
 ================= xcib statistics ====================
                    UART     BYPASS           
       thread      count      count   cpu time
 --------------------------------------------------------
-        main          0          0       2.05
+        main      13403          0       0.94
 --------------------------------------------------------
 
 xcmempio = 0.
 
-Log end: Thu Aug 15 14:07:50 2024
+Log end: Tue Aug 20 11:34:13 2024
 

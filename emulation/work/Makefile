@@ -7,4 +7,4 @@ ixcom_compile: clocks_compile
 clocks_compile: 
 	ixclkgen -input clocks.qel -output clk.sv -module _ixc_clkgen
 run: 
-	xeDebug --ncsim  +xcprof -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_0\" -- run.qel

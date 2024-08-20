@@ -1,15 +1,5 @@
 module hw_top (
-    wire rst_n,
-
     wire kme_ib_tready,
-    wire [`AXI_S_TID_WIDTH-1:0]  kme_ib_tid,
-    wire [`AXI_S_DP_DWIDTH-1:0]  kme_ib_tdata,
-    wire [`AXI_S_TSTRB_WIDTH-1:0] kme_ib_tstrb,
-    wire [`AXI_S_USER_WIDTH-1:0] kme_ib_tuser,
-    wire                         kme_ib_tvalid,
-    wire                         kme_ib_tlast,
-
-    wire kme_ob_tready,
     wire [`AXI_S_TID_WIDTH-1:0]  kme_ob_tid,
     wire [`AXI_S_DP_DWIDTH-1:0]  kme_ob_tdata,
     wire [`AXI_S_TSTRB_WIDTH-1:0] kme_ob_tstrb,
@@ -21,6 +11,14 @@ module hw_top (
     logic dut_clk;
     wire buff_clk;
 
+    logic [`AXI_S_TID_WIDTH-1:0]  kme_ib_tid;
+    logic [`AXI_S_DP_DWIDTH-1:0]  kme_ib_tdata;
+    logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ib_tstrb;
+    logic [`AXI_S_USER_WIDTH-1:0] kme_ib_tuser;
+    logic                         kme_ib_tvalid;
+    logic                         kme_ib_tlast;
+    logic kme_ob_tready;
+
     wire [`N_RBUS_ADDR_BITS-1:0] kme_apb_paddr;
     wire                         kme_apb_psel;
     wire                         kme_apb_penable;
@@ -29,6 +27,8 @@ module hw_top (
     wire [`N_RBUS_DATA_BITS-1:0] kme_apb_prdata;
     wire                         kme_apb_pready;		        
     wire                         kme_apb_pslverr;
+
+    logic rst_n;
 
     cr_kme kme_dut(
 		  .kme_ib_tready(kme_ib_tready), 
@@ -85,12 +85,16 @@ module hw_top (
                 .pwrite(kme_apb_pwrite)
                 );
 
-    task commit_kme_cfg_txn(input logic[7:0] operation, input logic[31:0] address, input logic[31:0] data, input logic[31:0] str_get, input int num_errors);
+   //localparam BUFLEN = 10000;
+   //typedef struct {logic}
+   //int ibuff[0:BUFLEN-1];
+
+    task commit_kme_cfg_txn(input logic[7:0] operation, input logic[31:0] address, input logic[31:0] data, input logic[31:0] str_get);
       reg [31:0]     returned_data;
       reg            response;
       if ( str_get == 3 && (operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
             if ( operation == "r" || operation == "R" ) begin
-               top.hw_top.apb_xactor.read(address, returned_data, response);
+               apb_xactor.read(address, returned_data, response);
                if ( response !== 0 ) begin
                   $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the READ operation to address 0x%h\n\n",
                                        $time, address );
@@ -98,13 +102,10 @@ module hw_top (
                end
                if ( returned_data !== data ) begin
                   $display ("APB_ERROR:  @time:%-d   Data MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, returned_data, data ); 
-                  ++num_errors;
-                  if ( num_errors > 10 ) begin
                   $finish;
-                  end
                end
             end else begin
-               top.hw_top.apb_xactor.write(address, data, response);
+               apb_xactor.write(address, data, response);
                if ( response !== 0 ) begin
                   $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the WRITE operation to address 0x%h\n\n",
                                        $time, address );
@@ -123,13 +124,150 @@ module hw_top (
             @(posedge buff_clk);
         end
     endtask : wait_cycles
-    
+
+    task wait_cycles_ob(input logic [31:0] cnt);
+        repeat(cnt) begin
+            @(posedge buff_clk);
+        end
+    endtask : wait_cycles_ob
+
+    task write_rst_n(input bit value);
+      rst_n <= value;
+    endtask : write_rst_n
+
+    task write_kme_ib_tid(input [`AXI_S_TID_WIDTH-1:0] value);
+      kme_ib_tid <= value;
+    endtask : write_kme_ib_tid
+
+    task write_kme_ib_tdata(input [`AXI_S_DP_DWIDTH-1:0] value);
+      kme_ib_tdata <= value;
+    endtask : write_kme_ib_tdata
+
+    task write_kme_ib_tstrb(input [`AXI_S_TSTRB_WIDTH-1:0] value);
+      kme_ib_tstrb <= value;
+    endtask : write_kme_ib_tstrb
+
+    task write_kme_ib_tuser(input [`AXI_S_USER_WIDTH-1:0] value);
+      kme_ib_tuser <= value;
+    endtask : write_kme_ib_tuser
+
+    task write_kme_ib_tvalid(input value);
+      kme_ib_tvalid <= value;
+    endtask : write_kme_ib_tvalid
+
+    task write_kme_ib_tlast(input value);
+      kme_ib_tlast <= value;
+    endtask : write_kme_ib_tlast
+
+    task write_kme_ob_tready(input value);
+      kme_ob_tready <= value;
+    endtask : write_kme_ob_tready
+
+    task reset_dut();
+      rst_n <= 0;
+      $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
+      repeat(100)
+        @(posedge buff_clk);
+      
+      kme_ib_tid <= 0;
+      kme_ib_tvalid <= 0;
+      kme_ib_tlast <= 0;
+      kme_ib_tdata <= 0;
+      kme_ib_tstrb <= 0;
+      kme_ib_tuser <= 0;
+      kme_ob_tready <= 1;
+
+      repeat(50)
+        @(posedge buff_clk);
+
+      $display("--- \"rst_n\" has been DE-ASSERTED! ---");
+
+      rst_n <= 1;
+
+      repeat(101)
+        @(posedge buff_clk);
+    endtask : reset_dut
+
+    logic saw_mega;
+    logic saw_guid_tlv;
+    logic have_guid_tlv;
+    logic mega_tlv_word_count;
+
+    task reset_ib_regs();
+      saw_mega <= 0;
+      saw_guid_tlv <= 0;
+      have_guid_tlv <= 0;
+      mega_tlv_word_count <= 0;
+      @(posedge buff_clk);
+    endtask : reset_ib_regs
+
+    task service_ib_txn(
+      input reg [7:0]      tstrb,
+      input reg [63:0]     tdata,
+      input reg [7:0]      tuser_int,
+      input integer        str_get);
+
+      if ( str_get >= 2 ) begin
+         if ( str_get == 3 ) begin
+            if ( tuser_int == 8'h01 && tdata[7:0] >= 8'd21 ) begin
+               saw_mega = 1;
+            end 
+            else if(tdata[7:0] == 8'd10) begin
+               saw_guid_tlv = 1;
+            end
+            if (saw_mega == 1 ) begin
+               mega_tlv_word_count = mega_tlv_word_count + 1;
+               if(mega_tlv_word_count == 2) begin
+                  $display("mega tlv word #2: %x", tdata);
+                  if(tdata[4] == 1) begin
+                     have_guid_tlv = 1;
+                  end
+               end
+            end
+            if ( tuser_int == 8'h02 && saw_mega == 1 ) begin
+               if( have_guid_tlv == 0 ) begin
+                  kme_ib_tlast <= 1;
+               end
+               saw_mega = 0;
+            end
+            else if(tuser_int == 8'h02 && saw_guid_tlv == 1) begin
+               kme_ib_tlast <= 0;
+               saw_guid_tlv = 0;
+            end
+            kme_ib_tuser <= tuser_int;
+         end else begin
+            kme_ib_tuser <= 0;
+         end
+         kme_ib_tvalid <= 1;
+         kme_ib_tdata <= tdata;
+         kme_ib_tstrb <= tstrb;
+      end else begin
+         kme_ib_tvalid <= 0;
+      end
+
+   endtask : service_ib_txn
+
     assign buff_clk = dut_clk;
     initial begin
-        $export_read(buff_clk);
+        //$export_read(buff_clk);
+        $export_read(kme_ib_tready);
         $ixc_ctrl("tb_export", "wait_cycles");
-        $ixc_ctrl("tb_export", "commit_kme_cfg_txn");
-        $ixc_ctrl("tb_import", "$display");
+        $ixc_ctrl("tb_export", "wait_cycles_ob");
+        $ixc_ctrl("sfifo", "commit_kme_cfg_txn");
+        $ixc_ctrl("tb_export", "write_rst_n");
+        $ixc_ctrl("tb_export", "reset_dut");
+        $ixc_ctrl("tb_export", "service_ib_txn");
+        $ixc_ctrl("tb_export", "reset_ib_regs");
+
+        $ixc_ctrl("tb_export", "write_kme_ib_tid");
+        $ixc_ctrl("tb_export", "write_kme_ib_tdata");
+        $ixc_ctrl("tb_export", "write_kme_ib_tstrb");
+        $ixc_ctrl("tb_export", "write_kme_ib_tuser");
+        $ixc_ctrl("tb_export", "write_kme_ib_tvalid");
+        $ixc_ctrl("tb_export", "write_kme_ib_tlast");
+        $ixc_ctrl("tb_export", "write_kme_ob_tready");
+
+        $ixc_ctrl("gfifo", "$display");
         $ixc_ctrl("tb_import", "$finish");
     end
     

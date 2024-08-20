@@ -1,0 +1,168 @@
+Log started on host: hsv-sc22 pid: 374 at: Tue Aug 20 11:09:50 2024
+
+libxcrt IXCOM, V23.03.131.s001             (compiled with XCELIUM-22.09-s001, loaded with  XCELIUM-23.03-s001)
+
+INFO: target platform:Z2, execution platform:Z2
+--- xc status: @ simTime=0 FS, IN SOFTWARE MODE going to be IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=0 FS, IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=374745 NS (End-Of-Simulation), IN TBRUN MODE, xt0, zt0.
+
+=========================================================================
+IXCOM Performance and Design Profile
+-------------------------------------------------------------------------
+--- Maximum HW operating speed (compiler fclk freq): 3156.00 KHz
+--- HW executed total fclk cycles  (      814016 ) : time = 0.26 sec, (cfclks/fclks: 11.25%)
+--- Clocking Mode: Default (2X).
+
+--- HW execution command line session time: 0.39 sec (0.18 CPU sec)
+
+--- HW execution wall clock time          : 0.27 sec (0.18 CPU sec)
+--- HW execution emulator busy time       : 0.03 sec (10.88%)
+
+--- Simulation acceleration speed achieved: 281.00 KHz (281000.69 evals/sec)
+
+--- HW executed
+    --      91598 ECM controlled fclk cycles      @ 343.42 KHz (343421.54 cfclks/sec)
+    --      74949 Eval (or sim-timestep) cycles   @ 281.00 KHz (281000.69 evals/sec)
+
+       --       6516 Behavioral-eval cycles                : 0.00 sec (0.77% total)
+               |--       6516 Beh logic : 0.00 sec (0.77% total)
+
+--- Total number of HW-SW Synchronizations(tbSyncs) : 3377 (22.19 evals/tbSync)
+    |-- Synchronizations due to tbcalls(tbcallSyncs): 3377 (22.19 evals/tbcallSync)
+
+
+--- xc Profile: (%)
+	    45.10    HW-EMU-TBRUN (Elapsed: 0.12 sec)
+
+	    38.24          SW-SIM (Elapsed: 0.10 sec)
+	                    |----  MARG (35.90 %, 0.04 sec)
+
+	    16.67         XCRT-OH (Elapsed: 0.04 sec)
+
+
+	--- HW-EMU     : HW evaluations and Synchronization Latency.
+	--- SW-SIM     : TB and TBCall execution in sw simulator.
+	--- XCRT-OH    : IXCOM runtime overhead.
+
+
+--- Primary Inputs  (bits): INPUT(0) FORCE(0)DEPOSIT(20 :dut=2 + dpi=18 + ixcom=0).
+--- Primary Outputs (bits): OUTPUT(171 :dut=84  dpi=84 + ixcom=3).
+=========================================================================
+
+=========================================================================
+	Behavioral evals statistics:
+-------------------------------------------------------------------------
+  BevCount     BpHalt Scope
+-------------------------------------------------------------------------
+      3258          0 top.hw_top
+      3258          0 top.hw_top.apb_xactor
+=========================================================================
+
+
+=========================================================================
+--- Synchronizations due to TB/DPI/SVA/SysTask calls (tbcallSyncs): 3377.
+
+-------------------------------------------------------------------------
+	TBCALL statistics: 3377 tb-calls
+-------------------------------------------------------------------------
+     Count Scope
+-------------------------------------------------------------------------
+      3377 IXC_GFIFO.OSF.OSF_flushAll
+              Loc: (/lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCSF.sv, 268)
+
+
+-------------------------------------------------------------------------
+    Synchronous task and function call profile, Total #calls = 3392
+-------------------------------------------------------------------------
+     Count Scope
+-------------------------------------------------------------------------
+      3258 top.hw_top.commit_kme_cfg_txn (task, tb_export:tb_mem, iArgW=136, oArgW=0)
+              Total life-time = 0.14 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 88)
+
+        87 top.hw_top.wait_cycles_ob (task, tb_export:tb_mem, iArgW=32, oArgW=0)
+              Total life-time = 0.02 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 127)
+
+        16 top.hw_top.wait_cycles (task, tb_export:tb_mem, iArgW=32, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 121)
+
+        14 top.hw_top.write_kme_ib_tlast (task, tb_export:tb_mem, iArgW=8, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 157)
+
+        12 top.hw_top.service_ib_txn (task, tb_export:tb_mem, iArgW=112, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 203)
+
+         2 top.hw_top.write_kme_ib_tvalid (task, tb_export:tb_mem, iArgW=8, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 153)
+
+         1 top.hw_top.reset_ib_regs (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 195)
+
+         1 top.hw_top._zyifsynp_disptf5 (func, tb_import:tb_mem, iArgW=0, oArgW=0)
+              Total time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 1)
+
+         1 top.hw_top._zyifsynp_disptf6 (func, tb_import:tb_mem, iArgW=0, oArgW=0)
+              Total time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 1)
+
+=========================================================================
+
+=========================================================================
+	Memory Writes statistics: 3389 mem writes
+-------------------------------------------------------------------------
+         Count           Bytes            sec     MB/sec  Name
+-------------------------------------------------------------------------
+          3389          105528         0.0580      1.821  IXCOM Generated Internal Memories
+-------------------------------------------------------------------------
+---       3389          105528         0.0580      1.821  Total
+=========================================================================
+
+=========================================================================
+	Output event statistics: 12 output events
+-------------------------------------------------------------------------
+     Count Name
+-------------------------------------------------------------------------
+         4 top.hw_top.kme_ob_tvalid
+         3 top.hw_top.kme_ob_tdata
+         3 top.hw_top.kme_ob_tuser
+         1 top.hw_top.kme_ob_tstrb
+         1 top.hw_top.kme_ob_tlast
+=========================================================================
+
+
+xcProfiler report generated on: Tue Aug 20 11:10:05 2024
+
+=========================================================================
+
+--- pollEmu PO usec: avg:20.27, max:4973.17, min:10.31 #polls:3378 (>1ms 1), tot:0.07s
+======================================================
+	get resource usage report
+------------------------------------------------------
+user time used: 0.18 sec
+system time used: 0.03 sec
+maximum resident set size: 570000 (700)
+integral shared memory size: 0
+integral unshared data size: 0
+integral unshared stack size: 0
+page reclaims: 363
+page faults: 0
+swaps: 0
+block input operations: 32
+block output operations: 16
+messages sent: 0
+messages received: 0
+signals received: 0
+voluntary context switches: 189
+involuntary context switches: 0
+======================================================
+
+================= xcib statistics ====================
+                   UART     BYPASS           
+      thread      count      count   cpu time
+--------------------------------------------------------
+        main          0          0       0.67
+--------------------------------------------------------
+
+xcmempio = 0.
+
+Log end: Tue Aug 20 11:10:05 2024
+

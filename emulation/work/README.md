@@ -1,6 +1,6 @@
 # 1: Dry run in Palladium: DUT running in the emulator and the Testbench running in software.
 
-My approach was as follows. In order get get the DUT running on the emulator, I needed to run vlan to parse the verilog files and then ixcom in order to actually compile the design. Looking through the dv/KME/run directory, I saw a kme.vlist file which looked like a series of options to pass to vlan in order to analyze the design. Running `vlan -sv -f kme.vlist` gave me some warnings and errors in the design rtl. Here are the following changes I made to the rtl to remove warnings and errors.
+My approach was as follows. In order get get the DUT running on the emulator, I needed to run vlan to analyze the verilog files and then ixcom in order to actually compile the design. Looking through the dv/KME/run directory, I saw a kme.vlist file which looked like a series of options to pass to vlan in order to analyze the design. Running `vlan -sv -f kme.vlist` gave me some warnings and errors in the design rtl. Here are the following changes I made to the rtl to remove warnings and errors.
 
 In cr_kme_core_glue.v, I commented out an always block that was never executing. In cr_kme_tlv_parser, I changed some calls to $fatal to include the first argument. In cr_kme_PKG.svp, I removed the line importing cr_kme.vh as this was causing a circular import. In kme_tb.v, I commented out a section of code that utilized synopsis specific $ commands like `fsdbDumpfile` and `vcdpluson` which seem to enable waveform dumping. I also had to change `operation !== "#"` to `operation != "#"`. I added a line with `kme_tb_config_path = getenv("DV_ROOT");` to be able to read the test config files from the emulation directory.
 
@@ -19,5 +19,11 @@ How we can improve the numbers is by moving to a different form of testing than 
 Make an export task in hw_top to wait a certain number of cycles. Moved the apb_xactor to be in hardware and exported the read and write task to the testbench
 
 # 4: Implement TBA (Transaction Based Acceleration) on the testbench.
+
+3258 top.hw_top.commit_kme_cfg_txn (task, tb_export:tb_mem, iArgW=136, oArgW=0)
+              Total life-time = 0.14 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 88)
+
+Moving $display in hw_top to use gfifo: sim acc -> 163.30
+
 # 5: Extra 1: use CAKE 1X clock.
 # 6: Extra 2: Implement Regression Test

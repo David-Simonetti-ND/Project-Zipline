@@ -12,18 +12,7 @@
 // use getenv to get path to tb config files
 import "DPI-C" function string getenv(input string env_name);
 
-module kme_tb (input wire clk,
-               output logic rst_n,
-
-               input logic kme_ib_tready,
-               output logic [`AXI_S_TID_WIDTH-1:0]  kme_ib_tid,
-               output logic [`AXI_S_DP_DWIDTH-1:0]  kme_ib_tdata,
-               output logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ib_tstrb,
-               output logic [`AXI_S_USER_WIDTH-1:0] kme_ib_tuser,
-               output logic                         kme_ib_tvalid,
-               output logic                         kme_ib_tlast,
- 
-               output logic kme_ob_tready,
+module kme_tb (input logic kme_ib_tready,
                input logic [`AXI_S_TID_WIDTH-1:0]  kme_ob_tid,
                input logic [`AXI_S_DP_DWIDTH-1:0]  kme_ob_tdata,
                input logic [`AXI_S_TSTRB_WIDTH-1:0] kme_ob_tstrb,
@@ -43,47 +32,24 @@ module kme_tb (input wire clk,
    initial begin
 
       error_cntr = 0;
-
-      rst_n = 1'b0; 
       
       if( $test$plusargs("SEED") ) begin
          void'($value$plusargs("SEED=%d", seed));
       end else begin
-	 seed="1";	
+	      seed="1";	
       end
       
       if( $test$plusargs("TESTNAME") ) begin
          void'($value$plusargs("TESTNAME=%s", testname));
          $display("TESTNAME=%s SEED=%s", testname, seed);
       end else begin
-	 testname="kme_key_type_0";	
-      end
-      
-      if ( $test$plusargs("waves") ) begin
+	      testname="kme_key_type_0";	
       end
 
       kme_tb_config_path = getenv("DV_ROOT");
       $display("Using tb config path = %s", kme_tb_config_path);
 
-      $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
-
-      top.hw_top.wait_cycles(100);
-
-      kme_ib_tid <= 0;
-      kme_ib_tvalid <= 0;
-      kme_ib_tlast <= 0;
-      kme_ib_tdata <= 0;
-      kme_ib_tstrb <= 0;
-      kme_ib_tuser <= 0;
-      kme_ob_tready <= 1;
-
-      top.hw_top.wait_cycles(50);
-
-      $display("--- \"rst_n\" has been DE-ASSERTED! ---");
-
-      rst_n = 1'b1; 
-
-      top.hw_top.wait_cycles(101);
+      top.hw_top.reset_dut();
 
       do_kme_config();
 
@@ -98,9 +64,9 @@ module kme_tb (input wire clk,
 
 
       if ( error_cntr ) begin
-	 $display("\nTest %s FAILED!\n", testname);
+	      $display("\nTest %s FAILED!\n", testname);
       end else begin
-	 $display("\nTest %s PASSED!\n", testname);
+	      $display("\nTest %s PASSED!\n", testname);
       end
 
       top.hw_top.wait_cycles(10);
@@ -128,9 +94,9 @@ module kme_tb (input wire clk,
 
       while( !$feof(file_descriptor) ) begin
          if ( $fgets(vector,file_descriptor) ) begin
-                  $display ("APB_INFO:  @time:%-d vector --> %s", $time, vector );
-                  str_get = $sscanf(vector, "%c 0x%h 0x%h", operation, address, data);
-                  top.hw_top.commit_kme_cfg_txn(operation, address, data, str_get, error_cntr);      
+               $display ("APB_INFO:  @time:%-d vector --> %s", $time, vector );
+               str_get = $sscanf(vector, "%c 0x%h 0x%h", operation, address, data);
+               top.hw_top.commit_kme_cfg_txn(operation, address, data, str_get);      
          end
       end
 
@@ -140,20 +106,15 @@ module kme_tb (input wire clk,
    endtask // do_kme_config   
 
    task service_ib_interface();
-      reg[7:0]       tstrb;
+      reg [7:0]      tstrb;
       reg [63:0]     tdata;
       string         tuser_string;
+      reg [7:0]      tuser_int;
       string         file_name;
       string         vector;
       integer        str_get;
       integer        file_descriptor; 
-      logic 	     saw_mega;
-      logic 	     saw_guid_tlv;
-      logic 	     have_guid_tlv;
-      integer 	     mega_tlv_word_count;
       
-      
-
       file_name = $psprintf("%s/KME/tests/%s.inbound", kme_tb_config_path, testname);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
@@ -163,72 +124,31 @@ module kme_tb (input wire clk,
 	      $display ("INBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
       end
 
-      saw_mega = 0;
-      saw_guid_tlv = 0;
-      mega_tlv_word_count = 0;
-      have_guid_tlv = 0;
+      top.hw_top.reset_ib_regs();
       
       while( !$feof(file_descriptor) ) begin
-         if ( kme_ib_tready === 1'b1 ) begin
-            kme_ib_tlast <= 1'b0;
+         if ( top.hw_top.kme_ib_tready === 1'b1 ) begin
+            top.hw_top.write_kme_ib_tlast(0);
             if ( $fgets(vector,file_descriptor) ) begin
+               $display ("INBOUND_INFO:  @time:%-d vector --> %s", $time, vector ); 
                str_get = $sscanf(vector, "0x%h %s 0x%h", tdata, tuser_string, tstrb);
-               if ( str_get >= 2 ) begin
-                  $display ("INBOUND_INFO:  @time:%-d vector --> %s", $time, vector ); 
-                  if ( str_get == 3 ) begin
-                     if ( tuser_string == "SoT" && tdata[7:0] >= 8'd21 ) begin
-                        saw_mega = 1;
-                     end 
-                     else if(tdata[7:0] == 8'd10) begin
-                        saw_guid_tlv = 1;
-                     end
-                     if (saw_mega == 1 ) begin
-                        mega_tlv_word_count = mega_tlv_word_count + 1;
-                        if(mega_tlv_word_count == 2) begin
-                           $display("mega tlv word #2: %x", tdata);
-                           if(tdata[4] == 1) begin
-                              have_guid_tlv = 1;
-                           end
-                        end
-                     end
-                     if ( tuser_string == "EoT" && saw_mega == 1 ) begin
-                        if( have_guid_tlv == 0 ) begin
-                           kme_ib_tlast <= 1'b1;
-                        end
-                        saw_mega = 0;
-                     end
-                     else if(tuser_string == "EoT" && saw_guid_tlv == 1) begin
-                        kme_ib_tlast <= 1'b1;
-                        saw_guid_tlv = 0;
-                     end
-                     kme_ib_tuser <= translate_tuser( tuser_string );
-                  end else begin
-                     kme_ib_tuser <= 8'h00;
-                  end
-                  kme_ib_tvalid <= 1'b1;
-                  kme_ib_tdata <= tdata;
-                  kme_ib_tstrb <= tstrb;
-                  end else begin
-                     kme_ib_tvalid <= 1'b0;
-                  end
+               tuser_int = translate_tuser(tuser_string);
+               top.hw_top.service_ib_txn(tstrb, tdata, tuser_int, str_get);
             end else begin
-               kme_ib_tvalid <= 1'b0;
+               top.hw_top.write_kme_ib_tvalid(0);
             end
          end
-         @(posedge clk);
+         top.hw_top.wait_cycles(1);
       end
 
-      kme_ib_tvalid <= 1'b0;
-      kme_ib_tlast <= 1'b0;
+      top.hw_top.write_kme_ib_tvalid(0);
+      top.hw_top.write_kme_ib_tlast(0);
 
-      @(posedge clk);
+      top.hw_top.wait_cycles(1);
 
       $display ("INBOUND_INFO:  @time:%-d Exiting INBOUND thread...", $time );
 
    endtask // service_ib_interface
-
-
-
 
    task service_ob_interface();
       reg[7:0]       tstrb;
@@ -252,10 +172,10 @@ module kme_tb (input wire clk,
       file_name = $psprintf("%s/KME/tests/%s.outbound", kme_tb_config_path, testname);
       file_descriptor = $fopen(file_name, "r");
       if ( file_descriptor == 0 ) begin
-	 $display ("OUTBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
-	 $finish;
+	      $display ("OUTBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
+	      $finish;
       end else begin
-	 $display ("OUTBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
+	      $display ("OUTBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
       end
 
       saw_cqe = 0;
@@ -263,73 +183,71 @@ module kme_tb (input wire clk,
       got_next_line = 0; 
       watchdog_timer = 0;
       while( !$feof(file_descriptor) ) begin
-	 if ( kme_ob_tvalid === 1'b1 ) begin
+         if ( kme_ob_tvalid === 1'b1 ) begin
             watchdog_timer = 0;
             tlast = 1'b0;
             ignore_compare_result = 0;
             if ( got_next_line == 1 || $fgets(vector,file_descriptor) ) begin
                got_next_line = 0;
                while ( vector[0] === "#" && !$feof(file_descriptor) ) begin
-		  rc = $fgets(vector,file_descriptor);
+                  rc = $fgets(vector,file_descriptor);
                end
                $display ("OUTBOUND_INFO:  @time:%-d vector --> %s", $time, vector );
                str_get = $sscanf(vector, "0x%h %s 0x%h", tdata, tuser_string, tstrb);
-	       //        $display ("OUTBOUND_INFO:  @time:%-d parsed vector --> 0x%h %s 0x%h %d", $time, tdata, tuser_string, tstrb, str_get ); 
                if ( str_get == 3 ) begin
-		  tuser = translate_tuser( tuser_string );
-		  if ( tuser_string == "SoT" && tdata[7:0] == 8'h09 ) begin
-		     saw_cqe = 1;
-		  end
-		  if ( tuser_string == "EoT") begin
-		     tlast = 1'b1;
-		     saw_cqe = 0;
-		     rc = $fgets(vector,file_descriptor);
-		     got_next_line = 1;
-		  end
-		  if ( tuser_string == "SoT" && tdata[7:0] == 8'h08 ) begin
-		     saw_stats = 1;
-		  end
-		  if ( tuser_string == "EoT" && saw_stats == 1 ) begin
-		     ignore_compare_result = 1;
-		     saw_stats = 0;
-		  end
+                  tuser = translate_tuser( tuser_string );
+                  if ( tuser_string == "SoT" && tdata[7:0] == 8'h09 ) begin
+                     saw_cqe = 1;
+                  end
+                  if ( tuser_string == "EoT") begin
+                     tlast = 1'b1;
+                     saw_cqe = 0;
+                     rc = $fgets(vector,file_descriptor);
+                     got_next_line = 1;
+                  end
+                  if ( tuser_string == "SoT" && tdata[7:0] == 8'h08 ) begin
+                     saw_stats = 1;
+                  end
+                  if ( tuser_string == "EoT" && saw_stats == 1 ) begin
+                     ignore_compare_result = 1;
+                     saw_stats = 0;
+                  end
                end else begin
-		  tuser = 8'h00;
+                  tuser = 8'h00;
                end
                if ( kme_ob_tdata !== tdata && ignore_compare_result == 0 ) begin
-		  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tdata MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tdata, tdata ); 
-		  ++error_cntr;
+                  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tdata MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tdata, tdata ); 
+                  ++error_cntr;
                end
                if ( kme_ob_tuser !== tuser ) begin
-		  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tuser MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tuser, tuser ); 
-		  ++error_cntr;
+                  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tuser MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tuser, tuser ); 
+                  ++error_cntr;
                end
                if ( kme_ob_tstrb !== tstrb ) begin
-		  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tstrb MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tstrb, tstrb ); 
-		  ++error_cntr;
+                  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tstrb MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tstrb, tstrb ); 
+                  ++error_cntr;
                end
                if ( kme_ob_tlast !== tlast ) begin
-		  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tlast MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tlast, tlast ); 
-		  ++error_cntr;
+                  $display ("OUTBOUND_ERROR:  @time:%-d   kme_ob_tlast MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, kme_ob_tlast, tlast ); 
+                  ++error_cntr;
                end
             end else begin
                ++error_cntr;
                $display ("\nOUTBOUND_FATAL:  @time:%-d  No corresponding expect vector!\n", $time ); 
                $finish;
             end
-	 end else begin
+         end else begin
             ++watchdog_timer;
             if ( watchdog_timer > 10000 ) begin
                ++error_cntr;
                $display ("\nOUTBOUND_ERROR:  @time:%-d  Watchdog timer EXPIRED!\n", $time ); 
                $finish;
             end
-	 end
-	 @(posedge clk);
+         end
+         top.hw_top.wait_cycles_ob(1);
       end
 
-
-      @(posedge clk);
+      top.hw_top.wait_cycles_ob(1);
 
       $display ("OUTBOUND_INFO:  @time:%-d Exiting OUTBOUND thread...", $time );
 
