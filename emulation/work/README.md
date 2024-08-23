@@ -24,6 +24,7 @@ Make an export task in hw_top to wait a certain number of cycles. Moved the apb_
               Total life-time = 0.14 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 88)
 
 Moving $display in hw_top to use gfifo: sim acc -> 163.30
+Moving commit_kme_cfg_txn to gfifo sim acc -> ~550
 
 # 5: Extra 1: use CAKE 1X clock.
 # 6: Extra 2: Implement Regression Test

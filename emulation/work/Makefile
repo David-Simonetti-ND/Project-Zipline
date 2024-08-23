@@ -7,4 +7,19 @@ ixcom_compile: clocks_compile
 clocks_compile: 
 	ixclkgen -input clocks.qel -output clk.sv -module _ixc_clkgen
 run: 
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_6\" -- run.qel
+run_all:
 	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_0\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_1\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_2\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_3\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_4\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_5\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_key_type_6\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_aux_cmd_guid_only\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_aux_cmd_iv_only\" -- run.qel
+	xeDebug --ncsim  +xcprof +TESTNAME=\"kme_aux_cmd_no_guid_or_iv\" -- run.qel
+clean:
+	ixcom -clean
+	xeDebug -clean
+	rm *.out *.key *.log *.msg
