@@ -19,8 +19,18 @@ module kme_tb ();
 
    string kme_tb_config_path;
 
-   initial begin
+   import "DPI-C" context task c_configure_kme(input string kme_tb_config_path);
+   import "DPI-C" context task c_service_ib_interface(input string kme_tb_config_path, input string testname);
+   import "DPI-C" context task c_service_ob_interface(input string kme_tb_config_path, input string testname);
+   export "DPI-C" task do_kme_config;
+   export "DPI-C" task c_commit_kme_cfg_txn;
+   export "DPI-C" task c_service_ib_interface_txn;
+   export "DPI-C" task c_service_ob_interface_txn;
 
+   bit tbs;
+   IXCtbsync tbsI(tbs); 
+
+   initial begin
       error_cntr = 0;
       
       if( $test$plusargs("SEED") ) begin
@@ -40,16 +50,26 @@ module kme_tb ();
       $display("Using tb config path = %s", kme_tb_config_path);
 
       top.hw_top.reset_dut();
-      do_kme_config();
 
-      fork
-         begin
-            service_ib_interface();
-         end
-         begin
-            service_ob_interface();
-         end
-      join
+      if( $test$plusargs("USE_DPI") ) begin
+         c_configure_kme(kme_tb_config_path);
+         fork
+            c_service_ib_interface(kme_tb_config_path, testname);
+            c_service_ob_interface(kme_tb_config_path, testname);
+         join
+      end 
+      else begin
+         do_kme_config();
+
+         fork
+            begin
+               service_ib_interface();
+            end
+            begin
+               service_ob_interface();
+            end
+         join
+      end
 
       if ( error_cntr ) begin
 	      $display("\nTest %s FAILED!\n", testname);
@@ -186,6 +206,18 @@ module kme_tb ();
          return 8'h03;
       end
    endfunction : translate_tuser
+
+   task c_commit_kme_cfg_txn(input byte operation, input int address, data, str_get);
+      top.hw_top.commit_kme_cfg_txn(operation, address, data, str_get);   
+   endtask : c_commit_kme_cfg_txn
+
+   task c_service_ib_interface_txn(input longint tdata, input byte tuser_int, input int tstrb, input int str_get);
+      top.hw_top.service_ib_txn(tstrb, tdata, tuser_int, str_get);   
+   endtask : c_service_ib_interface_txn
+
+   task c_service_ob_interface_txn(input longint tdata, input byte tuser_int, input int tstrb, input int str_get);
+      top.hw_top.service_ob_txn(tstrb, tdata, tuser_int, str_get);   
+   endtask : c_service_ob_interface_txn
 
    
 endmodule : kme_tb

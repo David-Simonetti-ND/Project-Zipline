@@ -1,5 +1,16 @@
 module hw_top ();
 
+   export "DPI-C" task reset_dut;
+   export "DPI-C" task commit_kme_cfg_txn;
+   export "DPI-C" task wait_for_cfg;
+   export "DPI-C" task c_wait_for_cfg;
+   export "DPI-C" task service_ib_txn;
+   export "DPI-C" task service_ob_txn;
+   export "DPI-C" task wait_for_ob;
+   export "DPI-C" task wait_for_ib;
+   export "DPI-C" task reset_ib_regs;
+   export "DPI-C" task reset_ob_regs;
+
    /* ################################################
       Internal wires for hardware
       ################################################ */
@@ -135,7 +146,7 @@ module hw_top ();
          str_get <= kme_cfg_buff[kme_cfg_rptr].str_get;
          kme_cfg_rptr = kme_cfg_rptr + 1;
          @(posedge buff_clk);
-         $display ("APB_INFO:  @time:%-d vector --> %c 0x%d 0x%d", $time, operation, address, data);
+         $display ("APB_INFO:  @time:%-d vector --> %c 0x%h 0x%h", $time, operation, address, data);
          if ( str_get == 3 && (operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
                if ( operation == "r" || operation == "R" ) begin
                   apb_xactor.read(address, returned_data, response);
@@ -169,6 +180,11 @@ module hw_top ();
       @(posedge buff_clk); 
       while (kme_cfg_rptr != kme_cfg_wptr) @(posedge buff_clk); 
    endtask : wait_for_cfg
+
+   task c_wait_for_cfg(input int num_txns);
+      @(posedge buff_clk); 
+      while (kme_cfg_rptr != num_txns) @(posedge buff_clk); 
+   endtask : c_wait_for_cfg
 
    /* ################################################
       Hardware logic for passing clk cycles
@@ -438,6 +454,7 @@ module hw_top ();
       $ixc_ctrl("tb_export", "reset_ib_regs");
       $ixc_ctrl("tb_export", "reset_ob_regs");
       $ixc_ctrl("tb_export", "wait_for_cfg");
+      $ixc_ctrl("tb_export", "c_wait_for_cfg");
       $ixc_ctrl("tb_export", "wait_for_ib");
 
       $ixc_ctrl("tb_export", "write_rst_n");
