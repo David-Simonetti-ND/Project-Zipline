@@ -1,0 +1,33 @@
+// Log started on host: sjcvl-simonett at : Tue Aug 27 13:19:04 2024
+ 
+
+******************************************************************************
+vlan IXCOM, V24.06.701.d000            
+Path - /lan/cva_rel/ixcom_main/24.06.701.d000/tools.lnx86/bin/64bit/vlan
+(c) 2024 Cadence Design Systems, Inc.  All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+******************************************************************************
+
+Executing ... vlan (64bit) - Mon Jun 24 00:04:36 PDT 2024
+
+Command Arguments:
+
+************************************************************
+System Configuration
+  Machine name:                              sjcvl-simonett
+  Number of processors in system:            4
+  Number of sockets in system:               7
+  CPU frequency:                             2294 MHz
+  L2 cache size:                             25344 kB
+  Total system memory:                       16266516 kB
+  Free system memory:                        7282672 kB
+************************************************************
+
+	Errors : 0 Warnings : 0 Info : 0
+
+ // Log end : Tue Aug 27 13:19:04 2024
+
+
+	vlan: cpu time = 0.01 sec, elapsed time = 0 sec
+	  peak virtual memory size = 72.98M bytes, peak resident memory size = 23.38M bytes
+	  heap memory size = 16.85M bytes

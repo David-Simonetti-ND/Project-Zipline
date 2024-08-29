@@ -27,7 +27,7 @@ module _ixc_clkgen;
 `ifdef IXCOM_COMPILE
   initial begin
     $ixc_ctrl("hotswap_top");
-    $ua_cmd("cakeClk", "top.hw_top.dut_clk", "ixcg_0", "100000kHz", "B2", "0");
+    $ua_cmd("cakeClk", "top.hw_top.dut_clk", "ixcg_0", "100000kHz", "B1", "0");
   end
 `endif
 endmodule // _ixc_clkgen

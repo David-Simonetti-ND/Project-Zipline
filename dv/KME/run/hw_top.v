@@ -179,6 +179,8 @@ module hw_top ();
    task wait_for_cfg();
       @(posedge buff_clk); 
       while (kme_cfg_rptr != kme_cfg_wptr) @(posedge buff_clk); 
+      kme_cfg_rptr = 0;
+      kme_cfg_wptr = 0;
    endtask : wait_for_cfg
 
    task c_wait_for_cfg(input int num_txns);

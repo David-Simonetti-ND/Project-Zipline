@@ -1,0 +1,185 @@
+Log started on host: hsv-sc21 pid: 26096 at: Mon Aug 26 13:40:42 2024
+
+libxcrt IXCOM, V23.03.131.s001             (compiled with XCELIUM-22.09-s001, loaded with  XCELIUM-23.03-s001)
+
+INFO: target platform:Z2, execution platform:Z2
+--- xc status: @ simTime=0 FS, IN SOFTWARE MODE going to be IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=0 FS, IN TBRUN MODE, xt0, zt0.
+--- xc status: @ simTime=440075 NS (End-Of-Simulation), IN TBRUN MODE, xt0, zt0.
+
+=========================================================================
+IXCOM Performance and Design Profile
+-------------------------------------------------------------------------
+--- Maximum HW operating speed (compiler fclk freq): 3156.00 KHz
+--- HW executed total fclk cycles  (      359919 ) : time = 0.11 sec, (cfclks/fclks: 26.27%)
+--- Clocking Mode: Default (2X).
+
+--- HW execution command line session time: 0.31 sec (0.05 CPU sec)
+
+--- HW execution wall clock time          : 0.12 sec (0.04 CPU sec)
+--- HW execution emulator busy time       : 0.03 sec (25.34%)
+
+--- Simulation acceleration speed achieved: 744.51 KHz (744513.69 evals/sec)
+
+--- HW executed
+    --      94546 ECM controlled fclk cycles      @ 799.76 KHz (799759.04 cfclks/sec)
+    --      88015 Eval (or sim-timestep) cycles   @ 744.51 KHz (744513.69 evals/sec)
+
+       --       6516 Behavioral-eval cycles                : 0.00 sec (1.75% total)
+               |--       6516 Beh logic : 0.00 sec (1.75% total)
+       --        176 Gfifo wait cycles           : 0.00 sec (0.05% total)
+               |--        176 Gfifo tbsync waits : 0.00 sec (0.05% total)
+
+       --       3327 Sfifo asyncCall idle cycles  : 0.00 sec (0.89% total)
+
+--- Total number of HW-SW Synchronizations(tbSyncs) : 5 (17603.00 evals/tbSync)
+    |-- Synchronizations due to tbcalls(tbcallSyncs): 5 (17603.00 evals/tbcallSync)
+
+
+--- xc Profile: (%)
+	    56.52         XCRT-OH (Elapsed: 0.07 sec)
+	                    |---- SFIFO (3.85 %, 0.00 sec)
+
+	    32.61    HW-EMU-TBRUN (Elapsed: 0.04 sec)
+	                    |---- GFIFO (73.33 %, 0.03 sec)
+	                             |-- GFIFO-DXFR (27.27 %, 0.01 sec)
+	                             |-- GFIFO-USER-CODE (54.55 %, 0.02 sec)
+
+	    10.87          SW-SIM (Elapsed: 0.01 sec)
+
+
+	--- XCRT-OH    : IXCOM runtime overhead.
+	--- HW-EMU     : HW evaluations and Synchronization Latency.
+	--- SW-SIM     : TB and TBCall execution in sw simulator.
+
+
+--- Primary Inputs  (bits): INPUT(0) FORCE(0)DEPOSIT(11 :dut=2 + dpi=9 + ixcom=0).
+--- Primary Outputs (bits): OUTPUT(78 :dut=0  dpi=75 + ixcom=3).
+=========================================================================
+
+=========================================================================
+	Behavioral evals statistics:
+-------------------------------------------------------------------------
+  BevCount     BpHalt Scope
+-------------------------------------------------------------------------
+      3258          0 top.hw_top
+      3258          0 top.hw_top.apb_xactor
+=========================================================================
+
+
+=========================================================================
+GFIFO (import) profile
+      Num read xfers = 721, Num bytes read = 105688, Time for read xfers = 0.01 sec (0.012 GBytes/sec)
+      Mem write wait time = 0.00 sec
+    3304 GFIFO functions executed in 0.01 sec
+-------------------------------------------------------------------------
+               Count    %1-way      Ave      Ave     Saved  Scope
+                               NB-Sfifo  B-Sfifo             
+-------------------------------------------------------------------------
+                3258  100.00%     0.00     0.00         0  top.hw_top._gfdL149_13_P0
+                  24  100.00%     0.00     0.00         0  top.hw_top._gfdL290_8_P0
+                  21  100.00%     0.00     0.00         0  top.hw_top._gfdL395_6_P0
+                   1  100.00%     0.00     0.00         0  top.hw_top._gfdL229_0_P0
+-------------------------------------------------------------------------
+---             3304  100.00%     0.00     0.00         0  Total
+-------------------------------------------------------------------------
+      Num polls = 723, Num bytes polled = 11568, Time for polls = 0.01 sec, Polling back off time = 0.00 sec
+      Ave poll time = 10.15 us, Min poll time = 7.59 us, Max poll time = 219.62 us
+      Polling distribution:
+          5.00 us to  10.00 us 481 polls
+         10.00 us to  15.00 us 215 polls
+         15.00 us to  20.00 us 19 polls
+         20.00 us to  25.00 us 4 polls
+         30.00 us to  35.00 us 2 polls
+         40.00 us to  45.00 us 1 polls
+        > 100.00 us            1 polls
+=========================================================================
+
+=========================================================================
+    SFIFO (export) profile
+    Total SFIFO flush time = 0.00 sec
+-------------------------------------------------------------------------
+               Count NB/B  Scope
+-------------------------------------------------------------------------
+                3258   NB  top.hw_top.commit_kme_cfg_txn
+                  24   NB  top.hw_top.service_ib_txn
+                  21   NB  top.hw_top.service_ob_txn
+-------------------------------------------------------------------------
+---             3303 Total
+-------------------------------------------------------------------------
+=========================================================================
+
+=========================================================================
+--- Synchronizations due to TB/DPI/SVA/SysTask calls (tbcallSyncs): 5.
+
+-------------------------------------------------------------------------
+	TBCALL statistics: 5 tb-calls
+-------------------------------------------------------------------------
+     Count Scope
+-------------------------------------------------------------------------
+         5 IXC_GFIFO.OSF.OSF_flushAll
+              Loc: (/lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCSF.sv, 268)
+
+
+-------------------------------------------------------------------------
+    Synchronous task and function call profile, Total #calls = 6
+-------------------------------------------------------------------------
+     Count Scope
+-------------------------------------------------------------------------
+         1 top.hw_top.wait_for_cfg (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.03 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 179)
+
+         1 top.hw_top.reset_dut (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 2.20 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 212)
+
+         1 top.hw_top.reset_ib_regs (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 261)
+
+         1 top.hw_top.wait_for_ib (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 335)
+
+         1 top.hw_top.reset_ob_regs (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 366)
+
+         1 top.hw_top.wait_for_ob (task, tb_export:tb_mem, iArgW=0, oArgW=0)
+              Total life-time = 0.00 sec,  Loc:(/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v, 434)
+
+=========================================================================
+
+xcProfiler report generated on: Mon Aug 26 13:40:52 2024
+
+=========================================================================
+
+--- pollEmu PO usec: avg:22.04, max:49.67, min:12.45 #polls:10 (>1ms 0), tot:0.00s
+======================================================
+	get resource usage report
+------------------------------------------------------
+user time used: 0.05 sec
+system time used: 0.09 sec
+maximum resident set size: 636684 (63036)
+integral shared memory size: 0
+integral unshared data size: 0
+integral unshared stack size: 0
+page reclaims: 15927
+page faults: 0
+swaps: 0
+block input operations: 24
+block output operations: 16
+messages sent: 0
+messages received: 0
+signals received: 0
+voluntary context switches: 154
+involuntary context switches: 0
+======================================================
+
+================= xcib statistics ====================
+                   UART     BYPASS           
+      thread      count      count   cpu time
+--------------------------------------------------------
+        main       3037          0       0.57
+--------------------------------------------------------
+
+xcmempio = 0.
+
+Log end: Mon Aug 26 13:40:52 2024
+

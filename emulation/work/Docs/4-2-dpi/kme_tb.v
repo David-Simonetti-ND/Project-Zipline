@@ -30,17 +30,6 @@ module kme_tb ();
    bit tbs;
    IXCtbsync tbsI(tbs); 
 
-   string all_test_files [] = {  "kme_key_type_0", 
-                                 "kme_key_type_1", 
-                                 "kme_key_type_2", 
-                                 "kme_key_type_3",
-                                 "kme_key_type_4",
-                                 "kme_key_type_5",
-                                 "kme_key_type_6",
-                                 "kme_aux_cmd_guid_only",
-                                 "kme_aux_cmd_iv_only",
-                                 "kme_aux_cmd_no_guid_or_iv"};
-
    initial begin
       error_cntr = 0;
       
@@ -60,33 +49,9 @@ module kme_tb ();
       kme_tb_config_path = getenv("DV_ROOT");
       $display("Using tb config path = %s", kme_tb_config_path);
 
-      
+      top.hw_top.reset_dut();
 
-      if( $test$plusargs("REGRESSION") ) begin
-         for (int i = 0; i < $size(all_test_files); i++) begin
-            testname = all_test_files[i];
-            $display("REGRESSION: Starting test %s", testname);
-            $display("REGRESSION: Resetting DUT");
-            top.hw_top.reset_dut();
-
-            $display("REGRESSION: Starting kme config");
-            do_kme_config();
-
-            $display("REGRESSION: Starting ib/ob servicing");
-            fork
-               begin
-                  service_ib_interface();
-               end
-               begin
-                  service_ob_interface();
-               end
-            join
-
-            $display("REGRESSION: Test %s PASSED", testname);
-         end
-      end
-      else if( $test$plusargs("USE_DPI") ) begin
-         top.hw_top.reset_dut();
+      if( $test$plusargs("USE_DPI") ) begin
          c_configure_kme(kme_tb_config_path);
          fork
             c_service_ib_interface(kme_tb_config_path, testname);
@@ -94,7 +59,6 @@ module kme_tb ();
          join
       end 
       else begin
-         top.hw_top.reset_dut();
          do_kme_config();
 
          fork
