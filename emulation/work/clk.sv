@@ -2,7 +2,7 @@
 // This is an auto-generated file using the ixclkgen utility
 //
 // Command-line specified:
-//   ixclkgen -input clocks.qel  -output clk.sv  -module _ixc_clkgen 
+//   ixclkgen -ptm -input clocks.qel  -output clk.sv  -module _ixc_clkgen 
 //
 // NOTE: Please refer to product user guide for clock modeling in IXCOM. Try:
 //   ixclkgen -help
@@ -19,7 +19,9 @@ module _ixc_clkgen;
 `endif
 
   // Generate logic for clock sources
-  ixc_master_clock #(5) ixcg_0(dut_clk_0  );
+  wire bridge_w;
+  ixc_master_clock #(5) ixcg_0(bridge_w);
+  IXCclkgen_PTM ixcg_0_ptm(dut_clk_0, bridge_w);
 
   // Bind clock sources to generated clock signal
   ixc_cakebind ixcb_0 (top.hw_top.dut_clk, dut_clk_0);

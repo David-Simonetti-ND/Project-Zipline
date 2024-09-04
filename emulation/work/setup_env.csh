@@ -9,7 +9,8 @@ endif
 ## path to VXE
 ## modify accordingly
 # setenv VXE_HOME /lan/cva_rel/23h1_vxe/23.03_latest
-setenv WXE_HOME /lan/cva_rel/23h1_wxe/23.03.078.s000
+# setenv WXE_HOME /lan/cva_rel/23h1_wxe/23.03.078.s000
+setenv WXE_HOME /lan/cva_rel/23h1_wxe/23.03.131.s001
 setenv XEHOME ${WXE_HOME}
 setenv AXIS_HOME ${WXE_HOME}/tools.lnx86
 ## end modify accordingly
@@ -77,6 +78,7 @@ setenv AEWARE_SCRIPT /home/jerson/cake_goodies/sep20
 ## path allocations
 setenv PATH ${AXIS_HOME}/bin:${PATH}
 setenv PATH ${IXCOM_HOME}/bin:${PATH}
+setenv PATH ${WXE_HOME}/tools.lnx86/bin:${PATH}
 setenv PATH ${HDLICE_HOME}/bin:${PATH}
 setenv PATH ${LDVHOME}/tools/bin/64bit:${PATH}
 setenv PATH ${LDVHOME}/tools/systemc/gcc/9.3/bin/:${PATH}
@@ -107,7 +109,7 @@ setenv LD_LIBRARY_PATH ${XLMHOME}/tools/systemc/gcc/9.3/install/lib:${LD_LIBRARY
 
 #LSF
 #source /grid/sfi/lsf/cva/conf/cshrc.lsf
-source /grid/sfi/farm/hsvlsf01/conf/cshrc.lsf
+#source /grid/sfi/farm/hsvlsf01/conf/cshrc.lsf
 
 #source ~/VXE_configs/commons.csh
 

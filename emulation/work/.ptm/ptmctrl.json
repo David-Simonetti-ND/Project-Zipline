@@ -1,0 +1,70 @@
+{
+	"ptmctrl" : 
+	{
+		"ModuleCurrent" : 
+		{
+			"COMPSTAT" : "ENVRN",
+			"IVALUE" : 8,
+			"SVALUE" : "None"
+		},
+		"ModuleLast" : 
+		{
+			"COMPSTAT" : "ENVRN",
+			"IVALUE" : 8,
+			"SVALUE" : "OTHER:libfpgaDBPrep"
+		},
+		"ModuleStatus" : 
+		{
+			"COMPSTAT" : "OTHER",
+			"IVALUE" : 1,
+			"SVALUE" : "Passed"
+		},
+		"PartServerPort" : 
+		{
+			"COMPSTAT" : "PTMGM",
+			"IVALUE" : -1,
+			"SVALUE" : "NONE"
+		},
+		"PartServerReady" : 
+		{
+			"COMPSTAT" : "PTMGM",
+			"IVALUE" : -1,
+			"SVALUE" : "NONE"
+		},
+		"Routability" : 
+		{
+			"Average" : 
+			{
+				"BRAM18" : 0,
+				"BRAM36/18_1" : 186,
+				"BRAM36/18_2" : 12,
+				"DMEM/LUTs_1" : 286,
+				"DMEM/LUTs_2" : 2288,
+				"LUTs" : 240459,
+				"SRAM128M" : 0,
+				"SRAM256M" : 0,
+				"SRAM64M" : 0,
+				"UMEM" : 68,
+				"XRAM" : 0,
+				"flops" : 90645,
+				"util" : 6
+			},
+			"Total" : 
+			{
+				"BRAM18" : 0,
+				"BRAM36/18_1" : 186,
+				"BRAM36/18_2" : 12,
+				"DMEM/LUTs_1" : 286,
+				"DMEM/LUTs_2" : 2288,
+				"LUTs" : 240459,
+				"SRAM128M" : 0,
+				"SRAM256M" : 0,
+				"SRAM64M" : 0,
+				"UMEM" : 68,
+				"XRAM" : 0,
+				"flops" : 90645,
+				"util" : 6
+			}
+		}
+	}
+}

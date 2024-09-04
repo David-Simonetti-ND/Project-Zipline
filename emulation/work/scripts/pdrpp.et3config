@@ -1,0 +1,23 @@
+* ==========================================================
+* Protium X2 1-board configuration
+* No cables or cards are added. 
+* Only FPGA A is enabled 
+*
+* Designer: Cadence ESD
+* Date:     4/10/2023
+* revision  1.0
+*
+* ==========================================================
+
++ 6_CHIP_BOARD 0 FPVUF6A F6A00000026AF0 0 0
+*- MODULE 0 0 0   * fpga_a
+- MODULE 0 0 1   * fpga_b
+- MODULE 0 0 2   * fpga_c
+- MODULE 0 0 3   * fpga_d
+- MODULE 0 0 4   * fpga_e
+- MODULE 0 0 5   * fpga_f
+
+
+* ==========================================================
+* Resources Removed
+* ==========================================================
