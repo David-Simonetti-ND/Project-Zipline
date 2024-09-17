@@ -1,1 +1,2 @@
-emulatorConfiguration -add "file scripts/pdrpp.et3config"
+precompileOption -add {PTM_FV}
+emulatorConfiguration -add {file /grid/cva/p4_02/ptmcov/PTM181/uxetests/pdrpptests/referenceConfigs/FerengiConfigs/204590015_204590008.et3config} {boards 0-1}

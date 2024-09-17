@@ -2,5 +2,11 @@ debug .
 host $env(XE_HOST)
 xc zt0 xt0 tbrun
 run -swap 
+database -open -shm trace
+probe -create -all -depth all
+sdl -autoprobe on
+sdl -load scripts/kme.tdf
+sdl -enable
 run
+database -upload
 exit

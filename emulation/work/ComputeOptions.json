@@ -1,0 +1,34 @@
+{
+    "ncpu": "1",
+    "phases": {
+        "pnr": {
+            "phases": {
+                "pnrsummary": {
+                    "ncpu": "1",
+                    "nthreads": "1",
+                    "max_mem": "4096",
+                    "balancer_string": "-r -R \"(OSNAME==Linux)&&(OSREL==EE60||OSREL==EE70||OSREL==SLES11)&&(OSBIT==64)&&(SFIARCH==EM64T) rusage[mem=4096]span[hosts=1]\" -sp 60 -g ${PTM_GROUP_NAME}",
+                    "queue": "rpp_compile_q",
+                    "timeout": "15",
+                    "loadBalancer": "lsf"
+                },
+                "vivadoCommonSynth ": {
+                    "ncpu": "1",
+                    "nthreads": "1",
+                    "loadBalancer": "lsf",
+                    "max_mem": "4096",
+                    "timeout": "30",
+                    "queue": "rpp_pnr_q",
+                    "balancer_string": "-r -R \"${PNR_RESOURCE}&&(SFIARCH==EM64T) span[hosts=1] rusage[mem=4096]\" -sp ${PTM_TEST_PRIORITY} -g ${PTM_GROUP_NAME}"
+                }
+            },
+            "nthreads": "3"
+        }
+    },
+    "nthreads": "1",
+    "max_mem": "16384",
+    "balancer_string": "-R \"(OSNAME==Linux)&&(OSREL==EE60||OSREL==EE70||OSREL==SLES11)&&(OSBIT==64)&&(SFIARCH == EM64T)&&(mem>=16384) rusage[mem=16384]span[hosts=1]\" -g ${PTM_GROUP_NAME} -J ${PTM_JOB_NAME} -sp ${PTM_TEST_PRIORITY}",
+    "queue": "linux",
+    "timeout": "4:00",
+    "loadBalancer": "lsf"
+}

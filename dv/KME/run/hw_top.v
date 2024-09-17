@@ -447,22 +447,27 @@ module hw_top ();
    initial begin
       // uncomment below for tb to access clk
       //$export_read(buff_clk);
-      $ixc_ctrl("tb_export", "wait_cycles");
-      $ixc_ctrl("sfifo", "commit_kme_cfg_txn");
-      $ixc_ctrl("tb_export", "reset_dut");
-      $ixc_ctrl("sfifo", "service_ib_txn");
-      $ixc_ctrl("sfifo", "service_ob_txn");
-      $ixc_ctrl("tb_export", "wait_for_ob");
-      $ixc_ctrl("tb_export", "reset_ib_regs");
-      $ixc_ctrl("tb_export", "reset_ob_regs");
-      $ixc_ctrl("tb_export", "wait_for_cfg");
-      $ixc_ctrl("tb_export", "c_wait_for_cfg");
-      $ixc_ctrl("tb_export", "wait_for_ib");
+      `ifdef IXCOM_COMPILE
+         $ixc_ctrl("tb_export", "wait_cycles");
+         $ixc_ctrl("sfifo", "commit_kme_cfg_txn");
+         $ixc_ctrl("tb_export", "reset_dut");
+         $ixc_ctrl("sfifo", "service_ib_txn");
+         $ixc_ctrl("sfifo", "service_ob_txn");
+         $ixc_ctrl("tb_export", "wait_for_ob");
+         $ixc_ctrl("tb_export", "reset_ib_regs");
+         $ixc_ctrl("tb_export", "reset_ob_regs");
+         $ixc_ctrl("tb_export", "wait_for_cfg");
+         $ixc_ctrl("tb_export", "c_wait_for_cfg");
+         $ixc_ctrl("tb_export", "wait_for_ib");
 
-      $ixc_ctrl("tb_export", "write_rst_n");
+         $ixc_ctrl("tb_export", "write_rst_n");
 
-      $ixc_ctrl("gfifo", "$display");
-      $ixc_ctrl("tb_import", "$finish");
+         $ixc_ctrl("gfifo", "$display");
+         $ixc_ctrl("tb_import", "$finish");
+      `elsif XCELIUM
+         dut_clk = 1'b0;
+         forever begin #1 dut_clk = ~dut_clk; end
+      `endif
    end
     
 endmodule : hw_top

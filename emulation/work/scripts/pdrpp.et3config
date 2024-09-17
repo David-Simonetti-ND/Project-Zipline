@@ -16,7 +16,8 @@
 - MODULE 0 0 3   * fpga_d
 - MODULE 0 0 4   * fpga_e
 - MODULE 0 0 5   * fpga_f
-
++ MEMORY_CARD_Q32G_V1 0.A-Q0 0.STREAM_0 0
++ MEMORY_CARD_Q32G_V1 0.B-Q0 0.STREAM_1 0
 
 * ==========================================================
 * Resources Removed

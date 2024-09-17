@@ -27,9 +27,6 @@ module kme_tb ();
    export "DPI-C" task c_service_ib_interface_txn;
    export "DPI-C" task c_service_ob_interface_txn;
 
-   bit tbs;
-   IXCtbsync tbsI(tbs); 
-
    string all_test_files [] = {  "kme_key_type_0", 
                                  "kme_key_type_1", 
                                  "kme_key_type_2", 

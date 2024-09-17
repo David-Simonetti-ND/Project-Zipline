@@ -1,0 +1,6 @@
+State s1
+{
+     if (top.hw_top.kme_cfg_rptr == 'd3257) {
+        Trigger;
+     }            
+}

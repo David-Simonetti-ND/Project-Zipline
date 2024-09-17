@@ -1,3 +1,3 @@
 emulatorConfiguration -add "host $env(XE_HOST)" "boards $env(XE_BOARDS)"
 symmetricConfiguration -add "host $env(XE_HOST)" 
-# compilerOption -add {visionMode FV}
+compilerOption -add {visionMode FV}
