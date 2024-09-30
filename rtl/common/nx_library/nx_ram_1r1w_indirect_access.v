@@ -1,7 +1,7 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
@@ -106,11 +106,14 @@ module nx_ram_1r1w_indirect_access
 
   import nx_mem_typePKG_v2::*;
   
+  /*
    localparam capabilities_t capabilities_t_set
      =  { init_inc     : (N_INIT_INC_BITS>0)? TRUE : FALSE, 
           compare      : FALSE,
           reserved_op  : 4'b0,
-          default      : TRUE};   
+          default      : TRUE};    */
+  localparam capabilities_t capabilities_t_set
+     =  {1'b1, 1'b1, 4'b0, 1'b0, 1'b1, (N_INIT_INC_BITS>0)? 1'b1 : 1'b0, 1'b1, 1'b1, 1'b1, 1'b1, 1'b1, 1'b1, 1'b1};        
  
    
    

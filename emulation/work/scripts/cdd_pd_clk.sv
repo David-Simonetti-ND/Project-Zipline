@@ -2,7 +2,10 @@
 // This is an auto-generated file using the ixclkgen utility
 //
 // Command-line specified:
-//   ixclkgen -ptm -input clocks.qel  -output clk.sv  -module _ixc_clkgen 
+//   ixclkgen
+//     -input scripts/cdd_pd_clocks.qel 
+//     -output scripts/cdd_pd_clk.sv 
+//     -module _ixc_clkgen 
 //
 // NOTE: Please refer to product user guide for clock modeling in IXCOM. Try:
 //   ixclkgen -help
@@ -11,7 +14,7 @@
 `timescale 1 ns / 1 ns
 `define IXCclkgenTs 1 ns / 1 ns
 module _ixc_clkgen;
-  wire dut_clk_0;
+  wire clk_0;
 
 `ifdef IXCOM_COMPILE
   initial $ixc_ctrl("map_delays");
@@ -19,17 +22,15 @@ module _ixc_clkgen;
 `endif
 
   // Generate logic for clock sources
-  wire bridge_w;
-  ixc_master_clock #(5) ixcg_0(bridge_w);
-  IXCclkgen_PTM ixcg_0_ptm(dut_clk_0, bridge_w);
+  ixc_master_clock #(5) ixcg_0(clk_0  );
 
   // Bind clock sources to generated clock signal
-  ixc_cakebind ixcb_0 (top.hw_top.dut_clk, dut_clk_0);
+  ixc_cakebind ixcb_0 (top.hw_top.clk, clk_0);
 
 `ifdef IXCOM_COMPILE
   initial begin
     $ixc_ctrl("hotswap_top");
-    $ua_cmd("cakeClk", "top.hw_top.dut_clk", "ixcg_0", "100000kHz", "B1", "0");
+    $ua_cmd("cakeClk", "top.hw_top.clk", "ixcg_0", "100000kHz", "B1", "0");
   end
 `endif
 endmodule // _ixc_clkgen

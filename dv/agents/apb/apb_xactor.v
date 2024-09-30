@@ -109,6 +109,12 @@ module apb_xactor #( parameter ADDR_WIDTH = 32, DATA_WIDTH = 32 ) (/*AUTOARG*/
       end
    endtask
    
+   `ifdef APB_HW_EXPORT
+		initial begin
+        	$ixc_ctrl("tb_export", "read");
+			$ixc_ctrl("tb_export", "write");
+		end
+	`endif
 
 
 endmodule // apb_xactor

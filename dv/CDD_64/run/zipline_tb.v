@@ -1,467 +1,388 @@
 
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
 
 `include "cr_global_params.vh"
 
-`define FSDB_PATH zipline_tb
+const int VALID = 1;
+const int EOS = 2;
 
-module zipline_tb;
-   string testname;
-   string seed;
-   reg[31:0] initial_seed;
-   int  error_cntr;
+const int DEBUG = 0;
 
-   string fsdbFilename;
+import "DPI-C" function string getenv(input string env_name);
+import "DPI-C" function int initialize_dpi(input string config_path, input string test_name, output int num_config_lines, output int num_ib_lines, output int num_ob_lines);
+
+module top;
   
+  hw_top hw_top(.*);
+  zipline_tb zipline_tb(.*);
+endmodule
 
-   logic clk;
-   logic rst_n;
+module hw_top();
 
-   logic ib_tready;
-   logic [`AXI_S_TID_WIDTH-1:0]  ib_tid;
-   logic [`AXI_S_DP_DWIDTH-1:0]  ib_tdata;
-   logic [`AXI_S_TSTRB_WIDTH-1:0] ib_tstrb;
-   logic [`AXI_S_USER_WIDTH-1:0] ib_tuser;
-   logic                         ib_tvalid;
-   logic                         ib_tlast;
+  import "DPI-C" function int get_config_data(output bit [7:0] operation, output bit [31:0] address, output bit [31:0] data);
+  import "DPI-C" function int get_ib_data(output bit [63:0] tdata, output bit [7:0] tuser_string, output bit [7:0] tstrb);
+  import "DPI-C" function int get_ob_data(output bit [63:0] tdata, output bit [7:0] tuser_string, output bit [7:0] tstrb);
 
-   logic ob_tready;
-   logic [`AXI_S_TID_WIDTH-1:0]  ob_tid;
-   logic [`AXI_S_DP_DWIDTH-1:0]  ob_tdata;
-   logic [`AXI_S_TSTRB_WIDTH-1:0] ob_tstrb;
-   logic [`AXI_S_USER_WIDTH-1:0] ob_tuser;
-   logic                         ob_tvalid;
-   logic                         ob_tlast;
-   
-   logic                         sch_update_tready;
-   logic [7:0]                   sch_update_tdata;
-   logic                         sch_update_tvalid;
-   logic                         sch_update_tlast;
-   logic [1:0]                   sch_update_tuser;
-
-   logic [`N_RBUS_ADDR_BITS-1:0] apb_paddr;
-   logic                         apb_psel;
-   logic                         apb_penable;
-   logic                         apb_pwrite;
-   logic [`N_RBUS_DATA_BITS-1:0] apb_pwdata;  
-   logic [`N_RBUS_DATA_BITS-1:0] apb_prdata;
-   logic                         apb_pready;		        
-   logic                         apb_pslverr;		        
-   logic                         engine_int;
-   logic                         engine_idle;
-   logic                         dbg_cmd_disable;
-   logic                         xp9_disable;
-   
-
-
-   initial begin
-     clk = 1'b0;
-     forever
-     begin
-         #0.625;
-         clk = ~clk;
-     end
-   end
-
-
-   apb_xactor #(.ADDR_WIDTH(`N_RBUS_ADDR_BITS),.DATA_WIDTH(`N_RBUS_DATA_BITS)) apb_xactor(
-	.clk(clk), 
-	.reset_n(rst_n), 
-        .prdata(apb_prdata), 
-        .pready(apb_pready), 
-        .pslverr(apb_pslverr), 
-        .psel(apb_psel), 
-        .penable(apb_penable), 
-        .paddr(apb_paddr), 
-        .pwdata(apb_pwdata), 
-        .pwrite(apb_pwrite)
-   );
-   
-   cr_cddip 
-     #(
-       )  
-   dut(
-       .ib_tready(ib_tready), 
-       .ib_tvalid(ib_tvalid),
-       .ib_tlast(ib_tlast),
-       .ib_tid(ib_tid),
-       .ib_tstrb(ib_tstrb),
-       .ib_tuser(ib_tuser),
-       .ib_tdata(ib_tdata),
-
-       .ob_tready(ob_tready), 
-       .ob_tvalid(ob_tvalid),
-       .ob_tlast(ob_tlast),
-       .ob_tid(ob_tid),
-       .ob_tstrb(ob_tstrb),
-       .ob_tuser(ob_tuser),
-       .ob_tdata(ob_tdata),
-
-       .sch_update_tready(sch_update_tready), 
-       .sch_update_tvalid(sch_update_tvalid),
-       .sch_update_tlast(sch_update_tlast),
-       .sch_update_tuser(sch_update_tuser),
-       .sch_update_tdata(sch_update_tdata),
-
-       .apb_paddr(apb_paddr),
-       .apb_psel(apb_psel), 
-       .apb_penable(apb_penable), 
-       .apb_pwrite(apb_pwrite), 
-       .apb_pwdata(apb_pwdata),
-       .apb_prdata(apb_prdata),
-       .apb_pready(apb_pready), 
-       .apb_pslverr(apb_pslverr),
-
-       .clk(clk), 
-       .rst_n(rst_n), 
-       .dbg_cmd_disable (dbg_cmd_disable),
-       .xp9_disable (xp9_disable),
-       .cddip_int (engine_int),            
-       .cddip_idle (engine_idle),            
-       .scan_en(1'b0), 
-       .scan_mode(1'b0), 
-       .scan_rst_n(1'b0), 
-    
-       .ovstb(1'b1), 
-       .lvm(1'b0),
-       .mlvm(1'b0)
-       );
-
-  initial begin
-
-     error_cntr = 0;
-
-     dbg_cmd_disable = 1'b0;
-     xp9_disable = 1'b0;
-     rst_n = 1'b0; 
-     
-     if( $test$plusargs("SEED") ) begin
-        $value$plusargs("SEED=%d", seed);
-     end else begin
-	seed="1";	
-     end
-     
-     if( $test$plusargs("TESTNAME") ) begin
-        $value$plusargs("TESTNAME=%s", testname);
-        $display("TESTNAME=%s SEED=%d", testname, seed);
-     end else begin
-	testname="unknown";	
-     end
-     
-     if ( $test$plusargs("waves") ) begin
-        if( $test$plusargs("dump_fsdb") ) begin
-          $value$plusargs("fsdbfile+%s", fsdbFilename);
-          $fsdbDumpfile(fsdbFilename);
-          $fsdbDumpvars(0, `FSDB_PATH);
-          $fsdbDumpMDA(0, `FSDB_PATH);
-          $fsdbDumpvars(0, "+all", `FSDB_PATH);
-        end else begin
-          $vcdpluson();
-          $vcdplusmemon();
-        end
-     end
-
-     $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
-
-     #100;
-
-     sch_update_tready <= 1'b1;
-     ib_tid <= 0;
-     ib_tvalid <= 0;
-     ib_tlast <= 0;
-     ib_tdata <= 0;
-     ib_tstrb <= 0;
-     ib_tuser <= 0;
-     ob_tready <= 1;
-
-     #50;
-
-     $display("--- \"rst_n\" has been DE-ASSERTED! ---");
-
-     rst_n = 1'b1; 
-
-     #100;
-
-     @(posedge clk);
-
-     do_engine_config();
-
-     fork
-        begin
-           service_ib_interface();
-        end
-        begin
-           service_ob_interface();
-        end
-     join
-
-
-     if ( error_cntr ) begin
-       $display("\nTest %s FAILED!\n", testname);
-     end else begin
-       $display("\nTest %s PASSED!\n", testname);
-     end
-
-     #10ns;
-     $finish;
-     
-  end // initial
-
-  task service_ib_interface();
-    reg[7:0]       tstrb;
-    reg[63:0]      tdata;
-    string         tuser_string;
-    string         file_name;
-    string         vector;
-    integer        str_get;
-    integer        file_descriptor; 
-    logic          saw_cqe;
-
-    
-    file_name = $psprintf("../tests/%s.inbound", testname);
-    file_descriptor = $fopen(file_name, "r");
-    if ( file_descriptor == 0 ) begin
-      $display ("INBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
-      $finish;
-    end else begin
-      $display ("INBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
-    end
-
-    saw_cqe = 0;
-    while( !$feof(file_descriptor) ) begin
-      if ( ib_tready === 1'b1 ) begin
-        ib_tlast <= 1'b0;
-        if ( $fgets(vector,file_descriptor) ) begin
-          str_get = $sscanf(vector, "0x%h %s 0x%h", tdata, tuser_string, tstrb);
-//        $display ("INBOUND_INFO:  @time:%-d parsed vector --> 0x%h %s 0x%h %d", $time, tdata, tuser_string, tstrb, str_get ); 
-          if ( str_get >= 2 ) begin
-            $display ("INBOUND_INFO:  @time:%-d vector --> %s", $time, vector ); 
-            if ( str_get == 3 ) begin
-              if ( tuser_string == "SoT" && tdata[7:0] == 8'h09 ) begin
-                saw_cqe = 1;
-              end
-              if ( tuser_string == "EoT" && saw_cqe == 1 ) begin
-                ib_tlast <= 1'b1;
-                saw_cqe = 0;
-              end
-              ib_tuser <= translate_tuser( tuser_string );
-            end else begin
-              ib_tuser <= 8'h00;
-            end
-            ib_tvalid <= 1'b1;
-            ib_tdata <= tdata;
-            ib_tstrb <= tstrb;
-          end else begin
-            ib_tvalid <= 1'b0;
-          end
-        end else begin
-          ib_tvalid <= 1'b0;
-        end
+  logic clk;
+  `ifndef IXCOM_COMPILE
+    initial begin
+      clk = 1'b0;
+      forever
+      begin
+        #1;
+        clk = ~clk;
       end
-      @(posedge clk);
     end
+  `endif
 
-    ib_tvalid <= 1'b0;
-    ib_tlast <= 1'b0;
+  logic                          rst_n;
+  wire [`N_RBUS_ADDR_BITS-1:0]   apb_paddr;
+  wire                           apb_psel;
+  wire                           apb_penable;
+  wire                           apb_pwrite;
+  wire [`N_RBUS_DATA_BITS-1:0]   apb_pwdata;
+  wire [`N_RBUS_DATA_BITS-1:0]   apb_prdata;
+  wire                           apb_pready;   
+  wire                           apb_pslverr;    
 
-    @(posedge clk);
+  logic                          sch_update_tready;
+  wire                           ib_tready;
+  logic [`AXI_S_TID_WIDTH-1:0]   ib_tid;
+  logic [`AXI_S_DP_DWIDTH-1:0]   ib_tdata;
+  logic [`AXI_S_TSTRB_WIDTH-1:0] ib_tstrb;
+  logic [`AXI_S_USER_WIDTH-1:0]  ib_tuser;
+  logic                          ib_tvalid;
+  logic                          ib_tlast;
 
-    $display ("INBOUND_INFO:  @time:%-d Exiting INBOUND thread...", $time );
+  logic                          ob_tready;
+  wire [`AXI_S_TID_WIDTH-1:0]    ob_tid;
+  wire [`AXI_S_DP_DWIDTH-1:0]    ob_tdata;
+  wire [`AXI_S_TSTRB_WIDTH-1:0]  ob_tstrb;
+  wire [`AXI_S_USER_WIDTH-1:0]   ob_tuser;
+  wire                           ob_tvalid;
+  wire                           ob_tlast;
+   
+  cr_cddip #()  dut(
+    .ib_tready(ib_tready), 
+    .ib_tvalid(ib_tvalid),
+    .ib_tlast(ib_tlast),
+    .ib_tid(ib_tid),
+    .ib_tstrb(ib_tstrb),
+    .ib_tuser(ib_tuser),
+    .ib_tdata(ib_tdata),
 
-  endtask // service_ib_interface
+    .ob_tready(ob_tready), 
+    .ob_tvalid(ob_tvalid),
+    .ob_tlast(ob_tlast),
+    .ob_tid(ob_tid),
+    .ob_tstrb(ob_tstrb),
+    .ob_tuser(ob_tuser),
+    .ob_tdata(ob_tdata),
 
+    .sch_update_tready(sch_update_tready), 
 
+    .apb_paddr(apb_paddr),
+    .apb_psel(apb_psel), 
+    .apb_penable(apb_penable), 
+    .apb_pwrite(apb_pwrite), 
+    .apb_pwdata(apb_pwdata),
+    .apb_prdata(apb_prdata),
+    .apb_pready(apb_pready), 
+    .apb_pslverr(apb_pslverr),
 
+    .clk(clk), 
+    .rst_n(rst_n), 
+    .dbg_cmd_disable (1'b0),
+    .xp9_disable (1'b0),        
+    .scan_en(1'b0), 
+    .scan_mode(1'b0), 
+    .scan_rst_n(1'b0), 
 
-  task service_ob_interface();
-    reg[7:0]       tstrb;
-    reg[7:0]       tuser;
-    reg[63:0]      tdata;
-    reg            tlast;
-    string         tuser_string;
-    string         file_name;
-    string         vector;
-    integer        str_get;
-    integer        file_descriptor; 
-    logic          saw_cqe;
-    logic          saw_stats;
-    logic          ignore_compare_result;
-    logic          got_next_line;
-    integer        watchdog_timer;
-    integer        rc;
+    .ovstb(1'b1), 
+    .lvm(1'b0),
+    .mlvm(1'b0)
+  );
 
+  apb_xactor #(.ADDR_WIDTH(`N_RBUS_ADDR_BITS),.DATA_WIDTH(`N_RBUS_DATA_BITS)) apb_xactor(
+    .clk(clk), 
+    .reset_n(rst_n), 
+    .prdata(apb_prdata), 
+    .pready(apb_pready), 
+    .pslverr(apb_pslverr), 
+    .psel(apb_psel), 
+    .penable(apb_penable), 
+    .paddr(apb_paddr), 
+    .pwdata(apb_pwdata), 
+    .pwrite(apb_pwrite)
+  );
+
+  int address;
+  int data;
+  int returned_data;
+  bit [7:0] operation;
+  logic response;
+  int apb_error_cntr;
+  logic apb_config_rdy;
+  int config_lines_processed;
     
-    file_name = $psprintf("../tests/%s.outbound", testname);
-    file_descriptor = $fopen(file_name, "r");
-    if ( file_descriptor == 0 ) begin
-      $display ("OUTBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
-      $finish;
-    end else begin
-      $display ("OUTBOUND_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
-    end
-
-    saw_cqe = 0;
-    saw_stats = 0;
-    got_next_line = 0;
-    watchdog_timer = 0;
-    while( !$feof(file_descriptor) ) begin
-      if ( ob_tvalid === 1'b1 ) begin
-        watchdog_timer = 0;
-        tlast = 1'b0;
-        ignore_compare_result = 0;
-        if ( got_next_line == 1 || $fgets(vector,file_descriptor) ) begin
-          got_next_line = 0;
-          while ( vector[0] === "#" && !$feof(file_descriptor) ) begin
-            rc = $fgets(vector,file_descriptor);
+  always @(posedge clk) begin
+    if (apb_config_rdy) begin
+      forever begin
+        if (get_config_data(operation, address, data) == VALID) break;
+        @(posedge clk);
+      end
+      if (DEBUG) $display ("APB_INFO:  @time:%-d vector --> %c 0x%h 0x%h", $time, operation, address, data);
+      config_lines_processed++;
+      if ((operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
+        if ( operation == "r" || operation == "R" ) begin
+          apb_xactor.read(address, returned_data, response);
+          if ( response !== 0 ) begin
+            $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the READ operation to address 0x%h\n\n", $time, address ); 
+            $finish;
           end
-          $display ("OUTBOUND_INFO:  @time:%-d vector --> %s", $time, vector );
-          str_get = $sscanf(vector, "0x%h %s 0x%h", tdata, tuser_string, tstrb);
-//        $display ("OUTBOUND_INFO:  @time:%-d parsed vector --> 0x%h %s 0x%h %d", $time, tdata, tuser_string, tstrb, str_get ); 
-          if ( str_get == 3 ) begin
-            tuser = translate_tuser( tuser_string );
-            if ( tuser_string == "SoT" && tdata[7:0] == 8'h09 ) begin
-              saw_cqe = 1;
+          if ( returned_data !== data ) begin
+            $display ("APB_ERROR:  @time:%-d   Data MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, returned_data, data ); 
+            ++apb_error_cntr;
+            if ( apb_error_cntr > 10 ) begin
+              $finish;
             end
-            if ( tuser_string == "EoT" && saw_cqe == 1 ) begin
-              tlast = 1'b1;
-              saw_cqe = 0;
-              rc = $fgets(vector,file_descriptor);
-              got_next_line = 1;
-            end
-            if ( tuser_string == "SoT" && tdata[7:0] == 8'h08 ) begin
-              saw_stats = 1;
-            end
-            if ( tuser_string == "EoT" && saw_stats == 1 ) begin
-              ignore_compare_result = 1;
-              saw_stats = 0;
-            end
-          end else begin
-            tuser = 8'h00;
-          end
-          if ( ob_tdata !== tdata && ignore_compare_result == 0 ) begin
-            $display ("OUTBOUND_ERROR:  @time:%-d   ob_tdata MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, ob_tdata, tdata ); 
-            ++error_cntr;
-          end
-          if ( ob_tuser !== tuser ) begin
-            $display ("OUTBOUND_ERROR:  @time:%-d   ob_tuser MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, ob_tuser, tuser ); 
-            ++error_cntr;
-          end
-          if ( ob_tstrb !== tstrb ) begin
-            $display ("OUTBOUND_ERROR:  @time:%-d   ob_tstrb MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, ob_tstrb, tstrb ); 
-            ++error_cntr;
-          end
-          if ( ob_tlast !== tlast ) begin
-            $display ("OUTBOUND_ERROR:  @time:%-d   ob_tlast MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, ob_tlast, tlast ); 
-            ++error_cntr;
           end
         end else begin
-          ++error_cntr;
-          $display ("\nOUTBOUND_FATAL:  @time:%-d  No corresponding expect vector!\n", $time );
-          $finish;
+          apb_xactor.write(address, data, response);
+          if ( response !== 0 ) begin
+            $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the WRITE operation to address 0x%h\n\n", $time, address ); 
+            $finish;
+          end
+        end
+      end else if ( operation != "#" ) begin
+        $display ("APB_FATAL:  @time:%-d vector --> %c 0x%h 0x%h NOT valid!", $time, operation, address, data );
+        $finish;
+      end
+    end
+  end
+
+  bit[7:0]     i_tstrb;
+  bit[63:0]    i_tdata;
+  bit[7:0]     i_tuser_str;
+  logic        i_saw_cqe;
+  bit          ib_enable;
+  int          ib_counter;
+
+  always @(posedge clk) begin
+    if (ib_tready == 1'b1 && ib_enable == 1'b1) begin
+      forever begin
+        if (get_ib_data(i_tdata, i_tuser_str, i_tstrb) == VALID) break;
+        @(posedge clk);
+        $display("INBOUND_INFO: unable to get more data\n");
+      end
+      ib_tlast <= 1'b0;
+      $display ("INBOUND_INFO:  @time:%-d vector -->  0x%h %d 0x%h", $time, i_tdata, i_tuser_str, i_tstrb );
+      ib_counter++; 
+      if ( i_tuser_str !== 3 ) begin
+        if ( i_tuser_str == 1 && i_tdata[7:0] == 8'h09 ) begin
+          i_saw_cqe = 1;
+        end
+        if ( i_tuser_str == 2 && i_saw_cqe == 1 ) begin
+          ib_tlast <= 1'b1;
+          i_saw_cqe = 0;
+        end
+        ib_tuser <= i_tuser_str;
+      end else begin
+        ib_tuser <= 8'h00;
+      end
+      ib_tvalid <= 1'b1;
+      ib_tdata <= i_tdata;
+      ib_tstrb <= i_tstrb;
+    end else begin
+      ib_tvalid <= 1'b0;
+      ib_tlast <= 1'b0;
+    end
+  end
+
+ 
+  bit[7:0]       o_tstrb;
+  bit[7:0]       o_tuser_str;
+  bit[63:0]      o_tdata;
+  reg            o_tlast;
+  logic          o_saw_cqe;
+  logic          o_saw_stats;
+  logic          ignore_compare_result;
+  logic          got_next_line;
+  integer        watchdog_timer;
+  bit            ob_enable;
+  int            ob_counter;
+
+  always @(posedge clk) begin
+    if (ob_enable == 1'b1) begin
+      if (ob_tvalid === 1'b1 ) begin
+        forever begin
+          if (get_ob_data(o_tdata, o_tuser_str, o_tstrb) == VALID) break;
+          @(posedge clk);
+          $display("OUTBOUND_INFO: unable to get more data\n");
+        end
+        $display ("OUTBOUND_INFO:  @time:%-d vector -->  0x%h %d 0x%h", $time, o_tdata, o_tuser_str, o_tstrb );
+        watchdog_timer = 0;
+        o_tlast = 1'b0;
+        ignore_compare_result = 0;
+        ob_counter++;
+        if ( o_tuser_str !== 3 ) begin
+          if ( o_tuser_str === 8'h1 && o_tdata[7:0] == 8'h09 ) begin
+            o_saw_cqe = 1;
+          end
+          if ( o_tuser_str === 8'h2 && o_saw_cqe == 1 ) begin
+            o_tlast = 1'b1;
+            o_saw_cqe = 0;
+          end
+          if ( o_tuser_str === 8'h1 && o_tdata[7:0] == 8'h08 ) begin
+            o_saw_stats = 1;
+          end
+          if ( o_tuser_str === 8'h2 && o_saw_stats == 1 ) begin
+            ignore_compare_result = 1;
+            o_saw_stats = 0;
+          end
+        end else begin
+          o_tuser_str = 8'h00;
         end
       end else begin
         ++watchdog_timer;
         if ( watchdog_timer > 10000 ) begin
-          ++error_cntr;
           $display ("\nOUTBOUND_ERROR:  @time:%-d  Watchdog timer EXPIRED!\n", $time );
           $finish;
         end
       end
-      @(posedge clk);
     end
+  end
 
+  task reset_dut();
+    $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
+    rst_n <= 1'b0; 
+    repeat(100) @(posedge clk);
 
-    @(posedge clk);
+    sch_update_tready <= 1'b1;
+    ib_tid <= 0;
+    ib_tvalid <= 0;
+    ib_tlast <= 0;
+    ib_tdata <= 0;
+    ib_tstrb <= 0;
+    ib_tuser <= 0;
+    ob_tready <= 1;
+    ib_enable = 1'b0;
+    ob_enable = 1'b0;
 
-    $display ("OUTBOUND_INFO:  @time:%-d Exiting OUTBOUND thread...", $time );
+    repeat(50) @(posedge clk);
+    $display("--- \"rst_n\" has been DE-ASSERTED! ---");
+    rst_n <= 1'b1; 
 
-  endtask // service_ob_interface
+    repeat(101) @(posedge clk);
+  endtask : reset_dut
 
-
-
-
-  task do_engine_config();
-    reg[31:0]      address;
-    reg[31:0]      data;
-    reg[31:0]      returned_data;
-    string         operation;
-    string         file_name;
-    string         vector;
-    integer        str_get;
-    integer        file_descriptor;
-    reg            response;
-
+  task do_engine_config(input int total_config_lines, input int total_ib_lines, input int total_ob_lines);
+    reset_dut();
     
-    file_name = $psprintf("../tests/%s.config", testname);
-    file_descriptor = $fopen(file_name, "r");
-    if ( file_descriptor == 0 ) begin
-      $display ("\nAPB_INFO:  @time:%-d File %s NOT found!\n", $time, file_name );
-      return;
+    $display("APB_INFO: starting apb config\n");
+    config_lines_processed = 'd0;
+    apb_config_rdy = 1'b1;
+    while (total_config_lines != config_lines_processed) @(posedge clk);
+    apb_config_rdy = 1'b0;
+    $display("APB_INFO: ending apb config total lines processed %d\n", config_lines_processed);
+
+    ib_counter = 0;
+    ob_counter = 0;
+    ib_enable = 1'b1;
+    i_saw_cqe = 0;
+
+    o_saw_cqe = 0;
+    o_saw_stats = 0;
+    got_next_line = 0;
+    watchdog_timer = 0;
+    ob_enable = 1'b1;
+
+    $display("INBOUND_INFO: starting inbound processing total lines: %d\n", total_ib_lines);
+    $display("OUTBOUND_INFO: starting outbound processing total lines:  %d\n", total_ob_lines);
+    
+    while (total_ib_lines != ib_counter) @(posedge clk);
+    $display("INBOUND_INFO: inbound processing complete\n");
+    while (total_ob_lines != ob_counter) @(posedge clk);
+    $display("OUTBOUND_INFO: outbound processing complete\n");
+
+    ib_enable = 1'b0;
+    ob_enable = 1'b0;
+  endtask : do_engine_config
+
+  task wait_n_cycles(input int n);
+    repeat(n) @(posedge clk);
+  endtask : wait_n_cycles
+  task wait_n_cycles_ib(input int n);
+    repeat(n) @(posedge clk);
+  endtask : wait_n_cycles_ib
+  task wait_n_cycles_ob(input int n);
+    repeat(n) @(posedge clk);
+  endtask : wait_n_cycles_ob
+
+  `ifdef IXCOM_COMPILE
+    initial begin
+      $ixc_ctrl("tb_export", "wait_n_cycles");
+      $ixc_ctrl("tb_export", "wait_n_cycles_ib");
+      $ixc_ctrl("tb_export", "wait_n_cycles_ob");
+      $ixc_ctrl("tb_export", "do_engine_config");
+      $ixc_ctrl("gsf_is", "get_config_data");
+      $ixc_ctrl("gsf_is", "get_ib_data");
+      $ixc_ctrl("gsf_is", "get_ob_data");
+      $ixc_ctrl("gfifo", "$display");
+      $ixc_ctrl("tb_import", "$finish");
+      $export_read(top.hw_top.ib_tready);
+    end
+  `endif
+
+endmodule
+
+module zipline_tb();
+
+  string testname;
+  string seed;
+  reg[31:0] initial_seed;
+  int  error_cntr;
+
+  string test_path;
+  int num_config_lines;
+  int num_ib_lines;
+  int num_ob_lines;
+   
+
+  initial begin
+    error_cntr = 0;
+    test_path = getenv("DV_ROOT");
+    $display("Using tb config path = %s", test_path);
+    
+    if( $test$plusargs("SEED") ) begin
+      void'($value$plusargs("SEED=%d", seed));
     end else begin
-      $display ("APB_INFO:  @time:%-d Openned test file -->  %s", $time, file_name );
+      seed="1";	
+    end
+     
+    if( $test$plusargs("TESTNAME") ) begin
+      void'($value$plusargs("TESTNAME=%s", testname));
+    end else begin
+      testname="unknown";	
     end
 
-    while( !$feof(file_descriptor) ) begin
-      if ( $fgets(vector,file_descriptor) ) begin
-        $display ("APB_INFO:  @time:%-d vector --> %s", $time, vector );
-        str_get = $sscanf(vector, "%s 0x%h 0x%h", operation, address, data);
-//      $display ("APB_INFO:  @time:%-d parsed vector --> %s 0x%h 0x%h    %d", $time, operation, address, data, str_get ); 
-        if ( str_get == 3 && (operation == "r" || operation == "R" || operation == "w" || operation == "W") ) begin
-          if ( operation == "r" || operation == "R" ) begin
-            apb_xactor.read(address, returned_data, response);
-            if ( response !== 0 ) begin
-              $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the READ operation to address 0x%h\n\n",
-                                                                                               $time, address ); 
-              $finish;
-            end
-            if ( returned_data !== data ) begin
-              $display ("APB_ERROR:  @time:%-d   Data MISMATCH --> Actual: 0x%h  Expect: 0x%h", $time, returned_data, data ); 
-              ++error_cntr;
-              if ( error_cntr > 10 ) begin
-                $finish;
-              end
-            end
-          end else begin
-            apb_xactor.write(address, data, response);
-            if ( response !== 0 ) begin
-              $display ("\n\nAPB_FATAL:  @time:%-d   Slave ERROR and/or TIMEOUT on the WRITE operation to address 0x%h\n\n",
-                                                                                               $time, address ); 
-              $finish;
-            end
-          end
-          @(posedge clk);
-        end else if ( operation !== "#" ) begin
-          $display ("APB_FATAL:  @time:%-d vector --> %s NOT valid!", $time, vector );
-          $finish;
-        end
-      end
+    initialize_dpi(test_path, testname, num_config_lines, num_ib_lines, num_ob_lines);
+    top.hw_top.do_engine_config(num_config_lines, num_ib_lines, num_ob_lines);
+
+    if ( error_cntr ) begin
+      $display("\nTest %s FAILED!\n", testname);
+    end else begin
+      $display("\nTest %s PASSED!\n", testname);
     end
 
-
-    @(posedge clk);
-
-    $display ("APB_INFO:  @time:%-d Exiting APB engine config ...", $time );
-
-  endtask // do_engine_config
-
-
-
-
-  function logic[7:0] translate_tuser (string tuser);
-      if ( tuser == "SoT" ) begin
-         return 8'h01;
-      end else if ( tuser == "EoT" ) begin
-         return 8'h02;
-      end else begin
-         return 8'h03;
-      end
-  endfunction : translate_tuser
-
+    $finish;
+     
+  end // initial
    
 endmodule : zipline_tb

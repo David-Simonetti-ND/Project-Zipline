@@ -1,13 +1,14 @@
 /*************************************************************************
 *
-* Copyright © Microsoft Corporation. All rights reserved.
-* Copyright © Broadcom Inc. All rights reserved.
+* Copyright ï¿½ Microsoft Corporation. All rights reserved.
+* Copyright ï¿½ Broadcom Inc. All rights reserved.
 * Licensed under the MIT License.
 *
 *************************************************************************/
 `include "cr_global_params.vh"
 
-`define FSDB_PATH zipline_tb
+import "DPI-C" function string getenv(input string env_name);
+
 
 module zipline_tb;
    string testname;
@@ -15,7 +16,7 @@ module zipline_tb;
    reg[31:0] initial_seed;
    int  error_cntr;
 
-   string fsdbFilename;
+   string test_path;
   
 
    logic clk;
@@ -135,6 +136,9 @@ module zipline_tb;
 
   initial begin
 
+    test_path = getenv("DV_ROOT");
+    $display("Using tb config path = %s", test_path);
+
      error_cntr = 0;
 
      key_mode = 1'b0;
@@ -150,24 +154,10 @@ module zipline_tb;
      
      if( $test$plusargs("TESTNAME") ) begin
         $value$plusargs("TESTNAME=%s", testname);
-        $display("TESTNAME=%s SEED=%d", testname, seed);
      end else begin
-	testname="unknown";	
+	      testname="unknown";	
      end
      
-     if ( $test$plusargs("waves") ) begin
-        if( $test$plusargs("dump_fsdb") ) begin
-          $value$plusargs("fsdbfile+%s", fsdbFilename);
-          $fsdbDumpfile(fsdbFilename);
-          $fsdbDumpvars(0, `FSDB_PATH);
-          $fsdbDumpMDA(0, `FSDB_PATH);
-          $fsdbDumpvars(0, "+all", `FSDB_PATH);
-        end else begin
-          $vcdpluson();
-          $vcdplusmemon();
-        end
-     end
-
      $display("--- \"rst_n\" is being ASSERTED for 100ns ---");
 
      #100;
@@ -226,7 +216,7 @@ module zipline_tb;
 
 
 
-    file_name = $psprintf("../tests/%s.inbound", testname);
+    file_name = $psprintf("%s/CCE_64/tests/%s.inbound", test_path, testname);
     file_descriptor = $fopen(file_name, "r");
     if ( file_descriptor == 0 ) begin
       $display ("INBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
@@ -300,7 +290,7 @@ module zipline_tb;
 
     
 
-    file_name = $psprintf("../tests/%s.outbound", testname);
+    file_name = $psprintf("%s/CCE_64/tests/%s.outbound", test_path, testname);
     file_descriptor = $fopen(file_name, "r");
     if ( file_descriptor == 0 ) begin
       $display ("OUTBOUND_FATAL:  @time:%-d File %s NOT found!", $time, file_name );
@@ -400,7 +390,7 @@ module zipline_tb;
     reg            response;
 
     
-    file_name = $psprintf("../tests/%s.config", testname);
+    file_name = $psprintf("%s/CCE_64/tests/%s.config", test_path, testname);
     file_descriptor = $fopen(file_name, "r");
     if ( file_descriptor == 0 ) begin
       $display ("\nAPB_INFO:  @time:%-d File %s NOT found!\n", $time, file_name );
@@ -438,7 +428,7 @@ module zipline_tb;
             end
           end
           @(posedge clk);
-        end else if ( operation !== "#" ) begin
+        end else if ( operation != "#" ) begin
           $display ("APB_FATAL:  @time:%-d vector --> %s NOT valid!", $time, vector );
           $finish;
         end

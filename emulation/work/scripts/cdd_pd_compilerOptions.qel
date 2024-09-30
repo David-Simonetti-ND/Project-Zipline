@@ -1,0 +1,4 @@
+emulatorConfiguration -add "host $env(XE_HOST)" "boards $env(XE_BOARDS)"
+#symmetricConfiguration -add "host $env(XE_HOST)" 
+symmetricConfiguration -add "host hsv-smd414"
+symmetricConfiguration -add "host hsv-smd417"
