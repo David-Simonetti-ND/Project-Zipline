@@ -1,0 +1,1607 @@
+XEC> #
+XEC> # Backend compiler script for ixcom 
+XEC> #
+XEC> 
+XEC> set xecompileTarget [lindex $::argv 0]
+1xua
+XEC> 
+XEC> set MCFlow [expr { [lsearch -exact -nocase $::argv "-mcBucket"] >= 0 } ? true : false]
+false
+XEC> 
+XEC> if { $MCFlow } {
+    set IXCOMbp true ;# Default
+    if { [lsearch -exact -nocase $::argv "-bp"] >= 0 } { set IXCOMbp true }
+    if { [lsearch -exact -nocase $::argv "-nobp"] >= 0 } { set IXCOMbp false }
+    
+    if { $IXCOMbp } {
+        puts "Initiating MC flow (bp)"
+        setModularCompile "IXCOMbp"
+    } else {
+        puts "Initiating MC flow"
+        setModularCompile
+    }
+    if { [regexp -nocase -- {-mcBucket +([\w.]+)} $::argv dummy custBFile] && \
+             $custBFile ni {1xua keepregs} } {
+        puts "Using Custom bucket modules file: $custBFile"
+        set ::MC(bucketModulesFile) $custBFile
+    }
+      
+    # Not supported 
+    if { [file exists "xc_work/qel/compile.qel"] || [file exists compile.qel] } {
+        puts "MC-Flow: Ignoring compile.qel script"
+    }
+    set partitionArgIndex [lsearch $::argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        puts "MC-Flow: \"-partition\" is not supported yet"
+        return -code error
+    }
+    # Hack to indicate import should be skipped
+    set skipImport [file exists "xc_work/qel/skipImport.qel"]
+    # Hack to indicate only import should run
+    set importOnly [file exists "xc_work/qel/importOnly.qel"]
+
+    if { [lsearch $argv "-rtldb"] != -1 } {
+        puts "MC-Flow: \"-rtldb\" is not supported yet"
+        return -code error
+    }
+
+    set importOptionsQel "importOptions.qel"
+    if { [file exists $importOptionsQel] } {
+        source $importOptionsQel
+    } 
+
+    # Get importOptions but do not execute designImport
+    set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+    puts "Reading $ixcomImportScript"
+    if { !$skipImport || !$IXCOMbp } {
+        proc runImport {} { if { $::IXCOMbp } { eval diCompile -importOnly } }
+        interp alias {} designImport {} runImport
+        source $ixcomImportScript
+        interp alias {} designImport {}
+    }
+
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    if { $IXCOMbp } {
+        if { $importOnly } { exit }
+        set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"
+        if {[file exists $ixcPreDesignOptionsScript]} {
+           puts "Sourcing $ixcPreDesignOptionsScript"
+           source $ixcPreDesignOptionsScript
+        }             
+        design hdldb xcva_top
+    }
+} else { ;# Regular and PPC flows
+
+    # Source custom compile script from user if specified
+    set compileQel "xc_work/qel/compile.qel"
+    if { [file exists $compileQel] } {
+        source $compileQel
+        exit
+    } else {
+        if {[file exists compile.qel]} {
+            source compile.qel
+            exit
+        }
+    }
+    
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    set partition ""
+    set partitionArgIndex [lsearch $argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        set partition [lindex $argv [ expr $partitionArgIndex + 1 ]]
+    }
+
+    set skipImportScript "xc_work/$partition/qel/skipImport.qel"
+    # Skip import if skipImportScript exists
+
+    if { [file exists $skipImportScript] != 1} {
+        if { $partition eq "" } {
+           set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+        } else {
+           set ixcomImportScript "xc_work/$partition/qel/ixcomImport.qel"
+        }          
+        set t [clock seconds]
+
+        set importOptionsQel "importOptions.qel"
+        if { [file exists $importOptionsQel] } {
+           source $importOptionsQel
+        } 
+        # passing arguments by name
+        handleImportArgs argc argv
+        source $ixcomImportScript
+        puts "IXCOMQEL> sourcing $ixcomImportScript took [expr [clock seconds] - $t]s"
+    }
+
+    set importOnly "xc_work/$partition/qel/importOnly.qel"
+    if { [file exists $importOnly] == 1 } {
+        exit
+    }
+
+    set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"    
+    if {[file exists $ixcPreDesignOptionsScript]} {
+        puts "Sourcing $ixcPreDesignOptionsScript"
+        source $ixcPreDesignOptionsScript
+    }      
+    design hdldb xcva_top
+}
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411888): Path is QTDB/.import/hdldb/.globalImpOption.txt 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411889): Path is QTDB/.import/hdldb/.xeimp.dil 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+INFO (legacy-411891): Path is QTDB/.import/hdldb/.par_import/.signalMap 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+INFO (import-1354): Current time: Tue Oct 22 11:03:45 2024
+ Rusage Stats: 
+	 User CPU Time: 0.018901 sec
+	 System CPU Time: 0.016801 sec
+	 PhyMemTotal(MB): 13
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       10        5        0        0
+Swap (GB):        7        1        6
+import - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+INFO (import-1038): Processing import control information from file QTDB/.import/hdldb/.xeimp.dil.
+INFO (import-1346): IMPORT_LOG : Time taken to read file QTDB/.import/hdldb/.xeimp.dil is 1.97626e-322 seconds.
+INFO (legacy-765432): Import Log Dir is hdldb 
+INFO (legacy-55555):  farmQueue is  .
+INFO (legacy-55555): Value of farmTimeout is 18000.
+INFO (legacy-55555): Value of maxParallel is -1 .
+=========================================================================================================
+New flow of Reading External Netlist is Enabled. To Disable it, Use "setenv DISABLE_PARALLEL_NETLIST_READ".
+=========================================================================================================
+INFO (import-1228): Name scope processing is not needed.
+INFO (import-1346): IMPORT_LOG : Time taken to mark netlists which are protected is 4.94066e-323 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create components and terminals.
+dbOpenLib: QTDB Library "qtref" has been imported successfully
+INFO (jdb-1000): Loading instances for library qtref
+dbOpenLib: QTDB Library "generic" has been imported successfully
+INFO (jdb-1000): Loading instances for library generic
+INFO (import-1346): IMPORT_LOG : Time taken to create components and terminals is 3.01204 seconds.
+INFO (db-9999): skel QTDB created in 252 ms
+INFO (jdb-1017): Time taken to save QTDB Skel library  hdldb is 0.254719 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB SKEL Lib hdldb Created at 
+Wall clock time:2024-10-22 11:03:49.495
+INFO (import-1346): IMPORT_LOG : Time taken to Import dependent skeleton libraries is 0.000229419 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create instances and nets.
+INFO (import-1346): IMPORT_LOG : Time taken to create instances and nets is 5.40707 seconds.
+INFO (mcp-1603): No new memory definition detected by automatic memory detection.
+INFO (jdb-1018): Saving QTDB library hdldb...
+INFO (db-9999): QTDB created in 3437 ms
+INFO (jdb-1017): Time taken to save QTDB library  hdldb is 4.45094 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB Lib hdldb Created at 
+Wall clock time:2024-10-22 11:04:00.275
+INFO (import-1246): Netlist File xc_work/xc_va.ver (VERILOG) Summary:
+     Lines parsed: 415448
+     Cells created: 324
+     Cells deleted: 0
+     Cells compared: 0
+     Terminals created: 127999
+     Terminals deleted: 0
+     Instances created: 297751
+     Instances deleted: 0
+     Nets created: 572721
+     Nets deleted: 0
+     Connections created: 1256041
+     Connections deleted: 0
+INFO (import-1245): Import Summary:
+     Lines parsed: 415448
+     Cells created: 324
+     Cells deleted: 0
+     Cells compared: 0
+     Terminals created: 127999
+     Terminals deleted: 0
+     Instances created: 297751
+     Instances deleted: 0
+     Nets created: 572721
+     Nets deleted: 0
+     Connections created: 1256041
+     Connections deleted: 0
+INFO (import-1354): Current time: Tue Oct 22 11:04:00 2024
+ Rusage Stats: 
+	 User CPU Time: 13.786423 sec
+	 System CPU Time: 0.620838 sec
+	 PhyMemTotal(MB): 691
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       11        4        0        0
+Swap (GB):        7        1        6
+INFO (import-1000): 1, 1, bytes: 2116050944
+INFO (import-1355): Memory Stats
+	 System  Memory (GB) Total:    15	 Free   :     4	 Cached  :     8
+ 	 Process Memory (GB) Peak :     1	 Virtual:     1	 Physical:     0
+INFO (import-1054): exit SUCCESS.
+INFO (import-1354): Current time: Tue Oct 22 11:04:00 2024
+ Rusage Stats: 
+	 User CPU Time: 13.927049 sec
+	 System CPU Time: 0.693756 sec
+	 PhyMemTotal(MB): 691
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       11        4        0        0
+Swap (GB):        7        1        6
+INFO (legacy-67676): designImport Elapsed Time: 15 secs
+[ PROFILER_START ]
+[ STAGE => MAIN : PROCESS_NUM - 0 : Log file : xeCompile.log ]
+=====================================================================================
+Executed Task                                     |Elapsedtime (second) : 13.2513
+=====================================================================================
+Creation of Instances / Nets (PASS2)              |5.40799             
+Saving Library                                    |4.45134             
+Creation of Cells (PASS1)                         |3.0134              
+Check Netlist Protection                          |0.376928            
+=====================================================================================
+[ PROFILER_END ]
+INFO (legacy-11003): import FINISHED SUCCESSFULLY
+IXCOMQEL> sourcing xc_work/qel/ixcomImport.qel took 15s
+Sourcing xc_work/qel/ixcPreDesignOptions.qel
+INFO 53652: checking Palladium_Z2_Compiler (23.00) ...
+oomr - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+Import library "qtref"
+Import library "hdldb"
+QTDB Library "qtref" has been imported successfully
+QTDB Library "hdldb" has been imported successfully
+INFO (legacy-35223): Adding keepNets from file QTDB/.import/.hier_keep_nets_hdldb at Tue Oct 22 11:04:02 2024
+ 
+INFO (legacy-23120): UserData -cache on at Tue Oct 22 11:04:02 2024
+
+INFO (legacy-23121): UserData -cache off at Tue Oct 22 11:04:02 2024
+
+INFO (legacy-35223): Successfully added keepNets from file QTDB/.import/.hier_keep_nets_hdldb at Tue Oct 22 11:04:02 2024
+ 
+hdldb xcva_top
+XEC> 
+XEC> if {[file exists xc_work/qel/ixcOptions.qel]} {
+    source xc_work/qel/ixcOptions.qel
+}
+XEC> 
+XEC> probeInternalNet -add xc_top.sdlEnable xc_top.tbcEnable xc_top.sdlHaltHwClk xc_top.hwClkDbg xc_top.hwClkDbgTime xc_top.hwClkEnable
+XEC> 
+XEC> if { $MCFlow } {
+    if { [info exists diCompileFindOptions] || [string match $xecompileTarget {et3pass[12]}] } {
+        set compileScript "diCompileFind"
+        if { [info exists diCompileFindOptions] } { 
+            append compileScript " $diCompileFindOptions" 
+        }
+        if { $xecompileTarget eq "et3pass1" } {
+            append compileScript " -et3pass1"
+        } else if { $xecompileTarget eq "et3pass2" } { 
+            append compileScript " -et3pass2" 
+        }
+    } else {
+        set compileScript "diCompile"
+        if { $skipImport || $::IXCOMbp } {
+            append compileScript " -skipImport "
+        } elseif { $importOnly } {
+            append compileScript " -importOnly "
+        }
+        if { $xecompileTarget eq "dbgPrepare" } {
+            append compileScript " -dbgPrepareOnly"
+        } elseif { $xecompileTarget eq "dbgPrepare2" } { 
+            append compileScript " -dbgPreparePass2Only" 
+        }
+    }
+} elseif { $xecompileTarget eq "precompile" } {
+    set compileScript "precompile"
+} elseif { $xecompileTarget eq "et3pass1" } {
+    set compileScript "compileFind -et3pass1"
+} elseif { $xecompileTarget eq "et3pass2" } {
+    set compileScript "compileFind -et3pass2" 
+} else {
+    set compileScript "compile -names_crit"
+}
+compile -names_crit
+XEC> 
+XEC> 
+XEC> set postCompileScript ""
+XEC> 
+XEC> # Make changes for UPF/CPF/1X features.
+XEC> handleBackendArgs $argc $argv
+precompileOption -add 1xua
+XEC> 
+XEC> # With et3pass1/2 we cannot afford to lose the emulator-config previously registered
+XEC> if { $xecompileTarget ne "et3pass1" && $xecompileTarget ne "et3pass2"  && (($xecompileTarget ne "precompile") || ![checkEmulatorConfigUD]) && (($xecompileTarget eq "compile") || ![checkEmulatorConfigUD])} { 
+    set defaultConfg [ file join $env(QTHOME) etc et3 ua_default.et3confg ]
+    emulatorConfiguration -add "file $defaultConfg" "boards 0.0"
+}
+/bin/cp -f /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/et3/ua_default.et3confg dbFiles/xcva_top.et3confg
+/bin/cp -f dbFiles/xcva_top.et3confg dbFiles/masterEmu.et3confg
+/bin/cp -f dbFiles/xcva_top.et3confg dbFiles/masterEmu.et3confg
+XEC> 
+XEC> if {[file exists xc_work/nl/hot-swap.qel]} {
+    source xc_work/nl/hot-swap.qel
+}
+XEC> 
+XEC> if {[file exists xc_work/qel/mdx.qel]} {
+    source xc_work/qel/mdx.qel
+}
+XEC> 
+XEC> # Source compiler options script from user if specified
+XEC> set compilerOptionsQel "xc_work/qel/compilerOptions.qel"
+xc_work/qel/compilerOptions.qel
+XEC> if { [file exists $compilerOptionsQel] } {
+    source $compilerOptionsQel
+} else {
+    if {[file exists compilerOptions.qel]} {
+	source compilerOptions.qel
+    }
+}
+INFO (legacy-3890): hsv-smd414 is a cfgmgr host
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg dbFiles/xcva_top.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+XEC> 
+XEC> ##############################
+XEC> # Compile Find related section
+XEC> 
+XEC> set et3passTargets [string match $xecompileTarget {et3pass[12]}]
+0
+XEC> if { $MCFlow } {
+    if { [info exists diCompileFindOptions] || $et3passTargets } {
+        set compileScript "diCompileFind"
+        if { [info exists diCompileFindOptions] } { 
+            append compileScript " $diCompileFindOptions" 
+        }
+        if { $xecompileTarget eq "et3pass1" } {
+            append compileScript " -et3pass1"
+        } elseif { $xecompileTarget eq "et3pass2" } { 
+            append compileScript " -et3pass2" 
+        }
+    }
+    if { [info exists diCompileOptions] } { 
+        append compileScript " $diCompileOptions" 
+    }
+} else {
+    if { [info exists compileFindOptions] &&  $et3passTargets } {
+        append compileScript " $compileFindOptions"
+    } 
+}
+XEC> ##############################
+XEC> 
+XEC> 
+XEC> if {[info exists env(XE_DYNP)]} {
+    compilerOption -add {visionMode DYNP}
+} elseif  {[info exists env(UXE_DYNP)]} {
+    compilerOption -add {visionMode DYNP}
+}
+XEC> 
+XEC> if {[info exists env(XE_MINSTEP)]} {
+  eval "compilerOption -add {minStep $env(XE_MINSTEP)}"
+} elseif  {[info exists env(UXE_MINSTEP)]} {
+  eval "compilerOption -add {minStep $env(UXE_MINSTEP)}"
+}
+XEC> 
+XEC> checkEnvForHostSetup
+Environment variables found for emulator configuration.
+emulatorConfiguration -add {host hsv-smd414} {boards 108}
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg dbFiles/xcva_top.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+XEC> 
+XEC> set t [clock seconds]
+1729620251
+XEC> eval $compileScript 
+INFO: Peak Memory Usage of the program (compile) is 1686  MB 
+INFO (legacy-45969): Rerun 'precompile' because of the changes of user data 'emulatorConfiguration compilerOption precompileOption '
+INFO (legacy-42624): Clock information saved to CLOCK_SOURCES
+INFO (legacy-44592): Confirmed using '.' as the design hierarchical path delimiter.
+INFO (legacy-43061): ******************************************** 
+INFO (legacy-43062): *  Running the precompile step
+INFO (legacy-43065): ******************************************** 
+Started system calibration process: 19605
+Using memory unit: KB and year: false
+Processing PPC settings: None
+INFO (legacy-0): updatePass1Stat status: 0, pid_t: -1
+INFO (legacy-0): Reading User Data...
+Total Symmetric Configuration options imported: 1
+Total clock options imported: 6
+Total compiler options imported: 43
+Total HW configuration options imported: 2
+Total internal probes imported: 6
+Total Precompile options imported: 3
+Info: file xc_work/xc_top.ucdb is backed up as xc_work/precompile.ucdb
+Total UCDB Signals imported: 79
+MESSAGE (legacy-0): Flattening design hdldb xcva_top...
+INFO (mtprecompile-1002): Running on a workstation with 4 CPUs.
+INFO (mtprecompile-1003): Precompiler is using 16 parallel threads.
+INFO (multclk-1946): Disconnected 248 sourceless buffers.
+MESSAGE (legacy-0): Processing assigns and strengths...
+MESSAGE (legacy-0): Initialize Design Rule Checker...
+MESSAGE (legacy-0): Trim net without source...
+MESSAGE (legacy-0): Propagate constants...
+MESSAGE (legacy-0): Verify netlist...
+MESSAGE (legacy-0): Update netlist...
+WARNING (jptdrc-1120): DRC detected 2314 sourceless nets, out of which 651 are generated by IXCOM. See ./tmp/drc.rpt for details. To see IXCOM generated sourceless nets apply precompileOption -add logAllMultiDrv.
+INFO (jptdrc-1112): Inserted 468 recirculating FF for sourceless and supply keepnets.
+INFO (jptdrc-1127): DRC combined drivers for 96 nets, which are subject to force/release. See ./tmp/drc.rpt for details. To see all force/release registers apply precompileOption -add logAllMultiDrv.
+MESSAGE (legacy-0): Cleaning...
+INFO (multclk-1277): Detected AP2 hardware configuration.
+MESSAGE (legacy-0): Collecting exclusivity points...
+MESSAGE (legacy-0): Initializing nets...
+MESSAGE (legacy-0): Initializing primitives...
+MESSAGE (legacy-0): Setting clock and data paths...
+MESSAGE (legacy-0): Setting exclusivity points...
+MESSAGE (legacy-0): Propagating clocks...
+MESSAGE (legacy-0): Propagating clocks...
+MESSAGE (legacy-0): Propagating data...
+MESSAGE (legacy-0): Duplicating and breaking combinational feedback loops...
+MESSAGE (legacy-0): Breaking clock feedback loops...
+MESSAGE (legacy-0): Breaking data feedback loops...
+MESSAGE (legacy-0): Breaking set/reset feedback loops...
+MESSAGE (legacy-0): Synthesizing registers...
+INFO (multclk-1137): Design will be emulated in fast mode.
+MESSAGE (legacy-0): Cleaning...
+INFO (multclk-1675): Shadows statistics: 19849 in clock cones, 89084 in data cones, 5191 ECM and 14200 instrumentation nets.
+INFO (multclk-1674): You may use ./shadows.request file to analyze shadows origin. Read this file for details.
+MESSAGE (legacy-0): Setting keepnets and probes...
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+MESSAGE (legacy-0): Inserting instrumentation logic...
+INFO (legacy-47291): Option advancedPartEffort not set. Using default value: 2.
+Partition marking took 1 second.
+MESSAGE (legacy-0): Creating partitions infrastructure...
+INFO (legacy-47291): Option advancedPartEffort not set. Using default value: 2.
+Partition marking took less than a second.
+MESSAGE (legacy-0): Logging partitions information...
+Begin partition resource assignment
+Partitions with no assignment: 	1
+Resources <brd.dom> available: 	0.0+0.1+0.2+0.3+0.4+0.5+0.6+0.7
+Created file 'tmp/partitionAssign.qel' successfully.
+End partition resource assignment
+Partition resource assignment took less than a second.
+MESSAGE (legacy-0): Collecting ids and names...
+MESSAGE (legacy-0): Saving netlist...
+Collecting Simulation Acceleration I/Os...
+Collecting tieSourceless I/Os...
+Writing I/O source partition file (Pass 1) ... Done.
+Preparing Initial PPC SideFiles took less than a second.
+Creating initial proto2 took 1 second.
+INFO (legacy-46435): Successfully generate memory rules file.
+Preparing CTL file and I/O partition assignment...
+Parsing I/O source partition file (Pass 1) ... Done.
+Writing I/O source partition file (Pass 2) ... Done.
+Optimizing I/O partition location took less than a second.
+INFO (tich-1014): Generating ctl file for ice mode
+INFO (tich-1017): CTL file generation succeeded.
+Generating CTL file took less than a second.
+Preparing PPC SideFiles took less than a second.
+INFO (legacy-0): 906568 synonyms have been setup: elapsed time 1 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): pass1: clearAllStep() in dbgPrepareMain
+INFO (legacy-0): dbgPrepstatus file get cleared
+INFO (legacy-0): updatePass1Stat status: 0, pid_t: -1
+Free mem: 2.4G; Memory usage: 4.1G
+dbgPrepare pre-selected instances top N = 10000
+INFO (legacy-39111): Opening PDB hdldb xcva_top (of=16).
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): CRT-FULL has been restored: elapsed time 0 sec
+ConstructInfoFile 119 cells (2923 constructs) which has 2706 records 87 arrays 155752 name size.
+INFO (legacy-45793): Collected construct info.
+WARNING (legacy-55183): Mode 'FV' detected, dsnGen only support FV and CP mode.
+INFO (legacy-0): pass1: start to prepare memory,current time is Tue Oct 22 11:04:24 2024
+INFO (legacy-0): pass1: start to prepare ucdb,current time is Tue Oct 22 11:04:24 2024
+INFO (legacy-0): pass1: start to prepare swfv, current time is Tue Oct 22 11:04:24 2024 
+INFO (legacy-0): Reading BIN ucdb
+building swfv DB...
+INFO (legacy-0): #PPC partitions = 1
+INFO (legacy-0): maxPDBnets 430279 #FD01s 81920 #PIprobes 13931 #FFprobes 47305
+INFO (legacy-0): pass1: finish preparing memory, current time is Tue Oct 22 11:04:25 2024, Elapsed time 0.21 real, 0.6 cpu(0.52u+0.08s), 286%, memory 4207M
+INFO (legacy-1): setStepDone: memory
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish memory preparing
+INFO (legacy-0): pass1: finish preparing ucdb, current time is Tue Oct 22 11:04:25 2024, Elapsed time 0.38 real, 1.17 cpu(1.09u+0.08s), 308%, memory 4207M
+INFO (legacy-1): setStepDone: ucdb
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-73921): Created sourceless net sidefile, total nets 2 (#3:398, #2:11235, #1:11229, #0:349824, 430279)
+total 58553 FF, 13908 PI, 304858 Comb, 398 back-to-back FF in PDB
+INFO (legacy-0): Total Wire Cap = 0.000000(pf)
+INFO (legacy-0): Total Pin Cap = 0.000000(pf)
+INFO (legacy-0): Full swfvDB details: #FF = 58553, #PI = 13908, #Gates = 377323
+INFO (legacy-54218): The number of comb is 304858, the number of breaking points is 0
+INFO (legacy-54218): Find breaking points total time 0.03 real, 0.03 cpu(0.03u+0s), 100%, memory 4207M
+INFO (legacy-26752): Created dccMaskFilePass1 in 0.000000 seconds.
+INFO (legacy-26751): Created swfvIdset with 376921 fv nets in 0.000000 seconds, 1.141541 bits/id, skipped 402 artificial nets.
+INFO (legacy-0): pass1: finish preparing swfvDB, current time is Tue Oct 22 11:04:26 2024, Elapsed time 1.69 real, 4.06 cpu(3.86u+0.2s), 240%, memory 4207M
+INFO (legacy-1): setStepDone: swfvDB
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish swfvDB preparing
+INFO (legacy-0): pass1: finish preparing clockconfig
+INFO (legacy-1): setStepDone: clockconfig
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish clockconfig preparing
+INFO (legacy-0): pass1: finish preparing abart
+INFO (legacy-1): setStepDone: abart
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish abart preparing
+INFO (legacy-1): setStepDone: dccmaskmd5
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: calculate dccMaskFilePass1 md5sum takes 0.020000 seconds.
+INFO (legacy-1): setStepDone: memorymd5
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: calculate memInfo_pass1 md5sum takes 0.010000 seconds.
+INFO (dbgPrep-1052): dbgPrepare done.
+INFO (legacy-0): updatePass1Stat status: 1, pid_t: 16803
+Executing on local host: tmp/mdc.csh PARTITIONS/1 > tmp/reportFromPartition1.log
+Launching partition job took: 15 seconds
+Checking compilation status...
+Starting PPC flow - phase two
+et3compile xcva_top -ppcPhase2 <Version> V23.03.131.s001
+
+INFO (qt2dadb-1035): ***COMPILING FOR IN-CIRCUIT EMULATION MODE***
+MESSAGE (legacy-0): Executing command `xbatch xcva_top xcva_top'
+INFO : Processing Symmetric Compile...
+Retiming...
+Design utilization: 1.1%
+   Scheduling 291853 boxes
+     .............................
+INFO (db2util-1108): Physical data capture trace depth is 15096544.
+INFO (db2util-1067): This design is scheduled in 360 steps.
+MESSAGE (legacy-0): 
+INFO (qt2dadb-1086): Maximum emulator operating speed is 2470 kHz.
+Merged memory files from all partitions in less than a second
+INFO (legacy-46435): Successfully generate memory rules file.
+INFO (legacy-31228): Running core compile with ice mode
+INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): : restored short PDB: elapsed time 0 sec
+INFO (legacy-43322): Running dbgPrepare...
+dbgPrepare pre-selected instances top N = 10000
+collecting ITRestore nets....
+INFO (legacy-0): pass2: start to prepare DADB, current time is Tue Oct 22 11:04:47 2024 
+collecting nets in final proto...
+INFO (legacy-0): collectDADBnets bucketsNum=0, numThreads=5, numPerThread=107569, maxCPUthread = 4
+Total 79349 FF outputs and 11429 self loops 0 user flops 0 floating 325 other nets, maxNets 430279.
+Total 0 dupflops.
+collecting retiming nets....
+Total 294 fd01SuffixNets. total 466 retimedSuffixNets.
+Total retiming net 220.
+Total 430278 nets in PDB, found 249655 in final proto, 0 inv nets, 0 equ nets, 0 delayed nets.
+INFO (legacy-0): pass2: finish preparing DADB, current time is Tue Oct 22 11:04:47 2024,  Elapsed time 0.12 real, 0.27 cpu(0.26u+0.01s), 225%, memory 4207M 
+INFO (legacy-0): pass2: wait for pass1 for ucdb, number of buckets 0
+INFO (legacy-0): pass2: start to prepare UCDB, current time is Tue Oct 22 11:04:47 2024 
+collecting memory information...
+INFO (legacy-37771): sync ./dbFiles/memInfo_pass1 takes 0.010000 seconds.
+INFO (legacy-0): bucket 0 get memory takes 0.010000 seconds
+INFO (legacy-0): get all memories in pass2 takes 0.020000 seconds
+Collecting memory transformations for UA Hardware.
+total 169 user memory
+INFO (legacy-0): pass2: finish preparing ucdb, current time is Tue Oct 22 11:04:48 2024, Elapsed time 0.98 real, 0.96 cpu(0.52u+0.44s), 98%, memory 5664M 
+INFO (legacy-59237): Collecting fastDownload memory high water mark information takes 0.028906 seconds.
+INFO (legacy-73920): Created fastDownload database in 0.056036 seconds.
+INFO (legacy-0): pass2: wait for pass1 for swfv
+INFO (legacy-73921): Call createUdnRegAddrFile in 0.003989 seconds.
+INFO (legacy-37771): sync dbFiles/dccMaskFilePass1 takes 0.010000 seconds.
+INFO (legacy-73921): Created dccMaskFile in 0.060584 seconds.
+INFO (legacy-55098): Created DRTL FF dataIn nets in 0.114008 seconds.
+INFO (dbgPrep-1052): dbgPrepare done.
+INFO (legacy-39111): Opening PDB hdldb xcva_top (of=4).
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): strtab(segs and data) has been restored: elapsed time 1 sec
+INFO (legacy-0): sigmap has been restored: elapsed time 0 sec
+INFO (legacy-0): 1443 cells have been restored: elapsed time 0 sec
+INFO (legacy-0): 430278 smTrNets have been restored: elapsed time 0 sec
+INFO (legacy-0): 416909 smTrPrims have been restored: elapsed time 0 sec
+INFO (legacy-0): flat-conns have been restored: elapsed time 1 sec
+INFO (legacy-0): 1177158 synonyms have been setup: elapsed time 0 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): CRT-FULL has been restored: elapsed time 0 sec
+INFO (legacy-43368): Successfully getting critical path design net names.
+0 -1 360 0 0
+XEC> puts "IXCOMQEL> running $compileScript took [expr [clock seconds] - $t]s"
+IXCOMQEL> running compile -names_crit took 40s
+XEC> 
+XEC> # Source post-Compile script
+XEC> set postCompileQel "xc_work/qel/postCompile.qel"
+xc_work/qel/postCompile.qel
+XEC> if { [file exists $postCompileQel] } {
+    source $postCompileQel
+}
+^D
+XEC> #
+XEC> # Backend compiler script for ixcom 
+XEC> #
+XEC> 
+XEC> set xecompileTarget [lindex $::argv 0]
+1xua
+XEC> 
+XEC> set MCFlow [expr { [lsearch -exact -nocase $::argv "-mcBucket"] >= 0 } ? true : false]
+false
+XEC> 
+XEC> if { $MCFlow } {
+    set IXCOMbp true ;# Default
+    if { [lsearch -exact -nocase $::argv "-bp"] >= 0 } { set IXCOMbp true }
+    if { [lsearch -exact -nocase $::argv "-nobp"] >= 0 } { set IXCOMbp false }
+    
+    if { $IXCOMbp } {
+        puts "Initiating MC flow (bp)"
+        setModularCompile "IXCOMbp"
+    } else {
+        puts "Initiating MC flow"
+        setModularCompile
+    }
+    if { [regexp -nocase -- {-mcBucket +([\w.]+)} $::argv dummy custBFile] && \
+             $custBFile ni {1xua keepregs} } {
+        puts "Using Custom bucket modules file: $custBFile"
+        set ::MC(bucketModulesFile) $custBFile
+    }
+      
+    # Not supported 
+    if { [file exists "xc_work/qel/compile.qel"] || [file exists compile.qel] } {
+        puts "MC-Flow: Ignoring compile.qel script"
+    }
+    set partitionArgIndex [lsearch $::argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        puts "MC-Flow: \"-partition\" is not supported yet"
+        return -code error
+    }
+    # Hack to indicate import should be skipped
+    set skipImport [file exists "xc_work/qel/skipImport.qel"]
+    # Hack to indicate only import should run
+    set importOnly [file exists "xc_work/qel/importOnly.qel"]
+
+    if { [lsearch $argv "-rtldb"] != -1 } {
+        puts "MC-Flow: \"-rtldb\" is not supported yet"
+        return -code error
+    }
+
+    set importOptionsQel "importOptions.qel"
+    if { [file exists $importOptionsQel] } {
+        source $importOptionsQel
+    } 
+
+    # Get importOptions but do not execute designImport
+    set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+    puts "Reading $ixcomImportScript"
+    if { !$skipImport || !$IXCOMbp } {
+        proc runImport {} { if { $::IXCOMbp } { eval diCompile -importOnly } }
+        interp alias {} designImport {} runImport
+        source $ixcomImportScript
+        interp alias {} designImport {}
+    }
+
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    if { $IXCOMbp } {
+        if { $importOnly } { exit }
+        set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"
+        if {[file exists $ixcPreDesignOptionsScript]} {
+           puts "Sourcing $ixcPreDesignOptionsScript"
+           source $ixcPreDesignOptionsScript
+        }             
+        design hdldb xcva_top
+    }
+} else { ;# Regular and PPC flows
+
+    # Source custom compile script from user if specified
+    set compileQel "xc_work/qel/compile.qel"
+    if { [file exists $compileQel] } {
+        source $compileQel
+        exit
+    } else {
+        if {[file exists compile.qel]} {
+            source compile.qel
+            exit
+        }
+    }
+    
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    set partition ""
+    set partitionArgIndex [lsearch $argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        set partition [lindex $argv [ expr $partitionArgIndex + 1 ]]
+    }
+
+    set skipImportScript "xc_work/$partition/qel/skipImport.qel"
+    # Skip import if skipImportScript exists
+
+    if { [file exists $skipImportScript] != 1} {
+        if { $partition eq "" } {
+           set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+        } else {
+           set ixcomImportScript "xc_work/$partition/qel/ixcomImport.qel"
+        }          
+        set t [clock seconds]
+
+        set importOptionsQel "importOptions.qel"
+        if { [file exists $importOptionsQel] } {
+           source $importOptionsQel
+        } 
+        # passing arguments by name
+        handleImportArgs argc argv
+        source $ixcomImportScript
+        puts "IXCOMQEL> sourcing $ixcomImportScript took [expr [clock seconds] - $t]s"
+    }
+
+    set importOnly "xc_work/$partition/qel/importOnly.qel"
+    if { [file exists $importOnly] == 1 } {
+        exit
+    }
+
+    set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"    
+    if {[file exists $ixcPreDesignOptionsScript]} {
+        puts "Sourcing $ixcPreDesignOptionsScript"
+        source $ixcPreDesignOptionsScript
+    }      
+    design hdldb xcva_top
+}
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411888): Path is QTDB/.import/hdldb/.globalImpOption.txt 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+INFO (legacy-411891): Path is QTDB/.import/hdldb/.par_import/.signalMap 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+WARNING (legacy-134520): removing QTDB/.skel
+INFO (import-1354): Current time: Tue Oct 22 11:04:54 2024
+ Rusage Stats: 
+	 User CPU Time: 0.022923 sec
+	 System CPU Time: 0.009966 sec
+	 PhyMemTotal(MB): 13
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       10        4        0        0
+Swap (GB):        7        1        6
+import - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+INFO (import-1038): Processing import control information from file QTDB/.import/hdldb/.xeimp.dil.
+INFO (import-1346): IMPORT_LOG : Time taken to read file QTDB/.import/hdldb/.xeimp.dil is 1.97626e-322 seconds.
+INFO (legacy-765432): Import Log Dir is hdldb 
+INFO (legacy-55555):  farmQueue is  .
+INFO (legacy-55555): Value of farmTimeout is 18000.
+INFO (legacy-55555): Value of maxParallel is -1 .
+=========================================================================================================
+New flow of Reading External Netlist is Enabled. To Disable it, Use "setenv DISABLE_PARALLEL_NETLIST_READ".
+=========================================================================================================
+INFO (import-1228): Name scope processing is not needed.
+INFO (import-1346): IMPORT_LOG : Time taken to mark netlists which are protected is 4.94066e-323 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create components and terminals.
+dbOpenLib: QTDB Library "qtref" has been imported successfully
+INFO (jdb-1000): Loading instances for library qtref
+dbOpenLib: QTDB Library "generic" has been imported successfully
+INFO (jdb-1000): Loading instances for library generic
+INFO (import-1346): IMPORT_LOG : Time taken to create components and terminals is 2.99062 seconds.
+INFO (db-9999): skel QTDB created in 249 ms
+INFO (jdb-1017): Time taken to save QTDB Skel library  hdldb is 0.251274 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB SKEL Lib hdldb Created at 
+Wall clock time:2024-10-22 11:04:58.535
+INFO (import-1346): IMPORT_LOG : Time taken to Import dependent skeleton libraries is 0.000228082 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create instances and nets.
+INFO (import-1346): IMPORT_LOG : Time taken to create instances and nets is 5.33039 seconds.
+INFO (mcp-1603): No new memory definition detected by automatic memory detection.
+INFO (jdb-1018): Saving QTDB library hdldb...
+ERROR (legacy-25194): signal handler: Program Terminated due to signal 2(Interrupt).
+ERROR (legacy-41438): Fatal error, process is exiting.
+2
+    while executing
+"designImport "
+    (file "xc_work/qel/ixcomImport.qel" line 15)
+    invoked from within
+"source $ixcomImportScript"
+    invoked from within
+"if { $MCFlow } {
+    set IXCOMbp true ;# Default
+    if { [lsearch -exact -nocase $::argv "-bp"] >= 0 } { set IXCOMbp true }
+    if { [lsearch -exact ..."
+    (file "/lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel" line 126)
+XEC> #
+XEC> # Backend compiler script for ixcom 
+XEC> #
+XEC> 
+XEC> set xecompileTarget [lindex $::argv 0]
+1xua
+XEC> 
+XEC> set MCFlow [expr { [lsearch -exact -nocase $::argv "-mcBucket"] >= 0 } ? true : false]
+false
+XEC> 
+XEC> if { $MCFlow } {
+    set IXCOMbp true ;# Default
+    if { [lsearch -exact -nocase $::argv "-bp"] >= 0 } { set IXCOMbp true }
+    if { [lsearch -exact -nocase $::argv "-nobp"] >= 0 } { set IXCOMbp false }
+    
+    if { $IXCOMbp } {
+        puts "Initiating MC flow (bp)"
+        setModularCompile "IXCOMbp"
+    } else {
+        puts "Initiating MC flow"
+        setModularCompile
+    }
+    if { [regexp -nocase -- {-mcBucket +([\w.]+)} $::argv dummy custBFile] && \
+             $custBFile ni {1xua keepregs} } {
+        puts "Using Custom bucket modules file: $custBFile"
+        set ::MC(bucketModulesFile) $custBFile
+    }
+      
+    # Not supported 
+    if { [file exists "xc_work/qel/compile.qel"] || [file exists compile.qel] } {
+        puts "MC-Flow: Ignoring compile.qel script"
+    }
+    set partitionArgIndex [lsearch $::argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        puts "MC-Flow: \"-partition\" is not supported yet"
+        return -code error
+    }
+    # Hack to indicate import should be skipped
+    set skipImport [file exists "xc_work/qel/skipImport.qel"]
+    # Hack to indicate only import should run
+    set importOnly [file exists "xc_work/qel/importOnly.qel"]
+
+    if { [lsearch $argv "-rtldb"] != -1 } {
+        puts "MC-Flow: \"-rtldb\" is not supported yet"
+        return -code error
+    }
+
+    set importOptionsQel "importOptions.qel"
+    if { [file exists $importOptionsQel] } {
+        source $importOptionsQel
+    } 
+
+    # Get importOptions but do not execute designImport
+    set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+    puts "Reading $ixcomImportScript"
+    if { !$skipImport || !$IXCOMbp } {
+        proc runImport {} { if { $::IXCOMbp } { eval diCompile -importOnly } }
+        interp alias {} designImport {} runImport
+        source $ixcomImportScript
+        interp alias {} designImport {}
+    }
+
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    if { $IXCOMbp } {
+        if { $importOnly } { exit }
+        set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"
+        if {[file exists $ixcPreDesignOptionsScript]} {
+           puts "Sourcing $ixcPreDesignOptionsScript"
+           source $ixcPreDesignOptionsScript
+        }             
+        design hdldb xcva_top
+    }
+} else { ;# Regular and PPC flows
+
+    # Source custom compile script from user if specified
+    set compileQel "xc_work/qel/compile.qel"
+    if { [file exists $compileQel] } {
+        source $compileQel
+        exit
+    } else {
+        if {[file exists compile.qel]} {
+            source compile.qel
+            exit
+        }
+    }
+    
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    set partition ""
+    set partitionArgIndex [lsearch $argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        set partition [lindex $argv [ expr $partitionArgIndex + 1 ]]
+    }
+
+    set skipImportScript "xc_work/$partition/qel/skipImport.qel"
+    # Skip import if skipImportScript exists
+
+    if { [file exists $skipImportScript] != 1} {
+        if { $partition eq "" } {
+           set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+        } else {
+           set ixcomImportScript "xc_work/$partition/qel/ixcomImport.qel"
+        }          
+        set t [clock seconds]
+
+        set importOptionsQel "importOptions.qel"
+        if { [file exists $importOptionsQel] } {
+           source $importOptionsQel
+        } 
+        # passing arguments by name
+        handleImportArgs argc argv
+        source $ixcomImportScript
+        puts "IXCOMQEL> sourcing $ixcomImportScript took [expr [clock seconds] - $t]s"
+    }
+
+    set importOnly "xc_work/$partition/qel/importOnly.qel"
+    if { [file exists $importOnly] == 1 } {
+        exit
+    }
+
+    set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"    
+    if {[file exists $ixcPreDesignOptionsScript]} {
+        puts "Sourcing $ixcPreDesignOptionsScript"
+        source $ixcPreDesignOptionsScript
+    }      
+    design hdldb xcva_top
+}
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411888): Path is QTDB/.import/hdldb/.globalImpOption.txt 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+INFO (legacy-411891): Path is QTDB/.import/hdldb/.par_import/.signalMap 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+WARNING (legacy-134520): removing QTDB/.skel
+INFO (import-1354): Current time: Tue Oct 22 11:06:22 2024
+ Rusage Stats: 
+	 User CPU Time: 0.021097 sec
+	 System CPU Time: 0.012466 sec
+	 PhyMemTotal(MB): 13
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       10        4        0        0
+Swap (GB):        7        1        6
+import - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+INFO (import-1038): Processing import control information from file QTDB/.import/hdldb/.xeimp.dil.
+INFO (import-1346): IMPORT_LOG : Time taken to read file QTDB/.import/hdldb/.xeimp.dil is 1.97626e-322 seconds.
+INFO (legacy-765432): Import Log Dir is hdldb 
+INFO (legacy-55555):  farmQueue is  .
+INFO (legacy-55555): Value of farmTimeout is 18000.
+INFO (legacy-55555): Value of maxParallel is -1 .
+=========================================================================================================
+New flow of Reading External Netlist is Enabled. To Disable it, Use "setenv DISABLE_PARALLEL_NETLIST_READ".
+=========================================================================================================
+INFO (import-1228): Name scope processing is not needed.
+INFO (import-1346): IMPORT_LOG : Time taken to mark netlists which are protected is 4.94066e-323 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create components and terminals.
+dbOpenLib: QTDB Library "qtref" has been imported successfully
+INFO (jdb-1000): Loading instances for library qtref
+dbOpenLib: QTDB Library "generic" has been imported successfully
+INFO (jdb-1000): Loading instances for library generic
+INFO (import-1346): IMPORT_LOG : Time taken to create components and terminals is 3.0726 seconds.
+INFO (db-9999): skel QTDB created in 254 ms
+INFO (jdb-1017): Time taken to save QTDB Skel library  hdldb is 0.257065 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB SKEL Lib hdldb Created at 
+Wall clock time:2024-10-22 11:06:26.585
+INFO (import-1346): IMPORT_LOG : Time taken to Import dependent skeleton libraries is 0.000255131 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create instances and nets.
+INFO (import-1346): IMPORT_LOG : Time taken to create instances and nets is 5.33248 seconds.
+INFO (mcp-1603): No new memory definition detected by automatic memory detection.
+INFO (jdb-1018): Saving QTDB library hdldb...
+INFO (db-9999): QTDB created in 3381 ms
+INFO (jdb-1017): Time taken to save QTDB library  hdldb is 4.36793 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB Lib hdldb Created at 
+Wall clock time:2024-10-22 11:06:37.193
+INFO (import-1246): Netlist File xc_work/xc_va.ver (VERILOG) Summary:
+     Lines parsed: 415448
+     Cells created: 324
+     Cells deleted: 0
+     Cells compared: 0
+     Terminals created: 127999
+     Terminals deleted: 0
+     Instances created: 297751
+     Instances deleted: 0
+     Nets created: 572721
+     Nets deleted: 0
+     Connections created: 1256041
+     Connections deleted: 0
+INFO (import-1245): Import Summary:
+     Lines parsed: 415448
+     Cells created: 324
+     Cells deleted: 0
+     Cells compared: 0
+     Terminals created: 127999
+     Terminals deleted: 0
+     Instances created: 297751
+     Instances deleted: 0
+     Nets created: 572721
+     Nets deleted: 0
+     Connections created: 1256041
+     Connections deleted: 0
+INFO (import-1354): Current time: Tue Oct 22 11:06:37 2024
+ Rusage Stats: 
+	 User CPU Time: 13.727961 sec
+	 System CPU Time: 0.556147 sec
+	 PhyMemTotal(MB): 691
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       11        4        0        0
+Swap (GB):        7        1        6
+INFO (import-1000): 1, 1, bytes: 2115850240
+INFO (import-1355): Memory Stats
+	 System  Memory (GB) Total:    15	 Free   :     4	 Cached  :     8
+ 	 Process Memory (GB) Peak :     1	 Virtual:     1	 Physical:     0
+INFO (import-1054): exit SUCCESS.
+INFO (import-1354): Current time: Tue Oct 22 11:06:37 2024
+ Rusage Stats: 
+	 User CPU Time: 13.854544 sec
+	 System CPU Time: 0.641008 sec
+	 PhyMemTotal(MB): 691
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       11        4        0        0
+Swap (GB):        7        1        6
+INFO (legacy-67676): designImport Elapsed Time: 15 secs
+[ PROFILER_START ]
+[ STAGE => MAIN : PROCESS_NUM - 0 : Log file : xeCompile.log ]
+=====================================================================================
+Executed Task                                     |Elapsedtime (second) : 13.1582
+=====================================================================================
+Creation of Instances / Nets (PASS2)              |5.33337             
+Saving Library                                    |4.36818             
+Creation of Cells (PASS1)                         |3.07505             
+Check Netlist Protection                          |0.378452            
+=====================================================================================
+[ PROFILER_END ]
+INFO (legacy-11003): import FINISHED SUCCESSFULLY
+IXCOMQEL> sourcing xc_work/qel/ixcomImport.qel took 15s
+Sourcing xc_work/qel/ixcPreDesignOptions.qel
+INFO 53652: checking Palladium_Z2_Compiler (23.00) ...
+oomr - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+Import library "qtref"
+Import library "hdldb"
+QTDB Library "qtref" has been imported successfully
+QTDB Library "hdldb" has been imported successfully
+INFO (legacy-35223): Adding keepNets from file QTDB/.import/.hier_keep_nets_hdldb at Tue Oct 22 11:06:39 2024
+ 
+INFO (legacy-23120): UserData -cache on at Tue Oct 22 11:06:39 2024
+
+INFO (legacy-23121): UserData -cache off at Tue Oct 22 11:06:39 2024
+
+INFO (legacy-35223): Successfully added keepNets from file QTDB/.import/.hier_keep_nets_hdldb at Tue Oct 22 11:06:39 2024
+ 
+hdldb xcva_top
+XEC> 
+XEC> if {[file exists xc_work/qel/ixcOptions.qel]} {
+    source xc_work/qel/ixcOptions.qel
+}
+INFO (legacy-22706): '* shallow off' of 'memoryTransform' is already in the DB.
+INFO (legacy-47291): Precompile option keepEmptyCells is already in the DB.
+INFO (legacy-47291): Precompile option breakECMloops is already in the DB.
+XEC> 
+XEC> probeInternalNet -add xc_top.sdlEnable xc_top.tbcEnable xc_top.sdlHaltHwClk xc_top.hwClkDbg xc_top.hwClkDbgTime xc_top.hwClkEnable
+INFO (legacy-42185): probeInternalNet name xc_top.sdlEnable is already in the DB.
+INFO (legacy-42185): probeInternalNet name xc_top.tbcEnable is already in the DB.
+INFO (legacy-42185): probeInternalNet name xc_top.sdlHaltHwClk is already in the DB.
+INFO (legacy-42185): probeInternalNet name xc_top.hwClkDbg is already in the DB.
+INFO (legacy-42185): probeInternalNet name xc_top.hwClkDbgTime is already in the DB.
+INFO (legacy-42185): probeInternalNet name xc_top.hwClkEnable is already in the DB.
+XEC> 
+XEC> if { $MCFlow } {
+    if { [info exists diCompileFindOptions] || [string match $xecompileTarget {et3pass[12]}] } {
+        set compileScript "diCompileFind"
+        if { [info exists diCompileFindOptions] } { 
+            append compileScript " $diCompileFindOptions" 
+        }
+        if { $xecompileTarget eq "et3pass1" } {
+            append compileScript " -et3pass1"
+        } else if { $xecompileTarget eq "et3pass2" } { 
+            append compileScript " -et3pass2" 
+        }
+    } else {
+        set compileScript "diCompile"
+        if { $skipImport || $::IXCOMbp } {
+            append compileScript " -skipImport "
+        } elseif { $importOnly } {
+            append compileScript " -importOnly "
+        }
+        if { $xecompileTarget eq "dbgPrepare" } {
+            append compileScript " -dbgPrepareOnly"
+        } elseif { $xecompileTarget eq "dbgPrepare2" } { 
+            append compileScript " -dbgPreparePass2Only" 
+        }
+    }
+} elseif { $xecompileTarget eq "precompile" } {
+    set compileScript "precompile"
+} elseif { $xecompileTarget eq "et3pass1" } {
+    set compileScript "compileFind -et3pass1"
+} elseif { $xecompileTarget eq "et3pass2" } {
+    set compileScript "compileFind -et3pass2" 
+} else {
+    set compileScript "compile -names_crit"
+}
+compile -names_crit
+XEC> 
+XEC> 
+XEC> set postCompileScript ""
+XEC> 
+XEC> # Make changes for UPF/CPF/1X features.
+XEC> handleBackendArgs $argc $argv
+INFO (legacy-47291): Precompile option 1xUA is already in the DB.
+precompileOption -add 1xua
+XEC> 
+XEC> # With et3pass1/2 we cannot afford to lose the emulator-config previously registered
+XEC> if { $xecompileTarget ne "et3pass1" && $xecompileTarget ne "et3pass2"  && (($xecompileTarget ne "precompile") || ![checkEmulatorConfigUD]) && (($xecompileTarget eq "compile") || ![checkEmulatorConfigUD])} { 
+    set defaultConfg [ file join $env(QTHOME) etc et3 ua_default.et3confg ]
+    emulatorConfiguration -add "file $defaultConfg" "boards 0.0"
+}
+Found Emulator Configuration in USER DATA:
+108.0+108.1+108.2+108.3+108.4+108.5+108.6+108.7
+XEC> 
+XEC> if {[file exists xc_work/nl/hot-swap.qel]} {
+    source xc_work/nl/hot-swap.qel
+}
+XEC> 
+XEC> if {[file exists xc_work/qel/mdx.qel]} {
+    source xc_work/qel/mdx.qel
+}
+XEC> 
+XEC> # Source compiler options script from user if specified
+XEC> set compilerOptionsQel "xc_work/qel/compilerOptions.qel"
+xc_work/qel/compilerOptions.qel
+XEC> if { [file exists $compilerOptionsQel] } {
+    source $compilerOptionsQel
+} else {
+    if {[file exists compilerOptions.qel]} {
+	source compilerOptions.qel
+    }
+}
+INFO (legacy-3890): hsv-smd414 is a cfgmgr host
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg dbFiles/xcva_top.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+INFO (legacy-22706): Symmetric configuration '{HOST hsv-smd414} {BOARDS all}' is already in the DB.
+XEC> 
+XEC> ##############################
+XEC> # Compile Find related section
+XEC> 
+XEC> set et3passTargets [string match $xecompileTarget {et3pass[12]}]
+0
+XEC> if { $MCFlow } {
+    if { [info exists diCompileFindOptions] || $et3passTargets } {
+        set compileScript "diCompileFind"
+        if { [info exists diCompileFindOptions] } { 
+            append compileScript " $diCompileFindOptions" 
+        }
+        if { $xecompileTarget eq "et3pass1" } {
+            append compileScript " -et3pass1"
+        } elseif { $xecompileTarget eq "et3pass2" } { 
+            append compileScript " -et3pass2" 
+        }
+    }
+    if { [info exists diCompileOptions] } { 
+        append compileScript " $diCompileOptions" 
+    }
+} else {
+    if { [info exists compileFindOptions] &&  $et3passTargets } {
+        append compileScript " $compileFindOptions"
+    } 
+}
+XEC> ##############################
+XEC> 
+XEC> 
+XEC> if {[info exists env(XE_DYNP)]} {
+    compilerOption -add {visionMode DYNP}
+} elseif  {[info exists env(UXE_DYNP)]} {
+    compilerOption -add {visionMode DYNP}
+}
+XEC> 
+XEC> if {[info exists env(XE_MINSTEP)]} {
+  eval "compilerOption -add {minStep $env(XE_MINSTEP)}"
+} elseif  {[info exists env(UXE_MINSTEP)]} {
+  eval "compilerOption -add {minStep $env(UXE_MINSTEP)}"
+}
+XEC> 
+XEC> checkEnvForHostSetup
+Environment variables found for emulator configuration.
+emulatorConfiguration -add {host hsv-smd414} {boards 108}
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg dbFiles/xcva_top.et3confg
+INFO (legacy-3891): vxe_fileio hsv-smd414 get /et3mach/scd.et3confg ./dbFiles/hsv-smd414.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+/bin/cp -f ./dbFiles/hsv-smd414.et3confg dbFiles/masterEmu.et3confg
+XEC> 
+XEC> set t [clock seconds]
+1729620408
+XEC> eval $compileScript 
+INFO: Peak Memory Usage of the program (compile) is 1686  MB 
+INFO (legacy-47925): QTDB changed: llib 'hdldb.llib' has been modified
+INFO (legacy-47926): Rerun 'precompile' because QTDB has been modified
+INFO (legacy-42624): Clock information saved to CLOCK_SOURCES
+INFO (legacy-44592): Confirmed using '.' as the design hierarchical path delimiter.
+INFO (legacy-43061): ******************************************** 
+INFO (legacy-43062): *  Running the precompile step
+INFO (legacy-43065): ******************************************** 
+MetricProf: Unable to Create Benchmark File /tmp/xeCompSysInfo.log - File exists
+Using memory unit: KB and year: false
+Processing PPC settings: None
+INFO (legacy-0): updatePass1Stat status: 0, pid_t: -1
+INFO (legacy-0): Reading User Data...
+Total Symmetric Configuration options imported: 1
+Total clock options imported: 6
+Total compiler options imported: 43
+Total HW configuration options imported: 2
+Total internal probes imported: 6
+Total Precompile options imported: 3
+Info: file xc_work/xc_top.ucdb is backed up as xc_work/precompile.ucdb
+Total UCDB Signals imported: 79
+MESSAGE (legacy-0): Flattening design hdldb xcva_top...
+INFO (mtprecompile-1002): Running on a workstation with 4 CPUs.
+INFO (mtprecompile-1003): Precompiler is using 16 parallel threads.
+INFO (multclk-1946): Disconnected 248 sourceless buffers.
+MESSAGE (legacy-0): Processing assigns and strengths...
+MESSAGE (legacy-0): Initialize Design Rule Checker...
+MESSAGE (legacy-0): Trim net without source...
+MESSAGE (legacy-0): Propagate constants...
+MESSAGE (legacy-0): Verify netlist...
+MESSAGE (legacy-0): Update netlist...
+WARNING (jptdrc-1120): DRC detected 2314 sourceless nets, out of which 651 are generated by IXCOM. See ./tmp/drc.rpt for details. To see IXCOM generated sourceless nets apply precompileOption -add logAllMultiDrv.
+INFO (jptdrc-1112): Inserted 468 recirculating FF for sourceless and supply keepnets.
+INFO (jptdrc-1127): DRC combined drivers for 96 nets, which are subject to force/release. See ./tmp/drc.rpt for details. To see all force/release registers apply precompileOption -add logAllMultiDrv.
+MESSAGE (legacy-0): Cleaning...
+INFO (multclk-1277): Detected AP2 hardware configuration.
+MESSAGE (legacy-0): Collecting exclusivity points...
+MESSAGE (legacy-0): Initializing nets...
+MESSAGE (legacy-0): Initializing primitives...
+MESSAGE (legacy-0): Setting clock and data paths...
+MESSAGE (legacy-0): Setting exclusivity points...
+MESSAGE (legacy-0): Propagating clocks...
+MESSAGE (legacy-0): Propagating clocks...
+MESSAGE (legacy-0): Propagating data...
+MESSAGE (legacy-0): Duplicating and breaking combinational feedback loops...
+MESSAGE (legacy-0): Breaking clock feedback loops...
+MESSAGE (legacy-0): Breaking data feedback loops...
+MESSAGE (legacy-0): Breaking set/reset feedback loops...
+MESSAGE (legacy-0): Synthesizing registers...
+INFO (multclk-1137): Design will be emulated in fast mode.
+MESSAGE (legacy-0): Cleaning...
+INFO (multclk-1675): Shadows statistics: 19849 in clock cones, 89084 in data cones, 5191 ECM and 14200 instrumentation nets.
+INFO (multclk-1674): You may use ./shadows.request file to analyze shadows origin.
+MESSAGE (legacy-0): Setting keepnets and probes...
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+MESSAGE (legacy-0): Inserting instrumentation logic...
+INFO (legacy-47291): Option advancedPartEffort not set. Using default value: 2.
+Partition marking took 1 second.
+MESSAGE (legacy-0): Creating partitions infrastructure...
+INFO (legacy-47291): Option advancedPartEffort not set. Using default value: 2.
+Partition marking took less than a second.
+MESSAGE (legacy-0): Logging partitions information...
+Begin partition resource assignment
+Partitions with no assignment: 	1
+Resources <brd.dom> available: 	0.0+0.1+0.2+0.3+0.4+0.5+0.6+0.7
+Created file 'tmp/partitionAssign.qel' successfully.
+End partition resource assignment
+Partition resource assignment took less than a second.
+MESSAGE (legacy-0): Collecting ids and names...
+MESSAGE (legacy-0): Saving netlist...
+Collecting Simulation Acceleration I/Os...
+Collecting tieSourceless I/Os...
+Writing I/O source partition file (Pass 1) ... Done.
+Preparing Initial PPC SideFiles took less than a second.
+Creating initial proto2 took 1 second.
+INFO (legacy-46435): Successfully generate memory rules file.
+Preparing CTL file and I/O partition assignment...
+Parsing I/O source partition file (Pass 1) ... Done.
+Writing I/O source partition file (Pass 2) ... Done.
+Optimizing I/O partition location took less than a second.
+INFO (tich-1014): Generating ctl file for ice mode
+INFO (tich-1017): CTL file generation succeeded.
+Generating CTL file took less than a second.
+Preparing PPC SideFiles took less than a second.
+INFO (legacy-0): 906568 synonyms have been setup: elapsed time 1 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): pass1: clearAllStep() in dbgPrepareMain
+INFO (legacy-0): dbgPrepstatus file get cleared
+INFO (legacy-0): updatePass1Stat status: 0, pid_t: -1
+Free mem: 3.8G; Memory usage: 4.1G
+dbgPrepare pre-selected instances top N = 10000
+INFO (legacy-39111): Opening PDB hdldb xcva_top (of=16).
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): CRT-FULL has been restored: elapsed time 0 sec
+ConstructInfoFile 119 cells (2923 constructs) which has 2706 records 87 arrays 155752 name size.
+INFO (legacy-45793): Collected construct info.
+WARNING (legacy-55183): Mode 'FV' detected, dsnGen only support FV and CP mode.
+INFO (legacy-0): pass1: start to prepare memory,current time is Tue Oct 22 11:07:00 2024
+INFO (legacy-0): pass1: start to prepare ucdb,current time is Tue Oct 22 11:07:00 2024
+INFO (legacy-0): pass1: start to prepare swfv, current time is Tue Oct 22 11:07:00 2024 
+INFO (legacy-0): Reading BIN ucdb
+building swfv DB...
+INFO (legacy-0): #PPC partitions = 1
+INFO (legacy-0): maxPDBnets 430279 #FD01s 81920 #PIprobes 13931 #FFprobes 47305
+INFO (legacy-0): pass1: finish preparing memory, current time is Tue Oct 22 11:07:01 2024, Elapsed time 0.22 real, 0.76 cpu(0.7u+0.06s), 345%, memory 4223M
+INFO (legacy-1): setStepDone: memory
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish memory preparing
+INFO (legacy-0): pass1: finish preparing ucdb, current time is Tue Oct 22 11:07:01 2024, Elapsed time 0.3 real, 1.09 cpu(1.03u+0.06s), 363%, memory 4223M
+INFO (legacy-1): setStepDone: ucdb
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-73921): Created sourceless net sidefile, total nets 2 (#3:398, #2:11235, #1:11229, #0:349824, 430279)
+total 58553 FF, 13908 PI, 304858 Comb, 398 back-to-back FF in PDB
+INFO (legacy-0): Total Wire Cap = 0.000000(pf)
+INFO (legacy-0): Total Pin Cap = 0.000000(pf)
+INFO (legacy-0): Full swfvDB details: #FF = 58553, #PI = 13908, #Gates = 377323
+INFO (legacy-54218): The number of comb is 304858, the number of breaking points is 0
+INFO (legacy-54218): Find breaking points total time 0.03 real, 0.03 cpu(0.03u+0s), 100%, memory 4223M
+INFO (legacy-26752): Created dccMaskFilePass1 in 0.000000 seconds.
+INFO (legacy-26751): Created swfvIdset with 376921 fv nets in 0.000000 seconds, 1.141541 bits/id, skipped 402 artificial nets.
+INFO (legacy-0): pass1: finish preparing swfvDB, current time is Tue Oct 22 11:07:02 2024, Elapsed time 1.52 real, 3.99 cpu(3.82u+0.17s), 262%, memory 4223M
+INFO (legacy-1): setStepDone: swfvDB
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish swfvDB preparing
+INFO (legacy-0): pass1: finish preparing clockconfig
+INFO (legacy-1): setStepDone: clockconfig
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish clockconfig preparing
+INFO (legacy-0): pass1: finish preparing abart
+INFO (legacy-1): setStepDone: abart
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: finish abart preparing
+INFO (legacy-1): setStepDone: dccmaskmd5
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: calculate dccMaskFilePass1 md5sum takes 0.030000 seconds.
+INFO (legacy-1): setStepDone: memorymd5
+INFO (legacy-1): Start to write back to dbgPrepStatus
+INFO (legacy-0): pass1: calculate memInfo_pass1 md5sum takes 0.010000 seconds.
+INFO (dbgPrep-1052): dbgPrepare done.
+INFO (legacy-0): updatePass1Stat status: 1, pid_t: 7872
+Executing on local host: tmp/mdc.csh PARTITIONS/1 > tmp/reportFromPartition1.log
+Launching partition job took: 13 seconds
+Checking compilation status...
+Starting PPC flow - phase two
+et3compile xcva_top -ppcPhase2 <Version> V23.03.131.s001
+
+INFO (qt2dadb-1035): ***COMPILING FOR IN-CIRCUIT EMULATION MODE***
+MESSAGE (legacy-0): Executing command `xbatch xcva_top xcva_top'
+INFO : Processing Symmetric Compile...
+Retiming...
+Design utilization: 1.1%
+   Scheduling 291961 boxes
+     .............................
+INFO (db2util-1108): Physical data capture trace depth is 14292736.
+INFO (db2util-1067): This design is scheduled in 368 steps.
+MESSAGE (legacy-0): 
+INFO (qt2dadb-1086): Maximum emulator operating speed is 2418 kHz.
+Merged memory files from all partitions in less than a second
+INFO (legacy-46435): Successfully generate memory rules file.
+INFO (legacy-31228): Running core compile with ice mode
+INFO (legacy-39111): Opening short PDB hdldb xcva_top.
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): : restored short PDB: elapsed time 0 sec
+INFO (legacy-43322): Running dbgPrepare...
+dbgPrepare pre-selected instances top N = 10000
+collecting ITRestore nets....
+INFO (legacy-0): pass2: start to prepare DADB, current time is Tue Oct 22 11:07:21 2024 
+collecting nets in final proto...
+INFO (legacy-0): collectDADBnets bucketsNum=0, numThreads=5, numPerThread=107569, maxCPUthread = 4
+Total 79320 FF outputs and 11429 self loops 0 user flops 0 floating 325 other nets, maxNets 430279.
+Total 0 dupflops.
+collecting retiming nets....
+Total 265 fd01SuffixNets. total 436 retimedSuffixNets.
+Total retiming net 174.
+Total 430278 nets in PDB, found 249279 in final proto, 0 inv nets, 0 equ nets, 0 delayed nets.
+INFO (legacy-0): pass2: finish preparing DADB, current time is Tue Oct 22 11:07:21 2024,  Elapsed time 0.1 real, 0.27 cpu(0.27u+0s), 270%, memory 4223M 
+INFO (legacy-0): pass2: wait for pass1 for ucdb, number of buckets 0
+INFO (legacy-0): pass2: start to prepare UCDB, current time is Tue Oct 22 11:07:21 2024 
+collecting memory information...
+INFO (legacy-37771): sync ./dbFiles/memInfo_pass1 takes 0.010000 seconds.
+INFO (legacy-0): bucket 0 get memory takes 0.000000 seconds
+INFO (legacy-0): get all memories in pass2 takes 0.020000 seconds
+Collecting memory transformations for UA Hardware.
+total 169 user memory
+INFO (legacy-0): pass2: finish preparing ucdb, current time is Tue Oct 22 11:07:22 2024, Elapsed time 0.97 real, 0.98 cpu(0.5u+0.48s), 101%, memory 5648M 
+INFO (legacy-59237): Collecting fastDownload memory high water mark information takes 0.028689 seconds.
+INFO (legacy-73920): Created fastDownload database in 0.071156 seconds.
+INFO (legacy-0): pass2: wait for pass1 for swfv
+INFO (legacy-73921): Call createUdnRegAddrFile in 0.002545 seconds.
+INFO (legacy-37771): sync dbFiles/dccMaskFilePass1 takes 0.010000 seconds.
+INFO (legacy-73921): Created dccMaskFile in 0.051369 seconds.
+INFO (legacy-55098): Created DRTL FF dataIn nets in 0.113572 seconds.
+INFO (dbgPrep-1052): dbgPrepare done.
+INFO (legacy-39111): Opening PDB hdldb xcva_top (of=4).
+INFO (legacy-0): 38681 critical net names have been restored: elapsed time 0 sec
+INFO (legacy-0): strtab(segs and data) has been restored: elapsed time 0 sec
+INFO (legacy-0): sigmap has been restored: elapsed time 0 sec
+INFO (legacy-0): 1443 cells have been restored: elapsed time 1 sec
+INFO (legacy-0): 430278 smTrNets have been restored: elapsed time 0 sec
+INFO (legacy-0): 416909 smTrPrims have been restored: elapsed time 0 sec
+INFO (legacy-0): flat-conns have been restored: elapsed time 0 sec
+INFO (legacy-0): 1177158 synonyms have been setup: elapsed time 0 sec
+INFO (legacy-0): smNetIDs have been setup: elapsed time 0 sec
+INFO (legacy-0): CRT-FULL has been restored: elapsed time 0 sec
+INFO (legacy-43368): Successfully getting critical path design net names.
+0 -1 368 0 0
+XEC> puts "IXCOMQEL> running $compileScript took [expr [clock seconds] - $t]s"
+IXCOMQEL> running compile -names_crit took 37s
+XEC> 
+XEC> # Source post-Compile script
+XEC> set postCompileQel "xc_work/qel/postCompile.qel"
+xc_work/qel/postCompile.qel
+XEC> if { [file exists $postCompileQel] } {
+    source $postCompileQel
+}
+^D
+XEC> #
+XEC> # Backend compiler script for ixcom 
+XEC> #
+XEC> 
+XEC> set xecompileTarget [lindex $::argv 0]
+1xua
+XEC> 
+XEC> set MCFlow [expr { [lsearch -exact -nocase $::argv "-mcBucket"] >= 0 } ? true : false]
+false
+XEC> 
+XEC> if { $MCFlow } {
+    set IXCOMbp true ;# Default
+    if { [lsearch -exact -nocase $::argv "-bp"] >= 0 } { set IXCOMbp true }
+    if { [lsearch -exact -nocase $::argv "-nobp"] >= 0 } { set IXCOMbp false }
+    
+    if { $IXCOMbp } {
+        puts "Initiating MC flow (bp)"
+        setModularCompile "IXCOMbp"
+    } else {
+        puts "Initiating MC flow"
+        setModularCompile
+    }
+    if { [regexp -nocase -- {-mcBucket +([\w.]+)} $::argv dummy custBFile] && \
+             $custBFile ni {1xua keepregs} } {
+        puts "Using Custom bucket modules file: $custBFile"
+        set ::MC(bucketModulesFile) $custBFile
+    }
+      
+    # Not supported 
+    if { [file exists "xc_work/qel/compile.qel"] || [file exists compile.qel] } {
+        puts "MC-Flow: Ignoring compile.qel script"
+    }
+    set partitionArgIndex [lsearch $::argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        puts "MC-Flow: \"-partition\" is not supported yet"
+        return -code error
+    }
+    # Hack to indicate import should be skipped
+    set skipImport [file exists "xc_work/qel/skipImport.qel"]
+    # Hack to indicate only import should run
+    set importOnly [file exists "xc_work/qel/importOnly.qel"]
+
+    if { [lsearch $argv "-rtldb"] != -1 } {
+        puts "MC-Flow: \"-rtldb\" is not supported yet"
+        return -code error
+    }
+
+    set importOptionsQel "importOptions.qel"
+    if { [file exists $importOptionsQel] } {
+        source $importOptionsQel
+    } 
+
+    # Get importOptions but do not execute designImport
+    set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+    puts "Reading $ixcomImportScript"
+    if { !$skipImport || !$IXCOMbp } {
+        proc runImport {} { if { $::IXCOMbp } { eval diCompile -importOnly } }
+        interp alias {} designImport {} runImport
+        source $ixcomImportScript
+        interp alias {} designImport {}
+    }
+
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    if { $IXCOMbp } {
+        if { $importOnly } { exit }
+        set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"
+        if {[file exists $ixcPreDesignOptionsScript]} {
+           puts "Sourcing $ixcPreDesignOptionsScript"
+           source $ixcPreDesignOptionsScript
+        }             
+        design hdldb xcva_top
+    }
+} else { ;# Regular and PPC flows
+
+    # Source custom compile script from user if specified
+    set compileQel "xc_work/qel/compile.qel"
+    if { [file exists $compileQel] } {
+        source $compileQel
+        exit
+    } else {
+        if {[file exists compile.qel]} {
+            source compile.qel
+            exit
+        }
+    }
+    
+    source [file join $env(QTHOME) etc qel ixcom_util.qel]
+
+    set partition ""
+    set partitionArgIndex [lsearch $argv "-partition"]
+    if { $partitionArgIndex != -1 } {
+        set partition [lindex $argv [ expr $partitionArgIndex + 1 ]]
+    }
+
+    set skipImportScript "xc_work/$partition/qel/skipImport.qel"
+    # Skip import if skipImportScript exists
+
+    if { [file exists $skipImportScript] != 1} {
+        if { $partition eq "" } {
+           set ixcomImportScript "xc_work/qel/ixcomImport.qel"
+        } else {
+           set ixcomImportScript "xc_work/$partition/qel/ixcomImport.qel"
+        }          
+        set t [clock seconds]
+
+        set importOptionsQel "importOptions.qel"
+        if { [file exists $importOptionsQel] } {
+           source $importOptionsQel
+        } 
+        # passing arguments by name
+        handleImportArgs argc argv
+        source $ixcomImportScript
+        puts "IXCOMQEL> sourcing $ixcomImportScript took [expr [clock seconds] - $t]s"
+    }
+
+    set importOnly "xc_work/$partition/qel/importOnly.qel"
+    if { [file exists $importOnly] == 1 } {
+        exit
+    }
+
+    set ixcPreDesignOptionsScript "xc_work/qel/ixcPreDesignOptions.qel"    
+    if {[file exists $ixcPreDesignOptionsScript]} {
+        puts "Sourcing $ixcPreDesignOptionsScript"
+        source $ixcPreDesignOptionsScript
+    }      
+    design hdldb xcva_top
+}
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411888): Path is QTDB/.import/hdldb/.globalImpOption.txt 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+INFO (legacy-411891): Path is QTDB/.import/hdldb/.par_import/.signalMap 
+INFO (legacy-411887): Path is QTDB/.import/hdldb 
+INFO (legacy-411890): Path is QTDB/.import/hdldb/.par_import 
+WARNING (legacy-134520): removing QTDB/.skel
+INFO (import-1354): Current time: Tue Oct 22 11:08:09 2024
+ Rusage Stats: 
+	 User CPU Time: 0.022033 sec
+	 System CPU Time: 0.011495 sec
+	 PhyMemTotal(MB): 13
+	 Page Faults: 0
+INFO (import-1000): SystemMemory:
+              total     used     free   shared  buffers
+Mem  (GB):       15       10        4        0        0
+Swap (GB):        7        1        6
+import - 23H1_WXE, V23.03.131.s001            
+
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+INFO (import-1038): Processing import control information from file QTDB/.import/hdldb/.xeimp.dil.
+INFO (import-1346): IMPORT_LOG : Time taken to read file QTDB/.import/hdldb/.xeimp.dil is 1.97626e-322 seconds.
+INFO (legacy-765432): Import Log Dir is hdldb 
+INFO (legacy-55555):  farmQueue is  .
+INFO (legacy-55555): Value of farmTimeout is 18000.
+INFO (legacy-55555): Value of maxParallel is -1 .
+=========================================================================================================
+New flow of Reading External Netlist is Enabled. To Disable it, Use "setenv DISABLE_PARALLEL_NETLIST_READ".
+=========================================================================================================
+INFO (import-1228): Name scope processing is not needed.
+INFO (import-1346): IMPORT_LOG : Time taken to mark netlists which are protected is 4.94066e-323 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create components and terminals.
+dbOpenLib: QTDB Library "qtref" has been imported successfully
+INFO (jdb-1000): Loading instances for library qtref
+dbOpenLib: QTDB Library "generic" has been imported successfully
+INFO (jdb-1000): Loading instances for library generic
+INFO (import-1346): IMPORT_LOG : Time taken to create components and terminals is 2.91435 seconds.
+INFO (db-9999): skel QTDB created in 244 ms
+INFO (jdb-1017): Time taken to save QTDB Skel library  hdldb is 0.247 seconds.
+INFO (legacy-411666): IMPORT_TIME_LOG : QTDB SKEL Lib hdldb Created at 
+Wall clock time:2024-10-22 11:08:13.309
+INFO (import-1346): IMPORT_LOG : Time taken to Import dependent skeleton libraries is 0.000225814 seconds.
+INFO (import-1022): Accessing netlist file xc_work/xc_va.ver to create instances and nets.
+ERROR (legacy-25194): signal handler: Program Terminated due to signal 2(Interrupt).
+ERROR (legacy-41438): Fatal error, process is exiting.

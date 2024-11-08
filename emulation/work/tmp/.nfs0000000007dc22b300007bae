@@ -1,0 +1,864 @@
+
+## hdl2qtdb starts at 10/22/2024 11:02:58 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 14184, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:03:01 Status: 0, PID: 14184
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.13, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.22
+
+## hdl2qtdb starts at 10/22/2024 11:03:02 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 15327, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:03:06 Status: 0, PID: 15327
+## hdl2qtdb Elapsed time: 0:00:04, CPU time: 0:00:00.14, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.23
+
+## hdl2qtdb starts at 10/22/2024 11:03:07 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 15990, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:03:44 Status: 0, PID: 15990
+## hdl2qtdb Elapsed time: 0:00:37, CPU time: 0:00:00.03, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.23
+
+## xeCompile starts at 10/22/2024 11:03:45 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 16803, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## import starts at 10/22/2024 11:03:45 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 17007, DISPLAY: none
+import -qel -qp 0 -o QTDB/.import/hdldb/.xeimp.mdl QTDB/.import/hdldb/.xeimp.dil -qi hdldb
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## import exits at 10/22/2024 11:04:00 Status: 0, PID: 17007
+## import Elapsed time: 0:00:15, CPU time: 0:00:14.59, Memory Usage: 2.0G
+## Child Proc. CPU time: 0:00:00.29
+
+## oomr starts at 10/22/2024 11:04:01 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 17315, DISPLAY: none
+oomr hdldb xcva_top
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## oomr exits at 10/22/2024 11:04:01 Status: 0, PID: 17315
+## oomr Elapsed time: 0:00:00, CPU time: 0:00:00.00, Memory Usage: 0.8G
+## Child Proc. CPU time: 0:00:00.28
+
+## flatopt starts at 10/22/2024 11:04:11 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 16803, DISPLAY: none
+flatopt hdldb xcva_top -noStandAlone -1xUA -breakECMloops -keepEmptyCells
+## flatopt exits at 10/22/2024 11:04:24 Status: 0, PID: 16803
+## flatopt Elapsed time: 0:00:13, CPU time: 0:00:15.62, Memory Usage: 4.1G
+
+## dbgPrepare starts at 10/22/2024 11:04:24 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 16803, DISPLAY: none
+dbgPrepare hdldb xcva_top -pass1 -mc
+## dbgPrepare exits at 10/22/2024 11:04:27 Status: 0, PID: 16803
+## dbgPrepare Elapsed time: 0:00:03, CPU time: 0:00:04.60, Memory Usage: 4.1G
+
+## et3compile starts at 10/22/2024 11:04:42 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 16803, DISPLAY: none
+et3compile xcva_top -ppcPhase2
+## et3compile exits at 10/22/2024 11:04:47 Status: 0, PID: 16803
+## et3compile Elapsed time: 0:00:05, CPU time: 0:00:05.20, Memory Usage: 4.1G
+
+## dbgPrepare starts at 10/22/2024 11:04:47 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 16803, DISPLAY: none
+dbgPrepare hdldb xcva_top -pass2 -bedb
+## dbgPrepare exits at 10/22/2024 11:04:49 Status: 0, PID: 16803
+## dbgPrepare Elapsed time: 0:00:02, CPU time: 0:00:02.38, Memory Usage: 5.5G
+
+## hdl2qtdb starts at 10/22/2024 11:04:50 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 806, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## xeCompile exits at 10/22/2024 11:04:51 Status: 0, PID: 16803
+## xeCompile Elapsed time: 0:01:06, CPU time: 0:00:32.64, Memory Usage: 5.5G
+## Child Proc. CPU time: 0:00:34.44
+## hdl2qtdb exits at 10/22/2024 11:04:53 Status: 0, PID: 806
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.04, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.22
+
+## xeCompile starts at 10/22/2024 11:04:54 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 1338, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## import starts at 10/22/2024 11:04:54 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 1524, DISPLAY: none
+import -qel -qp 0 -o QTDB/.import/hdldb/.xeimp.mdl QTDB/.import/hdldb/.xeimp.dil -qi hdldb
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## import exits at 10/22/2024 11:05:09 Status: 2, PID: 1524
+## import Elapsed time: 0:00:15, CPU time: 0:00:13.91, Memory Usage: 2.0G
+## Child Proc. CPU time: 0:00:00.28
+## xeCompile exits at 10/22/2024 11:05:09 Status: 1, PID: 1338
+## xeCompile Elapsed time: 0:00:15, CPU time: 0:00:02.18, Memory Usage: 1.1G
+## Child Proc. CPU time: 0:00:14.53
+
+## xeCompile starts at 10/22/2024 11:06:22 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 7872, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## import starts at 10/22/2024 11:06:22 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 8129, DISPLAY: none
+import -qel -qp 0 -o QTDB/.import/hdldb/.xeimp.mdl QTDB/.import/hdldb/.xeimp.dil -qi hdldb
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## import exits at 10/22/2024 11:06:37 Status: 0, PID: 8129
+## import Elapsed time: 0:00:15, CPU time: 0:00:14.46, Memory Usage: 2.0G
+## Child Proc. CPU time: 0:00:00.27
+
+## oomr starts at 10/22/2024 11:06:37 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 8451, DISPLAY: none
+oomr hdldb xcva_top
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## oomr exits at 10/22/2024 11:06:37 Status: 0, PID: 8451
+## oomr Elapsed time: 0:00:00, CPU time: 0:00:00.00, Memory Usage: 0.8G
+## Child Proc. CPU time: 0:00:00.28
+
+## flatopt starts at 10/22/2024 11:06:48 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 7872, DISPLAY: none
+flatopt hdldb xcva_top -noStandAlone -1xUA -breakECMloops -keepEmptyCells
+## flatopt exits at 10/22/2024 11:07:00 Status: 0, PID: 7872
+## flatopt Elapsed time: 0:00:12, CPU time: 0:00:15.48, Memory Usage: 4.1G
+
+## dbgPrepare starts at 10/22/2024 11:07:00 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 7872, DISPLAY: none
+dbgPrepare hdldb xcva_top -pass1 -mc
+## dbgPrepare exits at 10/22/2024 11:07:03 Status: 0, PID: 7872
+## dbgPrepare Elapsed time: 0:00:03, CPU time: 0:00:04.59, Memory Usage: 4.1G
+
+## et3compile starts at 10/22/2024 11:07:16 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 7872, DISPLAY: none
+et3compile xcva_top -ppcPhase2
+## et3compile exits at 10/22/2024 11:07:21 Status: 0, PID: 7872
+## et3compile Elapsed time: 0:00:05, CPU time: 0:00:05.28, Memory Usage: 4.1G
+
+## dbgPrepare starts at 10/22/2024 11:07:21 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 7872, DISPLAY: none
+dbgPrepare hdldb xcva_top -pass2 -bedb
+## dbgPrepare exits at 10/22/2024 11:07:24 Status: 0, PID: 7872
+## dbgPrepare Elapsed time: 0:00:03, CPU time: 0:00:02.45, Memory Usage: 5.5G
+## xeCompile exits at 10/22/2024 11:07:26 Status: 0, PID: 7872
+## xeCompile Elapsed time: 0:01:04, CPU time: 0:00:32.74, Memory Usage: 5.5G
+## Child Proc. CPU time: 0:00:19.32
+
+## hdl2qtdb starts at 10/22/2024 11:08:05 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 24386, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:08:08 Status: 0, PID: 24386
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.04, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.22
+
+## xeCompile starts at 10/22/2024 11:08:09 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 24853, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## import starts at 10/22/2024 11:08:09 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 25045, DISPLAY: none
+import -qel -qp 0 -o QTDB/.import/hdldb/.xeimp.mdl QTDB/.import/hdldb/.xeimp.dil -qi hdldb
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libnativeutils.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## hdl2qtdb starts at 10/22/2024 11:09:32 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 30713, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:09:35 Status: 0, PID: 30713
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.03, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.23
+
+## xeCompile starts at 10/22/2024 11:09:36 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 31166, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## hdl2qtdb starts at 10/22/2024 11:41:14 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 27127, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 10/22/2024 11:41:17 Status: 0, PID: 27127
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.03, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.23
+
+## xeCompile starts at 10/22/2024 11:41:17 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 27602, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## hdl2qtdb starts at 11/01/2024 12:04:31 simonett V23.03.131.s001            , HOST: sjcvl-simonett, PID: 31999, DISPLAY: none
+hdl2qtdb 6 9
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libmcp.so - 23H1_WXE, V23.03.131.s001            
+#)libimport.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libqfsutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqfs.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+## hdl2qtdb exits at 11/01/2024 12:04:34 Status: 0, PID: 31999
+## hdl2qtdb Elapsed time: 0:00:03, CPU time: 0:00:00.04, Memory Usage: 1.3G
+## Child Proc. CPU time: 0:00:00.23
+
+## xeCompile starts at 11/01/2024 12:04:34 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 32447, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            
+
+## xeCompile starts at 11/01/2024 12:05:51 simonett V23.03.131.s001, HOST: sjcvl-simonett, PID: 5939, DISPLAY: none
+xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+## 64bit program from /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/bin on Linux 3.10.0-1160.2.2.el7.x86_64 64bit
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+#)libhdl.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlmap.so - 23H1_WXE, V23.03.131.s001            
+#)libimp.so - 23H1_WXE, V23.03.131.s001            
+#)libdataStruct.so - 23H1_WXE, V23.03.131.s001            
+#)libudq.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libpich.so - 23H1_WXE, V23.03.131.s001            
+#)libtich.so - 23H1_WXE, V23.03.131.s001            
+#)libdb.so - 23H1_WXE, V23.03.131.s001            
+#)libsmDB.so - 23H1_WXE, V23.03.131.s001            
+#)libtypedb.so - 23H1_WXE, V23.03.131.s001            
+#)libudqr.so - 23H1_WXE, V23.03.131.s001            
+#)libhdldb.so - 23H1_WXE, V23.03.131.s001            
+#)libhdlucdb.so - 23H1_WXE, V23.03.131.s001            
+#)libcmp.so - 23H1_WXE, V23.03.131.s001            
+#)libddb.so - 23H1_WXE, V23.03.131.s001            
+#)libudp.so - 23H1_WXE, V23.03.131.s001            
+#)libPDBCommands.so - 23H1_WXE, V23.03.131.s001            
+#)libhwConfig.so - 23H1_WXE, V23.03.131.s001            
+#)libCompilerRT.so - 23H1_WXE, V23.03.131.s001            
+#)libclkBDD.so - 23H1_WXE, V23.03.131.s001            
+#)libsdltm.so - 23H1_WXE, V23.03.131.s001            
+#)libet3compile.so - 23H1_WXE, V23.03.131.s001            
+#)libdb2util.so - 23H1_WXE, V23.03.131.s001            
+#)liboptutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdb3.so - 23H1_WXE, V23.03.131.s001            
+#)libet3wrapper.so - 23H1_WXE, V23.03.131.s001            
+#)libsideFile.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgPrepare.so - 23H1_WXE, V23.03.131.s001            
+#)libucdbwrt.so - 23H1_WXE, V23.03.131.s001            
+#)libucdb_sh.so - 23H1_WXE, V23.03.131.s001            
+#)libradb.so - 23H1_WXE, V23.03.131.s001            
+#)libeclutil.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libdbgutil.so - 23H1_WXE, V23.03.131.s001            
+#)libuxeenglic.so - 23H1_WXE, V23.03.131.s001            
+#)libjsoncpp.so - 23H1_WXE, V23.03.131.s001            
+#)libgenlics.a - 23H1_WXE, V23.03.131.s001            
+#)libtcl.so - 23H1_WXE, V23.03.131.s001            
+#)libtk.so - 23H1_WXE, V23.03.131.s001            
+#)libtkdnd.so - 23H1_WXE, V23.03.131.s001            
+#)libtix.so - 23H1_WXE, V23.03.131.s001            
+#)libqt.so - 23H1_WXE, V23.03.131.s001            
+#)libqtutil.so - 23H1_WXE, V23.03.131.s001            
+#)libsd.so - 23H1_WXE, V23.03.131.s001            

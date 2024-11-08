@@ -53,6 +53,21 @@ cdd_pd_run_long: cdd_pd_dpi
 
 #####################################################################
 ###                                                               ###
+###                      cdd Protium                              ###
+###                                                               ###
+#####################################################################
+
+cdd_ptm_compile: cdd_ptm_clocks cdd_pd_dpi
+	ixcom -ptm +ua +sv +define+SYNTHESIS+ +staticFd -ignoreVersionCheck +dut+hw_top+_ixc_clkgen -xecompile compilerOptions=scripts/cdd_ptm_compile.qel +xe_alt_xlm +top+top+_ixc_clkgen -f ${DV_ROOT}/CDD_64/run/zipline.vlist -v ${IXCOM_HOME}/tools.lnx86/etc/ixcom/IXCclkgen.sv scripts/cdd_pd_clk.sv -timescale 1ns/1ns
+cdd_ptm_clocks: 
+	ixclkgen -ptm -input scripts/cdd_pd_clocks.qel -output scripts/cdd_pd_clk.sv -module _ixc_clkgen
+cdd_pnr:
+	$(MAKE) -f pdrpp_work/pdrpp.make pnr
+cdd_ptm_run:
+	xrun -R -input ./scripts/cdd_ptm_run.tcl -sv_lib libdpi.so -l ptmRun.log +REGRESSION=\"true\" +ptm_lock_script=scripts/ptm_lock.tcl +xcprof
+
+#####################################################################
+###                                                               ###
 ###                      kme Protium                              ###
 ###                                                               ###
 #####################################################################

@@ -61,7 +61,7 @@ setenv GENUSHOME /icd/flow/GENUS/GENUS221/22.99-d340_1
 #setenv PDAPP_HOME /lan/cva_rel/pdapp2304/23.04.005.s005/
 
 #VPAPP
-setenv VPAPP_HOME /grid/cva/p4_06/avip/pdapp2404/24.04.000.s000/vp_05_12_2024_nightly/rhel7_gcc93_abi1/
+setenv VPAPP_HOME /grid/cva/p4_06/avip/pdapp2404/24.04.002.s002/vp_09_10_2024_pdapp_release/rhel7_gcc93_abi1
 #AVIP
 setenv AVIP_ROOT ${VPAPP_HOME}/packages
 #setenv AVIP_ROOT ${PDAPP_HOME}/vp/rhel7_gcc93_abi1/packages

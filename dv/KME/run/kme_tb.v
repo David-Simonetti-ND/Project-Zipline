@@ -37,7 +37,7 @@ module kme_tb ();
                                  "kme_aux_cmd_guid_only",
                                  "kme_aux_cmd_iv_only",
                                  "kme_aux_cmd_no_guid_or_iv"};
-
+   
    initial begin
       error_cntr = 0;
       

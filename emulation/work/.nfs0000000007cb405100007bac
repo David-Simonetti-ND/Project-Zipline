@@ -1,0 +1,2193 @@
+
+******************************************************************************
+ixcom IXCOM, V23.03.131.s001            
+Path - /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/bin/64bit/ixcom
+(c) 2024 Cadence Design Systems, Inc.  All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+******************************************************************************
+
+Executing ... ixcom (64bit) - Thu Aug  3 21:46:53 PDT 2023
+
+Command Arguments:
+  -z2
+  +1xua
+  +dut+hw_top+_ixc_clkgen
+  +top+top+_ixc_clkgen
+  -xeCompile compilerOptions=scripts/kme_pd_compilerOptions.qel
+  -f /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/kme.vlist
+    +sv
+    +define+SYNTHESIS+
+    +TESTNAME=kme_key_type_0
+    -f /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.vlist
+      +define+ENA_BIMC+
+      +libext+.v
+      +libext+.sv
+      +libext+.svp
+      +libext+.vh
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp
+      +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi
+      -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common
+      -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library
+      -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo
+      -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core_glue.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_int_handler.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drbg_reggen.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_cceip_64_sa/cr_sa_counter.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regs.sv
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_fifo.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ram_fifo.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_pipeline.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_guid_stitcher.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kim_drng_reader.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_reader.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_assigner.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile_glue.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_compare_split.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_rsm.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_tlv_inspector.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_upsizer_x2.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_gcm.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_keyfilter.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_merger.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_hmac_sha256_stub.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_gen.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_pipe.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_keybuilder.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drng.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_aes_256_drng.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s_mstr.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s2_slv.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm_core.v
+      -v /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap1.v
+      -v /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap2.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_reg_slice_defs.vh
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_channel_reg_slice.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/AesSecI/AesSecIStub.v
+      /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_crc/cr_crc.v
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/CCE_64/tb_top
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb/apb_xactor.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/kme_tb.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/top.v
+  -v /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCclkgen.sv
+  scripts/kme_pd_clk.sv
+  -timescale 1ns/1ns
+
+Info!	 WXE was detected from user environment. 
+
+
+Warning!	 Previous IXCOM DB is detected. Rerunning vhelab/ixvcg will overwrite the existing IXCOM generated code.
+
+// ixcom started at : Fri Nov  1 12:05:31 2024
+
+Info!	 ./AxisWork already exists
+
+Info!	 ./AxisWork/reports already exists
+
+Info!		[VERSION_CHECK]
+ HDLICE version: 23H1_HDLICE, V23.03.131.s001            
+ xeCompile version: 23H1_WXE, V23.03.131.s001            
+
+************************************************************
+System Configuration
+  Machine name:                              sjcvl-simonett
+  Number of processors in system:            4
+  Number of sockets in system:               7
+  CPU frequency:                             2294 MHz
+  L2 cache size:                             25344 kB
+  Total system memory:                       16266516 kB
+  Free system memory:                        5194324 kB
+************************************************************
+
+// vlan started at : Fri Nov  1 12:05:35 2024
+
+// Log started on host: sjcvl-simonett at : Fri Nov  1 12:05:35 2024
+ 
+
+******************************************************************************
+vlan IXCOM, V23.03.131.s001            
+Path - /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/bin/64bit/vlan
+(c) 2024 Cadence Design Systems, Inc.  All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+******************************************************************************
+
+Executing ... vlan (64bit) - Thu Aug  3 21:46:56 PDT 2023
+
+Info!		[IGN_PLUS_OPTION]
+	 Plus option (+top+top+_ixc_clkgen) is not recognized by the compiler
+Info!		[IGN_PLUS_OPTION]
+	 Plus option (+TESTNAME=kme_key_type_0) is not recognized by the compiler
+Command Arguments:
+  -ixcom
+  -l /dev/null
+  -f ./AxisWork/vlan.args
+    +top+top+_ixc_clkgen
+    +sv
+    +define+SYNTHESIS+
+    +TESTNAME=kme_key_type_0
+    +define+ENA_BIMC+
+    +libext+.v
+    +libext+.sv
+    +libext+.svp
+    +libext+.vh
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb
+    +incdir+/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/CCE_64/tb_top
+    -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common
+    -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library
+    -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo
+    -y /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core_glue.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_int_handler.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drbg_reggen.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_cceip_64_sa/cr_sa_counter.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regs.sv
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_fifo.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ram_fifo.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_pipeline.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_guid_stitcher.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kim_drng_reader.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_reader.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_assigner.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile_glue.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_compare_split.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_rsm.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_tlv_inspector.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_upsizer_x2.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_gcm.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_keyfilter.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_merger.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_hmac_sha256_stub.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_gen.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_pipe.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_keybuilder.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drng.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_aes_256_drng.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s_mstr.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s2_slv.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm_core.v
+    -v /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap1.v
+    -v /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap2.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_reg_slice_defs.vh
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_channel_reg_slice.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/AesSecI/AesSecIStub.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_crc/cr_crc.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb/apb_xactor.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/kme_tb.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v
+    /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/top.v
+    -v /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCclkgen.sv
+    scripts/kme_pd_clk.sv
+    -singleStepCompileMode
+    -libmaprc ./AxisWork/ssc.libmaprc
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regs.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regsPKG.svp"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfilePKG.svp"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kmePKG.svp"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_core_glue.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top/bimc_master.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_int_handler.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drbg_reggen.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_cceip_64_sa/cr_sa_counter.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_fifo.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ram_fifo.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_pipeline.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_guid_stitcher.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kim_drng_reader.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_ckv_reader.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_assigner.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_regfile_glue.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_compare_split.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_key_tlv_rsm.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_tlv_inspector.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_upsizer_x2.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_gcm.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_keyfilter.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_merger.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_hmac_sha256_stub.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_gen.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_kdf_stream_pipe.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kop_keybuilder.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_drng.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_body_param.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_structs.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_aes_256_drng.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s_mstr.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_reg_slice_defs.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_axi4s2_slv.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_tlvp/cr_tlvp2_rsm_core.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_reg_slice_defs.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_channel_reg_slice.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/axi/axi_reg_slice_defs.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/AesSecI/AesSecIStub.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_crc/cr_crc.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb/apb_xactor.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/kme_tb.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v"
+Compiling source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/top.v"
+Compiling included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Compiling source file "scripts/kme_pd_clk.sv"
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common)
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_rst_sync.v) with CU
+Skipping cached library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_rst_sync.v) with CU
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/CR_TIE_CELL.v) with CU
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/cr_dual_rank_synchronizer.v) with CU
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library)
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_rbus_apb.v) with CU
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_rbus_ring.v) with CU
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_interface_monitor_pipe.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_interface_monitor.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_interface_monitor.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG_v2.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG_v2.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_roreg_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_roreg_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_reg_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_reg_indirect_access.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/sync_fifo.v) with CU
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_credit_manager.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_indirect_access_cntrl.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_indirect_access_cntrl_v2.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/nx_mem_typePKG_v2.svp"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo)
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap2.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap2.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top)
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top/bimc_master.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/mem_wrappers/bimc_master/top/bimc_master.vh"
+Scanning library file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap1.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/fifo/cr_fifo_wrap2.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_structs.sv"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_global_params.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_native_types.svh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/cr_error_codes.svh"
+Scanning library file (/lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/IXCclkgen.sv) with CU
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common)
+Scanning library directory (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library)
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ram_1r1w.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ram_1r1w.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1r1w.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning library directory file (/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl_ram_1r1w.v) with CU
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/messages_v2.vh"
+Scanning included source file "/home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/include/ccx_std.vh"
+Total number of passes through the libraries 2
+	Errors : 0 Warnings : 0 Info : 0
+
+ // Log end : Fri Nov  1 12:05:36 2024
+
+[PROFILER_START]
+**************************************************************************************************************************
+        Profile                      Calls  CPU Time  Elapsed Time  Memory Used  Peak Virtual Memory  Peak Resident Memory
+        Category                            (in sec)   (in sec)       (in MB)          (in MB)                (in MB)
+**************************************************************************************************************************
+Design Analysis                         1      0.62      1.30          475.42           542.98                 25.18
+   Scan and Parse                       1      0.60      1.25          475.42           542.98                 24.89
+      Register package/CU               1      0.00      0.01          473.12           542.98                 24.89
+         Handle CU dependencies         1      0.00      0.01          473.12           542.98                 24.89
+**************************************************************************************************************************
+[PROFILER_END]
+
+	vlan: cpu time = 0.62 sec, elapsed time = 1 sec
+	  peak virtual memory size = 542.98M bytes, peak resident memory size = 25.22M bytes
+	  heap memory size = 492.22M bytes
+
+// vlan ended at : Fri Nov  1 12:05:36 2024 (total: 1 sec), heap memory used by IXCOM : 16.77M bytes
+
+// vhelab started at : Fri Nov  1 12:05:36 2024
+
+// Log started on host: sjcvl-simonett at : Fri Nov  1 12:05:37 2024
+ 
+
+******************************************************************************
+vhelab IXCOM, V23.03.131.s001            
+Path - /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/bin/64bit/vhelab
+(c) 2024 Cadence Design Systems, Inc.  All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+******************************************************************************
+
+Executing ... vhelab (64bit) - Thu Aug  3 21:46:54 PDT 2023
+
+Info!		[IGN_PLUS_OPTION]
+	 Plus option (+top+top+_ixc_clkgen) is not recognized by the compiler, it will be passed to the runtime system
+Info!		[IGN_PLUS_OPTION]
+	 Plus option (+TESTNAME=kme_key_type_0) is not recognized by the compiler, it will be passed to the runtime system
+Command Arguments:
+  -ixcom
+  -l /dev/null
+  -f ./AxisWork/vhelab.args
+    -z2
+    +1xua
+    +dut+hw_top+_ixc_clkgen
+    +top+top+_ixc_clkgen
+    +TESTNAME=kme_key_type_0
+    -timescale 1ns/1ns
+    -ccom gcc
+    -ixc_xlm_ver 23.03-s001
+    -singleStepCompileMode
+    -libmaprc ./AxisWork/ssc.libmaprc
+
+Info!        [PLATFORM]
+          Target platform=Z2, execution platform=Z2
+
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.top ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.kme_tb ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.hw_top ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_rst_sync ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_dual_rank_synchronizer ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_core ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_axi4s2_slv ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_fifo_wrap2 ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo_ram_1r1w ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_ram_1r1w ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo_ctrl_ram_1r1w ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo_ctrl ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_drng ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_aes_256_drng ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.AesSecIStub ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_fifo ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_ckv_pipeline ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_guid_stitcher ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_tlv_parser ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kim_drng_reader ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_ckv_reader ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_assigner ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_ram_fifo ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_tlv_inspector ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_upsizer_x2 ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_gcm ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_kdf ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_kdf_keyfilter ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_hmac_sha256_stub ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_kdf_stream_gen ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_kdf_stream_pipe ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_kdf_merger ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_kop_keybuilder ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_crc ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_key_tlv_compare_split ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_key_tlv_rsm ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_tlvp2_rsm ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_tlvp2_rsm_core ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_axi4s_mstr ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.axi_channel_reg_slice ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_core_glue ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_sa_counter ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_rbus_apb ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_regfile ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.CR_TIE_CELL ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_regs ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_regs_flops ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_rbus_ring ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_interface_monitor_pipe ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_interface_monitor ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.sync_fifo ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_credit_manager ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_ram_1rw ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_indirect_access_cntrl ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_regfile_glue ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_ram_1rw_indirect_access ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_indirect_access_cntrl_v2 ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_drbg_reggen ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.bimc_master ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.cr_kme_int_handler ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_roreg_indirect_access ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_reg_indirect_access ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.apb_xactor ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK._ixc_clkgen ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.ixc_master_clock ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.ixc_1xbufsrc ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_GFIFO ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_OSF ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_OSF_MB ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_ISF ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_OSF1 ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_PTXTOP ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.ixcEcmHold ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.ixcEcmHoldOtb ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_SV_GFIFO ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_SV_GFIFO2 ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_SV_SFIFO ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_SV_SFIFO_VXE_64 ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.IXC_SV_SCG_GFIFO_VXE_64 ...
+# Loading verilog module (./AxisWork/64bit) IXCOM_TEMP_LIBRARY.ixc_time ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo ...
+# Loading verilog module (./AxisWork/WORK/64bit) WORK.nx_fifo_ctrl ...
+Info		[DUT]
+	Setting (hw_top) as dut.
+
+Info		[DUT]
+	Setting (_ixc_clkgen) as dut.
+
+Top level design units:
+	top
+	_ixc_clkgen
+Packages:
+	cr_kme_regsPKG
+	cr_kmePKG
+	cr_kme_regfilePKG
+	nx_mem_typePKG
+	nx_mem_typePKG_v2
+Design hierarchy summary:
+	                          Instances Unique Splits
+	Modules:                        278     68    136
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl_ram_1r1w.v at line 160 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl_ram_1r1w.v at line 223 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl_ram_1r1w.v at line 160 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl_ram_1r1w.v at line 223 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 82 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_UNDERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_fifo_ctrl.v at line 107 		[ASSERTION_UNSUPPORTED_IMM_ASSERT] 
+	Immediate assertion FIFO_OVERFLOW ignored : immediate assertions inside always@(*)/always_comb/always_latch process are not supported 
+
+Assertions Statistics:
+    Assertions summary by types:
+                                                           Instances    Unique
+        Immediate Assertions                            :      70         6
+        Concurrent Assertions                           :     398        84
+            SVA                                         :     398        84
+        Cover Directives (Part of concurrent assertions):     394        83
+
+    Post processing summary of concurrent assertions:
+        Supported (Evaluated at runtime)                :     398
+            Assertions in DUT (Mapped to HW partition)  :     398
+
+    Post processing summary of immediate assertions:
+        Un-supported                                    :      70
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1r1w.v at line 258 in module nx_ram_1r1w 		[RTL_IGNORE_SYS] 
+	system task ($display) ignored by rtl mapper
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1r1w.v at line 258 in module nx_ram_1r1w 		[RTL_IGNORE_SYS] 
+	system task ($display) ignored by rtl mapper
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw.v at line 263 in module nx_ram_1rw 		[RTL_IGNORE_SYS] 
+	system task ($display) ignored by rtl mapper
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw.v at line 263 in module nx_ram_1rw 		[RTL_IGNORE_SYS] 
+	system task ($display) ignored by rtl mapper
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/common/nx_library/nx_ram_1rw.v at line 263 in module nx_ram_1rw 		[RTL_IGNORE_SYS] 
+	system task ($display) ignored by rtl mapper
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 133 in module hw_top 		[ISC_INFO] 
+	SFIFO DPI function commit_kme_cfg_txn found in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 273 in module hw_top 		[ISC_INFO] 
+	SFIFO DPI function service_ib_txn found in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 377 in module hw_top 		[ISC_INFO] 
+	SFIFO DPI function service_ob_txn found in module hw_top [id:3 (p0)].
+
+Info in file scripts/kme_pd_clk.sv at line 44 in module ixc_master_clock 		[ISCDELAY_CLOCK_FOUND] 
+	Found clock specification in always block
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 231 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 216 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 429 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 423 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 419 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 415 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 397 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 304 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 292 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 172 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 165 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 159 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 154 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 149 in module hw_top 		[ISC_INFO] 
+	$display system-task in DUT transformed to use GFIFO.
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 149 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 149 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 154 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 154 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 159 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 159 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 165 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 165 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 172 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 172 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 292 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 292 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 304 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 304 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 397 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 397 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 415 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 415 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 419 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 419 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 423 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 423 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 429 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 429 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 216 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 216 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 231 in module hw_top 		[ISC_INFO] 
+	GFIFO DISP system task found at line 231 in module hw_top [id:3 (p0)].
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_functions.v at line 19 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function endian_switch as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 752 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function validate_dek as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 844 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function is_keyless_cipher as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 861 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function is_kdf_non_combo as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 724 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function missing_guid as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 739 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function missing_iv as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 776 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function validate_dak as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 852 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function is_keyless_hash as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 801 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function needs_dek as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 822 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function needs_dak as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_tlv_parser.v at line 870 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function kdf_dek_iter_f as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kim_drng_reader.v at line 553 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function dek_needs_kek as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../rtl/cr_kme/cr_kme_kim_drng_reader.v at line 565 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function dak_needs_kek as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb/apb_xactor.v at line 81 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function read as automatic
+
+Info in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/agents/apb/apb_xactor.v at line 48 		[ISYN_INLINE_INFO] 
+	static lifetime is ignored; inline task/function write as automatic
+
+// Elaboration peak virtual memory size = 1064.97M bytes, peak resident memory size = 93.76M bytes
+// Elaboration heap memory size = 192.15M bytes
+// Code generation started at : Fri Nov  1 12:05:39 2024
+
+
+*** Code Generator Arguments:
+  -ixcom
+  -l /dev/null
+  -f ./AxisWork/ixvcg.args
+    -z2
+    -ccom gcc
+    -ixc_xlm_ver 23.03-s001
+    -singleStepCompileMode
+UASA: HW insts = 292, SW insts = 2, Ignored insts = 0
+UASA: SW insts are: (tb: testbench, eb: embedded top, eb_sub: embedded)
+  tb:top  (top)
+  tb:top.tb  (kme_tb)
+UASA:     INPUT   OUTPUT   FORCED  SNWRITE
+UASA:         0       78        0        9
+
+        Signal Analysis: cpu time = 0.01 sec, elapsed time = 0.01 sec
+		 heap memory size = 0.00M bytes
+
+
+        Global Transformations: cpu time = 0.01 sec, elapsed time = 0.01 sec
+		 heap memory size = 0.00M bytes
+
+	INFO: Started source instrumentation, peak virtual memory = 1251.176M bytes, peak resident memory = 94.10M bytes
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 353 in module hw_top 		[BC_WARNING] 
+	Variable kme_ob_wptr is driven in both SFIFO and non-SFIFO RTL. When overlapping drivers are active from both SFIFO and RTL, SFIFO wins. This may lead to unexpected results.
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 122 in module hw_top 		[BC_WARNING] 
+	Variable kme_cfg_wptr is driven in both SFIFO and non-SFIFO RTL. When overlapping drivers are active from both SFIFO and RTL, SFIFO wins. This may lead to unexpected results.
+
+Warning! in file /home/simonett/Documents/Coursework/Project-Zipline/emulation/work/../../dv/KME/run/hw_top.v at line 250 in module hw_top 		[BC_WARNING] 
+	Variable kme_ib_wptr is driven in both SFIFO and non-SFIFO RTL. When overlapping drivers are active from both SFIFO and RTL, SFIFO wins. This may lead to unexpected results.
+
+
+	INFO: Finished source instrumentation, peak virtual memory = 1251.18M bytes, peak resident memory = 131.17M bytes
+
+        Source Instrumentation: cpu time = 0.33 sec, elapsed time = 0.39 sec
+		 heap memory size = 495.38M bytes
+
+BC control objects modules summary:
+	Number of Instance * BC ctrl obj count = Total BC ctrl obj count (Module)
+	                 1 *                 2 =                      2  (apb_xactor)
+	                 1 *                 1 =                      1  (hw_top)
+
+		      Total BC control objects =                      3
+
+	INFO:  ixcom xeAltXlm flow: off, xeCompile xeAltXlm flow: off
+
+
+        Creating Package Dependency Graph: cpu time = 0.00 sec, elapsed time = 0.00 sec
+		 heap memory size = 0.00M bytes
+
+
+        Code Generation: cpu time = 0.12 sec, elapsed time = 0.21 sec
+		 heap memory size = 0.00M bytes
+
+
+        INFO: IXCOM Simulation timescale: 1ns
+
+[PROFILER_START]
+**************************************************************************************************************************
+        Profile                      Calls  CPU Time  Elapsed Time  Memory Used  Peak Virtual Memory  Peak Resident Memory
+        Category                            (in sec)   (in sec)       (in MB)          (in MB)                (in MB)
+**************************************************************************************************************************
+Design elaboration                      1      1.89      3.47          611.20          1549.95                134.04
+   Elaborate                            1      0.54      1.51          169.81          1043.02                 68.62
+      Process top modules               1      0.53      1.39          166.76          1043.02                 68.62
+         Elaborate Design Unit          1      0.53      1.39          166.76          1043.02                 68.62
+            Design elab process         1      0.16      0.18          144.29          1043.02                 68.62
+               SV elaboration           1      0.13      0.14          129.28          1028.01                 53.39
+   Top generator                        1      0.50      0.95          419.46          1549.95                134.04
+      Code instrumentation              1      0.28      0.39          495.38          1549.95                133.48
+**************************************************************************************************************************
+[PROFILER_END]
+
+	IXCOM Elaborator and Code Generator: cpu time = 1.90 sec, elapsed time = 3 sec
+	  peak virtual memory size = 1549.95M bytes, peak resident memory size = 134.05M bytes
+	  heap memory size = 611.61M bytes
+	Errors : 0 Warnings : 24 Info : 49
+
+ // Log end : Fri Nov  1 12:05:40 2024
+
+
+// vhelab ended at : Fri Nov  1 12:05:40 2024 (total: 4 sec), heap memory used by IXCOM : 16.77M bytes
+
+Info		[FLOW_SUCCESS]
+	Successfully built target (vhelab)
+
+// HDL-ICE started at : Fri Nov  1 12:05:40 2024
+
+make[1]: Entering directory `/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+echo Compiling packages
+Compiling packages
+echo Compiling contexts
+Compiling contexts
+vavlog -RefLib qtref +ixcom  -Define USE_IXC_TIME  -append_log -logfile ./xc_work/va.log -valib ./xc_work/va.lib -F ./xc_work/va_reflib +ixcom -Work IXCOM_TEMP_LIBRARY -File ./xc_work/v/vavlog-IXCOM_TEMP_LIBRARY-verilog.f 
+hdlice - HDLICE, V23.03.131.s001                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file xc_work/v/151.v ...
+   >> Analyzing Verilog file xc_work/v/138.sv ...
+   >> Analyzing Verilog file xc_work/v/139.sv ...
+   >> Analyzing Verilog file xc_work/v/140.sv ...
+   >> Analyzing Verilog file xc_work/v/141.sv ...
+   >> Analyzing Verilog file xc_work/v/142.sv ...
+   >> Analyzing Verilog file xc_work/v/143.sv ...
+   >> Analyzing Verilog file xc_work/v/144.sv ...
+   >> Analyzing Verilog file xc_work/v/145.sv ...
+   >> Analyzing Verilog file xc_work/v/146.sv ...
+   >> Analyzing Verilog file xc_work/v/147.sv ...
+   >> Analyzing Verilog file xc_work/v/148.sv ...
+   >> Analyzing Verilog file xc_work/v/149.sv ...
+   >> Analyzing Verilog file xc_work/v/150.sv ...
+   >> Analyzing Verilog file /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_1x.sv ...
+   >> Analyzing Verilog file /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_base.sv ...
+WARNING: /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_base.sv(line 2053): Unsupported system task '$ixc_t2ab' is ignored.
+WARNING: /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_base.sv(line 2154): Unsupported system task '$ixc_ab2t' is ignored.
+   >> Analyzing Verilog file /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_ice.sv ...
+WARNING: /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_ice.sv(line 1236): 2-state type not allowed for net, treat as variable.
+   >> Analyzing Verilog file xc_work/v/xcva_top.v ...
+   >> Analyzing Verilog file xc_work/v/gfifo_conns.sv ...
+   >> Analyzing Verilog file xc_work/v/sfifo_conns.sv ...
+   >> Analyzing Verilog file xc_work/v/ifsyn_conns.sv ...
+   >> Begin library search : 1 library file/directory
+   >> Scanning library file ./xc_work/xc_vawork/IXCOM_TEMP_LIBRARY/.libvlog/qtref.v ...
+   >> End library search
+INFO: /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_base.sv(line 271): recursive instantiation of module 'ixc_gfifo_cico'.
+INFO: /lan/cva_rel/23h1_ixcom/23.03.131.s001/tools.lnx86/etc/ixcom/xcva_prims_ice.sv(line 113): recursive instantiation of module 'ixc_pop_cnt'.
+   >> Analyzing module axis_mux2 ...
+   >> Analyzing module axis_delay ...
+   >> Analyzing module axis_busreg ...
+   >> Analyzing module axis_latch ...
+   >> Analyzing module axis_dffp ...
+   >> Analyzing module axis_dffn ...
+   >> Analyzing module axis_jkffp ...
+   >> Analyzing module axis_jkffn ...
+   >> Analyzing module axis_tffp ...
+   >> Analyzing module axis_tffn ...
+   >> Analyzing module ixc_capLoopXp ...
+   >> Analyzing module ixc_clkXp ...
+   >> Analyzing module ixc_sampleXp ...
+   >> Analyzing module ixc_delay ...
+   >> Analyzing module ixc_ref ...
+   >> Analyzing module ixc_frequency ...
+   >> Analyzing module ixc_hwclksrc_emu ...
+   >> Analyzing module ixc_tcov_1 ...
+   >> Analyzing module ixc_fc_delay ...
+   >> Analyzing module ixc_capU ...
+   >> Analyzing module ixc_gfifo_pg ...
+   >> Analyzing module ixc_gfifo_cico ...
+   >> Analyzing module ixc_bind ...
+   >> Analyzing module ixc_gfifo_port ...
+   >> Analyzing module ixc_gfifo_merge_port ...
+   >> Analyzing module ixc_ml_gfifo_root_port ...
+   >> Analyzing module ixc_scg_gfifo_port ...
+   >> Analyzing module ixc_sfifo_port ...
+   >> Analyzing module ixc_uClkGen ...
+   >> Analyzing module ixc_sfifo_port_ptm ...
+   >> Analyzing module ixc_dist_sfifo_port ...
+   >> Analyzing module ixc_uclk_sample ...
+   >> Analyzing module ixc_osf1_evcap ...
+   >> Analyzing module ixc_osf_evcap ...
+   >> Analyzing module ixc_pio_call ...
+   >> Analyzing module ixc_mem_call ...
+   >> Analyzing module ixc_mem_call_direct ...
+   >> Analyzing module ixc_bindFF ...
+   >> Analyzing module ixc_clkbind ...
+   >> Analyzing module ixc_cakebind ...
+   >> Analyzing module ixc_asgn_cov_rst_pulse ...
+   >> Analyzing module ixc_asgn_ecov_rst_pulse ...
+   >> Analyzing module ixc_capR ...
+   >> Analyzing module ixc_not_touch ...
+   >> Analyzing module ixc_context_read ...
+   >> Analyzing module ixc_context_4s_read ...
+   >> Analyzing module ixc_rforce ...
+   >> Analyzing module ixc_context_write ...
+   >> Analyzing module ixc_context_4s_write ...
+   >> Analyzing module ixc_rec_ts ...
+   >> Analyzing module ixc_ptx_port ...
+   >> Analyzing module ixc_ev ...
+   >> Analyzing module ixc_edge ...
+   >> Analyzing module ecm_holdToEOT ...
+   >> Analyzing module ixc_mpulse ...
+   >> Analyzing module ixc_mpulseXp ...
+   >> Analyzing module ixc_mtoggle ...
+   >> Analyzing module ixc_mevent ...
+   >> Analyzing module ixc_mevClk ...
+   >> Analyzing module ixc_mdrOn ...
+   >> Analyzing module ixc_nba2BpD ...
+   >> Analyzing module ixc_nba2BpE ...
+   >> Analyzing module ixc_del2clk ...
+   >> Analyzing module ixc_tcm_chk ...
+   >> Analyzing module ixc_wforce ...
+   >> Analyzing module ixc_pulse_en ...
+   >> Analyzing module ixc_event_driver ...
+   >> Analyzing module ixc_cov_latch ...
+   >> Analyzing module ixc_sampleLT ...
+   >> Analyzing module ixc_dutexcl_h2s_port_sync ...
+   >> Analyzing module ixc_dutexcl_s2h_port_sync ...
+   >> Analyzing module ixc_ptz_port ...
+   >> Analyzing module ixc_frequency_ptm ...
+   >> Analyzing module ixc_expEv ...
+   >> Analyzing module ixc_sample_bit ...
+   >> Analyzing module ixc_sample_logic ...
+   >> Analyzing module ixc_gfifo2_port ...
+   >> Analyzing module ixc_global_status ...
+   >> Analyzing module ixc_gf2_latch ...
+   >> Analyzing module ixc_pkt_q_single_buf ...
+   >> Analyzing module ixc_error ...
+   >> Analyzing module ixc_pkt_q_single ...
+   >> Analyzing module ixc_tbcpo_push ...
+   >> Analyzing module ixc_gf4_q_status ...
+   >> Analyzing module ixc_pop_cnt ...
+   >> Analyzing module ixc_gf4_pkt_q ...
+   >> Analyzing module ixc_gf4_pkt_q_single ...
+   >> Analyzing module axis_tbcall ...
+   >> Analyzing module ixc_assign ...
+   >> Analyzing module IXC_OSF ...
+   >> Analyzing module IXC_ISF ...
+   >> Analyzing module ixc_osfTbc_buf ...
+   >> Analyzing module IXC_OSF_MB ...
+   >> Analyzing module IXC_OSF1 ...
+   >> Analyzing module IXC_PTXTOP ...
+   >> Analyzing module ixcEcmHold ...
+   >> Analyzing module ixcEcmHoldOtb ...
+   >> Analyzing module IXC_SV_GFIFO2 ...
+   >> Analyzing module IXC_SV_GFIFO ...
+   >> Analyzing module IXC_SV_SFIFO_VXE_64 ...
+   >> Analyzing module IXC_SV_SCG_GFIFO_VXE_64 ...
+   >> Analyzing module IXC_SV_SFIFO ...
+   >> Analyzing module ixc_pkt_q ...
+   >> Analyzing module ixc_gf2_ff ...
+   >> Analyzing module ixc_q_status ...
+   >> Analyzing module ixc_cmd_q ...
+   >> Analyzing module ixc_q_poll_ctrl ...
+   >> Analyzing module ixc_gfifo_bind_2_2 ...
+   >> Analyzing module ixc_gfifo_bind_128_2 ...
+   >> Analyzing module ixc_gfifo_bind_3_2 ...
+   >> Analyzing module ixc_gfifo_bind_192_2 ...
+   >> Analyzing module ixc_gfifo_bind_1_2 ...
+   >> Analyzing module ixc_gfifo_bind_64_2 ...
+   >> Analyzing module gfifo_conns_0 ...
+   >> Analyzing module gfifo_conns ...
+   >> Analyzing module ixc_sfifo_bind_512_2 ...
+   >> Analyzing module ixc_sfifo_bind_22_2 ...
+   >> Analyzing module ixc_sfifo_bind_1_2 ...
+   >> Analyzing module ixc_sfifo_bind_4_2 ...
+   >> Analyzing module sfifo_conns_0 ...
+   >> Analyzing module sfifo_conns ...
+   >> Analyzing module ifsyn_conns ...
+   >> Analyzing module IXC_GFIFO ...
+   >> Analyzing module axis_eclk ...
+   >> Analyzing module ixc_time ...
+   >> Analyzing module Q_RBUFZN ...
+   >> Analyzing module Q_RBUFZP ...
+   >> Analyzing module xc_top ...
+   >> Analyzing module ASSERTION ...
+   >> Analyzing module xcva_top ...
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    sjcvl-simonett
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time    :        0.16 seconds
+   System CPU time  :        0.13 seconds
+   Wall clock time  :           2 seconds
+   Peak Memory usage:       54108 KB
+
+vavlog -RefLib qtref +ixcom  -Define USE_IXC_TIME  -append_log -logfile ./xc_work/va.log -valib ./xc_work/va.lib -F ./xc_work/va_reflib +ixcom -Work xc_ncwork -RefLib IXCOM_TEMP_LIBRARY -File ./xc_work/v/vavlog-xc_ncwork-verilog.f 
+hdlice - HDLICE, V23.03.131.s001                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+   >> Analyzing Verilog file xc_work/v/WORK/svPkg3.sv ...
+   >> Analyzing Verilog file xc_work/v/WORK/svPkg4.sv ...
+   >> Analyzing Verilog file xc_work/v/WORK/svPkg5.sv ...
+   >> Analyzing Verilog file xc_work/v/1.sv ...
+   >> Analyzing Verilog file xc_work/v/3.sv ...
+WARNING: xc_work/v/3.sv(line 1113): "!==" will be treated as "!=". This may cause RTL-gate simulation mismatch.
+WARNING: xc_work/v/3.sv(line 1545): "!==" will be treated as "!=". This may cause RTL-gate simulation mismatch.
+WARNING: xc_work/v/3.sv(line 1554): "!==" will be treated as "!=". This may cause RTL-gate simulation mismatch.
+WARNING: xc_work/v/3.sv(line 1563): "!==" will be treated as "!=". This may cause RTL-gate simulation mismatch.
+   >> Analyzing Verilog file xc_work/v/4.sv ...
+   >> Analyzing Verilog file xc_work/v/5.sv ...
+   >> Analyzing Verilog file xc_work/v/6.sv ...
+   >> Analyzing Verilog file xc_work/v/7.sv ...
+   >> Analyzing Verilog file xc_work/v/8.sv ...
+   >> Analyzing Verilog file xc_work/v/9.sv ...
+   >> Analyzing Verilog file xc_work/v/10.sv ...
+   >> Analyzing Verilog file xc_work/v/11.sv ...
+   >> Analyzing Verilog file xc_work/v/12.sv ...
+   >> Analyzing Verilog file xc_work/v/13.sv ...
+   >> Analyzing Verilog file xc_work/v/14.sv ...
+   >> Analyzing Verilog file xc_work/v/15.sv ...
+   >> Analyzing Verilog file xc_work/v/16.sv ...
+   >> Analyzing Verilog file xc_work/v/17.sv ...
+   >> Analyzing Verilog file xc_work/v/18.sv ...
+   >> Analyzing Verilog file xc_work/v/19.sv ...
+   >> Analyzing Verilog file xc_work/v/20.sv ...
+   >> Analyzing Verilog file xc_work/v/21.sv ...
+   >> Analyzing Verilog file xc_work/v/22.sv ...
+   >> Analyzing Verilog file xc_work/v/23.sv ...
+   >> Analyzing Verilog file xc_work/v/24.sv ...
+   >> Analyzing Verilog file xc_work/v/25.sv ...
+   >> Analyzing Verilog file xc_work/v/26.sv ...
+   >> Analyzing Verilog file xc_work/v/27.sv ...
+   >> Analyzing Verilog file xc_work/v/28.sv ...
+   >> Analyzing Verilog file xc_work/v/29.sv ...
+   >> Analyzing Verilog file xc_work/v/30.sv ...
+   >> Analyzing Verilog file xc_work/v/31.sv ...
+   >> Analyzing Verilog file xc_work/v/32.sv ...
+   >> Analyzing Verilog file xc_work/v/33.sv ...
+   >> Analyzing Verilog file xc_work/v/34.sv ...
+   >> Analyzing Verilog file xc_work/v/35.sv ...
+   >> Analyzing Verilog file xc_work/v/36.sv ...
+   >> Analyzing Verilog file xc_work/v/37.sv ...
+   >> Analyzing Verilog file xc_work/v/38.sv ...
+   >> Analyzing Verilog file xc_work/v/39.sv ...
+   >> Analyzing Verilog file xc_work/v/40.sv ...
+   >> Analyzing Verilog file xc_work/v/41.sv ...
+   >> Analyzing Verilog file xc_work/v/42.sv ...
+   >> Analyzing Verilog file xc_work/v/43.sv ...
+   >> Analyzing Verilog file xc_work/v/44.sv ...
+   >> Analyzing Verilog file xc_work/v/45.sv ...
+   >> Analyzing Verilog file xc_work/v/46.sv ...
+   >> Analyzing Verilog file xc_work/v/47.sv ...
+   >> Analyzing Verilog file xc_work/v/48.sv ...
+   >> Analyzing Verilog file xc_work/v/49.sv ...
+   >> Analyzing Verilog file xc_work/v/50.sv ...
+   >> Analyzing Verilog file xc_work/v/51.sv ...
+   >> Analyzing Verilog file xc_work/v/52.sv ...
+   >> Analyzing Verilog file xc_work/v/53.sv ...
+   >> Analyzing Verilog file xc_work/v/54.sv ...
+   >> Analyzing Verilog file xc_work/v/55.sv ...
+   >> Analyzing Verilog file xc_work/v/56.sv ...
+   >> Analyzing Verilog file xc_work/v/57.sv ...
+   >> Analyzing Verilog file xc_work/v/58.sv ...
+   >> Analyzing Verilog file xc_work/v/59.sv ...
+   >> Analyzing Verilog file xc_work/v/60.sv ...
+   >> Analyzing Verilog file xc_work/v/61.sv ...
+   >> Analyzing Verilog file xc_work/v/62.sv ...
+   >> Analyzing Verilog file xc_work/v/63.sv ...
+   >> Analyzing Verilog file xc_work/v/64.sv ...
+   >> Analyzing Verilog file xc_work/v/65.sv ...
+   >> Analyzing Verilog file xc_work/v/66.sv ...
+   >> Analyzing Verilog file xc_work/v/67.sv ...
+   >> Analyzing Verilog file xc_work/v/68.sv ...
+   >> Analyzing Verilog file xc_work/v/69.sv ...
+   >> Analyzing Verilog file xc_work/v/70.sv ...
+   >> Analyzing Verilog file xc_work/v/71.sv ...
+   >> Analyzing Verilog file xc_work/v/72.sv ...
+   >> Analyzing Verilog file xc_work/v/73.sv ...
+   >> Analyzing Verilog file xc_work/v/74.sv ...
+   >> Analyzing Verilog file xc_work/v/75.sv ...
+   >> Analyzing Verilog file xc_work/v/76.sv ...
+   >> Analyzing Verilog file xc_work/v/77.sv ...
+   >> Analyzing Verilog file xc_work/v/78.sv ...
+   >> Analyzing Verilog file xc_work/v/79.sv ...
+   >> Analyzing Verilog file xc_work/v/80.sv ...
+   >> Analyzing Verilog file xc_work/v/81.sv ...
+   >> Analyzing Verilog file xc_work/v/82.sv ...
+   >> Analyzing Verilog file xc_work/v/83.sv ...
+   >> Analyzing Verilog file xc_work/v/84.sv ...
+   >> Analyzing Verilog file xc_work/v/85.sv ...
+   >> Analyzing Verilog file xc_work/v/86.sv ...
+   >> Analyzing Verilog file xc_work/v/87.sv ...
+   >> Analyzing Verilog file xc_work/v/88.sv ...
+   >> Analyzing Verilog file xc_work/v/89.sv ...
+   >> Analyzing Verilog file xc_work/v/90.sv ...
+   >> Analyzing Verilog file xc_work/v/91.sv ...
+   >> Analyzing Verilog file xc_work/v/92.sv ...
+   >> Analyzing Verilog file xc_work/v/93.sv ...
+   >> Analyzing Verilog file xc_work/v/94.sv ...
+   >> Analyzing Verilog file xc_work/v/95.sv ...
+   >> Analyzing Verilog file xc_work/v/96.sv ...
+   >> Analyzing Verilog file xc_work/v/97.sv ...
+   >> Analyzing Verilog file xc_work/v/98.sv ...
+   >> Analyzing Verilog file xc_work/v/99.sv ...
+   >> Analyzing Verilog file xc_work/v/100.sv ...
+   >> Analyzing Verilog file xc_work/v/101.sv ...
+   >> Analyzing Verilog file xc_work/v/102.sv ...
+   >> Analyzing Verilog file xc_work/v/103.sv ...
+   >> Analyzing Verilog file xc_work/v/104.sv ...
+   >> Analyzing Verilog file xc_work/v/105.sv ...
+   >> Analyzing Verilog file xc_work/v/106.sv ...
+   >> Analyzing Verilog file xc_work/v/107.sv ...
+   >> Analyzing Verilog file xc_work/v/108.sv ...
+   >> Analyzing Verilog file xc_work/v/109.sv ...
+   >> Analyzing Verilog file xc_work/v/110.sv ...
+   >> Analyzing Verilog file xc_work/v/111.sv ...
+   >> Analyzing Verilog file xc_work/v/112.sv ...
+   >> Analyzing Verilog file xc_work/v/113.sv ...
+   >> Analyzing Verilog file xc_work/v/114.sv ...
+   >> Analyzing Verilog file xc_work/v/115.sv ...
+   >> Analyzing Verilog file xc_work/v/116.sv ...
+   >> Analyzing Verilog file xc_work/v/117.sv ...
+   >> Analyzing Verilog file xc_work/v/118.sv ...
+   >> Analyzing Verilog file xc_work/v/119.sv ...
+   >> Analyzing Verilog file xc_work/v/120.sv ...
+   >> Analyzing Verilog file xc_work/v/121.sv ...
+   >> Analyzing Verilog file xc_work/v/122.sv ...
+   >> Analyzing Verilog file xc_work/v/123.sv ...
+   >> Analyzing Verilog file xc_work/v/124.sv ...
+   >> Analyzing Verilog file xc_work/v/125.sv ...
+   >> Analyzing Verilog file xc_work/v/126.sv ...
+   >> Analyzing Verilog file xc_work/v/127.sv ...
+   >> Analyzing Verilog file xc_work/v/128.sv ...
+   >> Analyzing Verilog file xc_work/v/129.sv ...
+   >> Analyzing Verilog file xc_work/v/130.sv ...
+   >> Analyzing Verilog file xc_work/v/131.sv ...
+   >> Analyzing Verilog file xc_work/v/132.sv ...
+   >> Analyzing Verilog file xc_work/v/133.sv ...
+   >> Analyzing Verilog file xc_work/v/134.sv ...
+   >> Analyzing Verilog file xc_work/v/135.sv ...
+   >> Analyzing Verilog file xc_work/v/136.sv ...
+   >> Analyzing Verilog file xc_work/v/137.sv ...
+   >> Analyzing Verilog file xc_work/v/152.sv ...
+   >> Analyzing Verilog file xc_work/v/xcva_top.v ...
+   >> Analyzing Verilog file xc_work/v/gfifo_conns.sv ...
+   >> Analyzing Verilog file xc_work/v/sfifo_conns.sv ...
+   >> Analyzing Verilog file xc_work/v/ifsyn_conns.sv ...
+   >> Begin library search : 1 library file/directory
+   >> Scanning library file ./xc_work/xc_vawork/xc_vawork/.libvlog/qtref.v ...
+   >> End library search
+   >> Analyzing Package cr_kme_regfilePKG ...
+   >> Analyzing Package nx_mem_typePKG ...
+   >> Analyzing Package nx_mem_typePKG_v2 ...
+   >> Analyzing module cr_dual_rank_synchronizer ...
+   >> Analyzing module cr_rst_sync ...
+   >> Analyzing module nx_ram_1r1w_xcm16 ...
+   >> Analyzing module nx_fifo_ctrl_ram_1r1w_xcm18 ...
+   >> Analyzing module nx_fifo_ram_1r1w_xcm14 ...
+   >> Analyzing module cr_fifo_wrap2_xcm12 ...
+   >> Analyzing module cr_axi4s2_slv ...
+   >> Analyzing module AesSecIStub ...
+   >> Analyzing module nx_fifo_ctrl_xcm41 ...
+   >> Analyzing module nx_fifo_xcm35 ...
+   >> Analyzing module cr_kme_fifo_xcm60 ...
+   >> Analyzing module cr_kme_aes_256_drng ...
+   >> Analyzing module cr_kme_drng ...
+   >> Analyzing module nx_fifo_ctrl_xcm40 ...
+   >> Analyzing module nx_fifo_xcm34 ...
+   >> Analyzing module cr_kme_fifo_xcm59 ...
+   >> Analyzing module cr_kme_guid_stitcher ...
+   >> Analyzing module nx_fifo_ctrl_xcm39 ...
+   >> Analyzing module nx_fifo_xcm33 ...
+   >> Analyzing module cr_kme_fifo_xcm58 ...
+   >> Analyzing module cr_kme_tlv_parser ...
+   >> Analyzing module cr_kme_kim_drng_reader ...
+   >> Analyzing module nx_fifo_xcm32 ...
+   >> Analyzing module cr_kme_fifo_xcm57 ...
+   >> Analyzing module cr_kme_ckv_reader ...
+   >> Analyzing module cr_kme_kop_assigner ...
+   >> Analyzing module cr_kme_ckv_pipeline ...
+   >> Analyzing module nx_ram_1r1w_xcm15 ...
+   >> Analyzing module nx_fifo_ctrl_ram_1r1w_xcm17 ...
+   >> Analyzing module nx_fifo_ram_1r1w_xcm13 ...
+   >> Analyzing module cr_fifo_wrap2_xcm11 ...
+   >> Analyzing module cr_kme_ram_fifo ...
+   >> Analyzing module cr_kme_kop_tlv_inspector_xcm71 ...
+   >> Analyzing module cr_kme_kop_upsizer_x2_xcm73 ...
+   >> Analyzing module nx_fifo_ctrl_xcm38 ...
+   >> Analyzing module nx_fifo_xcm31 ...
+   >> Analyzing module cr_kme_fifo_xcm56 ...
+   >> Analyzing module cr_kme_kop_gcm ...
+   >> Analyzing module nx_fifo_ctrl_xcm37 ...
+   >> Analyzing module nx_fifo_xcm30 ...
+   >> Analyzing module cr_kme_fifo_xcm55 ...
+   >> Analyzing module cr_kme_kop_upsizer_x2_xcm72 ...
+   >> Analyzing module cr_kme_kop_kdf_keyfilter ...
+   >> Analyzing module nx_fifo_xcm29 ...
+   >> Analyzing module cr_kme_fifo_xcm54 ...
+   >> Analyzing module cr_kme_hmac_sha256_stub ...
+   >> Analyzing module cr_kme_kop_kdf_stream_pipe_xcm80 ...
+   >> Analyzing module cr_kme_kop_kdf_stream_pipe_xcm79 ...
+   >> Analyzing module nx_fifo_xcm28 ...
+   >> Analyzing module cr_kme_fifo_xcm53 ...
+   >> Analyzing module cr_kme_kop_kdf_stream_gen ...
+   >> Analyzing module nx_fifo_ctrl_xcm36 ...
+   >> Analyzing module nx_fifo_xcm27 ...
+   >> Analyzing module cr_kme_fifo_xcm52 ...
+   >> Analyzing module cr_kme_kop_kdf_merger ...
+   >> Analyzing module cr_kme_kop_kdf ...
+   >> Analyzing module cr_crc ...
+   >> Analyzing module cr_kme_kop_keybuilder ...
+   >> Analyzing module nx_fifo_xcm26 ...
+   >> Analyzing module cr_kme_fifo_xcm51 ...
+   >> Analyzing module nx_fifo_xcm25 ...
+   >> Analyzing module cr_kme_fifo_xcm50 ...
+   >> Analyzing module nx_fifo_xcm24 ...
+   >> Analyzing module cr_kme_fifo_xcm49 ...
+   >> Analyzing module nx_fifo_xcm23 ...
+   >> Analyzing module cr_kme_fifo_xcm48 ...
+   >> Analyzing module nx_fifo_xcm22 ...
+   >> Analyzing module cr_kme_fifo_xcm47 ...
+   >> Analyzing module nx_fifo_xcm21 ...
+   >> Analyzing module cr_kme_fifo_xcm46 ...
+   >> Analyzing module cr_kme_kop_xcm69 ...
+   >> Analyzing module cr_kme_kop_tlv_inspector_xcm70 ...
+   >> Analyzing module cr_kme_kop_xcm68 ...
+   >> Analyzing module nx_fifo_xcm19 ...
+   >> Analyzing module cr_kme_fifo_xcm45 ...
+   >> Analyzing module cr_kme_key_tlv_compare_split ...
+   >> Analyzing module cr_tlvp2_rsm_core ...
+   >> Analyzing module cr_fifo_wrap2_xcm10 ...
+   >> Analyzing module nx_fifo_xcm20 ...
+   >> Analyzing module cr_fifo_wrap2_xcm9 ...
+   >> Analyzing module cr_tlvp2_rsm ...
+   >> Analyzing module axi_channel_reg_slice ...
+   >> Analyzing module cr_axi4s_mstr ...
+   >> Analyzing module cr_kme_key_tlv_rsm ...
+   >> Analyzing module cr_sa_counter ...
+   >> Analyzing module cr_kme_core_glue ...
+   >> Analyzing module cr_kme_core ...
+   >> Analyzing module nx_rbus_apb ...
+   >> Analyzing module CR_TIE_CELL ...
+   >> Analyzing module cr_kme_regs_flops ...
+   >> Analyzing module cr_kme_regs ...
+   >> Analyzing module nx_rbus_ring ...
+   >> Analyzing module nx_interface_monitor_pipe ...
+   >> Analyzing module sync_fifo ...
+   >> Analyzing module nx_credit_manager ...
+   >> Analyzing module nx_ram_1rw_xcm111 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm122 ...
+   >> Analyzing module nx_interface_monitor_xcm106 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm121 ...
+   >> Analyzing module nx_interface_monitor_xcm105 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm120 ...
+   >> Analyzing module nx_interface_monitor_xcm104 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm119 ...
+   >> Analyzing module nx_interface_monitor_xcm103 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm118 ...
+   >> Analyzing module nx_interface_monitor_xcm102 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm117 ...
+   >> Analyzing module nx_interface_monitor_xcm101 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm116 ...
+   >> Analyzing module nx_interface_monitor_xcm100 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm115 ...
+   >> Analyzing module nx_interface_monitor_xcm99 ...
+   >> Analyzing module cr_kme_regfile_glue ...
+   >> Analyzing module nx_ram_1rw_xcm110 ...
+   >> Analyzing module nx_indirect_access_cntrl_v2_xcm127 ...
+   >> Analyzing module nx_ram_1rw_indirect_access_xcm125 ...
+   >> Analyzing module nx_ram_1rw_xcm109 ...
+   >> Analyzing module nx_indirect_access_cntrl_v2_xcm126 ...
+   >> Analyzing module nx_ram_1rw_indirect_access_xcm124 ...
+   >> Analyzing module cr_kme_drbg_reggen ...
+   >> Analyzing module bimc_master ...
+   >> Analyzing module cr_kme_int_handler ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm114 ...
+   >> Analyzing module nx_roreg_indirect_access_xcm132 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm113 ...
+   >> Analyzing module nx_roreg_indirect_access_xcm131 ...
+   >> Analyzing module nx_indirect_access_cntrl_xcm112 ...
+   >> Analyzing module nx_reg_indirect_access ...
+   >> Analyzing module cr_kme_regfile ...
+   >> Analyzing module cr_kme ...
+   >> Analyzing module apb_xactor ...
+   >> Analyzing module hw_top ...
+   >> Analyzing module top ...
+   >> Analyzing module ixc_1xbufsrc ...
+   >> Analyzing module ixc_master_clock ...
+   >> Analyzing module _ixc_clkgen ...
+   >> Analyzing module _ixc_isc ...
+   >> Analyzing module ASSERTION ...
+   >> Analyzing module xcva_top ...
+   >> Analyzing module ixc_gfifo_bind_2_2 ...
+   >> Analyzing module ixc_gfifo_bind_128_2 ...
+   >> Analyzing module ixc_gfifo_bind_3_2 ...
+   >> Analyzing module ixc_gfifo_bind_192_2 ...
+   >> Analyzing module ixc_gfifo_bind_1_2 ...
+   >> Analyzing module ixc_gfifo_bind_64_2 ...
+   >> Analyzing module gfifo_conns_0 ...
+   >> Analyzing module gfifo_conns ...
+   >> Analyzing module ixc_sfifo_bind_512_2 ...
+   >> Analyzing module ixc_sfifo_bind_22_2 ...
+   >> Analyzing module ixc_sfifo_bind_1_2 ...
+   >> Analyzing module ixc_sfifo_bind_4_2 ...
+   >> Analyzing module sfifo_conns_0 ...
+   >> Analyzing module sfifo_conns ...
+   >> Analyzing module ifsyn_conns ...
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    sjcvl-simonett
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time    :        0.87 seconds
+   System CPU time  :        0.21 seconds
+   Wall clock time  :           3 seconds
+   Peak Memory usage:       54108 KB
+
+vaelab -append_log -logfile ./xc_work/va.log -valib ./xc_work/va.lib -F ./xc_work/va_reflib_elab  -DontStopOnError -Work xc_ncwork -UCDBnoZZ -keepRtlSymbol -keepAllFlipFlop  -outputVlog ./xc_work/xc_va.ver xcva_top 
+hdlice - HDLICE, V23.03.131.s001                
+(c) 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+INFO: Using new BDD package in HDLICE; to revert to legacy BDD package from 20.0, use switch '-legacy_bdd'.
+
+ >> (1) The netlist of module 'xcva_top' is up to date.
+
+ >> (2) The netlist of module 'ASSERTION' is up to date.
+
+ >> (3) The netlist of module 'xc_top_1' is up to date.
+
+ >> (4) The netlist of module 'Q_RBUFZP' is up to date.
+
+ >> (5) The netlist of module 'Q_RBUFZN' is up to date.
+
+ >> (6) The netlist of module '_ixc_isc' is up to date.
+
+ >> (7) The netlist of module 'ixc_time' is up to date.
+
+ >> (8) The netlist of module 'ixc_assign_4' is up to date.
+
+ >> (9) The netlist of module 'axis_eclk' is up to date.
+
+ >> (10) The netlist of module 'ixc_assign_64' is up to date.
+
+ >> (11) The netlist of module 'IXC_GFIFO' is up to date.
+
+ >> (12) The netlist of module 'ifsyn_conns' is up to date.
+
+ >> (13) The netlist of module 'ixc_assign' is up to date.
+
+ >> (14) The netlist of module 'sfifo_conns' is up to date.
+
+ >> (15) The netlist of module 'sfifo_conns_0' is up to date.
+
+ >> (16) The netlist of module 'ixc_sfifo_bind_4_2' is up to date.
+
+ >> (17) The netlist of module 'ixc_sfifo_bind_1_2' is up to date.
+
+ >> (18) The netlist of module 'ixc_sfifo_bind_22_2' is up to date.
+
+ >> (19) The netlist of module 'ixc_sfifo_bind_512_2' is up to date.
+
+ >> (20) The netlist of module 'gfifo_conns' is up to date.
+
+ >> (21) The netlist of module 'gfifo_conns_0' is up to date.
+
+ >> (22) The netlist of module 'ixc_gfifo_bind_64_2' is up to date.
+
+ >> (23) The netlist of module 'ixc_gfifo_bind_1_2' is up to date.
+
+ >> (24) The netlist of module 'ixc_gfifo_bind_192_2' is up to date.
+
+ >> (25) The netlist of module 'ixc_gfifo_bind_3_2' is up to date.
+
+ >> (26) The netlist of module 'ixc_gfifo_bind_128_2' is up to date.
+
+ >> (27) The netlist of module 'ixc_gfifo_bind_2_2' is up to date.
+
+ >> (28) The netlist of module 'ixc_q_poll_ctrl_1_4' is up to date.
+
+ >> (29) The netlist of module 'ixc_cmd_q_1_1023_ARCH_4' is up to date.
+
+ >> (30) The netlist of module 'ixc_q_status_2_ARCH_4' is up to date.
+
+ >> (31) The netlist of module 'ixc_gf2_latch_36' is up to date.
+
+ >> (32) The netlist of module 'ixc_tbcpo_push_4' is up to date.
+
+ >> (33) The netlist of module 'ixc_error' is up to date.
+
+ >> (34) The netlist of module 'ixc_pop_cnt_1_2' is up to date.
+
+ >> (35) The netlist of module 'ixc_gf2_ff' is up to date.
+
+ >> (36) The netlist of module 'ixc_gf2_ff_56' is up to date.
+
+ >> (37) The netlist of module 'ixc_gf2_ff_8' is up to date.
+
+ >> (38) The netlist of module 'ixc_uClkGen' is up to date.
+
+ >> (39) The netlist of module 'ixc_pkt_q_16_1023_1_4' is up to date.
+
+ >> (40) The netlist of module 'ixc_pop_cnt_16_5' is up to date.
+
+ >> (41) The netlist of module 'ixc_pop_cnt_8_4' is up to date.
+
+ >> (42) The netlist of module 'ixc_pop_cnt_4_3' is up to date.
+
+ >> (43) The netlist of module 'IXC_SV_SFIFO' is up to date.
+
+ >> (44) The netlist of module 'IXC_SV_SCG_GFIFO_VXE_64' is up to date.
+
+ >> (45) The netlist of module 'IXC_SV_SFIFO_VXE_64' is up to date.
+
+ >> (46) The netlist of module 'IXC_SV_GFIFO' is up to date.
+
+ >> (47) The netlist of module 'IXC_SV_GFIFO2' is up to date.
+
+ >> (48) The netlist of module 'ixcEcmHoldOtb' is up to date.
+
+ >> (49) The netlist of module 'ixcEcmHold' is up to date.
+
+ >> (50) The netlist of module 'IXC_PTXTOP' is up to date.
+
+ >> (51) The netlist of module 'IXC_OSF1' is up to date.
+
+ >> (52) The netlist of module 'IXC_OSF_MB_4' is up to date.
+
+ >> (53) The netlist of module 'ixc_osfTbc_buf' is up to date.
+
+ >> (54) The netlist of module 'axis_tbcall_1_0_1' is up to date.
+
+ >> (55) The netlist of module 'IXC_ISF' is up to date.
+
+ >> (56) The netlist of module 'ixc_assign_9' is up to date.
+
+ >> (57) The netlist of module 'IXC_OSF' is up to date.
+
+ >> (58) The netlist of module 'axis_tbcall_BP_1' is up to date.
+
+ >> (59) The netlist of module '_ixc_clkgen' is up to date.
+
+ >> (60) The netlist of module 'ixc_master_clock' is up to date.
+
+ >> (61) The netlist of module 'ixc_1xbufsrc' is up to date.
+
+ >> (62) The netlist of module 'ixc_cakebind' is up to date.
+
+ >> (63) The netlist of module 'top' is up to date.
+
+ >> (64) The netlist of module 'hw_top' is up to date.
+
+ >> (65) The netlist of module 'apb_xactor' is up to date.
+
+ >> (66) The netlist of module 'ixc_sampleLT_20' is up to date.
+
+ >> (67) The netlist of module 'ixc_sample_logic_32' is up to date.
+
+ >> (68) The netlist of module 'ixc_sample_logic' is up to date.
+
+ >> (69) The netlist of module 'ixc_mevClk_2_0_0_1_0_2' is up to date.
+
+ >> (70) The netlist of module 'ixc_assign_20' is up to date.
+
+ >> (71) The netlist of module 'cr_kme' is up to date.
+
+ >> (72) The netlist of module 'ixc_assign_2176' is up to date.
+
+ >> (73) The netlist of module 'cr_kme_regfile' is up to date.
+
+ >> (74) The netlist of module 'ixc_assign_25' is up to date.
+
+ >> (75) The netlist of module 'nx_reg_indirect_access' is up to date.
+
+ >> (76) The netlist of module 'nx_indirect_access_cntrl_xcm112' is up to date.
+
+ >> (77) The netlist of module 'nx_roreg_indirect_access_xcm131' is up to date.
+
+ >> (78) The netlist of module 'nx_indirect_access_cntrl_xcm113' is up to date.
+
+ >> (79) The netlist of module 'nx_roreg_indirect_access_xcm132' is up to date.
+
+ >> (80) The netlist of module 'nx_indirect_access_cntrl_xcm114' is up to date.
+
+ >> (81) The netlist of module 'cr_kme_int_handler' is up to date.
+
+ >> (82) The netlist of module 'bimc_master' is up to date.
+
+ >> (83) The netlist of module 'ixc_assign_26' is up to date.
+
+ >> (84) The netlist of module 'ixc_assign_73' is up to date.
+
+ >> (85) The netlist of module 'ixc_assign_72' is up to date.
+
+ >> (86) The netlist of module 'cr_kme_drbg_reggen' is up to date.
+
+ >> (87) The netlist of module 'ixc_assign_48' is up to date.
+
+ >> (88) The netlist of module 'ixc_assign_128' is up to date.
+
+ >> (89) The netlist of module 'ixc_assign_256' is up to date.
+
+ >> (90) The netlist of module 'nx_ram_1rw_indirect_access_xcm124' is up to date.
+
+ >> (91) The netlist of module 'nx_indirect_access_cntrl_v2_xcm126' is up to date.
+
+ >> (92) The netlist of module 'nx_ram_1rw_xcm109' is up to date.
+
+ >> (93) The netlist of module 'nx_ram_1rw_indirect_access_xcm125' is up to date.
+
+ >> (94) The netlist of module 'nx_indirect_access_cntrl_v2_xcm127' is up to date.
+
+ >> (95) The netlist of module 'nx_ram_1rw_xcm110' is up to date.
+
+ >> (96) The netlist of module 'cr_kme_regfile_glue' is up to date.
+
+ >> (97) The netlist of module 'nx_interface_monitor_xcm99' is up to date.
+
+ >> (98) The netlist of module 'nx_indirect_access_cntrl_xcm115' is up to date.
+
+ >> (99) The netlist of module 'nx_ram_1rw_xcm111' is up to date.
+
+ >> (100) The netlist of module 'nx_credit_manager' is up to date.
+
+ >> (101) The netlist of module 'sync_fifo' is up to date.
+
+ >> (102) The netlist of module 'nx_interface_monitor_xcm100' is up to date.
+
+ >> (103) The netlist of module 'nx_indirect_access_cntrl_xcm116' is up to date.
+
+ >> (104) The netlist of module 'nx_interface_monitor_xcm101' is up to date.
+
+ >> (105) The netlist of module 'nx_indirect_access_cntrl_xcm117' is up to date.
+
+ >> (106) The netlist of module 'nx_interface_monitor_xcm102' is up to date.
+
+ >> (107) The netlist of module 'nx_indirect_access_cntrl_xcm118' is up to date.
+
+ >> (108) The netlist of module 'nx_interface_monitor_xcm103' is up to date.
+
+ >> (109) The netlist of module 'nx_indirect_access_cntrl_xcm119' is up to date.
+
+ >> (110) The netlist of module 'nx_interface_monitor_xcm104' is up to date.
+
+ >> (111) The netlist of module 'nx_indirect_access_cntrl_xcm120' is up to date.
+
+ >> (112) The netlist of module 'nx_interface_monitor_xcm105' is up to date.
+
+ >> (113) The netlist of module 'nx_indirect_access_cntrl_xcm121' is up to date.
+
+ >> (114) The netlist of module 'nx_interface_monitor_xcm106' is up to date.
+
+ >> (115) The netlist of module 'nx_indirect_access_cntrl_xcm122' is up to date.
+
+ >> (116) The netlist of module 'nx_interface_monitor_pipe' is up to date.
+
+ >> (117) The netlist of module 'nx_rbus_ring' is up to date.
+
+ >> (118) The netlist of module 'cr_kme_regs' is up to date.
+
+ >> (119) The netlist of module 'cr_kme_regs_flops' is up to date.
+
+ >> (120) The netlist of module 'CR_TIE_CELL' is up to date.
+
+ >> (121) The netlist of module 'ixc_assign_14' is up to date.
+
+ >> (122) The netlist of module 'ixc_assign_15' is up to date.
+
+ >> (123) The netlist of module 'ixc_assign_96' is up to date.
+
+ >> (124) The netlist of module 'ixc_assign_3' is up to date.
+
+ >> (125) The netlist of module 'ixc_assign_22' is up to date.
+
+ >> (126) The netlist of module 'ixc_assign_23' is up to date.
+
+ >> (127) The netlist of module 'ixc_assign_10' is up to date.
+
+ >> (128) The netlist of module 'ixc_assign_29' is up to date.
+
+ >> (129) The netlist of module 'ixc_assign_5' is up to date.
+
+ >> (130) The netlist of module 'ixc_assign_2' is up to date.
+
+ >> (131) The netlist of module 'ixc_assign_18' is up to date.
+
+ >> (132) The netlist of module 'ixc_assign_17' is up to date.
+
+ >> (133) The netlist of module 'ixc_assign_21' is up to date.
+
+ >> (134) The netlist of module 'ixc_assign_19' is up to date.
+
+ >> (135) The netlist of module 'ixc_assign_12' is up to date.
+
+ >> (136) The netlist of module 'ixc_assign_13' is up to date.
+
+ >> (137) The netlist of module 'ixc_assign_11' is up to date.
+
+ >> (138) The netlist of module 'nx_rbus_apb' is up to date.
+
+ >> (139) The netlist of module 'cr_kme_core' is up to date.
+
+ >> (140) The netlist of module 'cr_kme_core_glue' is up to date.
+
+ >> (141) The netlist of module 'cr_sa_counter' is up to date.
+
+ >> (142) The netlist of module 'ixc_assign_6' is up to date.
+
+ >> (143) The netlist of module 'ixc_assign_50' is up to date.
+
+ >> (144) The netlist of module 'cr_kme_key_tlv_compare_split' is up to date.
+
+ >> (145) The netlist of module 'cr_kme_fifo_xcm45' is up to date.
+
+ >> (146) The netlist of module 'nx_fifo_xcm19' is up to date.
+
+ >> (147) The netlist of module 'nx_fifo_ctrl_xcm39' is up to date.
+
+ >> (148) The netlist of module 'ixc_sample_logic_1_3' is up to date.
+
+ >> (149) The netlist of module 'ixc_assign_424' is up to date.
+
+ >> (150) The netlist of module 'cr_kme_key_tlv_rsm' is up to date.
+
+ >> (151) The netlist of module 'cr_axi4s_mstr' is up to date.
+
+ >> (152) The netlist of module 'axi_channel_reg_slice' is up to date.
+
+ >> (153) The netlist of module 'ixc_assign_82' is up to date.
+
+ >> (154) The netlist of module 'cr_tlvp2_rsm' is up to date.
+
+ >> (155) The netlist of module 'cr_fifo_wrap2_xcm9' is up to date.
+
+ >> (156) The netlist of module 'nx_fifo_xcm20' is up to date.
+
+ >> (157) The netlist of module 'nx_fifo_ctrl_xcm38' is up to date.
+
+ >> (158) The netlist of module 'cr_fifo_wrap2_xcm10' is up to date.
+
+ >> (159) The netlist of module 'nx_fifo_ram_1r1w_xcm14' is up to date.
+
+ >> (160) The netlist of module 'nx_fifo_ctrl_ram_1r1w_xcm18' is up to date.
+
+ >> (161) The netlist of module 'ixc_pio_call_0_0_0_0_1' is up to date.
+
+ >> (162) The netlist of module 'ixc_osf1_evcap' is up to date.
+
+ >> (163) The netlist of module 'ixc_uclk_sample' is up to date.
+
+ >> (164) The netlist of module 'ixc_sample_logic_3_3' is up to date.
+
+ >> (165) The netlist of module 'nx_ram_1r1w_xcm16' is up to date.
+
+ >> (166) The netlist of module 'cr_tlvp2_rsm_core' is up to date.
+
+ >> (167) The netlist of module 'cr_kme_kop_xcm68' is up to date.
+
+ >> (168) The netlist of module 'cr_kme_fifo_xcm46' is up to date.
+
+ >> (169) The netlist of module 'nx_fifo_xcm21' is up to date.
+
+ >> (170) The netlist of module 'nx_fifo_ctrl_xcm37' is up to date.
+
+ >> (171) The netlist of module 'cr_kme_fifo_xcm47' is up to date.
+
+ >> (172) The netlist of module 'nx_fifo_xcm22' is up to date.
+
+ >> (173) The netlist of module 'cr_kme_fifo_xcm48' is up to date.
+
+ >> (174) The netlist of module 'nx_fifo_xcm23' is up to date.
+
+ >> (175) The netlist of module 'cr_kme_fifo_xcm49' is up to date.
+
+ >> (176) The netlist of module 'nx_fifo_xcm24' is up to date.
+
+ >> (177) The netlist of module 'cr_kme_fifo_xcm50' is up to date.
+
+ >> (178) The netlist of module 'nx_fifo_xcm25' is up to date.
+
+ >> (179) The netlist of module 'cr_kme_fifo_xcm51' is up to date.
+
+ >> (180) The netlist of module 'nx_fifo_xcm26' is up to date.
+
+ >> (181) The netlist of module 'cr_kme_kop_keybuilder' is up to date.
+
+ >> (182) The netlist of module 'cr_crc' is up to date.
+
+ >> (183) The netlist of module 'cr_kme_kop_kdf' is up to date.
+
+ >> (184) The netlist of module 'cr_kme_kop_kdf_merger' is up to date.
+
+ >> (185) The netlist of module 'cr_kme_fifo_xcm52' is up to date.
+
+ >> (186) The netlist of module 'nx_fifo_xcm27' is up to date.
+
+ >> (187) The netlist of module 'nx_fifo_ctrl_xcm36' is up to date.
+
+ >> (188) The netlist of module 'cr_kme_kop_kdf_stream_gen' is up to date.
+
+ >> (189) The netlist of module 'cr_kme_fifo_xcm53' is up to date.
+
+ >> (190) The netlist of module 'nx_fifo_xcm28' is up to date.
+
+ >> (191) The netlist of module 'cr_kme_kop_kdf_stream_pipe_xcm79' is up to date.
+
+ >> (192) The netlist of module 'cr_kme_kop_kdf_stream_pipe_xcm80' is up to date.
+
+ >> (193) The netlist of module 'ixc_assign_34' is up to date.
+
+ >> (194) The netlist of module 'ixc_assign_296' is up to date.
+
+ >> (195) The netlist of module 'ixc_assign_288' is up to date.
+
+ >> (196) The netlist of module 'cr_kme_hmac_sha256_stub' is up to date.
+
+ >> (197) The netlist of module 'cr_kme_fifo_xcm54' is up to date.
+
+ >> (198) The netlist of module 'nx_fifo_xcm29' is up to date.
+
+ >> (199) The netlist of module 'cr_kme_kop_kdf_keyfilter' is up to date.
+
+ >> (200) The netlist of module 'cr_kme_kop_upsizer_x2_xcm72' is up to date.
+
+ >> (201) The netlist of module 'cr_kme_fifo_xcm55' is up to date.
+
+ >> (202) The netlist of module 'nx_fifo_xcm30' is up to date.
+
+ >> (203) The netlist of module 'cr_kme_kop_gcm' is up to date.
+
+ >> (204) The netlist of module 'cr_kme_fifo_xcm56' is up to date.
+
+ >> (205) The netlist of module 'nx_fifo_xcm31' is up to date.
+
+ >> (206) The netlist of module 'AesSecIStub' is up to date.
+
+ >> (207) The netlist of module 'ixc_assign_132' is up to date.
+
+ >> (208) The netlist of module 'cr_kme_kop_upsizer_x2_xcm73' is up to date.
+
+ >> (209) The netlist of module 'cr_kme_kop_tlv_inspector_xcm70' is up to date.
+
+ >> (210) The netlist of module 'ixc_assign_263' is up to date.
+
+ >> (211) The netlist of module 'ixc_assign_611' is up to date.
+
+ >> (212) The netlist of module 'cr_kme_kop_xcm69' is up to date.
+
+ >> (213) The netlist of module 'cr_kme_kop_tlv_inspector_xcm71' is up to date.
+
+ >> (214) The netlist of module 'cr_kme_ram_fifo' is up to date.
+
+ >> (215) The netlist of module 'cr_fifo_wrap2_xcm11' is up to date.
+
+ >> (216) The netlist of module 'nx_fifo_ram_1r1w_xcm13' is up to date.
+
+ >> (217) The netlist of module 'nx_fifo_ctrl_ram_1r1w_xcm17' is up to date.
+
+ >> (218) The netlist of module 'nx_ram_1r1w_xcm15' is up to date.
+
+ >> (219) The netlist of module 'cr_kme_ckv_pipeline' is up to date.
+
+ >> (220) The netlist of module 'cr_kme_kop_assigner' is up to date.
+
+ >> (221) The netlist of module 'cr_kme_ckv_reader' is up to date.
+
+ >> (222) The netlist of module 'cr_kme_fifo_xcm57' is up to date.
+
+ >> (223) The netlist of module 'nx_fifo_xcm32' is up to date.
+
+ >> (224) The netlist of module 'cr_kme_kim_drng_reader' is up to date.
+
+ >> (225) The netlist of module 'cr_kme_tlv_parser' is up to date.
+
+ >> (226) The netlist of module 'cr_kme_fifo_xcm58' is up to date.
+
+ >> (227) The netlist of module 'nx_fifo_xcm33' is up to date.
+
+ >> (228) The netlist of module 'cr_kme_guid_stitcher' is up to date.
+
+ >> (229) The netlist of module 'cr_kme_fifo_xcm59' is up to date.
+
+ >> (230) The netlist of module 'nx_fifo_xcm34' is up to date.
+
+ >> (231) The netlist of module 'nx_fifo_ctrl_xcm40' is up to date.
+
+ >> (232) The netlist of module 'cr_kme_drng' is up to date.
+
+ >> (233) The netlist of module 'cr_kme_aes_256_drng' is up to date.
+
+ >> (234) The netlist of module 'cr_kme_fifo_xcm60' is up to date.
+
+ >> (235) The netlist of module 'nx_fifo_xcm35' is up to date.
+
+ >> (236) The netlist of module 'nx_fifo_ctrl_xcm41' is up to date.
+
+ >> (237) The netlist of module 'ixc_assign_384' is up to date.
+
+ >> (238) The netlist of module 'cr_axi4s2_slv' is up to date.
+
+ >> (239) The netlist of module 'cr_fifo_wrap2_xcm12' is up to date.
+
+ >> (240) The netlist of module 'ixc_assign_106' is up to date.
+
+ >> (241) The netlist of module 'ixc_assign_71' is up to date.
+
+ >> (242) The netlist of module 'cr_rst_sync' is up to date.
+
+ >> (243) The netlist of module 'cr_dual_rank_synchronizer' is up to date.
+
+ >> (244) The netlist of module 'ixc_assign_84' is up to date.
+
+ >> (245) The netlist of module 'ixc_assign_16' is up to date.
+
+ >> (246) The netlist of module 'ixc_assign_7' is up to date.
+
+ >> (247) The netlist of module 'ixc_assign_38' is up to date.
+
+ >> (248) The netlist of module 'ixc_assign_83' is up to date.
+
+ >> (249) The netlist of module 'ixc_sampleLT_64' is up to date.
+
+ >> (250) The netlist of module 'ixc_sampleLT' is up to date.
+
+ >> (251) The netlist of module 'ixc_mdrOn' is up to date.
+
+ >> (252) The netlist of module 'ixc_capLoopXp' is up to date.
+
+ >> (253) The netlist of module 'ixc_sampleLT_32' is up to date.
+
+ >> (254) The netlist of module 'ixc_sampleLT_8' is up to date.
+
+ >> (255) The netlist of module 'ixc_nba2BpD' is up to date.
+
+ >> (256) The netlist of module 'ixc_rforce_32' is up to date.
+
+ >> (257) The netlist of module 'ixc_mevClk_1' is up to date.
+
+ >> (258) The netlist of module 'ixc_mevClk_2_0_0_1' is up to date.
+
+ >> (259) The netlist of module 'ixc_mevClk_3_0_0_4_0_3' is up to date.
+
+ >> (260) The netlist of module 'ixc_gfifo2_port_1_2' is up to date.
+
+ >> (261) The netlist of module 'ixc_gfifo2_port_16' is up to date.
+
+ >> (262) The netlist of module 'ixc_gfifo2_port_128' is up to date.
+
+ >> (263) The netlist of module 'ixc_gfifo2_port_80_3' is up to date.
+
+ >> (264) The netlist of module 'ixc_gfifo2_port_64' is up to date.
+
+ >> (265) The netlist of module 'ixc_gfifo2_port_80' is up to date.
+
+ >> (266) The netlist of module 'ixc_gfifo2_port_72_3' is up to date.
+
+ >> (267) The netlist of module 'axis_tbcall_2' is up to date.
+
+ >> (268) The netlist of module 'ixc_assign_32' is up to date.
+
+ >> (269) The netlist of module 'ixc_sfifo_port_112_0' is up to date.
+
+ >> (270) The netlist of module 'ixc_sfifo_port_104_0' is up to date.
+
+ >> (271) The netlist of module 'ixc_mem_call_8_0' is up to date.
+
+ >> (272) The netlist of module 'ixc_osf_evcap' is up to date.
+
+ >> (273) The netlist of module 'ixc_mem_call_32_0' is up to date.
+
+ >> (274) The netlist of module 'ixc_mem_call_0_0' is up to date.
+
+ >> (275) The netlist of module 'ixc_assign_8' is up to date.
+
+ >> writing './xc_work/xc_va.ver' at Fri Nov  1 12:05:50 2024
+ ...
+
+ >> writing UCDB ...
+
+ >> Reporting netlist area at Fri Nov  1 12:05:50 2024
+ ...
+
+ Total Area (275 modules & 4648 instances) :       676935.00
+
+ >> Reporting Runtime Statistics ...
+   Hostname         :    sjcvl-simonett
+   Operating system :    Linux RedHat 7.9 (64bit)
+   User CPU time    :        0.32 seconds
+   System CPU time  :        0.63 seconds
+   Wall clock time  :           5 seconds
+   Peak Memory usage:      104284 KB
+
+make[1]: Leaving directory `/home/simonett/Documents/Coursework/Project-Zipline/emulation/work'
+
+// HDL-ICE ended at : Fri Nov  1 12:05:51 2024 (total: 11 sec), heap memory used by IXCOM : 86.41M bytes
+
+Info		[FLOW_SUCCESS]
+	Successfully built target (HDL-ICE)
+
+// UCDB update (HWONLY) started at : Fri Nov  1 12:05:51 2024
+
+Info!	UCDB update (HWONLY) done.
+
+// UCDB update (HWONLY) ended at : Fri Nov  1 12:05:51 2024 (total: 0 sec), heap memory used by IXCOM : 86.41M bytes
+
+// UCDB update (FORGEN) started at : Fri Nov  1 12:05:51 2024
+
+
+Info!	UCDB updated for P and V entries with NCNAME attrib
+
+Info!	UCDB update (FORGEN) done.
+
+// UCDB update (FORGEN) ended at : Fri Nov  1 12:05:51 2024 (total: 0 sec), heap memory used by IXCOM : 86.41M bytes
+
+Generating xc_work/qel/ixcPreDesignOptions.qel
+Generating xc_work/qel/ixcOptions.qel
+Generating xc_work/qel/ixcomImport.qel
+Forking xeCompile /lan/cva_rel/23h1_wxe/23.03.131.s001/tools.lnx86/etc/qel/ixcom.qel 1xua
+// xeCompile started at : Fri Nov  1 12:05:51 2024
+
+xeCompile - 23H1_WXE, V23.03.131.s001            
+
+(c) 1991-2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+See files in <rootdir>/share/vxe/install/Copyrights
+WARNING (legacy-52507): The file descriptors limit is 4096, which is less than recommended minimum of 16384.
+WARNING (legacy-52368): Current overcommit memory settings are not optimal. The values are (memory=0, ratio=50). Suggested values are (memory=2, ratio=100).
+* Cannot lock xeCompile.key: Resource temporarily unavailable.
+
+// xeCompile ended at : Fri Nov  1 12:05:51 2024 (total: 0 sec), heap memory used by IXCOM : 86.41M bytes
+
+Error!		[FLOW_FAILED]
+	Failure to build target (xeCompile)
+
+// nc elaborate started at : Fri Nov  1 12:05:40 2024
+
+	Please refer to xc_work/xc_make.log for the AVS log.
+
+// nc elaborate ended at : Fri Nov  1 12:05:50 2024 (total: 10 sec)
+Info		[FLOW_SUCCESS]
+	Successfully built target (nc elaborate)
+
+// ixcom ended at : Fri Nov  1 12:05:51 2024 (total: 20 sec), heap memory used by IXCOM : 86.41M bytes
+// peak virtual memory size (VmPeak) used by IXCOM : 975.95M bytes, peak resident memory size (VmHWM) used by IXCOM : 20.45M bytes
+

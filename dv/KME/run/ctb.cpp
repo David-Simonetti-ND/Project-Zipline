@@ -34,7 +34,9 @@ using namespace std;
 
 extern "C" {
 
-
+extern "C" void dpi__hw2sw_core_monitor_pkt(uint64_t pc, uint16_t robid, uint8_t  excp_valid, uint8_t  trap) {
+    printf("DPI MONITOR %lu %u %u %u\n", pc, robid, excp_valid, trap);
+}
 
 int c_configure_kme(char *kme_tb_config_path) {
     std::string kme_tb_config_path_str = kme_tb_config_path;

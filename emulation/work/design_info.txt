@@ -1,0 +1,20 @@
+TOOL VERSION INFO:
+HDLICE VERSION: 22H1_HDLICE, V22.04.160.s002
+HDLICE PATH: /lan/cva/ptm_tools/Production_L/cadence/HDLICE2204ISR2/bin/hdlice
+IXCOM VERSION: IXCOM, V22.04.160.s002
+IXCOM PATH: /lan/cva/ptm_tools/Production_L/cadence/IXCOM2204ISR2/bin/ixcom
+PTM VERSION: PTM 22.05.198.s003            
+
+XECOMPILE PATH: /lan/cva/ptm_tools/Production_L/cadence/PTM2205ISR3/bin/xeCompile
+VIVADO PATH: /lan/cva/ptm_tools/Production_L/xilinx/Vivado/2022.2/bin/vivado
+VIVADO Version: Vivado v2022.2 (64-bit)
+XRUN TOOL:	xrun	22.03-s006
+XCELIUM PATH: /lan/cva/ptm_tools/Production_L/cadence/XCELIUM2203_06/tools.lnx86/bin/xrun
+PtmRun Version: 22H1_Protium, V22.05.198.s003            
+PTMRUN PATH: /lan/cva/ptm_tools/Production_L/cadence/PTM2205ISR3/bin/ptmRun
+PostCompile INFO:
+Number Of Boards: 2
+Number Of FPGAs: 2
+Target Frequency: 119MHz
+Num Steps: 7
+Cake Val: 2

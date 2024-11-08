@@ -443,6 +443,14 @@ module hw_top ();
       ################################################ */
 
    assign buff_clk = dut_clk;
+   import "DPI-C" context function void dpi__hw2sw_core_monitor_pkt(input longint unsigned pc, input shortint unsigned robid, input byte unsigned excp_valid, input byte unsigned trap);
+   always @(posedge buff_clk) begin
+      dpi__hw2sw_core_monitor_pkt(10, 11, 0, 1);
+   end
+
+   always @(posedge buff_clk) begin
+      dpi__hw2sw_core_monitor_pkt(5, 6, 1, 0);
+   end
 
    initial begin
       // uncomment below for tb to access clk
