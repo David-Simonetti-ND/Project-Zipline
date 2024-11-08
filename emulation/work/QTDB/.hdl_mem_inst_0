@@ -1,6 +1,0 @@
-{ixc_q_poll_ctrl_1_4},{ixc_gf2_ack_buf},{1 63 0 0 3}
-{ixc_tbcpo_push_4},{ixc_gf2_tbcpo_buf},{1 63 0 0 1}
-{ixc_tbcpo_push_4},{ixc_gf2_req_buf},{1 63 0 0 1}
-{ixc_pkt_q_16_1023_1_4},{ixc_gf2_pkt_buf},{1 63 0 0 16384}
-{ixc_q_status_2_ARCH_4},{ixc_gf2_qstatus_buf},{1 63 0 0 3}
-{ixc_cmd_q_1_1023_ARCH_4},{ixc_gf2_cmd_buf},{1 63 0 0 1024}
